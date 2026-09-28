@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Sizes and care — Azita Mehrabi, Toronto</title>
-<meta name="description" content="Measuring a floor for a hand-knotted rug or runner, what a pad does, turning a rug, vacuuming without eating the fringe, and what the Toronto room will not do. A floor reckoner included.">
+<meta name="description" content="Measuring a floor for a hand-knotted rug, what a pad does, turning a rug, vacuuming without eating the fringe, and what the Toronto room will not do.">
 <meta name="robots" content="noindex, nofollow">
 <link rel="canonical" href="/sizes-and-care.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Sizes and care — Azita Mehrabi, Toronto">
-<meta property="og:description" content="Measuring a floor for a hand-knotted rug or runner, what a pad does, turning a rug, vacuuming without eating the fringe, and what the Toronto room will not do. A floor reckoner included.">
+<meta property="og:description" content="Measuring a floor for a hand-knotted rug, what a pad does, turning a rug, vacuuming without eating the fringe, and what the Toronto room will not do.">
 <meta property="og:image" content="/assets/og.png">
 <meta property="og:url" content="/sizes-and-care.html">
 <meta name="theme-color" content="#1E3A5F">
@@ -50,7 +50,7 @@ ul,ol{padding-left:1.3em}
 .warp-toggle[aria-expanded="true"] .warp-line:nth-child(2){opacity:0}
 .warp-toggle[aria-expanded="true"] .warp-line:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
 main{padding:.4rem clamp(1rem,3.4vw,2.6rem) 2.6rem}
-.field-panel{position:relative;max-width:1180px;margin:2.9rem auto;background:var(--field);border:var(--mb) solid var(--theme);color:var(--ink)}
+.field-panel{position:relative;max-width:1180px;margin:2.9rem auto;background:var(--field);border:var(--mb) solid var(--theme);color:var(--ink);scroll-margin-top:5.5rem}
 .field-panel:first-child{margin-top:2.2rem}
 .guard-line{position:absolute;top:calc(-1*(var(--mb) + var(--gd)));left:calc(-1*(var(--mb) + var(--gd)));width:calc(100% + 2*(var(--mb) + var(--gd)));height:calc(100% + 2*(var(--mb) + var(--gd)));overflow:visible;pointer-events:none}
 .guard-line rect{fill:none;stroke:var(--theme);stroke-width:2}
@@ -130,6 +130,16 @@ main{padding:.4rem clamp(1rem,3.4vw,2.6rem) 2.6rem}
 .prose-pair{display:grid;grid-template-columns:1.3fr .9fr;gap:2rem 3rem;align-items:start}
 .prose-pair.pair-flip{grid-template-columns:.9fr 1.3fr}
 .prose-pair.pair-flip .sight-figure{order:-1}
+.sight-stack{display:grid;gap:1.5rem;align-content:start}
+.sight-narrow{max-width:390px}
+.margin-pair{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,.85fr);gap:1.8rem 2.6rem;align-items:start}
+.margin-note{border:2px solid var(--theme);outline:1px dashed var(--theme);outline-offset:4px;background:var(--white);padding:1.05rem 1.15rem}
+.margin-note h3{font-size:1.1rem;margin:0 0 .45rem}
+.margin-note p{margin:0 0 .7rem;max-width:none;font-size:1.02rem;line-height:1.5}
+.margin-note p:last-child{margin:0}
+.margin-note ul{margin:0 0 .7rem;padding-left:1.15em}
+.margin-note li{max-width:none;font-size:1.02rem;line-height:1.5;margin-bottom:.3rem}
+.field-dark .margin-note{background:var(--theme-2);color:var(--ground);border-color:var(--accent);outline-color:var(--accent)}
 .spec-list{list-style:none;padding:0;margin:.2rem 0 1rem}
 .spec-list li{padding:.55rem 0;border-top:1px dashed var(--theme);max-width:66ch}
 .spec-list li:last-child{border-bottom:1px dashed var(--theme)}
@@ -165,12 +175,14 @@ main{padding:.4rem clamp(1rem,3.4vw,2.6rem) 2.6rem}
 .foot-threads a{color:var(--ground);text-decoration:none;font-weight:600;border-bottom:1px dotted var(--cream-2)}
 .foot-threads a:hover{border-bottom-color:var(--ground)}
 .foot-line{max-width:1180px;margin:1.8rem auto 0;padding-top:1rem;border-top:1px dashed var(--cream-2);color:var(--cream-2);font-size:.98rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
-.consent-nook{position:fixed;right:1rem;bottom:1rem;width:min(370px,calc(100% - 2rem));background:var(--ground);color:var(--ink);border:3px double var(--theme);padding:1rem 1.1rem 1.05rem;z-index:40;font-size:1rem;line-height:1.45}
+.consent-nook{position:sticky;top:0;z-index:60;background:var(--ground);color:var(--ink);border-bottom:3px double var(--theme);padding:.7rem clamp(1rem,4vw,3rem) .75rem;font-size:1rem;line-height:1.45}
+.nook-strip{max-width:1180px;margin:0 auto;display:flex;align-items:center;gap:.55rem 2rem;flex-wrap:wrap}
 .consent-nook p{margin:0 0 .8rem;max-width:none}
+.nook-strip p{margin:0;max-width:74ch;flex:1 1 20rem}
 .nook-actions{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center}
 .nook-accept,.nook-save{background:var(--theme);color:var(--ground);font:inherit;font-weight:700;font-size:1.02rem;padding:.5rem .95rem;border:2px solid var(--theme);cursor:pointer}
 .nook-manage{background:none;color:var(--theme);font:inherit;font-weight:600;font-size:1.02rem;padding:.5rem .7rem;border:2px solid var(--theme);cursor:pointer}
-.nook-panel{margin-top:.8rem;padding-top:.8rem;border-top:1px dashed var(--theme)}
+.nook-panel{max-width:1180px;margin:.8rem auto 0;padding-top:.8rem;border-top:1px dashed var(--theme)}
 .nook-head{font-family:Caudex,Georgia,serif;font-size:1.1rem;margin:0 0 .5rem}
 .nook-switch{display:flex;gap:.6rem;align-items:flex-start;margin-bottom:.7rem;font-weight:600}
 .nook-switch input{width:20px;height:20px;margin:.15rem 0 0;accent-color:var(--theme)}
@@ -178,6 +190,7 @@ main{padding:.4rem clamp(1rem,3.4vw,2.6rem) 2.6rem}
 .wide-stage{max-width:1180px;margin:2.9rem auto}
 .wide-stage img{width:100%}
 .lost-field{text-align:left}
+.field-slim{max-width:780px}
 @media (prefers-reduced-motion:no-preference){
   .room-js .guard-reveal{stroke-dasharray:1;stroke-dashoffset:1}
   .room-js .field-arrived .guard-reveal{animation:guard-draw 1.3s cubic-bezier(.4,0,.2,1) forwards}
@@ -187,9 +200,13 @@ main{padding:.4rem clamp(1rem,3.4vw,2.6rem) 2.6rem}
   .room-js .guard-reveal{stroke-dasharray:none;stroke-dashoffset:0;animation:none}
   .warp-line,.nav-thread,.ask-tab{transition:none}
 }
+@media (min-width:1001px){
+  .margin-pair>.margin-note{position:sticky;top:1.5rem}
+}
 @media (max-width:1000px){
   .loom-list{grid-template-columns:repeat(2,1fr)}
   .room-open,.room-story,.prose-pair,.prose-pair.pair-flip{grid-template-columns:1fr}
+  .margin-pair{grid-template-columns:minmax(0,1fr)}
   .prose-pair.pair-flip .sight-figure{order:0}
   .find-room{grid-template-columns:1fr 1fr}
   .runner-band{grid-template-columns:1fr 1fr}
@@ -225,7 +242,7 @@ main{padding:.4rem clamp(1rem,3.4vw,2.6rem) 2.6rem}
   .room-open .tab-row{margin-top:.2rem}
   .ask-tab{font-size:1.18rem;padding:.55rem 1rem}
   .loom-name{font-size:1.4rem}
-  .consent-nook{right:.6rem;bottom:.6rem;width:calc(100% - 1.2rem);padding:.85rem .9rem}
+  .consent-nook{padding:.6rem .9rem .65rem;font-size:.97rem}
   .sight-frame{outline-offset:2px}
 }
 </style>
@@ -246,6 +263,21 @@ main{padding:.4rem clamp(1rem,3.4vw,2.6rem) 2.6rem}
 <a class="ask-tab" href="ask-about-a-piece.html">Ask about a piece</a>
 </nav>
 </header>
+<aside class="consent-nook" id="consent-nook" hidden aria-label="Preferences kept in your browser">
+<div class="nook-strip">
+<p>Nothing on this site is measured today. One preference is kept in your browser: whether analytics may ever run. The rest of it is on the <a href="privacy.html">privacy page</a>.</p>
+<div class="nook-actions">
+<button class="nook-accept" id="nook-accept" type="button">Accept all</button>
+<button class="nook-manage" id="nook-manage" type="button" aria-expanded="false" aria-controls="nook-panel">Manage preferences</button>
+</div>
+</div>
+<div class="nook-panel" id="nook-panel" hidden>
+<p class="nook-head">Your choice, one switch</p>
+<label class="nook-switch" for="nook-analytics"><input type="checkbox" id="nook-analytics"><span>Analytics and performance<small>Stays off until you turn it on; no measuring tool is installed on the site today.</small></span></label>
+<button class="nook-save" id="nook-save" type="button">Save my choice</button>
+</div>
+</aside>
+<script>(function(){var n=document.getElementById('consent-nook'),v=null;try{v=localStorage.getItem('am_room_pref');}catch(e){}if(!v){n.hidden=false;}})();</script>
 <main>
 <section class="field-panel weave-hatch" id="floor-first"><svg class="guard-line" aria-hidden="true" focusable="false"><defs><mask id="gm-floor-first" maskUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%"><rect class="guard-reveal" pathLength="1"/></mask></defs><g mask="url(#gm-floor-first)"><rect class="guard-a"/><rect class="guard-b"/></g></svg><div class="border-strip"><h2>Sizes and care</h2></div><div class="field-body"><div class="prose-pair">
 <div>
@@ -255,11 +287,17 @@ main{padding:.4rem clamp(1rem,3.4vw,2.6rem) 2.6rem}
 </div>
 <figure class="sight-figure"><span class="sight-frame"><img src="assets/img/grey-kilim-fringe.webp" alt="A whole flatweave in brown, cream and black with a stepped border and fringe at both ends, lying on wooden boards" width="640" height="426"></span><figcaption class="knot-note">A whole flatweave on wooden boards, fringe at both ends. The size in a listing is the cloth between the fringes, never the fringe itself.</figcaption></figure>
 </div></div></section>
-<section class="field-panel weave-ticks" id="measuring"><svg class="guard-line" aria-hidden="true" focusable="false"><defs><mask id="gm-measuring" maskUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%"><rect class="guard-reveal" pathLength="1"/></mask></defs><g mask="url(#gm-measuring)"><rect class="guard-a"/><rect class="guard-b"/></g></svg><div class="border-strip"><h2>Measuring a room for a rug</h2></div><div class="field-body"><p>Measure the floor, not the room. Walls are not where a rug stops; the skirting, a radiator, a hearth and the swing of a door all take floor away, and the rug has to sit inside what is left. Run a tape along the two directions at floor level, write both figures down in centimetres, and note anything that intrudes.</p>
+<section class="field-panel weave-ticks" id="measuring"><svg class="guard-line" aria-hidden="true" focusable="false"><defs><mask id="gm-measuring" maskUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%"><rect class="guard-reveal" pathLength="1"/></mask></defs><g mask="url(#gm-measuring)"><rect class="guard-a"/><rect class="guard-b"/></g></svg><div class="border-strip"><h2>Measuring a room for a rug</h2></div><div class="field-body"><div class="margin-pair"><div><p>Measure the floor, not the room. Walls are not where a rug stops; the skirting, a radiator, a hearth and the swing of a door all take floor away, and the rug has to sit inside what is left. Run a tape along the two directions at floor level, write both figures down in centimetres, and note anything that intrudes.</p>
 <p>Then decide how much floor you want to see. A rug that runs to the skirting on all sides reads as fitted carpet; a rug that stops well short of the walls reads as a rug. The band of floor showing is a matter of taste, but it should be the same on all four sides, and a hand's width is the least that reads as intentional. Take that band off both ends of each measurement and what is left is the largest rug the floor will carry.</p>
 <p>Under a dining table the rule is different: the rug should be large enough that a chair pulled out to sit down still has all four legs on it. Measure the table, add the depth of a pulled-out chair on every side, and that is the smallest rug that works there, whatever the room around it says.</p>
-<p>For a hallway, measure the length of floor between the two doorways or the two ends, and the width between the skirting boards. A runner stops short of both ends and leaves a band of floor along each side, and because a hand-knotted runner may not run perfectly straight, the widest point on its note is the width to plan with.</p></div></section>
-<section class="field-panel weave-checks" id="floor-reckoner-field"><svg class="guard-line" aria-hidden="true" focusable="false"><defs><mask id="gm-floor-reckoner-field" maskUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%"><rect class="guard-reveal" pathLength="1"/></mask></defs><g mask="url(#gm-floor-reckoner-field)"><rect class="guard-a"/><rect class="guard-b"/></g></svg><div class="border-strip"><h2>The floor reckoner</h2></div><div class="field-body"><p>Type the floor's length and width in centimetres, and the band of floor you want to see on each side. The reckoner takes the band off both ends of each measurement and gives the largest rug that fits, in centimetres and in feet and inches. It is subtraction and a unit change, nothing more; the judgement about the band is yours.</p>
+<p>For a hallway, measure the length of floor between the two doorways or the two ends, and the width between the skirting boards. A runner stops short of both ends and leaves a band of floor along each side, and because a hand-knotted runner may not run perfectly straight, the widest point on its note is the width to plan with.</p></div>
+<aside class="margin-note"><h3>What to write down</h3>
+<ul><li>The floor in both directions, in centimetres, taken down at floor level.</li>
+<li>Whatever eats into it: a hearth, a radiator, the arc of a door as it opens.</li>
+<li>The band of floor you have decided to keep showing.</li>
+<li>For a hallway, the width between the skirting boards at the narrowest point.</li></ul>
+<p>Those four lines are the whole of what a reply needs in order to name the pieces that will fit.</aside></div></div></section>
+<section class="field-panel weave-checks" id="floor-reckoner-field"><svg class="guard-line" aria-hidden="true" focusable="false"><defs><mask id="gm-floor-reckoner-field" maskUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%"><rect class="guard-reveal" pathLength="1"/></mask></defs><g mask="url(#gm-floor-reckoner-field)"><rect class="guard-a"/><rect class="guard-b"/></g></svg><div class="border-strip"><h2>The floor reckoner</h2></div><div class="field-body"><div class="margin-pair"><div><p>Type the floor's length and width in centimetres, and the band of floor you want to see on each side. The reckoner takes the band off both ends of each measurement and gives the largest rug that fits, in centimetres and in feet and inches. It is subtraction and a unit change, nothing more; the judgement about the band is yours.</p>
 <form class="reckon-form" id="floor-reckoner" onsubmit="return false">
 <div><label for="room-long">Floor length, cm</label><input type="number" id="room-long" inputmode="numeric" min="1" step="1"></div>
 <div><label for="room-wide">Floor width, cm</label><input type="number" id="room-wide" inputmode="numeric" min="1" step="1"></div>
@@ -270,7 +308,10 @@ main{padding:.4rem clamp(1rem,3.4vw,2.6rem) 2.6rem}
 <p>Largest rug, width: <strong id="rug-wide">&mdash;</strong></p>
 <p>The same in feet and inches: <strong id="rug-inches">&mdash;</strong></p>
 </div>
-<p class="knot-note">Hand-knotted pieces come in the sizes they were woven at, so the answer is a ceiling, not a target. A listing a little under it will work; a listing over it will not.</p></div></section>
+<p class="knot-note">Hand-knotted pieces come in the sizes they were woven at, so the answer is a ceiling, not a target. A listing a little under it will work; a listing over it will not.</p></div>
+<aside class="margin-note"><h3>Two floors it cannot do</h3>
+<p>A rug under a dining table is not sized from the room. It is sized from the table plus the depth of a chair pulled out on every side, so the figure above is only the ceiling that answer has to fit under.</p>
+<p>An L-shaped floor is measured as the rectangle you actually mean to cover. Leave the shorter arm out of the sum and treat what is left as the room.</aside></div></div></section>
 <section class="field-panel weave-lozenge" id="the-pad"><svg class="guard-line" aria-hidden="true" focusable="false"><defs><mask id="gm-the-pad" maskUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%"><rect class="guard-reveal" pathLength="1"/></mask></defs><g mask="url(#gm-the-pad)"><rect class="guard-a"/><rect class="guard-b"/></g></svg><div class="border-strip"><h2>What a pad does</h2></div><div class="field-body"><div class="prose-pair">
 <div>
 <p>A pad does three things, and only one of them is about comfort.</p>
@@ -281,13 +322,18 @@ main{padding:.4rem clamp(1rem,3.4vw,2.6rem) 2.6rem}
 </div>
 <figure class="sight-figure"><span class="sight-frame"><img src="assets/img/red-corner-fringe.webp" alt="The fringed corner of a red-ground rug with a floral border, on a wooden floor" width="640" height="480" loading="lazy"></span><figcaption class="knot-note">A corner on a wooden floor. A pad sits a little inside the edge so the corner lies flat and the fringe stays free of it.</figcaption></figure>
 </div></div></section>
-<section class="field-panel weave-dots field-dark" id="turning"><svg class="guard-line" aria-hidden="true" focusable="false"><defs><mask id="gm-turning" maskUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%"><rect class="guard-reveal" pathLength="1"/></mask></defs><g mask="url(#gm-turning)"><rect class="guard-a"/><rect class="guard-b"/></g></svg><div class="border-strip"><h2>Turning a rug</h2></div><div class="field-body"><p>A rug wears where it is walked on and fades where the sun lands, and neither happens evenly. Turning the rug end for end moves the walking line and the sunlit patch to the other half, and over the years that is the difference between a rug that has worn all over and one that has a bald path down its middle.</p>
+<section class="field-panel weave-dots field-dark" id="turning"><svg class="guard-line" aria-hidden="true" focusable="false"><defs><mask id="gm-turning" maskUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%"><rect class="guard-reveal" pathLength="1"/></mask></defs><g mask="url(#gm-turning)"><rect class="guard-a"/><rect class="guard-b"/></g></svg><div class="border-strip"><h2>Turning a rug</h2></div><div class="field-body"><div class="margin-pair"><div><p>A rug wears where it is walked on and fades where the sun lands, and neither happens evenly. Turning the rug end for end moves the walking line and the sunlit patch to the other half, and over the years that is the difference between a rug that has worn all over and one that has a bald path down its middle.</p>
 <p>Turn it when the season changes, which is often enough to matter and rare enough to remember. If one end sits in a window, turn it more often than that. A runner in a hallway is turned end for end the same way, and it is worth turning it over too, face down for a day, so the back gets air.</p>
-<p>Turning is also the moment to look. Lift a corner, look at the back for the pale line of a moth, run a hand along the selvedge for a place where the wrapping has opened. Anything found is a job for a repairer, caught early.</p></div></section>
-<section class="field-panel weave-chevron" id="fringe"><svg class="guard-line" aria-hidden="true" focusable="false"><defs><mask id="gm-fringe" maskUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%"><rect class="guard-reveal" pathLength="1"/></mask></defs><g mask="url(#gm-fringe)"><rect class="guard-a"/><rect class="guard-b"/></g></svg><div class="border-strip"><h2>Vacuuming, and what it does to fringe</h2></div><div class="field-body"><p>A vacuum cleaner with a rotating brush is the thing in a house most likely to damage a hand-knotted rug, and the fringe is where it does it. The brush catches the free warp threads, twists them, and pulls them out of the end of the rug a few at a time; a fringe that has been vacuumed for a few years is short, ragged and taking the end of the pile with it.</p>
+<p>Turning is also the moment to look. Lift a corner, look at the back for the pale line of a moth, run a hand along the selvedge for a place where the wrapping has opened. Anything found is a job for a repairer, caught early.</p></div>
+<aside class="margin-note"><h3>What to look at while it is up</h3>
+<p>The back, for the pale line a moth leaves along a fold. The selvedge, run through a hand, for a place where the wrapping has opened. The fringe, for warp threads gone short at one end and not the other.</p>
+<p>Anything found goes to a repairer. Nothing found is repaired here.</aside></div></div></section>
+<section class="field-panel weave-chevron" id="fringe"><svg class="guard-line" aria-hidden="true" focusable="false"><defs><mask id="gm-fringe" maskUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%"><rect class="guard-reveal" pathLength="1"/></mask></defs><g mask="url(#gm-fringe)"><rect class="guard-a"/><rect class="guard-b"/></g></svg><div class="border-strip"><h2>Vacuuming, and what it does to fringe</h2></div><div class="field-body"><div class="margin-pair"><div><p>A vacuum cleaner with a rotating brush is the thing in a house most likely to damage a hand-knotted rug, and the fringe is where it does it. The brush catches the free warp threads, twists them, and pulls them out of the end of the rug a few at a time; a fringe that has been vacuumed for a few years is short, ragged and taking the end of the pile with it.</p>
 <p>So: suction only, never a beater brush, and never across the fringe at all. Vacuum the field in the direction the pile lies, which you can find by running a hand across it, the smooth way. Stop the head short of the ends. Shake the fringe out by hand, or comb it with your fingers, and leave it at that.</p>
 <p>A flatweave has no pile and can be vacuumed on either face, but its ends and its selvedges are just as easily eaten. Cushion covers are not vacuumed; they are taken outside and shaken, or aired flat in shade.</p>
-<p>Spills are blotted, not rubbed, and never soaked, because dyes in old wool can run and the room cannot tell you which will. Anything beyond blotting is cleaning, and cleaning is not done here.</p></div></section>
+<p>Spills are blotted, not rubbed, and never soaked, because dyes in old wool can run and the room cannot tell you which will. Anything beyond blotting is cleaning, and cleaning is not done here.</p></div>
+<aside class="margin-note"><h3>The fringe, in one line</h3>
+<p>Fringe is the warp itself, left free where the weaving stopped. It is not sewn on afterwards and it cannot be put back by this room, which is why the rule about a beater brush is the firmest rule on the page.</aside></div></div></section>
 <section class="field-panel weave-bars" id="not-done-here"><svg class="guard-line" aria-hidden="true" focusable="false"><defs><mask id="gm-not-done-here" maskUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%"><rect class="guard-reveal" pathLength="1"/></mask></defs><g mask="url(#gm-not-done-here)"><rect class="guard-a"/><rect class="guard-b"/></g></svg><div class="border-strip"><h2>What the room will not do</h2></div><div class="field-body"><p>The room sells rugs, runners, cushion covers, pads and binding tape, and it describes them plainly. It does not offer the services that usually sit beside a rug shop, and it says so here rather than in small print.</p>
 <ul class="turned-down">
 <li>We do not clean, wash, repair or restore rugs, our own or anyone else's.</li>
@@ -302,7 +348,7 @@ main{padding:.4rem clamp(1rem,3.4vw,2.6rem) 2.6rem}
 <div>
 <a class="fringe-mark" href="index.html">Azita Mehrabi</a>
 <p>Hand-knotted rugs and kilim cushions. A rug room in Toronto, Ontario; pieces travel anywhere in Canada.</p>
-<p>Written to at <a href="mailto:studio@azitamehrabi.com">studio@azitamehrabi.com</a></p>
+<p>Write to the room at <a href="mailto:studio@azitamehrabi.com">studio@azitamehrabi.com</a></p>
 </div>
 <div>
 <ul class="foot-threads">
@@ -324,18 +370,6 @@ main{padding:.4rem clamp(1rem,3.4vw,2.6rem) 2.6rem}
 </div>
 <div class="foot-line"><span>© 2026 Azita Mehrabi</span><span>Toronto, Ontario, Canada</span></div>
 </footer>
-<aside class="consent-nook" id="consent-nook" hidden aria-label="Preferences kept in your browser">
-<p>This site keeps one preference in your browser: whether you allow analytics. Nothing is measured or set until you choose, and at present no analytics run at all. Read the <a href="privacy.html">privacy page</a> for the whole of it.</p>
-<div class="nook-actions">
-<button class="nook-accept" id="nook-accept" type="button">Accept all</button>
-<button class="nook-manage" id="nook-manage" type="button" aria-expanded="false" aria-controls="nook-panel">Manage preferences</button>
-</div>
-<div class="nook-panel" id="nook-panel" hidden>
-<p class="nook-head">Your choice, one switch</p>
-<label class="nook-switch" for="nook-analytics"><input type="checkbox" id="nook-analytics"><span>Analytics and performance<small>Stays off until you turn it on; no measuring tool is installed on the site today.</small></span></label>
-<button class="nook-save" id="nook-save" type="button">Save my choice</button>
-</div>
-</aside>
 <script>(function(){
   var tog=document.getElementById('warp-toggle'),list=document.getElementById('weft-list');
   if(tog&&list){tog.addEventListener('click',function(){var open=list.classList.toggle('weft-open');
@@ -348,8 +382,6 @@ main{padding:.4rem clamp(1rem,3.4vw,2.6rem) 2.6rem}
   }else{panels.forEach(function(p){p.classList.add('field-arrived');});}
   var KEY='am_room_pref',nook=document.getElementById('consent-nook');
   if(!nook)return;
-  var stored=null;try{stored=localStorage.getItem(KEY);}catch(e){}
-  if(!stored){nook.hidden=false;}
   function keep(choice){try{localStorage.setItem(KEY,JSON.stringify(choice));}catch(e){}nook.hidden=true;}
   var accept=document.getElementById('nook-accept'),manage=document.getElementById('nook-manage'),
       panel=document.getElementById('nook-panel'),save=document.getElementById('nook-save'),

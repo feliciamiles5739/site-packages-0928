@@ -2,8 +2,8 @@
  "picks": [
   {
    "asset": "two-pencils-on-yellow.webp",
-   "source": "wm_unsplash",
-   "creator": "Joanna Kosinska joannakosinska",
+   "source": "Wikimedia Commons",
+   "creator": "Joanna Kosinska",
    "license": "CC0",
    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
    "url": "https://commons.wikimedia.org/wiki/File:Minimal_pencils_on_yellow_(Unsplash).jpg",
@@ -12,8 +12,19 @@
    "needs_attribution": false
   },
   {
+   "asset": "open-book-and-pencil.webp",
+   "source": "Openverse",
+   "creator": "Messala Ciulla",
+   "license": "CC0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "url": "https://stocksnap.io/photo/blank-notebook-YYJBMNVN6Q",
+   "short_url": "https://stocksnap.io/photo/blank-notebook-YYJBMNVN6Q",
+   "title": "Blank Notebook",
+   "needs_attribution": false
+  },
+  {
    "asset": "alphabet-cards-on-a-desk.webp",
-   "source": "openverse",
+   "source": "Openverse",
    "creator": "goblinbox_(queen_of_ad_hoc_bento)",
    "license": "CC BY",
    "license_url": "https://creativecommons.org/licenses/by/2.0/",
@@ -23,41 +34,19 @@
    "needs_attribution": true
   },
   {
-   "asset": "copybook-line-repeated.webp",
-   "source": "openverse",
-   "creator": "Openverse contributor",
+   "asset": "nib-on-a-ruled-line.webp",
+   "source": "Openverse",
+   "creator": "an unnamed contributor",
    "license": "CC0",
    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-   "url": "https://www.rawpixel.com/image/14005983/exercise-book-keith-surgeons-boy-aboard-hms-scout",
-   "short_url": "https://www.rawpixel.com/image/14005983/exercise-book-keith-surgeons-boy-aboard-hms-scout",
-   "title": "Exercise book A. Keith, surgeon's",
-   "needs_attribution": false
-  },
-  {
-   "asset": "copybook-second-page.webp",
-   "source": "openverse",
-   "creator": "Openverse contributor",
-   "license": "CC0",
-   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-   "url": "https://www.rawpixel.com/image/13972829/exercise-book-keith-surgeons-boy-aboard-hms-scout",
-   "short_url": "https://www.rawpixel.com/image/13972829/exercise-book-keith-surgeons-boy-aboard-hms-scout",
-   "title": "Exercise book A. Keith, surgeon's",
-   "needs_attribution": false
-  },
-  {
-   "asset": "copybook-paragraph.webp",
-   "source": "openverse",
-   "creator": "Openverse contributor",
-   "license": "CC0",
-   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-   "url": "https://www.rawpixel.com/image/13998132/exercise-book-keith-surgeons-boy-aboard-hms-scout",
-   "short_url": "https://www.rawpixel.com/image/13998132/exercise-book-keith-surgeons-boy-aboard-hms-scout",
-   "title": "Exercise book A. Keith, surgeon's",
+   "url": "https://www.rawpixel.com/image/3284166/free-photo-image-fountain-pen-writer-writing",
+   "short_url": "https://www.rawpixel.com/image/3284166/free-photo-image-fountain-pen-writer-writing",
+   "title": "Close-up fountain pen writing notebook",
    "needs_attribution": false
   },
   {
    "asset": "pencil-on-ruled-paper.webp",
-   "source": "openverse",
+   "source": "Openverse",
    "creator": "Wonderlane",
    "license": "CC0",
    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -67,9 +56,31 @@
    "needs_attribution": false
   },
   {
+   "asset": "pad-and-loose-sheets.webp",
+   "source": "Openverse",
+   "creator": "an unnamed contributor",
+   "license": "CC0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "url": "https://www.rawpixel.com/image/5915956/image-book-public-domain-note",
+   "short_url": "https://www.rawpixel.com/image/5915956/image-book-public-domain-note",
+   "title": "Free black coffee blank notebook",
+   "needs_attribution": false
+  },
+  {
+   "asset": "binding-tools-on-a-bench.webp",
+   "source": "PxHere",
+   "creator": "an unnamed contributor",
+   "license": "CC0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "url": "https://pxhere.com/",
+   "short_url": "https://pxhere.com/",
+   "title": "bookbinding,tools,workshop,craft,book,paper",
+   "needs_attribution": false
+  },
+  {
    "asset": "round-typewriter-keys.webp",
-   "source": "openverse",
-   "creator": "Openverse contributor",
+   "source": "Openverse",
+   "creator": "an unnamed contributor",
    "license": "CC0",
    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
    "url": "https://www.rawpixel.com/image/5906736/photo-image-public-domain-vintage-free",
@@ -79,24 +90,13 @@
   },
   {
    "asset": "typewriter-key-rows.webp",
-   "source": "openverse",
+   "source": "Openverse",
    "creator": "Markus Spiske",
    "license": "CC0",
    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
    "url": "https://www.rawpixel.com/image/432980/free-photo-image-story-writer-typewriter",
    "short_url": "https://www.rawpixel.com/image/432980/free-photo-image-story-writer-typewriter",
    "title": "Vintage typewriter keys",
-   "needs_attribution": false
-  },
-  {
-   "asset": "copybook-letter-page.webp",
-   "source": "openverse",
-   "creator": "Openverse contributor",
-   "license": "CC0",
-   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-   "url": "https://www.rawpixel.com/image/13993174/exercise-book-keith-surgeons-boy-aboard-hms-scout",
-   "short_url": "https://www.rawpixel.com/image/13993174/exercise-book-keith-surgeons-boy-aboard-hms-scout",
-   "title": "Exercise book A. Keith, surgeon's",
    "needs_attribution": false
   }
  ]

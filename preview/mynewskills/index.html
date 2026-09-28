@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>My New Skills — practice workbooks, printed in Dunedin</title>
-<meta name="description" content="Printed practice workbooks for handwriting, mental arithmetic, sketching and touch typing. No course, no tutor, no certificate. Made in Dunedin, posted across New Zealand.">
+<meta name="description" content="Printed practice workbooks for handwriting, mental arithmetic, sketching and touch typing. No course, no tutor, no certificate. Made in Dunedin.">
 <meta name="robots" content="noindex, nofollow">
 <link rel="canonical" href="/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="My New Skills — practice workbooks, printed in Dunedin">
-<meta property="og:description" content="Printed practice workbooks for handwriting, mental arithmetic, sketching and touch typing. No course, no tutor, no certificate. Made in Dunedin, posted across New Zealand.">
+<meta property="og:description" content="Printed practice workbooks for handwriting, mental arithmetic, sketching and touch typing. No course, no tutor, no certificate. Made in Dunedin.">
 <meta property="og:image" content="/assets/og.png">
 <meta property="og:url" content="/">
 <meta property="og:site_name" content="My New Skills">
@@ -144,17 +144,18 @@ strong{font-weight:600}
 .foot-links a:hover{border-bottom-color:var(--accent)}
 .foot-note{grid-column:1/-1;margin:0;font-size:14px;color:#d7dcea;border-top:1px solid rgba(255,255,255,.25);padding-top:18px}
 
-/* consent slip */
-.consent-slip{position:fixed;right:20px;bottom:20px;z-index:60;width:min(380px,calc(100vw - 32px));background:var(--paper);border:1.5px solid var(--theme);box-shadow:5px 5px 0 var(--accent);padding:20px 22px 18px;border-radius:3px;font-size:15px;line-height:23px}
+/* consent slip: a notice pasted across the head of the page, in the flow so it covers nothing */
+.consent-slip{position:sticky;top:0;z-index:60;background:var(--paper);border-bottom:3px solid var(--theme);box-shadow:0 10px 24px -18px rgba(23,31,51,.75);font-size:15px;line-height:23px}
 .consent-slip[hidden]{display:none}
-.slip-head{font:700 19px/24px "Frank Ruhl Libre",Georgia,serif;color:var(--theme);margin:0 0 8px}
-.slip-text{margin:0 0 14px}
+.slip-inner{max-width:1360px;margin:0 auto;padding:14px var(--edge);display:flex;flex-wrap:wrap;align-items:center;gap:10px 28px}
+.slip-text{margin:0;flex:1 1 420px;min-width:0}
+.slip-lead{font-weight:600;color:var(--theme)}
 .slip-text a{color:var(--theme)}
-.slip-actions{display:flex;flex-wrap:wrap;gap:10px}
+.slip-actions{display:flex;flex-wrap:wrap;gap:10px;flex:0 0 auto}
 .slip-accept,.slip-manage,.slip-save{font:600 14px/20px "Lexend Deca",sans-serif;padding:9px 14px;border-radius:2px;cursor:pointer;border:1.5px solid var(--theme)}
 .slip-accept,.slip-save{background:var(--accent);color:var(--ink);border-color:var(--accent)}
 .slip-manage{background:var(--paper);color:var(--theme)}
-.slip-panel{margin:14px 0 0;padding:12px 0 0;border-top:1px dashed var(--theme)}
+.slip-panel{flex:1 1 100%;margin:0;padding:12px 0 2px;border-top:1px dashed var(--theme)}
 .slip-panel[hidden]{display:none}
 .panel-toggle{display:flex;gap:10px;align-items:flex-start;margin-bottom:12px}
 .panel-toggle input{width:20px;height:20px;margin:2px 0 0;accent-color:var(--theme)}
@@ -198,9 +199,8 @@ strong{font-weight:600}
   .closing-line{font-size:27px;line-height:36px}
   .post-box{grid-template-columns:1fr}
   .foot-inner{grid-template-columns:1fr}
-  .consent-slip{right:12px;bottom:12px;left:12px;width:auto;padding:14px 14px 12px;font-size:14px;line-height:20px}
-  .slip-head{display:none}
-  .slip-text{margin-bottom:10px}
+  .consent-slip{font-size:14px;line-height:20px}
+  .slip-inner{padding:12px var(--edge);gap:8px 14px}
   .slip-accept,.slip-manage,.slip-save{padding:8px 12px}
   .cover-label{padding-top:var(--pitch)}
   .label-stamp{margin-bottom:18px}
@@ -256,12 +256,22 @@ textarea.field-input{min-height:150px;resize:vertical}
 <header class="cover-band">
 <div class="cover-inner">
 <a class="book-mark" href="index.html"><span class="mark-name">My New Skills</span><span class="mark-line">Practice workbooks, printed and posted</span></a>
-<button class="pencil-toggle" type="button" aria-label="Open the menu" aria-expanded="false" aria-controls="spine-list"><span class="pencil-line"></span><span class="pencil-line"></span><span class="pencil-line"></span></button>
-<nav class="spine-nav" aria-label="Pages of the site">
-<ul class="spine-list" id="spine-list"><li><a class="spine-link" href="index.html" aria-current="page">Home</a></li><li><a class="spine-link" href="handwriting-books.html">Handwriting books</a></li><li><a class="spine-link" href="number-practice.html">Number practice</a></li><li><a class="spine-link" href="how-a-book-is-built.html">How a book is built</a></li><li><a class="spine-link" href="order-a-set.html">Order a set</a></li><li><a class="spine-order" href="order-a-set.html">Order a set of books</a></li></ul>
+<button class="pencil-toggle" type="button" aria-label="Open the menu" aria-expanded="false" aria-controls="spine-nav"><span class="pencil-line"></span><span class="pencil-line"></span><span class="pencil-line"></span></button>
+<nav class="spine-nav" id="spine-nav" aria-label="Pages of the site">
+<ul class="spine-list"><li><a class="spine-link" href="index.html" aria-current="page">Home</a></li><li><a class="spine-link" href="handwriting-books.html">Handwriting books</a></li><li><a class="spine-link" href="number-practice.html">Number practice</a></li><li><a class="spine-link" href="how-a-book-is-built.html">How a book is built</a></li><li><a class="spine-link" href="order-a-set.html">Order a set</a></li><li><a class="spine-order" href="order-a-set.html">Order a set of books</a></li></ul>
 </nav>
 </div>
 </header>
+<aside class="consent-slip" id="consent-slip" hidden aria-label="Cookie preferences">
+<div class="slip-inner">
+<p class="slip-text"><b class="slip-lead">One tick box, written to your own browser.</b> Nothing on these pages counts, follows or advertises to you, and no cookie of ours exists at all until the answer you give here says it may. <a href="privacy.html">The privacy page sets out the lot</a>.</p>
+<div class="slip-actions"><button class="slip-accept" type="button" id="slip-accept">Accept all</button><button class="slip-manage" type="button" id="slip-manage" aria-expanded="false" aria-controls="slip-panel">Manage preferences</button></div>
+<div class="slip-panel" id="slip-panel" hidden>
+<label class="panel-toggle"><input type="checkbox" id="slip-analytics"><span>Measurement of how these pages get used. It stays off until this box is ticked, and as things stand no tool anywhere on the site so much as looks at the answer.</span></label>
+<button class="slip-save" type="button" id="slip-save">Keep that answer</button>
+</div>
+</div>
+</aside>
 <main class="page-stack">
 <section class="exercise-box cover-label" id="front-label">
 <div class="rule-sheet" aria-hidden="true"></div>
@@ -304,7 +314,7 @@ textarea.field-input{min-height:150px;resize:vertical}
 <p>What we care about is the object. A ruling that is exactly the height printed on the cover. Paper heavy enough that a soft pencil does not show through to the next page. A binding that stays open at the page you are on without a hand holding it down. Answers at the back, never at the foot of the page. Plain instructions in short sentences, one idea to a line. That is the whole craft, and it is enough to keep a small press busy.</p>
 <p>We work from Dunedin and post throughout New Zealand and to Australia. The books are written here, ruled here, printed and bound here, and packed here. A single order and a class set go through the same hands.</p>
 </div>
-<figure class="label-figure"><div class="figure-frame"><img src="assets/img/copybook-line-repeated.webp" alt="A nineteenth-century copybook page with one sentence written out in copperplate, line after line" width="622" height="778" loading="lazy"></div><figcaption class="figure-caption"><b>Fig. 2</b> A copybook page from the eighteen-thirties, one sentence written line after line. The idea is old. Our ruling is not.</figcaption></figure>
+<figure class="label-figure"><div class="figure-frame"><img src="assets/img/open-book-and-pencil.webp" alt="A book of blank pages lying open on a dark wooden table with a sharpened pencil beside it" width="954" height="636" loading="lazy"></div><figcaption class="figure-caption"><b>Fig. 2</b> A book that stays open at the page you are on, and one pencil. Every decision on this list is taken so that those two are the whole kit.</figcaption></figure>
 </div>
 <div class="answer-slot"><span class="slot-label">What we turn down</span><p>We turn down anything that turns a book into a service. We will not mark or grade work sent to us, will not write a report on a learner, will not design a programme for a class, and will not print a badge, a level or a certificate on any page. We also do not print other people's material, and we do not sell the books through anyone else.</p></div>
 </section>
@@ -344,15 +354,6 @@ textarea.field-input{min-height:150px;resize:vertical}
 <p class="foot-note">© 2026 My New Skills &middot; Dunedin, New Zealand &middot; post@mynewskills.com</p>
 </div>
 </footer>
-<aside class="consent-slip" id="consent-slip" hidden aria-label="Cookie preferences">
-<p class="slip-head">One preference, kept in your browser</p>
-<p class="slip-text">This site keeps a single consent choice in your browser and sets no analytics or advertising cookies unless you accept them. None are installed at present. <a href="privacy.html">Read the privacy page</a>.</p>
-<div class="slip-actions"><button class="slip-accept" type="button" id="slip-accept">Accept all</button><button class="slip-manage" type="button" id="slip-manage" aria-expanded="false" aria-controls="slip-panel">Manage preferences</button></div>
-<div class="slip-panel" id="slip-panel" hidden>
-<label class="panel-toggle"><input type="checkbox" id="slip-analytics"><span>Analytics and performance measurement. Off unless you tick it, and nothing reads this setting today.</span></label>
-<button class="slip-save" type="button" id="slip-save">Save my choice</button>
-</div>
-</aside>
 <script>
 (function(){
   var d=document;

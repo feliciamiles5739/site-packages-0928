@@ -1,15 +1,15 @@
 {
  "picks": [
   {
-   "asset": "printed-week-sheets.webp",
+   "asset": "counter-espresso-pour.webp",
    "source": "openverse",
-   "creator": "cloudplanner",
-   "license": "CC BY",
-   "url": "https://www.flickr.com/photos/140356468@N03/26675838151",
-   "short_url": "https://flic.kr/p/GDfDiZ",
-   "license_url": "https://creativecommons.org/licenses/by/2.0/",
-   "title": "cloud-planner-work",
-   "needs_attribution": true
+   "creator": "tapecode",
+   "license": "Public domain",
+   "url": "https://www.flickr.com/photos/148019735@N08/31813073584",
+   "short_url": "https://flic.kr/p/QtdjqG",
+   "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+   "title": "Coffee Shop Cafeteria Restaurant Service Concept",
+   "needs_attribution": false
   },
   {
    "asset": "desk-clock-notebook.webp",
@@ -23,6 +23,17 @@
    "needs_attribution": false
   },
   {
+   "asset": "counter-jugs-tamper.webp",
+   "source": "openverse",
+   "creator": "_-0-_",
+   "license": "CC BY",
+   "url": "https://www.flickr.com/photos/85759247@N04/8631876389",
+   "short_url": "https://flic.kr/p/e9LC7Z",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "title": "Barista Tools",
+   "needs_attribution": true
+  },
+  {
    "asset": "open-diary-week.webp",
    "source": "openverse",
    "creator": "cireremarc",
@@ -34,14 +45,14 @@
    "needs_attribution": true
   },
   {
-   "asset": "espresso-pull.webp",
-   "source": "openverse",
-   "creator": "tapecode",
-   "license": "Public domain",
-   "url": "https://www.flickr.com/photos/148019735@N08/31813073584",
-   "short_url": "https://flic.kr/p/QtdjqG",
-   "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
-   "title": "Coffee Shop Cafeteria Restaurant Service Concept",
+   "asset": "cup-on-red.webp",
+   "source": "pxhere",
+   "creator": "PxHere contributor",
+   "license": "CC0",
+   "url": "https://pxhere.com/",
+   "short_url": "https://pxhere.com/",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "title": "coffee,cup,red,drink,espresso,mug",
    "needs_attribution": false
   },
   {
@@ -97,17 +108,6 @@
    "short_url": "https://stocksnap.io/photo/journal-desk-MFRLKOXJVH",
    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
    "title": "Journal Desk",
-   "needs_attribution": false
-  },
-  {
-   "asset": "desk-coffee-keyboard.webp",
-   "source": "openverse",
-   "creator": "Lukas",
-   "license": "CC0",
-   "url": "https://stocksnap.io/photo/lifestyle-office-0DW7NPB8RO",
-   "short_url": "https://stocksnap.io/photo/lifestyle-office-0DW7NPB8RO",
-   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-   "title": "Lifestyle Office",
    "needs_attribution": false
   }
  ]

@@ -86,7 +86,7 @@ html.bench-js .bench-line.rule-drawn::after{transform:none}
 .part-name a{color:inherit}
 .part-copy{margin:.4em 0 0;font-size:16px;line-height:1.6;max-width:60ch;overflow-wrap:anywhere}
 .part-name,.stage-copy,.reply-cell,.entry-aside{overflow-wrap:anywhere}
-code{font-size:.92em;letter-spacing:.01em;background:var(--tint);padding:1px 5px}
+code{font-family:inherit;font-size:.92em;letter-spacing:.01em;background:var(--tint);padding:1px 5px}
 .volume-cell{font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:29px;line-height:1.06;letter-spacing:.03em;color:var(--theme);text-align:right;margin:0}
 .tolerance-note{font-size:14px;line-height:1.45;color:var(--mid);text-align:right;margin:.35em 0 0}
 .glyph-cell{display:grid;grid-template-columns:56px 1fr;gap:20px;align-items:start}
@@ -185,8 +185,10 @@ textarea.entry-well{min-height:150px;resize:vertical;font-family:inherit}
  .ticket-acts{order:3;margin-top:6px}
  .ticket-side{order:4}
  .plate-wide+.plate-side{grid-column:1}
- .tray-deck{grid-template-columns:1fr;gap:8px}
+ .tray-deck{grid-template-columns:1fr;gap:8px;padding:10px 0 12px}
+ .tray-head{font-size:22px}
  .tray-acts{justify-content:flex-start}
+ .tray-accept,.tray-manage,.tray-save{font-size:20px;padding:9px 14px 6px}
  .ledger-links{grid-template-columns:1fr}
  .bench-mark{font-size:36px}
  .ticket-line{font-size:clamp(50px,15vw,80px)}
@@ -252,7 +254,7 @@ textarea.entry-well{min-height:150px;resize:vertical;font-family:inherit}
 <div class="consent-tray" id="consent-tray" role="region" aria-label="Consent preferences" hidden>
 <div class="stock-list tray-deck">
 <div><p class="tray-head">Your choice, held on your own machine</p>
-<p>No cookies are set here and nothing is measured. Your answer is written once to this browser&rsquo;s storage, which is the only reason the strip stays away next time. <a href="privacy.html">Privacy notice</a>.</p></div>
+<p>No cookies are set here and nothing is measured. Your answer stays in this browser, and that is what keeps the strip away. <a href="privacy.html">Privacy notice</a>.</p></div>
 <div class="tray-acts"><button class="tray-accept" id="tray-accept" type="button">Accept all</button><button class="tray-manage" id="tray-manage" type="button" aria-expanded="false" aria-controls="tray-panel">Manage preferences</button></div>
 <div class="tray-panel" id="tray-panel" hidden>
 <div class="tray-row"><input type="checkbox" id="tray-analytics"><label for="tray-analytics">Analytics and performance<small>Stays unticked until you tick it. At present no tool on the site would read the answer either way.</small></label></div>

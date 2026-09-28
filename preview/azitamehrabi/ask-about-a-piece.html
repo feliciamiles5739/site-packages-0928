@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Ask about a piece — Azita Mehrabi, Toronto</title>
-<meta name="description" content="Ask about a hand-knotted rug, runner or kilim cushion cover in the Toronto room. One form, read by a person; the reply carries the piece&#x27;s note and photographs.">
+<meta name="description" content="Ask about a hand-knotted rug, runner or kilim cushion cover in the Toronto room. One form, read by a person; the reply carries the note and photographs.">
 <meta name="robots" content="noindex, nofollow">
 <link rel="canonical" href="/ask-about-a-piece.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Ask about a piece — Azita Mehrabi, Toronto">
-<meta property="og:description" content="Ask about a hand-knotted rug, runner or kilim cushion cover in the Toronto room. One form, read by a person; the reply carries the piece&#x27;s note and photographs.">
+<meta property="og:description" content="Ask about a hand-knotted rug, runner or kilim cushion cover in the Toronto room. One form, read by a person; the reply carries the note and photographs.">
 <meta property="og:image" content="/assets/og.png">
 <meta property="og:url" content="/ask-about-a-piece.html">
 <meta name="theme-color" content="#1E3A5F">
@@ -50,7 +50,7 @@ ul,ol{padding-left:1.3em}
 .warp-toggle[aria-expanded="true"] .warp-line:nth-child(2){opacity:0}
 .warp-toggle[aria-expanded="true"] .warp-line:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
 main{padding:.4rem clamp(1rem,3.4vw,2.6rem) 2.6rem}
-.field-panel{position:relative;max-width:1180px;margin:2.9rem auto;background:var(--field);border:var(--mb) solid var(--theme);color:var(--ink)}
+.field-panel{position:relative;max-width:1180px;margin:2.9rem auto;background:var(--field);border:var(--mb) solid var(--theme);color:var(--ink);scroll-margin-top:5.5rem}
 .field-panel:first-child{margin-top:2.2rem}
 .guard-line{position:absolute;top:calc(-1*(var(--mb) + var(--gd)));left:calc(-1*(var(--mb) + var(--gd)));width:calc(100% + 2*(var(--mb) + var(--gd)));height:calc(100% + 2*(var(--mb) + var(--gd)));overflow:visible;pointer-events:none}
 .guard-line rect{fill:none;stroke:var(--theme);stroke-width:2}
@@ -130,6 +130,16 @@ main{padding:.4rem clamp(1rem,3.4vw,2.6rem) 2.6rem}
 .prose-pair{display:grid;grid-template-columns:1.3fr .9fr;gap:2rem 3rem;align-items:start}
 .prose-pair.pair-flip{grid-template-columns:.9fr 1.3fr}
 .prose-pair.pair-flip .sight-figure{order:-1}
+.sight-stack{display:grid;gap:1.5rem;align-content:start}
+.sight-narrow{max-width:390px}
+.margin-pair{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,.85fr);gap:1.8rem 2.6rem;align-items:start}
+.margin-note{border:2px solid var(--theme);outline:1px dashed var(--theme);outline-offset:4px;background:var(--white);padding:1.05rem 1.15rem}
+.margin-note h3{font-size:1.1rem;margin:0 0 .45rem}
+.margin-note p{margin:0 0 .7rem;max-width:none;font-size:1.02rem;line-height:1.5}
+.margin-note p:last-child{margin:0}
+.margin-note ul{margin:0 0 .7rem;padding-left:1.15em}
+.margin-note li{max-width:none;font-size:1.02rem;line-height:1.5;margin-bottom:.3rem}
+.field-dark .margin-note{background:var(--theme-2);color:var(--ground);border-color:var(--accent);outline-color:var(--accent)}
 .spec-list{list-style:none;padding:0;margin:.2rem 0 1rem}
 .spec-list li{padding:.55rem 0;border-top:1px dashed var(--theme);max-width:66ch}
 .spec-list li:last-child{border-bottom:1px dashed var(--theme)}
@@ -165,12 +175,14 @@ main{padding:.4rem clamp(1rem,3.4vw,2.6rem) 2.6rem}
 .foot-threads a{color:var(--ground);text-decoration:none;font-weight:600;border-bottom:1px dotted var(--cream-2)}
 .foot-threads a:hover{border-bottom-color:var(--ground)}
 .foot-line{max-width:1180px;margin:1.8rem auto 0;padding-top:1rem;border-top:1px dashed var(--cream-2);color:var(--cream-2);font-size:.98rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
-.consent-nook{position:fixed;right:1rem;bottom:1rem;width:min(370px,calc(100% - 2rem));background:var(--ground);color:var(--ink);border:3px double var(--theme);padding:1rem 1.1rem 1.05rem;z-index:40;font-size:1rem;line-height:1.45}
+.consent-nook{position:sticky;top:0;z-index:60;background:var(--ground);color:var(--ink);border-bottom:3px double var(--theme);padding:.7rem clamp(1rem,4vw,3rem) .75rem;font-size:1rem;line-height:1.45}
+.nook-strip{max-width:1180px;margin:0 auto;display:flex;align-items:center;gap:.55rem 2rem;flex-wrap:wrap}
 .consent-nook p{margin:0 0 .8rem;max-width:none}
+.nook-strip p{margin:0;max-width:74ch;flex:1 1 20rem}
 .nook-actions{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center}
 .nook-accept,.nook-save{background:var(--theme);color:var(--ground);font:inherit;font-weight:700;font-size:1.02rem;padding:.5rem .95rem;border:2px solid var(--theme);cursor:pointer}
 .nook-manage{background:none;color:var(--theme);font:inherit;font-weight:600;font-size:1.02rem;padding:.5rem .7rem;border:2px solid var(--theme);cursor:pointer}
-.nook-panel{margin-top:.8rem;padding-top:.8rem;border-top:1px dashed var(--theme)}
+.nook-panel{max-width:1180px;margin:.8rem auto 0;padding-top:.8rem;border-top:1px dashed var(--theme)}
 .nook-head{font-family:Caudex,Georgia,serif;font-size:1.1rem;margin:0 0 .5rem}
 .nook-switch{display:flex;gap:.6rem;align-items:flex-start;margin-bottom:.7rem;font-weight:600}
 .nook-switch input{width:20px;height:20px;margin:.15rem 0 0;accent-color:var(--theme)}
@@ -178,6 +190,7 @@ main{padding:.4rem clamp(1rem,3.4vw,2.6rem) 2.6rem}
 .wide-stage{max-width:1180px;margin:2.9rem auto}
 .wide-stage img{width:100%}
 .lost-field{text-align:left}
+.field-slim{max-width:780px}
 @media (prefers-reduced-motion:no-preference){
   .room-js .guard-reveal{stroke-dasharray:1;stroke-dashoffset:1}
   .room-js .field-arrived .guard-reveal{animation:guard-draw 1.3s cubic-bezier(.4,0,.2,1) forwards}
@@ -187,9 +200,13 @@ main{padding:.4rem clamp(1rem,3.4vw,2.6rem) 2.6rem}
   .room-js .guard-reveal{stroke-dasharray:none;stroke-dashoffset:0;animation:none}
   .warp-line,.nav-thread,.ask-tab{transition:none}
 }
+@media (min-width:1001px){
+  .margin-pair>.margin-note{position:sticky;top:1.5rem}
+}
 @media (max-width:1000px){
   .loom-list{grid-template-columns:repeat(2,1fr)}
   .room-open,.room-story,.prose-pair,.prose-pair.pair-flip{grid-template-columns:1fr}
+  .margin-pair{grid-template-columns:minmax(0,1fr)}
   .prose-pair.pair-flip .sight-figure{order:0}
   .find-room{grid-template-columns:1fr 1fr}
   .runner-band{grid-template-columns:1fr 1fr}
@@ -225,7 +242,7 @@ main{padding:.4rem clamp(1rem,3.4vw,2.6rem) 2.6rem}
   .room-open .tab-row{margin-top:.2rem}
   .ask-tab{font-size:1.18rem;padding:.55rem 1rem}
   .loom-name{font-size:1.4rem}
-  .consent-nook{right:.6rem;bottom:.6rem;width:calc(100% - 1.2rem);padding:.85rem .9rem}
+  .consent-nook{padding:.6rem .9rem .65rem;font-size:.97rem}
   .sight-frame{outline-offset:2px}
 }
 </style>
@@ -246,16 +263,31 @@ main{padding:.4rem clamp(1rem,3.4vw,2.6rem) 2.6rem}
 <a class="ask-tab" href="ask-about-a-piece.html">Ask about a piece</a>
 </nav>
 </header>
+<aside class="consent-nook" id="consent-nook" hidden aria-label="Preferences kept in your browser">
+<div class="nook-strip">
+<p>Nothing on this site is measured today. One preference is kept in your browser: whether analytics may ever run. The rest of it is on the <a href="privacy.html">privacy page</a>.</p>
+<div class="nook-actions">
+<button class="nook-accept" id="nook-accept" type="button">Accept all</button>
+<button class="nook-manage" id="nook-manage" type="button" aria-expanded="false" aria-controls="nook-panel">Manage preferences</button>
+</div>
+</div>
+<div class="nook-panel" id="nook-panel" hidden>
+<p class="nook-head">Your choice, one switch</p>
+<label class="nook-switch" for="nook-analytics"><input type="checkbox" id="nook-analytics"><span>Analytics and performance<small>Stays off until you turn it on; no measuring tool is installed on the site today.</small></span></label>
+<button class="nook-save" id="nook-save" type="button">Save my choice</button>
+</div>
+</aside>
+<script>(function(){var n=document.getElementById('consent-nook'),v=null;try{v=localStorage.getItem('am_room_pref');}catch(e){}if(!v){n.hidden=false;}})();</script>
 <main>
 <section class="field-panel weave-chevron" id="the-question"><svg class="guard-line" aria-hidden="true" focusable="false"><defs><mask id="gm-the-question" maskUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%"><rect class="guard-reveal" pathLength="1"/></mask></defs><g mask="url(#gm-the-question)"><rect class="guard-a"/><rect class="guard-b"/></g></svg><div class="border-strip"><h2>Ask about a piece</h2></div><div class="field-body"><div class="prose-pair">
 <div>
-<h1>Write about a piece, a size, or a floor.</h1>
+<h1>Ask about a piece, a size, or a floor.</h1>
 <p class="loom-lead">One form, read by a person, answered from the room's own mailbox. Name a piece from its listing, or tell us the floor you want to cover, and the reply carries the note, the photographs and a plain answer on whether the piece is still here.</p>
 <p>There is no shopping basket on this site and no price list on any page. Every piece is one piece, so every sale begins with a question, and this is where the question goes.</p>
 </div>
 <figure class="sight-figure"><span class="sight-frame"><img src="assets/img/two-panel-kilim.webp" alt="A long two-panel flatweave: hexagons on a cream field inside a red border of hooks" width="640" height="245"></span><figcaption class="knot-note">The reply to a question comes with the piece photographed flat, in daylight, ends and edges in the frame.</figcaption></figure>
 </div></div></section>
-<section class="field-panel weave-ticks" id="the-form"><svg class="guard-line" aria-hidden="true" focusable="false"><defs><mask id="gm-the-form" maskUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%"><rect class="guard-reveal" pathLength="1"/></mask></defs><g mask="url(#gm-the-form)"><rect class="guard-a"/><rect class="guard-b"/></g></svg><div class="border-strip"><h2>The form</h2></div><div class="field-body"><form class="ask-form" action="https://formsubmit.co/studio@azitamehrabi.com" method="post">
+<section class="field-panel weave-ticks" id="the-form"><svg class="guard-line" aria-hidden="true" focusable="false"><defs><mask id="gm-the-form" maskUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%"><rect class="guard-reveal" pathLength="1"/></mask></defs><g mask="url(#gm-the-form)"><rect class="guard-a"/><rect class="guard-b"/></g></svg><div class="border-strip"><h2>The form</h2></div><div class="field-body"><div class="margin-pair"><div><form class="ask-form" action="https://formsubmit.co/studio@azitamehrabi.com" method="post">
 <input type="hidden" name="_subject" value="A question about a piece, from azitamehrabi.com">
 <input type="hidden" name="_next" value="">
 <div class="hush-note" aria-hidden="true"><input type="text" name="_honey" tabindex="-1" autocomplete="off"></div>
@@ -265,11 +297,19 @@ main{padding:.4rem clamp(1rem,3.4vw,2.6rem) 2.6rem}
 <div class="form-thread"><label for="ask-floor">The floor, if you have measured it <span class="thread-hint">Length and width in centimetres, and the band of floor you want to see. Leave it blank if you are asking about a cushion cover.</span></label><input type="text" id="ask-floor" name="floor"></div>
 <div class="form-thread"><label for="ask-message">Your question</label><textarea id="ask-message" name="message" required></textarea></div>
 <button class="weft-send" type="submit">Send the question</button>
-</form></div></section>
-<section class="field-panel weave-lozenge field-dark" id="after-sending"><svg class="guard-line" aria-hidden="true" focusable="false"><defs><mask id="gm-after-sending" maskUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%"><rect class="guard-reveal" pathLength="1"/></mask></defs><g mask="url(#gm-after-sending)"><rect class="guard-a"/><rect class="guard-b"/></g></svg><div class="border-strip"><h2>What happens after sending</h2></div><div class="field-body"><p>Your message lands in the room's mailbox and nowhere else. It is read on the next working day at the latest, Tuesday to Saturday, and answered by a person, from the same mailbox, to the address you gave.</p>
+</form></div>
+<aside class="margin-note"><h3>What to put in the message</h3>
+<p>The name of the piece, if a listing gave you one. The floor you mean to cover, and the band of floor you want left showing. The colours already in the room, in your own words.</p>
+<p>Asking about a cushion cover, say which insert you already own: covers are listed by the insert that fills them out.</p>
+<p>What is not needed: a budget, a deadline, or a reason. Every piece is one piece and is quoted as itself, so a question costs nothing to ask and commits nothing on either side.</p>
+<p>Nothing here is a hold. A piece is held only once the room has written back to say the window has started, and the window is stated in that reply rather than guessed at here.</aside></div></div></section>
+<section class="field-panel weave-lozenge field-dark" id="after-sending"><svg class="guard-line" aria-hidden="true" focusable="false"><defs><mask id="gm-after-sending" maskUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%"><rect class="guard-reveal" pathLength="1"/></mask></defs><g mask="url(#gm-after-sending)"><rect class="guard-a"/><rect class="guard-b"/></g></svg><div class="border-strip"><h2>What happens after sending</h2></div><div class="field-body"><div class="margin-pair"><div><p>Your message lands in the room's mailbox and nowhere else. It is read on the next working day at the latest, Tuesday to Saturday, and answered by a person, from the same mailbox, to the address you gave.</p>
 <p>If you named a piece, the reply says first whether it is still in the room. If it is, the note follows: size to the centimetre, knot count, pile height, fibre and wear, with further photographs in daylight, close views of the pile and of the back, and the ends and edges in frame. If it has gone, the reply says so, and offers nothing in its place unless you asked for something like it.</p>
 <p>If you sent a floor, the reply lists the pieces in the room that fit inside it, each with its note. If you asked a question the site has not answered, you get an answer, and if the answer is that the room does not do the thing, that is said plainly rather than passed to somebody who does.</p>
-<p>Nothing is held and nothing is invoiced until you write back to say you want a piece. The form is a question, not an order.</p></div></section>
+<p>Nothing is held and nothing is invoiced until you write back to say you want a piece. The form is a question, not an order.</p></div>
+<aside class="margin-note"><h3>The days the mailbox is read</h3>
+<p>Tuesday to Saturday, from ten in the morning until six in the evening. A message sent on Sunday or Monday waits until Tuesday, and nothing about it is lost by waiting.</p>
+<p>No acknowledgement lands on its own; the first thing you get back is written by a person. If a week has gone by, the message did not arrive, and it is worth sending again.</aside></div></div></section>
 <section class="field-panel weave-dots" id="the-room-itself"><svg class="guard-line" aria-hidden="true" focusable="false"><defs><mask id="gm-the-room-itself" maskUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%"><rect class="guard-reveal" pathLength="1"/></mask></defs><g mask="url(#gm-the-room-itself)"><rect class="guard-a"/><rect class="guard-b"/></g></svg><div class="border-strip"><h2>The room, and where pieces go</h2></div><div class="field-body"><div class="find-room">
 <div class="find-cell"><h3>The mailbox</h3><p><a href="mailto:studio@azitamehrabi.com">studio@azitamehrabi.com</a></p><p>Writing to it directly does the same as the form. Put the piece's name in the subject line and it is found faster.</p></div>
 <div class="find-cell"><h3>The room</h3><p>Toronto, Ontario. Pieces are measured and photographed here, and a time to see one in person is arranged by writing. There is no walk-in shop and no counter to turn up at.</p></div>
@@ -281,7 +321,7 @@ main{padding:.4rem clamp(1rem,3.4vw,2.6rem) 2.6rem}
 <div>
 <a class="fringe-mark" href="index.html">Azita Mehrabi</a>
 <p>Hand-knotted rugs and kilim cushions. A rug room in Toronto, Ontario; pieces travel anywhere in Canada.</p>
-<p>Written to at <a href="mailto:studio@azitamehrabi.com">studio@azitamehrabi.com</a></p>
+<p>Write to the room at <a href="mailto:studio@azitamehrabi.com">studio@azitamehrabi.com</a></p>
 </div>
 <div>
 <ul class="foot-threads">
@@ -303,18 +343,6 @@ main{padding:.4rem clamp(1rem,3.4vw,2.6rem) 2.6rem}
 </div>
 <div class="foot-line"><span>© 2026 Azita Mehrabi</span><span>Toronto, Ontario, Canada</span></div>
 </footer>
-<aside class="consent-nook" id="consent-nook" hidden aria-label="Preferences kept in your browser">
-<p>This site keeps one preference in your browser: whether you allow analytics. Nothing is measured or set until you choose, and at present no analytics run at all. Read the <a href="privacy.html">privacy page</a> for the whole of it.</p>
-<div class="nook-actions">
-<button class="nook-accept" id="nook-accept" type="button">Accept all</button>
-<button class="nook-manage" id="nook-manage" type="button" aria-expanded="false" aria-controls="nook-panel">Manage preferences</button>
-</div>
-<div class="nook-panel" id="nook-panel" hidden>
-<p class="nook-head">Your choice, one switch</p>
-<label class="nook-switch" for="nook-analytics"><input type="checkbox" id="nook-analytics"><span>Analytics and performance<small>Stays off until you turn it on; no measuring tool is installed on the site today.</small></span></label>
-<button class="nook-save" id="nook-save" type="button">Save my choice</button>
-</div>
-</aside>
 <script>(function(){
   var tog=document.getElementById('warp-toggle'),list=document.getElementById('weft-list');
   if(tog&&list){tog.addEventListener('click',function(){var open=list.classList.toggle('weft-open');
@@ -327,8 +355,6 @@ main{padding:.4rem clamp(1rem,3.4vw,2.6rem) 2.6rem}
   }else{panels.forEach(function(p){p.classList.add('field-arrived');});}
   var KEY='am_room_pref',nook=document.getElementById('consent-nook');
   if(!nook)return;
-  var stored=null;try{stored=localStorage.getItem(KEY);}catch(e){}
-  if(!stored){nook.hidden=false;}
   function keep(choice){try{localStorage.setItem(KEY,JSON.stringify(choice));}catch(e){}nook.hidden=true;}
   var accept=document.getElementById('nook-accept'),manage=document.getElementById('nook-manage'),
       panel=document.getElementById('nook-panel'),save=document.getElementById('nook-save'),

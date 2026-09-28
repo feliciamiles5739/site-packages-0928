@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>document.documentElement.className+=" js";</script>
 <title>Les tirages — Nicolas Francoual</title>
-<meta name="description" content="Format, papier et grammage, nombre de couches, encres, taille de l’édition : ce que dit la fiche de chaque tirage de l’atelier, et ce qui distingue un exemplaire d’un autre.">
+<meta name="description" content="Format, papier et grammage, nombre de couches, encres, taille de l’édition : ce que dit la fiche de chaque tirage de l’atelier.">
 <meta name="robots" content="noindex, nofollow">
 <link rel="canonical" href="/les-tirages.html">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:site_name" content="Nicolas Francoual">
 <meta property="og:title" content="Les tirages — Nicolas Francoual">
-<meta property="og:description" content="Format, papier et grammage, nombre de couches, encres, taille de l’édition : ce que dit la fiche de chaque tirage de l’atelier, et ce qui distingue un exemplaire d’un autre.">
+<meta property="og:description" content="Format, papier et grammage, nombre de couches, encres, taille de l’édition : ce que dit la fiche de chaque tirage de l’atelier.">
 <meta property="og:image" content="/assets/og.png">
 <meta property="og:url" content="/les-tirages.html">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -154,7 +154,10 @@ h2.couche-titre{font-size:clamp(2.1rem,3.6vw,3.4rem)}
 .pied-etiquette{font-family:var(--titrage);font-weight:700;font-size:.85rem;letter-spacing:.16em;text-transform:uppercase;color:var(--encre-grise);margin:0 0 .6rem}
 .pied-rognage{grid-column:1/-1;border-top:1px solid var(--filet);padding-top:1rem;color:var(--encre-grise);font-size:.9rem;display:flex;flex-wrap:wrap;gap:.5rem 1.6rem}
 
-.grammage-table{overflow-x:auto;margin:1.4rem 0}
+.grammage-volet{position:relative;margin:1.4rem 0}
+.grammage-glisse{margin:0 0 .6rem;font-size:.92rem;color:var(--encre-grise)}
+.grammage-table{overflow-x:auto}
+@media (max-width:780px){.grammage-volet::after{content:"";position:absolute;top:0;right:0;bottom:0;width:44px;pointer-events:none;background:linear-gradient(to right,rgba(26,26,26,0),var(--planche))}}
 .grammage-table table{border-collapse:collapse;width:100%;min-width:560px;font-size:1rem}
 .grammage-table th,.grammage-table td{text-align:left;padding:.7rem .8rem;border-bottom:1px solid var(--filet-clair);vertical-align:top}
 .grammage-table th{font-family:var(--titrage);font-weight:700;font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;color:var(--encre-grise)}
@@ -263,8 +266,8 @@ textarea.bordereau-champ{min-height:150px;resize:vertical}
   <figure class="marge-image">
   <span class="fil-sechage" aria-hidden="true"></span>
   <span class="pince-sechage" aria-hidden="true"><i></i><i></i></span>
-  <div class="bord-feuille"><img src="assets/img/linogravures-table.webp" alt="Linogravures fraîchement tirées en rose, bleu et vert, posées à sécher sur une table" width="860" height="645" fetchpriority="high"></div>
-  <figcaption class="encre-legende">Linogravures fraîchement tirées, posées à sécher</figcaption>
+  <div class="bord-feuille"><img src="assets/img/linogravures-table.webp" alt="Deux linogravures en rouge, fraîchement tirées, posées à plat pour sécher sur un plan de travail clair" width="800" height="450" fetchpriority="high"></div>
+  <figcaption class="encre-legende">Linogravures fraîchement tirées, posées à plat pour sécher</figcaption>
 </figure>
   <div class="colonne-calee">
     <p class="encre-note">Les tirages</p>
@@ -370,8 +373,8 @@ textarea.bordereau-champ{min-height:150px;resize:vertical}
   <div>
     <p class="pied-etiquette">Mentions</p>
     <ul class="pied-reperes">
-      <li><a href="privacy.html">Politique de confidentialité (Privacy)</a></li>
-      <li><a href="terms.html">Conditions d’utilisation (Terms)</a></li>
+      <li><a href="terms.html">Conditions d’utilisation<span class="hors-maille"> (Terms)</span></a></li>
+      <li><a href="privacy.html">Politique de confidentialité<span class="hors-maille"> (Privacy)</span></a></li>
       <li><a href="terms.html#image-credits">Crédits des photographies</a></li>
     </ul>
   </div>

@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Azita Mehrabi — hand-knotted rugs and kilim cushions, Toronto</title>
-<meta name="description" content="A rug room in Toronto. Hand-knotted rugs, runners and kilim cushion covers, each listed with its size, knot count, pile height, fibre and wear. One piece, one listing.">
+<title>Azita Mehrabi — hand-knotted rugs and kilim cushions</title>
+<meta name="description" content="A rug room in Toronto: hand-knotted rugs, runners and kilim cushion covers, each listed with its size, knot count, pile height, fibre and wear.">
 <meta name="robots" content="noindex, nofollow">
 <link rel="canonical" href="/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Azita Mehrabi — hand-knotted rugs and kilim cushions, Toronto">
-<meta property="og:description" content="A rug room in Toronto. Hand-knotted rugs, runners and kilim cushion covers, each listed with its size, knot count, pile height, fibre and wear. One piece, one listing.">
+<meta property="og:title" content="Azita Mehrabi — hand-knotted rugs and kilim cushions">
+<meta property="og:description" content="A rug room in Toronto: hand-knotted rugs, runners and kilim cushion covers, each listed with its size, knot count, pile height, fibre and wear.">
 <meta property="og:image" content="/assets/og.png">
 <meta property="og:url" content="/">
 <meta name="theme-color" content="#1E3A5F">
@@ -50,7 +50,7 @@ ul,ol{padding-left:1.3em}
 .warp-toggle[aria-expanded="true"] .warp-line:nth-child(2){opacity:0}
 .warp-toggle[aria-expanded="true"] .warp-line:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
 main{padding:.4rem clamp(1rem,3.4vw,2.6rem) 2.6rem}
-.field-panel{position:relative;max-width:1180px;margin:2.9rem auto;background:var(--field);border:var(--mb) solid var(--theme);color:var(--ink)}
+.field-panel{position:relative;max-width:1180px;margin:2.9rem auto;background:var(--field);border:var(--mb) solid var(--theme);color:var(--ink);scroll-margin-top:5.5rem}
 .field-panel:first-child{margin-top:2.2rem}
 .guard-line{position:absolute;top:calc(-1*(var(--mb) + var(--gd)));left:calc(-1*(var(--mb) + var(--gd)));width:calc(100% + 2*(var(--mb) + var(--gd)));height:calc(100% + 2*(var(--mb) + var(--gd)));overflow:visible;pointer-events:none}
 .guard-line rect{fill:none;stroke:var(--theme);stroke-width:2}
@@ -130,6 +130,16 @@ main{padding:.4rem clamp(1rem,3.4vw,2.6rem) 2.6rem}
 .prose-pair{display:grid;grid-template-columns:1.3fr .9fr;gap:2rem 3rem;align-items:start}
 .prose-pair.pair-flip{grid-template-columns:.9fr 1.3fr}
 .prose-pair.pair-flip .sight-figure{order:-1}
+.sight-stack{display:grid;gap:1.5rem;align-content:start}
+.sight-narrow{max-width:390px}
+.margin-pair{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,.85fr);gap:1.8rem 2.6rem;align-items:start}
+.margin-note{border:2px solid var(--theme);outline:1px dashed var(--theme);outline-offset:4px;background:var(--white);padding:1.05rem 1.15rem}
+.margin-note h3{font-size:1.1rem;margin:0 0 .45rem}
+.margin-note p{margin:0 0 .7rem;max-width:none;font-size:1.02rem;line-height:1.5}
+.margin-note p:last-child{margin:0}
+.margin-note ul{margin:0 0 .7rem;padding-left:1.15em}
+.margin-note li{max-width:none;font-size:1.02rem;line-height:1.5;margin-bottom:.3rem}
+.field-dark .margin-note{background:var(--theme-2);color:var(--ground);border-color:var(--accent);outline-color:var(--accent)}
 .spec-list{list-style:none;padding:0;margin:.2rem 0 1rem}
 .spec-list li{padding:.55rem 0;border-top:1px dashed var(--theme);max-width:66ch}
 .spec-list li:last-child{border-bottom:1px dashed var(--theme)}
@@ -165,12 +175,14 @@ main{padding:.4rem clamp(1rem,3.4vw,2.6rem) 2.6rem}
 .foot-threads a{color:var(--ground);text-decoration:none;font-weight:600;border-bottom:1px dotted var(--cream-2)}
 .foot-threads a:hover{border-bottom-color:var(--ground)}
 .foot-line{max-width:1180px;margin:1.8rem auto 0;padding-top:1rem;border-top:1px dashed var(--cream-2);color:var(--cream-2);font-size:.98rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
-.consent-nook{position:fixed;right:1rem;bottom:1rem;width:min(370px,calc(100% - 2rem));background:var(--ground);color:var(--ink);border:3px double var(--theme);padding:1rem 1.1rem 1.05rem;z-index:40;font-size:1rem;line-height:1.45}
+.consent-nook{position:sticky;top:0;z-index:60;background:var(--ground);color:var(--ink);border-bottom:3px double var(--theme);padding:.7rem clamp(1rem,4vw,3rem) .75rem;font-size:1rem;line-height:1.45}
+.nook-strip{max-width:1180px;margin:0 auto;display:flex;align-items:center;gap:.55rem 2rem;flex-wrap:wrap}
 .consent-nook p{margin:0 0 .8rem;max-width:none}
+.nook-strip p{margin:0;max-width:74ch;flex:1 1 20rem}
 .nook-actions{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center}
 .nook-accept,.nook-save{background:var(--theme);color:var(--ground);font:inherit;font-weight:700;font-size:1.02rem;padding:.5rem .95rem;border:2px solid var(--theme);cursor:pointer}
 .nook-manage{background:none;color:var(--theme);font:inherit;font-weight:600;font-size:1.02rem;padding:.5rem .7rem;border:2px solid var(--theme);cursor:pointer}
-.nook-panel{margin-top:.8rem;padding-top:.8rem;border-top:1px dashed var(--theme)}
+.nook-panel{max-width:1180px;margin:.8rem auto 0;padding-top:.8rem;border-top:1px dashed var(--theme)}
 .nook-head{font-family:Caudex,Georgia,serif;font-size:1.1rem;margin:0 0 .5rem}
 .nook-switch{display:flex;gap:.6rem;align-items:flex-start;margin-bottom:.7rem;font-weight:600}
 .nook-switch input{width:20px;height:20px;margin:.15rem 0 0;accent-color:var(--theme)}
@@ -178,6 +190,7 @@ main{padding:.4rem clamp(1rem,3.4vw,2.6rem) 2.6rem}
 .wide-stage{max-width:1180px;margin:2.9rem auto}
 .wide-stage img{width:100%}
 .lost-field{text-align:left}
+.field-slim{max-width:780px}
 @media (prefers-reduced-motion:no-preference){
   .room-js .guard-reveal{stroke-dasharray:1;stroke-dashoffset:1}
   .room-js .field-arrived .guard-reveal{animation:guard-draw 1.3s cubic-bezier(.4,0,.2,1) forwards}
@@ -187,9 +200,13 @@ main{padding:.4rem clamp(1rem,3.4vw,2.6rem) 2.6rem}
   .room-js .guard-reveal{stroke-dasharray:none;stroke-dashoffset:0;animation:none}
   .warp-line,.nav-thread,.ask-tab{transition:none}
 }
+@media (min-width:1001px){
+  .margin-pair>.margin-note{position:sticky;top:1.5rem}
+}
 @media (max-width:1000px){
   .loom-list{grid-template-columns:repeat(2,1fr)}
   .room-open,.room-story,.prose-pair,.prose-pair.pair-flip{grid-template-columns:1fr}
+  .margin-pair{grid-template-columns:minmax(0,1fr)}
   .prose-pair.pair-flip .sight-figure{order:0}
   .find-room{grid-template-columns:1fr 1fr}
   .runner-band{grid-template-columns:1fr 1fr}
@@ -225,7 +242,7 @@ main{padding:.4rem clamp(1rem,3.4vw,2.6rem) 2.6rem}
   .room-open .tab-row{margin-top:.2rem}
   .ask-tab{font-size:1.18rem;padding:.55rem 1rem}
   .loom-name{font-size:1.4rem}
-  .consent-nook{right:.6rem;bottom:.6rem;width:calc(100% - 1.2rem);padding:.85rem .9rem}
+  .consent-nook{padding:.6rem .9rem .65rem;font-size:.97rem}
   .sight-frame{outline-offset:2px}
 }
 </style>
@@ -246,6 +263,21 @@ main{padding:.4rem clamp(1rem,3.4vw,2.6rem) 2.6rem}
 <a class="ask-tab" href="ask-about-a-piece.html">Ask about a piece</a>
 </nav>
 </header>
+<aside class="consent-nook" id="consent-nook" hidden aria-label="Preferences kept in your browser">
+<div class="nook-strip">
+<p>Nothing on this site is measured today. One preference is kept in your browser: whether analytics may ever run. The rest of it is on the <a href="privacy.html">privacy page</a>.</p>
+<div class="nook-actions">
+<button class="nook-accept" id="nook-accept" type="button">Accept all</button>
+<button class="nook-manage" id="nook-manage" type="button" aria-expanded="false" aria-controls="nook-panel">Manage preferences</button>
+</div>
+</div>
+<div class="nook-panel" id="nook-panel" hidden>
+<p class="nook-head">Your choice, one switch</p>
+<label class="nook-switch" for="nook-analytics"><input type="checkbox" id="nook-analytics"><span>Analytics and performance<small>Stays off until you turn it on; no measuring tool is installed on the site today.</small></span></label>
+<button class="nook-save" id="nook-save" type="button">Save my choice</button>
+</div>
+</aside>
+<script>(function(){var n=document.getElementById('consent-nook'),v=null;try{v=localStorage.getItem('am_room_pref');}catch(e){}if(!v){n.hidden=false;}})();</script>
 <main>
 <section class="field-panel weave-ticks" id="the-room"><svg class="guard-line" aria-hidden="true" focusable="false"><defs><mask id="gm-the-room" maskUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%"><rect class="guard-reveal" pathLength="1"/></mask></defs><g mask="url(#gm-the-room)"><rect class="guard-a"/><rect class="guard-b"/></g></svg><div class="border-strip"><h2>A rug room in Toronto</h2></div><div class="field-body"><div class="room-open">
 <div>
@@ -279,10 +311,12 @@ main{padding:.4rem clamp(1rem,3.4vw,2.6rem) 2.6rem}
 <div class="story-side">
 <figure class="sight-figure"><span class="sight-frame"><img src="assets/img/rug-on-the-floor.webp" alt="A blue-ground rug laid flat on the floor of the room, its lower border and fringe nearest the camera, other pieces at the edges" width="1024" height="410" loading="lazy"></span><figcaption class="knot-note">A rug laid out flat on the floor of the room, lower border and fringe to the front, for measuring and photographing.</figcaption></figure>
 <figure class="sight-figure"><span class="sight-frame"><img src="assets/img/red-rug-edge.webp" alt="The edge of a red rug: three border stripes and the bound selvedge meeting the floorboards" width="700" height="338" loading="lazy"></span><figcaption class="knot-note">The edge of a piece: three border stripes and the bound selvedge, which is where wear shows first and where binding tape goes.</figcaption></figure>
+<figure class="sight-figure"><span class="sight-frame"><img src="assets/img/red-cushion-face.webp" alt="A cushion face in deep red and cream: a round medallion at the centre, curved leaves around it and a row of small arches down each end" width="640" height="360" loading="lazy"></span><figcaption class="knot-note">A cushion face, photographed flat and face up with its zip edge at the foot of the frame, which is how every cover is listed.</figcaption></figure>
+<figure class="sight-figure"><span class="sight-frame"><img src="assets/img/grey-kilim-fringe.webp" alt="A whole flatweave in brown, cream and black with a stepped border and fringe at both ends, lying on wooden boards" width="640" height="426" loading="lazy"></span><figcaption class="knot-note">A whole flatweave on boards, fringe at both ends. A piece too sound to cut stays a rug; a piece too worn to walk on becomes cushion covers.</figcaption></figure>
 </div>
 </div></div></section>
 <section class="field-panel weave-hatch" id="at-the-counter"><svg class="guard-line" aria-hidden="true" focusable="false"><defs><mask id="gm-at-the-counter" maskUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%"><rect class="guard-reveal" pathLength="1"/></mask></defs><g mask="url(#gm-at-the-counter)"><rect class="guard-a"/><rect class="guard-b"/></g></svg><div class="border-strip"><h2>Asked at the counter</h2></div><div class="field-body"><div class="counter-list"><div class="knot-pair"><h3>Is this rug antique?</h3><p>We do not say, and no listing will. Age is a claim that cannot be proved from the rug alone, so the note carries no date, no period and no word like old or antique. What it carries instead is what can be seen: the wear, the low pile in the walking line, the abrash where the dye changed between one weft and the next, and the fibres. Draw your own conclusions from those; we will not draw them for you.</p></div><div class="knot-pair"><h3>Can you clean or repair a rug?</h3><p>No. The room does not clean, wash, repair, re-fringe or restore rugs, including the ones it sells. We stock the plain cotton tape used to bind a worn edge, and the note on every piece tells you where the wear is, but the work itself belongs to a repairer. If a piece needs work before it can be used, the listing says so.</p></div><div class="knot-pair"><h3>How do I measure for a runner?</h3><p>Measure the length of hall floor you want covered, then the width of floor between the skirting boards. A runner should stop short of both ends and leave a band of floor showing along each side. The sizes page has a floor reckoner: type in the corridor and how much floor you want to see, and it does the subtraction for you.</p></div><div class="knot-pair"><h3>Do I need a pad?</h3><p>On a hard floor, yes, unless the rug sits under furniture heavy enough to hold it. A pad stops the piece creeping, keeps the edges flat so they do not catch a foot, and takes some of the wear that would otherwise go into the knots. On a fitted carpet a thin, grippy pad stops the rug walking. We cut pads a little under the rug's own measurements.</p></div><div class="knot-pair"><h3>Will the colours run?</h3><p>We cannot promise how a dye behaves in water, because we do not wash our pieces, which is one of the reasons we do not clean. What the note says is what can be seen dry: whether any colour has already bled into its neighbour, and where. Treat every piece as if its colours will run. A cushion cover should be spot-cleaned dry, never put through a wash.</p></div><div class="knot-pair"><h3>Can you hold a piece for me?</h3><p>Yes, for a short, stated window, once you have written and we have confirmed the piece is still in the room. While it is held the listing is marked held and it is offered to nobody else. If the window passes without word from you, it goes back on. One piece, one listing, one person at a time.</p></div><div class="knot-pair"><h3>Do you ship outside Ontario?</h3><p>Across Canada, yes. Rugs travel rolled around a tube and wrapped; cushion covers travel flat. We do not ship outside Canada, and we do not come to a house to fit or lay anything: the piece arrives rolled and you unroll it. Within Toronto, hand-over in person can be arranged by writing.</p></div></div></div></section>
-<section class="field-panel weave-bars field-dark" id="ask"><svg class="guard-line" aria-hidden="true" focusable="false"><defs><mask id="gm-ask" maskUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%"><rect class="guard-reveal" pathLength="1"/></mask></defs><g mask="url(#gm-ask)"><rect class="guard-a"/><rect class="guard-b"/></g></svg><div class="border-strip"><h2>Write about a piece</h2></div><div class="field-body"><div class="ask-field">
+<section class="field-panel weave-bars field-dark" id="ask"><svg class="guard-line" aria-hidden="true" focusable="false"><defs><mask id="gm-ask" maskUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%"><rect class="guard-reveal" pathLength="1"/></mask></defs><g mask="url(#gm-ask)"><rect class="guard-a"/><rect class="guard-b"/></g></svg><div class="border-strip"><h2>Ask about a piece</h2></div><div class="field-body"><div class="ask-field">
 <div><h2>One piece, one listing, one straight answer.</h2>
 <p>Write with the name of a piece from its listing, or with the floor you want to cover, and you will get its note, more photographs, and a plain yes or no on whether it is still here.</p></div>
 <a class="ask-tab" href="ask-about-a-piece.html">Ask about a piece</a>
@@ -290,7 +324,7 @@ main{padding:.4rem clamp(1rem,3.4vw,2.6rem) 2.6rem}
 <section class="field-panel weave-dots" id="find-the-room"><svg class="guard-line" aria-hidden="true" focusable="false"><defs><mask id="gm-find-the-room" maskUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%"><rect class="guard-reveal" pathLength="1"/></mask></defs><g mask="url(#gm-find-the-room)"><rect class="guard-a"/><rect class="guard-b"/></g></svg><div class="border-strip"><h2>Finding the room</h2></div><div class="field-body"><div class="find-room">
 <div class="find-cell"><h3>The mailbox</h3><p><a href="mailto:studio@azitamehrabi.com">studio@azitamehrabi.com</a></p><p>The only address the room uses. Every listing, every hold and every invoice goes through it.</p></div>
 <div class="find-cell"><h3>When it is read</h3><p>Tuesday to Saturday, from ten in the morning until six in the evening. On Sunday and Monday it is not read, and a message sent then is answered on Tuesday.</p></div>
-<div class="find-cell"><h3>Where the room is</h3><p>Toronto, Ontario. Every piece is measured and photographed here, and a time to see one in person can be arranged by writing. Pieces are couriered anywhere in Canada and nowhere outside it.</p><p><a class="thread-link" href="ask-about-a-piece.html">Write about a piece</a></p></div>
+<div class="find-cell"><h3>Where the room is</h3><p>Toronto, Ontario. Every piece is measured and photographed here, and a time to see one in person can be arranged by writing. Pieces are couriered anywhere in Canada and nowhere outside it.</p><p><a class="thread-link" href="ask-about-a-piece.html">Ask about a piece</a></p></div>
 </div></div></section>
 </main>
 <footer class="fringe-foot">
@@ -298,7 +332,7 @@ main{padding:.4rem clamp(1rem,3.4vw,2.6rem) 2.6rem}
 <div>
 <a class="fringe-mark" href="index.html">Azita Mehrabi</a>
 <p>Hand-knotted rugs and kilim cushions. A rug room in Toronto, Ontario; pieces travel anywhere in Canada.</p>
-<p>Written to at <a href="mailto:studio@azitamehrabi.com">studio@azitamehrabi.com</a></p>
+<p>Write to the room at <a href="mailto:studio@azitamehrabi.com">studio@azitamehrabi.com</a></p>
 </div>
 <div>
 <ul class="foot-threads">
@@ -320,18 +354,6 @@ main{padding:.4rem clamp(1rem,3.4vw,2.6rem) 2.6rem}
 </div>
 <div class="foot-line"><span>© 2026 Azita Mehrabi</span><span>Toronto, Ontario, Canada</span></div>
 </footer>
-<aside class="consent-nook" id="consent-nook" hidden aria-label="Preferences kept in your browser">
-<p>This site keeps one preference in your browser: whether you allow analytics. Nothing is measured or set until you choose, and at present no analytics run at all. Read the <a href="privacy.html">privacy page</a> for the whole of it.</p>
-<div class="nook-actions">
-<button class="nook-accept" id="nook-accept" type="button">Accept all</button>
-<button class="nook-manage" id="nook-manage" type="button" aria-expanded="false" aria-controls="nook-panel">Manage preferences</button>
-</div>
-<div class="nook-panel" id="nook-panel" hidden>
-<p class="nook-head">Your choice, one switch</p>
-<label class="nook-switch" for="nook-analytics"><input type="checkbox" id="nook-analytics"><span>Analytics and performance<small>Stays off until you turn it on; no measuring tool is installed on the site today.</small></span></label>
-<button class="nook-save" id="nook-save" type="button">Save my choice</button>
-</div>
-</aside>
 <script>(function(){
   var tog=document.getElementById('warp-toggle'),list=document.getElementById('weft-list');
   if(tog&&list){tog.addEventListener('click',function(){var open=list.classList.toggle('weft-open');
@@ -344,8 +366,6 @@ main{padding:.4rem clamp(1rem,3.4vw,2.6rem) 2.6rem}
   }else{panels.forEach(function(p){p.classList.add('field-arrived');});}
   var KEY='am_room_pref',nook=document.getElementById('consent-nook');
   if(!nook)return;
-  var stored=null;try{stored=localStorage.getItem(KEY);}catch(e){}
-  if(!stored){nook.hidden=false;}
   function keep(choice){try{localStorage.setItem(KEY,JSON.stringify(choice));}catch(e){}nook.hidden=true;}
   var accept=document.getElementById('nook-accept'),manage=document.getElementById('nook-manage'),
       panel=document.getElementById('nook-panel'),save=document.getElementById('nook-save'),

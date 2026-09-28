@@ -154,7 +154,10 @@ h2.couche-titre{font-size:clamp(2.1rem,3.6vw,3.4rem)}
 .pied-etiquette{font-family:var(--titrage);font-weight:700;font-size:.85rem;letter-spacing:.16em;text-transform:uppercase;color:var(--encre-grise);margin:0 0 .6rem}
 .pied-rognage{grid-column:1/-1;border-top:1px solid var(--filet);padding-top:1rem;color:var(--encre-grise);font-size:.9rem;display:flex;flex-wrap:wrap;gap:.5rem 1.6rem}
 
-.grammage-table{overflow-x:auto;margin:1.4rem 0}
+.grammage-volet{position:relative;margin:1.4rem 0}
+.grammage-glisse{margin:0 0 .6rem;font-size:.92rem;color:var(--encre-grise)}
+.grammage-table{overflow-x:auto}
+@media (max-width:780px){.grammage-volet::after{content:"";position:absolute;top:0;right:0;bottom:0;width:44px;pointer-events:none;background:linear-gradient(to right,rgba(26,26,26,0),var(--planche))}}
 .grammage-table table{border-collapse:collapse;width:100%;min-width:560px;font-size:1rem}
 .grammage-table th,.grammage-table td{text-align:left;padding:.7rem .8rem;border-bottom:1px solid var(--filet-clair);vertical-align:top}
 .grammage-table th{font-family:var(--titrage);font-weight:700;font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;color:var(--encre-grise)}
@@ -269,7 +272,7 @@ textarea.bordereau-champ{min-height:150px;resize:vertical}
   <div class="colonne-calee feuille-egaree">
     <p class="encre-note">Page introuvable</p>
     <h1 class="couche-titre" data-couche="Cette feuille n’est pas dans la pile.">Cette feuille n’est pas dans la pile.</h1>
-    <p class="amorce-encre">L’adresse demandée ne correspond à aucune page du site. Le lien était peut-être mal calé, ou la page a été rognée depuis.</p>
+    <p class="amorce-encre">Cette adresse ne mène à aucune page de ce site : le lien était peut-être mal calé, ou la page a été rognée depuis.</p>
     <ul class="liste-degravee">
       <li><a href="index.html">L’accueil de l’atelier</a></li>
       <li><a href="les-tirages.html">Les tirages</a> — ce que dit une fiche</li>
@@ -300,8 +303,8 @@ textarea.bordereau-champ{min-height:150px;resize:vertical}
   <div>
     <p class="pied-etiquette">Mentions</p>
     <ul class="pied-reperes">
-      <li><a href="privacy.html">Politique de confidentialité (Privacy)</a></li>
-      <li><a href="terms.html">Conditions d’utilisation (Terms)</a></li>
+      <li><a href="terms.html">Conditions d’utilisation<span class="hors-maille"> (Terms)</span></a></li>
+      <li><a href="privacy.html">Politique de confidentialité<span class="hors-maille"> (Privacy)</span></a></li>
       <li><a href="terms.html#image-credits">Crédits des photographies</a></li>
     </ul>
   </div>

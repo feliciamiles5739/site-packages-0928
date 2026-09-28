@@ -73,7 +73,7 @@ main{display:block}
 .label-run{grid-column:1/-1;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));column-gap:12px;margin-bottom:6px}
 .day-label{padding:10px 10px 8px;border-bottom:1px solid var(--rule-2)}
 .shift-block{grid-column:var(--col,1)/span var(--span,7);position:relative;z-index:1;background:var(--sheet);border:1px solid var(--rule);border-top:4px solid var(--theme);padding:20px 22px 14px;border-radius:2px}
-.shift-block[data-day]::before{content:attr(data-day);position:absolute;top:8px;right:12px;font-family:var(--disp);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--rule-2)}
+.shift-block[data-day]::before{content:attr(data-day);position:absolute;top:8px;right:12px;font-family:var(--disp);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
 .open-shift{background:transparent;border:0;padding:0 0 10px}
 .open-shift[data-day]::before{display:none}
 .loud-shift{border-top-color:var(--accent)}
@@ -114,9 +114,11 @@ main{display:block}
 .swap-strip .day-rule span{border-color:#2C4E63}
 .swap-strip .day-label{color:var(--paper-2);border-bottom-color:#3E6A85}
 .swap-strip .shift-block{background:transparent;border:0;color:var(--paper);padding:26px 0 40px}
-.swap-strip .shift-block[data-day]::before{color:#5F7F94}
+.swap-strip .shift-block[data-day]::before{color:var(--paper-2)}
 .swap-strip h2{color:var(--paper);font-size:clamp(1.7rem,2.8vw,2.5rem)}
 .swap-strip p{color:var(--paper-2);font-size:1.1rem;max-width:60ch}
+.desk-run .shift-block h2{font-size:1.3rem;margin-top:0}
+.desk-run .shift-block h2+p{margin-top:.2em}
 .desk-run .shift-block h3{margin-top:0}
 .desk-run dl{margin:0}
 .desk-run dt{font-family:var(--disp);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin-top:12px}
@@ -131,6 +133,7 @@ main{display:block}
 .foot-week .foot-tag{color:#8FA6B5;margin-bottom:8px;display:block}
 .foot-week .book-shift{margin-top:6px}
 .foot-week .book-loud{color:var(--ink)}
+.notice-open .week-foot{padding-bottom:220px}
 .foot-year{grid-column:1/-1;border-top:1px solid #23394A;padding-top:14px;margin-top:8px;font-size:.88rem;color:#8FA6B5}
 
 .rota-notice{position:fixed;right:18px;bottom:18px;width:min(380px,calc(100vw - 36px));background:var(--sheet);color:var(--ink);border:1px solid var(--rule);border-top:4px solid var(--accent);padding:16px 18px 14px;box-shadow:0 12px 34px rgba(11,26,36,.18);z-index:50;font-size:.92rem;border-radius:3px}
@@ -192,13 +195,14 @@ main{display:block}
   .week-head{padding:26px 0 4px}
   .open-week .shift-block{padding-top:14px}
 .open-week .photo-shift{padding:0}
-  .rota-board{grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-flow:column;grid-template-rows:auto repeat(7,auto);gap:6px}
+  .rota-board{grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-flow:column;grid-template-rows:repeat(7,auto);gap:6px}
   .rota-cell{font-size:.72rem;min-height:56px;padding:8px 6px 6px}
   .rota-board .rota-cell:nth-child(n+8){margin-top:0}
   .rota-board .rota-cell:nth-child(7n+1)::before{content:attr(data-role);top:-20px;left:0;font-size:.62rem}
   .rota-board .rota-cell:nth-child(7n+1){margin-top:24px}
   .rota-board .rota-cell::after{content:attr(data-day);position:absolute;right:5px;top:3px;font-size:.56rem;letter-spacing:.1em;text-transform:uppercase;color:inherit}
   .cell-shift::after,.cell-cover::after{color:var(--paper-2)}
+  .notice-open .week-foot{padding-bottom:190px}
   .foot-week{display:flex;flex-direction:column}
   .swap-strip .shift-block{padding:22px 0 30px}
   .rota-notice{right:10px;left:10px;bottom:10px;width:auto;padding:11px 13px 10px;font-size:.84rem}
@@ -221,14 +225,14 @@ main{display:block}
 <script>document.documentElement.classList.add('rota-live');</script>
 </head>
 <body>
-<header class="rota-top"><div class="week-sheet rota-topline"><a class="rota-mark" href="index.html"><span class="mark-cells" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>Prefer Solutions</a><button class="rota-toggle" type="button" aria-label="Open the menu" aria-expanded="false" aria-controls="week-menu"><span class="toggle-rung"></span><span class="toggle-rung"></span><span class="toggle-rung"></span></button><nav class="week-menu" id="week-menu" aria-label="Pages"><ul class="rota-menu"><li><a class="menu-shift" href="index.html">Home</a></li><li><a class="menu-shift" href="building-a-rota.html">Building a rota</a></li><li><a class="menu-shift" href="swaps-and-cover.html">Swaps and cover</a></li><li><a class="menu-shift" href="what-it-does-not-do.html">What it does not do</a></li><li><a class="menu-shift" href="see-it-on-your-week.html">See it on your week</a></li><li><a class="book-shift" href="see-it-on-your-week.html">See it on your own week</a></li></ul></nav></div><p class="slot-line"><span class="week-sheet"><span>Shift rotas that fit the people on them</span><span><em>Cork</em> · Ireland</span></span></p></header>
+<header class="rota-top"><div class="week-sheet rota-topline"><a class="rota-mark" href="index.html"><span class="mark-cells" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>Prefer Solutions</a><button class="rota-toggle" type="button" aria-label="Open the menu" aria-expanded="false" aria-controls="week-menu"><span class="toggle-rung"></span><span class="toggle-rung"></span><span class="toggle-rung"></span></button><nav class="week-menu" id="week-menu" aria-label="Pages"><ul class="rota-menu"><li><a class="menu-shift" href="index.html">Home</a></li><li><a class="menu-shift" href="building-a-rota.html">Building a rota</a></li><li><a class="menu-shift" href="swaps-and-cover.html">Swaps and cover</a></li><li><a class="menu-shift" href="what-it-does-not-do.html">What it does not do</a></li><li><a class="menu-shift" href="see-it-on-your-week.html">Walkthrough</a></li><li><a class="book-shift" href="see-it-on-your-week.html">See it on your own week</a></li></ul></nav></div><p class="slot-line"><span class="week-sheet"><span>Shift rotas that fit the people on them</span><span><em>Cork</em> · Ireland</span></span></p></header>
 <main>
 <section class="week-sheet open-week" id="top"><div class="week-strip"><div class="day-rule" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="label-run" aria-hidden="true"><span class="day-label">Mon</span><span class="day-label">Tue</span><span class="day-label">Wed</span><span class="day-label">Thu</span><span class="day-label">Fri</span><span class="day-label">Sat</span><span class="day-label">Sun</span></div><div class="shift-block open-shift" style="--col:1;--span:4" data-day="Mon–Thu"><h1>Sent. A person will read it.</h1>
 <p class="lead-shift">Thank you. Your message is on its way to hello@prefersolutions.com, and the reply comes from the same address, normally within one working day, Monday to Friday.</p>
 <p>If you have a photo of last week's wall sheet, reply to our email with it attached and the walkthrough can start from your real week. Until then, the <a href="building-a-rota.html">building a week</a> page shows what we will be doing on the call.</p>
 <a class="book-shift" href="index.html">Back to the home page</a></div></div></section>
 </main>
-<footer class="week-foot"><div class="week-sheet foot-week"><div style="--col:1;--span:2"><a class="rota-mark" href="index.html"><span class="mark-cells" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>Prefer Solutions</a><p>A shift-rota planner for small teams, made in Cork and shown on your own week.</p></div><div style="--col:3;--span:2"><span class="foot-tag">Pages</span><ul><li><a href="index.html">Home</a></li><li><a href="building-a-rota.html">Building a rota</a></li><li><a href="swaps-and-cover.html">Swaps and cover</a></li><li><a href="what-it-does-not-do.html">What it does not do</a></li><li><a href="see-it-on-your-week.html">See it on your week</a></li></ul></div><div style="--col:5;--span:2"><span class="foot-tag">The small print</span><ul><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms of use</a></li><li><a href="mailto:hello@prefersolutions.com">hello@prefersolutions.com</a></li></ul></div><div style="--col:7;--span:1"><span class="foot-tag">Walkthrough</span><a class="book-shift book-loud" href="see-it-on-your-week.html">See it on your own week</a></div><div class="foot-year">© 2026 Prefer Solutions · Cork, Ireland · Walkthroughs by enquiry across Ireland</div></div></footer>
+<footer class="week-foot"><div class="week-sheet foot-week"><div style="--col:1;--span:2"><a class="rota-mark" href="index.html"><span class="mark-cells" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>Prefer Solutions</a><p>A shift-rota planner for small teams, made in Cork and shown on your own week.</p></div><div style="--col:3;--span:2"><span class="foot-tag">Pages</span><ul><li><a href="index.html">Home</a></li><li><a href="building-a-rota.html">Building a rota</a></li><li><a href="swaps-and-cover.html">Swaps and cover</a></li><li><a href="what-it-does-not-do.html">What it does not do</a></li><li><a href="see-it-on-your-week.html">Walkthrough</a></li></ul></div><div style="--col:5;--span:2"><span class="foot-tag">The small print</span><ul><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms of use</a></li><li><a href="mailto:hello@prefersolutions.com">hello@prefersolutions.com</a></li></ul></div><div style="--col:7;--span:1"><span class="foot-tag">Walkthrough</span><a class="book-shift book-loud" href="see-it-on-your-week.html">See it on your own week</a></div><div class="foot-year">© 2026 Prefer Solutions · Cork, Ireland · Walkthroughs by enquiry across Ireland</div></div></footer>
 <aside class="rota-notice" id="consent-notice" hidden aria-label="Cookie preferences"><p class="notice-copy">One answer, yours, is all this site remembers, and it lives in your own browser. No measurement or advertising cookie is set here unless you turn one on yourself. <a href="privacy.html">How we handle data</a></p><div class="notice-choices"><button type="button" class="book-shift accept-shift">Accept all</button><button type="button" class="book-shift book-quiet manage-shift" aria-expanded="false" aria-controls="notice-panel">Manage preferences</button></div><div class="notice-panel" id="notice-panel" hidden><label class="notice-switch"><input type="checkbox" id="notice-analytics"><span>Analytics and performance</span></label><p class="notice-small">Nothing of the kind is installed today. The switch records your answer for the day something is.</p><button type="button" class="book-shift save-shift">Save choices</button></div></aside>
 <script>
 (function(){
@@ -244,8 +248,8 @@ main{display:block}
   if(slip){
     var kept=null;try{kept=localStorage.getItem(K);}catch(err){}
     if(!kept){
-      slip.hidden=false;
-      var keep=function(analytics){try{localStorage.setItem(K,JSON.stringify({analytics:!!analytics,kept:new Date().toISOString()}));}catch(err){}slip.hidden=true;};
+      slip.hidden=false;document.documentElement.classList.add('notice-open');
+      var keep=function(analytics){try{localStorage.setItem(K,JSON.stringify({analytics:!!analytics,kept:new Date().toISOString()}));}catch(err){}slip.hidden=true;document.documentElement.classList.remove('notice-open');};
       slip.querySelector('.accept-shift').addEventListener('click',function(){keep(true);});
       var man=slip.querySelector('.manage-shift'),pan=document.getElementById('notice-panel');
       man.addEventListener('click',function(){var show=pan.hidden;pan.hidden=!show;man.setAttribute('aria-expanded',show?'true':'false');});

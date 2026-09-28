@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>document.documentElement.className+=" js";</script>
 <title>Papiers et encres — Nicolas Francoual</title>
-<meta name="description" content="Les papiers sur lesquels l’atelier imprime et pourquoi, les encres à l’eau et leur tenue à la lumière telle que le fabricant la publie, et ce que fait le temps sur une affiche.">
+<meta name="description" content="Les papiers sur lesquels l’atelier imprime, les encres à l’eau et leur tenue à la lumière telle que le fabricant la publie.">
 <meta name="robots" content="noindex, nofollow">
 <link rel="canonical" href="/papiers-et-encres.html">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:site_name" content="Nicolas Francoual">
 <meta property="og:title" content="Papiers et encres — Nicolas Francoual">
-<meta property="og:description" content="Les papiers sur lesquels l’atelier imprime et pourquoi, les encres à l’eau et leur tenue à la lumière telle que le fabricant la publie, et ce que fait le temps sur une affiche.">
+<meta property="og:description" content="Les papiers sur lesquels l’atelier imprime, les encres à l’eau et leur tenue à la lumière telle que le fabricant la publie.">
 <meta property="og:image" content="/assets/og.png">
 <meta property="og:url" content="/papiers-et-encres.html">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -154,7 +154,10 @@ h2.couche-titre{font-size:clamp(2.1rem,3.6vw,3.4rem)}
 .pied-etiquette{font-family:var(--titrage);font-weight:700;font-size:.85rem;letter-spacing:.16em;text-transform:uppercase;color:var(--encre-grise);margin:0 0 .6rem}
 .pied-rognage{grid-column:1/-1;border-top:1px solid var(--filet);padding-top:1rem;color:var(--encre-grise);font-size:.9rem;display:flex;flex-wrap:wrap;gap:.5rem 1.6rem}
 
-.grammage-table{overflow-x:auto;margin:1.4rem 0}
+.grammage-volet{position:relative;margin:1.4rem 0}
+.grammage-glisse{margin:0 0 .6rem;font-size:.92rem;color:var(--encre-grise)}
+.grammage-table{overflow-x:auto}
+@media (max-width:780px){.grammage-volet::after{content:"";position:absolute;top:0;right:0;bottom:0;width:44px;pointer-events:none;background:linear-gradient(to right,rgba(26,26,26,0),var(--planche))}}
 .grammage-table table{border-collapse:collapse;width:100%;min-width:560px;font-size:1rem}
 .grammage-table th,.grammage-table td{text-align:left;padding:.7rem .8rem;border-bottom:1px solid var(--filet-clair);vertical-align:top}
 .grammage-table th{font-family:var(--titrage);font-weight:700;font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;color:var(--encre-grise)}
@@ -282,7 +285,9 @@ textarea.bordereau-champ{min-height:150px;resize:vertical}
   <p class="encre-note">Les papiers</p>
   <h2 class="couche-titre" data-couche="Les papiers que nous imprimons, et pourquoi" id="papiers">Les papiers que nous imprimons, et pourquoi</h2>
   <p>Un papier de sérigraphie doit accepter une encre à l’eau sans gondoler, garder un aplat net sans boire la couleur, et supporter deux, trois ou quatre passages de racle sans pelucher. Un papier de gravure doit au contraire être un peu souple, pour épouser le relief du bloc sous la presse et prendre le foulage. Nous n’utilisons donc pas un seul papier, mais quelques-uns, chacun pour ce qu’il fait bien.</p>
-  <div class="grammage-table">
+  <p class="grammage-glisse">Tableau à quatre colonnes : sur un écran étroit, faites-le glisser vers la droite pour lire les deux dernières.</p>
+  <div class="grammage-volet">
+    <div class="grammage-table">
     <table>
       <thead><tr><th>Papier</th><th>Nature et surface</th><th>Ce que nous y tirons</th><th>Pourquoi celui-là</th></tr></thead>
       <tbody>
@@ -293,6 +298,7 @@ textarea.bordereau-champ{min-height:150px;resize:vertical}
         <tr><td>Papier de mise en train</td><td>Papier courant, non conservé</td><td>Essais, calage, réglage de pression</td><td>Il sert à régler, pas à durer ; une épreuve tirée dessus est vendue comme telle et dite comme telle.</td></tr>
       </tbody>
     </table>
+    </div>
   </div>
   <p>Dans tous les cas, la fiche du tirage nomme le papier, son grain et son grammage. Nous ne changeons pas de papier au milieu d’une édition : si une rame s’épuise, l’édition est fermée là où elle en est.</p>
 </div>
@@ -360,8 +366,8 @@ textarea.bordereau-champ{min-height:150px;resize:vertical}
   <div>
     <p class="pied-etiquette">Mentions</p>
     <ul class="pied-reperes">
-      <li><a href="privacy.html">Politique de confidentialité (Privacy)</a></li>
-      <li><a href="terms.html">Conditions d’utilisation (Terms)</a></li>
+      <li><a href="terms.html">Conditions d’utilisation<span class="hors-maille"> (Terms)</span></a></li>
+      <li><a href="privacy.html">Politique de confidentialité<span class="hors-maille"> (Privacy)</span></a></li>
       <li><a href="terms.html#image-credits">Crédits des photographies</a></li>
     </ul>
   </div>

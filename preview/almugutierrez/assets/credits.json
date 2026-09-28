@@ -45,7 +45,18 @@
    "needs_attribution": false
   },
   {
-   "asset": "jarras-repisa.webp",
+   "asset": "pieza-torno.webp",
+   "source": "openverse",
+   "creator": "Openverse contributor",
+   "license": "CC0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "url": "https://www.rawpixel.com/image/3305358/free-photo-image-artist-clay-pottery",
+   "short_url": "https://www.rawpixel.com/image/3305358/free-photo-image-artist-clay-pottery",
+   "title": "Hands create art pottery wheel",
+   "needs_attribution": false
+  },
+  {
+   "asset": "tazas-repisa.webp",
    "source": "openverse",
    "creator": "bwstock",
    "license": "CC0",
@@ -56,14 +67,14 @@
    "needs_attribution": false
   },
   {
-   "asset": "jarra-bizcocho.webp",
+   "asset": "jarra-repisa.webp",
    "source": "openverse",
-   "creator": "Openverse contributor",
+   "creator": "bwstock",
    "license": "CC0",
    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-   "url": "https://www.metmuseum.org/art/collection/search/331945",
-   "short_url": "https://www.metmuseum.org/art/collection/search/331945",
-   "title": "Ceramic jug",
+   "url": "https://www.flickr.com/photos/16962092@N03/30551827171",
+   "short_url": "https://flic.kr/p/NxL6NT",
+   "title": "ceramic jugs on the tiled stove",
    "needs_attribution": false
   },
   {
@@ -75,50 +86,6 @@
    "url": "https://wordpress.org/photos/photo/878693ab61/",
    "short_url": "https://wordpress.org/photos/photo/878693ab61/",
    "title": "A handcrafted clay mug sits on a granite countertop in Perumanna, Kozhikode. The cup’s brick-style design and warm, earthy tone stand out be",
-   "needs_attribution": false
-  },
-  {
-   "asset": "tazas-apiladas.webp",
-   "source": "openverse",
-   "creator": "IrishFireside",
-   "license": "CC BY 2.0",
-   "license_url": "https://creativecommons.org/licenses/by/2.0/",
-   "url": "https://www.flickr.com/photos/43762537@N00/2535213015",
-   "short_url": "https://flic.kr/p/4S2Cve",
-   "title": "Celtic Clays Mug",
-   "needs_attribution": true
-  },
-  {
-   "asset": "tazas-decoradas.webp",
-   "source": "openverse",
-   "creator": "loppear",
-   "license": "CC BY 2.0",
-   "license_url": "https://creativecommons.org/licenses/by/2.0/",
-   "url": "https://www.flickr.com/photos/24062889@N00/19139336490",
-   "short_url": "https://flic.kr/p/vah6Wb",
-   "title": "Clay mugs",
-   "needs_attribution": true
-  },
-  {
-   "asset": "cuenco-verde.webp",
-   "source": "openverse",
-   "creator": "Gary Lee Todd, Ph.D.",
-   "license": "CC0",
-   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-   "url": "https://www.flickr.com/photos/101561334@N08/9847662546",
-   "short_url": "https://flic.kr/p/g1cQZh",
-   "title": "Yaozhou Stoneware Bowl, Northern Song, 960-1127",
-   "needs_attribution": false
-  },
-  {
-   "asset": "jarra-ambar.webp",
-   "source": "openverse",
-   "creator": "Carlo Raso",
-   "license": "Public domain",
-   "license_url": "",
-   "url": "https://www.flickr.com/photos/70125105@N06/40627698312",
-   "short_url": "https://flic.kr/p/24U8zg7",
-   "title": "'Ceramic jugs' (2nd half 9th century AD) from Rome, Crypta Balbi, now at Archaeological Museum of Naples, Exhibition 'The Longobards', up to",
    "needs_attribution": false
   }
  ]
