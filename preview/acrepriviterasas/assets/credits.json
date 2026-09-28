@@ -1,0 +1,92 @@
+{
+ "picks": [
+  {
+   "asset": "frasco-portada.webp",
+   "source": "wm_unsplash",
+   "creator": "Roberta Sorge",
+   "license": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Honey_and_Clementines_(Unsplash).jpg",
+   "short_url": "https://commons.wikimedia.org/wiki/File:Honey_and_Clementines_(Unsplash).jpg",
+   "license_url": "",
+   "title": "Honey and Clementines (Unsplash).jpg",
+   "needs_attribution": false
+  },
+  {
+   "asset": "frascos-mesa-oscura.webp",
+   "source": "openverse",
+   "creator": "Krzysztof Puszczyński",
+   "license": "CC0",
+   "url": "https://stocksnap.io/photo/honey-jars-97LJAKWL36",
+   "short_url": "https://stocksnap.io/photo/honey-jars-97LJAKWL36",
+   "license_url": "",
+   "title": "Honey Jars",
+   "needs_attribution": false
+  },
+  {
+   "asset": "frasco-cuchara.webp",
+   "source": "openverse",
+   "creator": "Alabama Extension",
+   "license": "CC0",
+   "url": "https://www.flickr.com/photos/184594136@N08/51330849013",
+   "short_url": "https://flic.kr/p/2mcW25a",
+   "license_url": "",
+   "title": "Small Honey Jar with Honeycomb",
+   "needs_attribution": false
+  },
+  {
+   "asset": "miel-en-frasco.webp",
+   "source": "openverse",
+   "creator": "Alabama Extension",
+   "license": "CC0",
+   "url": "https://www.flickr.com/photos/184594136@N08/51330848773",
+   "short_url": "https://flic.kr/p/2mcW212",
+   "license_url": "",
+   "title": "Big Honey Jar",
+   "needs_attribution": false
+  },
+  {
+   "asset": "panal-contraluz.webp",
+   "source": "openverse",
+   "creator": "wildxplorer",
+   "license": "CC BY",
+   "url": "https://www.flickr.com/photos/21932201@N04/2268587409",
+   "short_url": "https://flic.kr/p/4st712",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "title": "Honeycomb",
+   "needs_attribution": true
+  },
+  {
+   "asset": "celdas-de-miel.webp",
+   "source": "openverse",
+   "creator": "prilfish",
+   "license": "CC BY",
+   "url": "https://www.flickr.com/photos/37707866@N00/13805669085",
+   "short_url": "https://flic.kr/p/n2XErk",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "title": "Honeycomb",
+   "needs_attribution": true
+  },
+  {
+   "asset": "panal-nuevo.webp",
+   "source": "openverse",
+   "creator": "Bistrosavage",
+   "license": "CC BY",
+   "url": "https://www.flickr.com/photos/16533652@N00/1313589",
+   "short_url": "https://flic.kr/p/7Ju6",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "title": "Honeycomb",
+   "needs_attribution": true
+  },
+  {
+   "asset": "cuadro-de-cria.webp",
+   "source": "openverse",
+   "creator": "Scrap Pile",
+   "license": "CC BY",
+   "url": "https://www.flickr.com/photos/12376942@N08/3686853553",
+   "short_url": "https://flic.kr/p/6BN67z",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "title": "honeycomb",
+   "needs_attribution": true
+  }
+ ]
+}

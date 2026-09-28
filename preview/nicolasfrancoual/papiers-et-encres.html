@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.className+=" js";</script>
+<title>Papiers et encres — Nicolas Francoual</title>
+<meta name="description" content="Les papiers sur lesquels l’atelier imprime et pourquoi, les encres à l’eau et leur tenue à la lumière telle que le fabricant la publie, et ce que fait le temps sur une affiche.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="/papiers-et-encres.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Nicolas Francoual">
+<meta property="og:title" content="Papiers et encres — Nicolas Francoual">
+<meta property="og:description" content="Les papiers sur lesquels l’atelier imprime et pourquoi, les encres à l’eau et leur tenue à la lumière telle que le fabricant la publie, et ce que fait le temps sur une affiche.">
+<meta property="og:image" content="/assets/og.png">
+<meta property="og:url" content="/papiers-et-encres.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600;700;800&family=Sumana:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--fond:#121212;--planche:#1A1A1A;--encre:#F2F2F2;--rouge:#E4572E;--encre-douce:#BDBDBD;--encre-grise:#9C9C9C;--filet:#2C2C2C;--filet-clair:#3D3D3D;--champ:#202020;--titrage:"Darker Grotesque","Arial Narrow",Arial,sans-serif;--corps:Sumana,Georgia,"Times New Roman",serif}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--fond);color:var(--encre);font-family:var(--corps);font-size:1.0625rem;line-height:1.65;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--rouge)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:2px solid var(--encre);outline-offset:3px}
+[hidden]{display:none!important}
+p{margin:0 0 1rem}
+.hors-maille{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
+[id]{scroll-margin-top:1.5rem}
+
+.ecran-entete{width:min(1520px,calc(100% - 2.4rem));margin:0 auto;padding:1.1rem 0 1rem;display:flex;align-items:center;gap:1.2rem 2rem;border-bottom:1px solid var(--filet);position:relative}
+.griffe-bloc{display:flex;flex-direction:column;gap:.15rem;margin-right:auto}
+.griffe-atelier{font-family:var(--titrage);font-weight:800;font-size:2rem;line-height:1;letter-spacing:-.01em;color:var(--encre);text-decoration:none;position:relative;isolation:isolate;display:inline-block}
+.griffe-atelier::before{content:attr(data-couche);position:absolute;inset:0;color:var(--rouge);transform:translate(2px,2px);z-index:-1}
+.devise-atelier{font-family:var(--titrage);font-weight:700;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:var(--encre-grise)}
+.calage-liens{display:flex;gap:1.5rem;list-style:none;margin:0;padding:0;align-items:center}
+.calage-liens a{color:var(--encre-douce);text-decoration:none;font-family:var(--titrage);font-weight:700;font-size:1.2rem;letter-spacing:.02em;padding:.2rem 0;border-bottom:2px solid transparent}
+.calage-liens a:hover{color:var(--encre)}
+.calage-liens a[aria-current=page]{color:var(--encre);border-bottom-color:var(--rouge)}
+.calage-bascule{display:none;background:none;border:1px solid var(--filet-clair);color:var(--encre);width:46px;height:42px;padding:0;cursor:pointer;flex-direction:column;justify-content:center;align-items:center;gap:6px}
+.barre-racle{display:block;width:22px;height:2px;background:var(--encre);transition:transform .3s ease,opacity .3s ease}
+.calage-bascule[aria-expanded=true] .barre-racle:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.calage-bascule[aria-expanded=true] .barre-racle:nth-child(2){opacity:0}
+.calage-bascule[aria-expanded=true] .barre-racle:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+
+.racle-bouton{display:inline-flex;align-items:center;gap:.6rem;background:var(--rouge);color:#121212;font-family:var(--titrage);font-weight:800;font-size:1.2rem;line-height:1;letter-spacing:.05em;text-transform:uppercase;padding:.8rem 1.3rem .7rem;text-decoration:none;border:2px solid var(--rouge);cursor:pointer;white-space:nowrap}
+.racle-bouton:hover{background:var(--encre);border-color:var(--encre)}
+.racle-bouton svg{width:16px;height:16px;flex:none}
+.racle-secondaire{color:var(--encre);font-family:var(--titrage);font-weight:700;font-size:1.2rem;text-decoration:underline;text-decoration-color:var(--rouge);text-decoration-thickness:2px;text-underline-offset:.3em}
+.racle-secondaire:hover{text-decoration-color:var(--encre)}
+
+.planche-feuille{position:relative;width:min(1520px,calc(100% - 2.4rem));margin:2.8rem auto;padding:clamp(1.8rem,4vw,3.8rem) clamp(1.2rem,4vw,3.8rem);background:var(--planche);outline:1px solid var(--filet)}
+.planche-rouge{outline-color:var(--rouge)}
+.planche-serree{padding-top:clamp(1.2rem,2.5vw,2rem);padding-bottom:clamp(1.2rem,2.5vw,2rem)}
+.repere-coin{position:absolute;width:26px;height:26px;color:var(--encre-grise);pointer-events:none}
+.repere-hg{top:-13px;left:-13px}.repere-hd{top:-13px;right:-13px}.repere-bg{bottom:-13px;left:-13px}.repere-bd{bottom:-13px;right:-13px}
+.etiquette-planche{position:absolute;top:-.62em;left:2.4rem;margin:0;padding:0 .5rem;background:var(--fond);font-family:var(--titrage);font-weight:700;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--encre-grise);line-height:1.2}
+.planche-grille{display:grid;grid-template-columns:minmax(240px,5fr) 7fr;gap:clamp(1.6rem,4vw,4.5rem);align-items:start}
+.planche-grille.calage-etroit{grid-template-columns:minmax(220px,4fr) 8fr}
+.colonne-calee>:first-child{margin-top:0}
+.colonne-calee>:last-child{margin-bottom:0}
+
+.marge-image{position:relative;margin:0;padding-top:1.7rem}
+.fil-sechage{position:absolute;left:-.6rem;right:-.6rem;top:.6rem;height:1px;background:var(--filet-clair)}
+.pince-sechage{position:absolute;top:0;left:17%;right:17%;display:flex;justify-content:space-between;pointer-events:none;z-index:1}
+.pince-sechage i{display:block;width:13px;height:30px;background:var(--rouge);border-radius:1px;position:relative}
+.pince-sechage i::after{content:"";position:absolute;left:4px;top:-8px;width:5px;height:9px;background:var(--encre-grise)}
+.bord-feuille{border:6px solid var(--encre);background:var(--encre)}
+.feuille-penchee .bord-feuille{transform:rotate(-1.4deg);transform-origin:50% 0}
+.encre-legende{font-size:.8rem;color:var(--encre-grise);margin-top:.9rem;font-family:var(--titrage);font-weight:700;letter-spacing:.08em;text-transform:uppercase;line-height:1.35}
+.marge-image + .marge-image{margin-top:2.4rem}
+.pile-epreuves{display:grid;gap:2.4rem}
+
+.encre-note{font-family:var(--titrage);font-weight:700;font-size:.9rem;letter-spacing:.18em;text-transform:uppercase;color:var(--rouge);margin:0 0 .9rem}
+.couche-titre{font-family:var(--titrage);font-weight:800;line-height:.98;letter-spacing:-.012em;margin:0 0 1.2rem;position:relative;isolation:isolate;color:var(--encre)}
+.couche-titre::before{content:attr(data-couche);position:absolute;inset:0;color:var(--rouge);z-index:-1;transform:translate(4px,4px)}
+html.js .couche-titre::before{transform:translate(10px,8px)}
+html.js .couche-titre.en-registre::before{transform:translate(4px,4px)}
+@media (prefers-reduced-motion:no-preference){html.js .couche-titre::before{transition:transform .45s cubic-bezier(.2,.8,.2,1)}}
+@media (prefers-reduced-motion:reduce){html.js .couche-titre::before{transform:translate(4px,4px)}}
+h1.couche-titre{font-size:clamp(2.6rem,5.4vw,5.6rem)}
+h2.couche-titre{font-size:clamp(2.1rem,3.6vw,3.4rem)}
+.titre-aplat{font-family:var(--titrage);font-weight:700;font-size:1.6rem;line-height:1.05;margin:0 0 .5rem;color:var(--encre)}
+.amorce-encre{font-size:1.25rem;line-height:1.55;color:var(--encre-douce);max-width:60ch}
+.groupe-racles{display:flex;flex-wrap:wrap;gap:1.2rem 1.8rem;align-items:center;margin-top:1.8rem}
+.colonne-calee p,.colonne-calee li{max-width:68ch}
+.barre-controle{display:flex;gap:6px;margin-top:2.6rem}
+.barre-controle i{display:block;width:26px;height:16px}
+.barre-controle i:nth-child(1),.barre-controle i:nth-child(7){background:var(--rouge)}
+.barre-controle i:nth-child(2),.barre-controle i:nth-child(8){background:var(--encre)}
+.barre-controle i:nth-child(3){background:#BDBDBD}.barre-controle i:nth-child(4){background:#9C9C9C}
+.barre-controle i:nth-child(5){background:#6E6E6E}.barre-controle i:nth-child(6){background:#4A4A4A}
+
+.bande-faits{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr)}
+.fait-tuile{padding:.4rem 1.6rem .4rem 1.4rem;border-left:1px solid var(--filet-clair);position:relative}
+.fait-tuile:first-child{border-left:0;padding-left:0}
+.fait-glyphe{width:18px;height:18px;color:var(--rouge);margin-bottom:.7rem;display:block}
+.fait-titre{display:block;font-family:var(--titrage);font-weight:800;font-size:1.45rem;line-height:1.05;margin-bottom:.5rem}
+.fait-note{color:var(--encre-douce);font-size:.98rem;line-height:1.5}
+
+.bon-tirage{list-style:none;margin:0;padding:0;counter-reset:tirage}
+.tirage-ligne{display:grid;grid-template-columns:64px 1fr 132px;gap:1.6rem;align-items:start;padding:1.7rem 0;border-top:1px dashed var(--filet-clair);counter-increment:tirage}
+.tirage-ligne:first-child{border-top:0;padding-top:.4rem}
+.icone-outil{width:52px;height:52px;color:var(--encre-douce)}
+.tirage-corps h3{margin-top:.1rem}
+.tirage-corps h3::before{content:counter(tirage,decimal-leading-zero) " · ";color:var(--rouge);font-weight:700;letter-spacing:.04em}
+.tirage-corps p{margin-bottom:0;color:var(--encre-douce)}
+.pastille-couche{display:flex;flex-direction:column;align-items:flex-end;gap:.35rem;padding-top:.3rem}
+.pastille-couche span{font-family:var(--titrage);font-weight:700;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--encre-grise)}
+.pastille-couche i{display:flex;gap:5px}
+.pastille-couche i b{display:block;width:18px;height:18px;border:2px solid var(--encre-douce)}
+.pastille-couche i b:nth-child(1){background:var(--rouge);border-color:var(--rouge)}
+.pastille-couche i b:nth-child(2){background:var(--encre);border-color:var(--encre)}
+.pastille-couche i b:nth-child(3){background:#6E6E6E;border-color:#6E6E6E}
+.pastille-couche i b.pastille-vide{background:repeating-linear-gradient(45deg,transparent 0 3px,var(--encre-grise) 3px 5px)}
+
+.deroule-etapes{list-style:none;margin:1.4rem 0;padding:0;counter-reset:etape}
+.etape-ligne{position:relative;padding:.6rem 0 .6rem 3.4rem;counter-increment:etape;border-top:1px solid var(--filet)}
+.etape-ligne:first-child{border-top:0}
+.etape-ligne::before{content:counter(etape,decimal-leading-zero);position:absolute;left:0;top:.7rem;font-family:var(--titrage);font-weight:800;font-size:1.5rem;line-height:1;color:var(--rouge)}
+.etape-ligne strong{font-family:var(--titrage);font-weight:700;font-size:1.25rem;display:block;margin-bottom:.15rem}
+
+.questions-planche{margin:0}
+.question-pli{border-top:1px solid var(--filet-clair)}
+.question-pli:last-child{border-bottom:1px solid var(--filet-clair)}
+.question-pli summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:baseline;gap:1.2rem;padding:1.1rem 0;font-family:var(--titrage);font-weight:700;font-size:1.45rem;line-height:1.1}
+.question-pli summary::-webkit-details-marker{display:none}
+.question-pli summary::after{content:"+";color:var(--rouge);font-weight:800;font-size:1.7rem;line-height:1;flex:none}
+.question-pli[open] summary::after{content:"–"}
+.question-pli p{margin:0 0 1.3rem;color:var(--encre-douce);max-width:70ch}
+
+.appel-bat{display:grid;grid-template-columns:1fr auto;gap:1.5rem 3rem;align-items:center}
+.appel-bat p{margin:0;color:var(--encre-douce);font-size:1.15rem;max-width:58ch}
+
+.bureau-planche{display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem 3rem;margin:0}
+.bureau-planche div{border-top:1px solid var(--filet-clair);padding-top:.9rem}
+.bureau-planche dt{font-family:var(--titrage);font-weight:700;font-size:.85rem;letter-spacing:.16em;text-transform:uppercase;color:var(--encre-grise);margin-bottom:.3rem}
+.bureau-planche dd{margin:0;font-size:1.08rem}
+.bureau-planche dd a{word-break:break-word}
+
+.pied-planche{width:min(1520px,calc(100% - 2.4rem));margin:3.4rem auto 2rem;padding-top:1.6rem;border-top:1px solid var(--filet);display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:1.6rem 2.5rem;color:var(--encre-douce);font-size:.98rem}
+.pied-planche p{margin:0 0 .4rem}
+.pied-griffe{font-family:var(--titrage);font-weight:800;font-size:1.5rem;color:var(--encre);line-height:1}
+.pied-reperes{list-style:none;margin:0;padding:0;display:grid;gap:.35rem}
+.pied-reperes a{color:var(--encre-douce);text-decoration:none}
+.pied-reperes a:hover{color:var(--encre);text-decoration:underline;text-decoration-color:var(--rouge)}
+.pied-etiquette{font-family:var(--titrage);font-weight:700;font-size:.85rem;letter-spacing:.16em;text-transform:uppercase;color:var(--encre-grise);margin:0 0 .6rem}
+.pied-rognage{grid-column:1/-1;border-top:1px solid var(--filet);padding-top:1rem;color:var(--encre-grise);font-size:.9rem;display:flex;flex-wrap:wrap;gap:.5rem 1.6rem}
+
+.grammage-table{overflow-x:auto;margin:1.4rem 0}
+.grammage-table table{border-collapse:collapse;width:100%;min-width:560px;font-size:1rem}
+.grammage-table th,.grammage-table td{text-align:left;padding:.7rem .8rem;border-bottom:1px solid var(--filet-clair);vertical-align:top}
+.grammage-table th{font-family:var(--titrage);font-weight:700;font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;color:var(--encre-grise)}
+.grammage-table td{color:var(--encre-douce)}
+.grammage-table td:first-child{color:var(--encre);font-weight:700}
+.encart-limite{border-left:3px solid var(--rouge);padding:.3rem 0 .3rem 1.2rem;margin:1.6rem 0;color:var(--encre-douce)}
+.encart-limite strong{color:var(--encre)}
+.liste-degravee{margin:.6rem 0 0;padding-left:1.2rem;color:var(--encre-douce)}
+.liste-degravee li{margin-bottom:.35rem}
+.sources-photos li{overflow-wrap:anywhere;margin-bottom:.6rem}
+code{font-family:var(--titrage);font-weight:700;font-size:.95em;letter-spacing:.02em;color:var(--encre)}
+.fiche-tirage{border:1px solid var(--filet-clair);padding:1.2rem 1.4rem;margin:1.4rem 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.9rem 1.4rem}
+.fiche-tirage dt{font-family:var(--titrage);font-weight:700;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--encre-grise)}
+.fiche-tirage dd{margin:0;font-size:1.02rem}
+
+.formulaire-reservation{display:grid;gap:1.1rem;margin:0}
+.bordereau-bloc{display:grid;gap:.35rem}
+.bordereau-libelle{font-family:var(--titrage);font-weight:700;font-size:1.05rem;letter-spacing:.03em}
+.bordereau-libelle small{font-family:var(--corps);font-weight:400;color:var(--encre-grise);font-size:.88rem;letter-spacing:0;margin-left:.4rem}
+.bordereau-champ{width:100%;background:var(--champ);color:var(--encre);border:1px solid var(--filet-clair);padding:.7rem .8rem;font:inherit;font-size:1.02rem;border-radius:0}
+.bordereau-champ:focus{border-color:var(--encre-douce)}
+.bordereau-champ::placeholder{color:var(--encre-grise)}
+textarea.bordereau-champ{min-height:150px;resize:vertical}
+.bordereau-double{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
+.piege-miel{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+.encre-fine{color:var(--encre-grise);font-size:.92rem;margin:0}
+
+.encart-consentement{position:fixed;left:1rem;bottom:1rem;width:min(380px,calc(100% - 2rem));background:var(--planche);color:var(--encre);border:1px solid var(--filet-clair);outline:1px solid var(--rouge);outline-offset:4px;padding:1.1rem 1.2rem;z-index:50;box-shadow:0 12px 30px rgba(0,0,0,.5)}
+.encart-consentement h2{font-family:var(--titrage);font-weight:800;font-size:1.3rem;margin:0 0 .4rem;line-height:1}
+.encart-consentement p{font-size:.92rem;color:var(--encre-douce);margin:0 0 .8rem;line-height:1.5}
+.encart-consentement p a{color:var(--encre)}
+.encart-actions{display:flex;flex-wrap:wrap;gap:.6rem}
+.encart-actions .racle-bouton{font-size:1rem;padding:.6rem 1rem .5rem}
+.racle-sobre{background:none;border:1px solid var(--encre-douce);color:var(--encre);font-family:var(--titrage);font-weight:700;font-size:1rem;letter-spacing:.05em;text-transform:uppercase;padding:.6rem 1rem .5rem;cursor:pointer}
+.racle-sobre:hover{border-color:var(--encre)}
+.encart-panneau{margin-top:.9rem;padding-top:.9rem;border-top:1px solid var(--filet-clair)}
+.ligne-bascule{display:flex;align-items:center;gap:.7rem;font-size:.95rem;margin-bottom:.7rem}
+.ligne-bascule input{width:18px;height:18px;accent-color:var(--rouge);margin:0}
+
+.feuille-egaree{text-align:left;max-width:60ch}
+
+@media (max-width:1080px){
+  .calage-bascule{display:inline-flex}
+  .ecran-entete{flex-wrap:wrap}
+  .calage-liens{display:none;width:100%;order:5;flex-direction:column;align-items:flex-start;gap:.2rem;padding-top:.8rem;border-top:1px solid var(--filet)}
+  .calage-liens.est-ouvert{display:flex}
+  html:not(.js) .calage-liens{display:flex;flex-direction:row;flex-wrap:wrap;gap:.6rem 1.2rem}
+  .calage-liens a{font-size:1.35rem;padding:.35rem 0}
+  .bande-faits{grid-template-columns:repeat(2,1fr);gap:1.2rem 0}
+  .fait-tuile:nth-child(3){border-left:0;padding-left:0}
+  .pied-planche{grid-template-columns:1fr 1fr}
+}
+@media (max-width:820px){
+  .planche-grille,.planche-grille.calage-etroit{grid-template-columns:1fr}
+  .marge-image{order:2}
+  .feuille-penchee .bord-feuille{transform:none}
+  .tirage-ligne{grid-template-columns:44px 1fr;gap:1rem}
+  .icone-outil{width:40px;height:40px}
+  .pastille-couche{grid-column:2;flex-direction:row;align-items:center;justify-content:flex-start;gap:.8rem}
+  .appel-bat{grid-template-columns:1fr}
+  .bureau-planche{grid-template-columns:1fr}
+  .bordereau-double{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  .ecran-entete{padding:.8rem 0 .8rem;gap:.8rem 1rem}
+  .ecran-entete .racle-bouton{font-size:.95rem;padding:.55rem .85rem .45rem}
+  .planche-ouverture{margin-top:1.4rem;padding-top:1.4rem}
+  .planche-ouverture .amorce-encre{font-size:1.08rem;line-height:1.5}
+  .planche-ouverture .groupe-racles{margin-top:1.2rem;gap:.9rem 1.4rem}
+  .planche-ouverture .encre-note{margin-bottom:.6rem}
+  h1.couche-titre{font-size:2.35rem;margin-bottom:.9rem}
+  .encart-consentement{left:.6rem;bottom:.6rem;width:calc(100% - 1.2rem);padding:.8rem .9rem}
+  .encart-consentement h2{font-size:1.05rem;margin-bottom:.3rem}
+  .encart-consentement p{font-size:.84rem;margin-bottom:.6rem;line-height:1.4}
+  .encart-actions{gap:.45rem}
+  .encart-actions .racle-bouton,.encart-consentement .racle-sobre{font-size:.9rem;padding:.5rem .8rem .4rem}
+  .griffe-atelier{font-size:1.7rem}
+  .devise-atelier{font-size:.72rem;letter-spacing:.1em}
+  .bande-faits{grid-template-columns:1fr}
+  .fait-tuile{border-left:0;padding-left:0;border-top:1px solid var(--filet-clair);padding-top:1rem}
+  .fait-tuile:first-child{border-top:0;padding-top:0}
+  .pied-planche{grid-template-columns:1fr}
+  .etiquette-planche{left:1rem;font-size:.7rem}
+  .fiche-tirage{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+<header class="ecran-entete">
+  <div class="griffe-bloc">
+    <a class="griffe-atelier" href="index.html" data-couche="Nicolas Francoual">Nicolas Francoual</a>
+    <span class="devise-atelier">Affiches et gravures, tirées à la main</span>
+  </div>
+  <button class="calage-bascule" id="calage-bascule" type="button" aria-expanded="false" aria-controls="calage-liens" aria-label="Ouvrir le menu"><span class="barre-racle"></span><span class="barre-racle"></span><span class="barre-racle"></span></button>
+  <nav aria-label="Pages du site">
+    <ul class="calage-liens" id="calage-liens"><li><a href="index.html">Accueil</a></li><li><a href="les-tirages.html">Les tirages</a></li><li><a href="papiers-et-encres.html" aria-current="page">Papiers et encres</a></li><li><a href="atelier-et-methode.html">Atelier et méthode</a></li><li><a href="reserver-un-tirage.html">Réserver</a></li></ul>
+  </nav>
+  <a class="racle-bouton" href="reserver-un-tirage.html">Réserver un tirage <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M2 8h11M8 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2"/></svg></a>
+</header>
+<main>
+<section class="planche-feuille">
+<svg class="repere-coin repere-hg" viewBox="0 0 26 26" aria-hidden="true" focusable="false"><circle cx="13" cy="13" r="7.5" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M13 0v26M0 13h26" stroke="currentColor" stroke-width="1.3"/></svg><svg class="repere-coin repere-hd" viewBox="0 0 26 26" aria-hidden="true" focusable="false"><circle cx="13" cy="13" r="7.5" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M13 0v26M0 13h26" stroke="currentColor" stroke-width="1.3"/></svg><svg class="repere-coin repere-bg" viewBox="0 0 26 26" aria-hidden="true" focusable="false"><circle cx="13" cy="13" r="7.5" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M13 0v26M0 13h26" stroke="currentColor" stroke-width="1.3"/></svg><svg class="repere-coin repere-bd" viewBox="0 0 26 26" aria-hidden="true" focusable="false"><circle cx="13" cy="13" r="7.5" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M13 0v26M0 13h26" stroke="currentColor" stroke-width="1.3"/></svg>
+<p class="etiquette-planche">Planche 01 · Papiers et encres</p>
+
+<div class="planche-grille">
+  <figure class="marge-image">
+  <span class="fil-sechage" aria-hidden="true"></span>
+  <span class="pince-sechage" aria-hidden="true"><i></i><i></i></span>
+  <div class="bord-feuille"><img src="assets/img/encres-plaque-melange.webp" alt="Plaque de verre couverte de touches d’encre de toutes les couleurs, avec les rouleaux et les couteaux à mélanger" width="1024" height="480" fetchpriority="high"></div>
+  <figcaption class="encre-legende">Touches d’encre et rouleaux sur la plaque de mélange</figcaption>
+</figure>
+  <div class="colonne-calee">
+    <p class="encre-note">Papiers et encres</p>
+    <h1 class="couche-titre" data-couche="Le papier d’abord, l’encre ensuite, le temps enfin">Le papier d’abord, l’encre ensuite, le temps enfin</h1>
+    <p class="amorce-encre">Ce que nous imprimons, sur quoi, et ce que devient une affiche une fois sortie de l’atelier — encadrée au mur ou roulée dans son tube. Les faits tels que nous les connaissons, et les tenues à la lumière telles que les fabricants les publient.</p>
+    <div class="groupe-racles"><a class="racle-bouton" href="reserver-un-tirage.html">Réserver un tirage <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M2 8h11M8 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2"/></svg></a></div>
+  </div>
+</div>
+</section>
+<section class="planche-feuille">
+<svg class="repere-coin repere-hg" viewBox="0 0 26 26" aria-hidden="true" focusable="false"><circle cx="13" cy="13" r="7.5" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M13 0v26M0 13h26" stroke="currentColor" stroke-width="1.3"/></svg><svg class="repere-coin repere-hd" viewBox="0 0 26 26" aria-hidden="true" focusable="false"><circle cx="13" cy="13" r="7.5" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M13 0v26M0 13h26" stroke="currentColor" stroke-width="1.3"/></svg><svg class="repere-coin repere-bg" viewBox="0 0 26 26" aria-hidden="true" focusable="false"><circle cx="13" cy="13" r="7.5" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M13 0v26M0 13h26" stroke="currentColor" stroke-width="1.3"/></svg><svg class="repere-coin repere-bd" viewBox="0 0 26 26" aria-hidden="true" focusable="false"><circle cx="13" cy="13" r="7.5" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M13 0v26M0 13h26" stroke="currentColor" stroke-width="1.3"/></svg>
+<p class="etiquette-planche">Planche 02 · Les papiers</p>
+
+<div class="colonne-calee">
+  <p class="encre-note">Les papiers</p>
+  <h2 class="couche-titre" data-couche="Les papiers que nous imprimons, et pourquoi" id="papiers">Les papiers que nous imprimons, et pourquoi</h2>
+  <p>Un papier de sérigraphie doit accepter une encre à l’eau sans gondoler, garder un aplat net sans boire la couleur, et supporter deux, trois ou quatre passages de racle sans pelucher. Un papier de gravure doit au contraire être un peu souple, pour épouser le relief du bloc sous la presse et prendre le foulage. Nous n’utilisons donc pas un seul papier, mais quelques-uns, chacun pour ce qu’il fait bien.</p>
+  <div class="grammage-table">
+    <table>
+      <thead><tr><th>Papier</th><th>Nature et surface</th><th>Ce que nous y tirons</th><th>Pourquoi celui-là</th></tr></thead>
+      <tbody>
+        <tr><td>Papier de création, grain fin</td><td>Cellulose pure, sans acide, grain fin, blanc naturel ou crème, grammage lourd</td><td>Affiches sérigraphiées en plusieurs couches</td><td>Un aplat s’y pose net, la feuille reste plane après trois couches et se roule sans casser.</td></tr>
+        <tr><td>Papier de création, grain satiné</td><td>Cellulose, surface lissée, blanc</td><td>Affiches où les traits fins et les trames comptent</td><td>Le détail d’une trame passe mieux sur une surface lisse ; la couleur y paraît plus vive.</td></tr>
+        <tr><td>Papier coton</td><td>Coton en majorité, grain léger, blanc doux, grammage moyen</td><td>Linogravures en noir et en deux tons</td><td>Il se laisse presser et garde le foulage ; le noir y devient profond sans briller.</td></tr>
+        <tr><td>Papier vergé</td><td>Cellulose, surface striée par les vergeures, teinte crème</td><td>Petites estampes, épreuves d’atelier</td><td>Le relief des vergeures dialogue avec la gravure ; nous le gardons pour les petits formats.</td></tr>
+        <tr><td>Papier de mise en train</td><td>Papier courant, non conservé</td><td>Essais, calage, réglage de pression</td><td>Il sert à régler, pas à durer ; une épreuve tirée dessus est vendue comme telle et dite comme telle.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Dans tous les cas, la fiche du tirage nomme le papier, son grain et son grammage. Nous ne changeons pas de papier au milieu d’une édition : si une rame s’épuise, l’édition est fermée là où elle en est.</p>
+</div>
+</section>
+<section class="planche-feuille">
+<svg class="repere-coin repere-hg" viewBox="0 0 26 26" aria-hidden="true" focusable="false"><circle cx="13" cy="13" r="7.5" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M13 0v26M0 13h26" stroke="currentColor" stroke-width="1.3"/></svg><svg class="repere-coin repere-hd" viewBox="0 0 26 26" aria-hidden="true" focusable="false"><circle cx="13" cy="13" r="7.5" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M13 0v26M0 13h26" stroke="currentColor" stroke-width="1.3"/></svg><svg class="repere-coin repere-bg" viewBox="0 0 26 26" aria-hidden="true" focusable="false"><circle cx="13" cy="13" r="7.5" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M13 0v26M0 13h26" stroke="currentColor" stroke-width="1.3"/></svg><svg class="repere-coin repere-bd" viewBox="0 0 26 26" aria-hidden="true" focusable="false"><circle cx="13" cy="13" r="7.5" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M13 0v26M0 13h26" stroke="currentColor" stroke-width="1.3"/></svg>
+<p class="etiquette-planche">Planche 03 · Les encres</p>
+
+<div class="planche-grille calage-etroit">
+  <figure class="marge-image">
+  <span class="fil-sechage" aria-hidden="true"></span>
+  <span class="pince-sechage" aria-hidden="true"><i></i><i></i></span>
+  <div class="bord-feuille"><img src="assets/img/rouleau-encre-bleue.webp" alt="Rouleau chargé d’encre bleue posé sur une feuille rose, étiquettes encrées à côté" width="722" height="722" loading="lazy"></div>
+  <figcaption class="encre-legende">Rouleau chargé d’encre bleue, étiquettes d’essai à côté</figcaption>
+</figure>
+  <div class="colonne-calee">
+    <p class="encre-note">Les encres</p>
+    <h2 class="couche-titre" data-couche="Encres à l’eau, base acrylique" id="encres">Encres à l’eau, base acrylique</h2>
+    <p>L’atelier imprime avec des encres à l’eau en base acrylique, pour la sérigraphie comme pour la gravure. Elles sèchent à l’air, sans solvant, et donnent un aplat mat, légèrement velouté. Elles se mélangent entre elles à la plaque, au couteau, ce qui nous permet de composer une couleur pour une édition — et de la noter, pour la tenir d’une feuille à l’autre.</p>
+    <p><strong>Tenue à la lumière.</strong> Les fabricants d’encres publient pour chaque pigment une indication de tenue à la lumière, le plus souvent sur l’échelle dite de la laine bleue ou selon une classification par degrés. Nous reprenons ces indications telles quelles sur la fiche du tirage lorsque l’encre sort du pot sans mélange ; pour une couleur composée à l’atelier, nous indiquons la tenue du pigment le plus fragile du mélange, parce que c’est lui qui donnera le ton en vieillissant. Nous ne faisons pas nos propres tests de vieillissement et ne promettons rien au-delà de ce que le fabricant écrit.</p>
+    <p><strong>Ce qu’une encre à l’eau n’est pas.</strong> Elle n’est pas une encre à solvant : elle ne brille pas, ne sent pas, et ne durcit pas en film épais. Elle n’est pas non plus une encre d’imprimerie numérique : la couleur est posée en une couche pleine, à travers un écran, et non en points. Une sérigraphie regardée de près montre un aplat uniforme et, aux bords, la trace de la maille ; c’est à cela qu’on la reconnaît.</p>
+    <p><strong>Pourquoi une couleur bouge.</strong> Un mélange fait à la main varie d’un pot à l’autre ; une encre s’épaissit un peu au fil de la journée ; l’humidité de l’atelier change la vitesse de séchage. Nous notons les proportions et remélangeons si besoin, mais deux éditions tirées à des mois d’écart, dans la même couleur nominale, ne sont jamais tout à fait jumelles.</p>
+  </div>
+</div>
+</section>
+<section class="planche-feuille">
+<svg class="repere-coin repere-hg" viewBox="0 0 26 26" aria-hidden="true" focusable="false"><circle cx="13" cy="13" r="7.5" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M13 0v26M0 13h26" stroke="currentColor" stroke-width="1.3"/></svg><svg class="repere-coin repere-hd" viewBox="0 0 26 26" aria-hidden="true" focusable="false"><circle cx="13" cy="13" r="7.5" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M13 0v26M0 13h26" stroke="currentColor" stroke-width="1.3"/></svg><svg class="repere-coin repere-bg" viewBox="0 0 26 26" aria-hidden="true" focusable="false"><circle cx="13" cy="13" r="7.5" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M13 0v26M0 13h26" stroke="currentColor" stroke-width="1.3"/></svg><svg class="repere-coin repere-bd" viewBox="0 0 26 26" aria-hidden="true" focusable="false"><circle cx="13" cy="13" r="7.5" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M13 0v26M0 13h26" stroke="currentColor" stroke-width="1.3"/></svg>
+<p class="etiquette-planche">Planche 04 · Le temps</p>
+
+<div class="planche-grille calage-etroit">
+  <figure class="marge-image">
+  <span class="fil-sechage" aria-hidden="true"></span>
+  <span class="pince-sechage" aria-hidden="true"><i></i><i></i></span>
+  <div class="bord-feuille"><img src="assets/img/detail-serigraphie-noir.webp" alt="Détail d’une sérigraphie en noir sur papier blanc, motif taché à la main" width="793" height="793" loading="lazy"></div>
+  <figcaption class="encre-legende">Sérigraphie en noir, la maille laisse sa trace aux bords</figcaption>
+</figure>
+  <div class="colonne-calee">
+    <p class="encre-note">Le temps</p>
+    <h2 class="couche-titre" data-couche="Ce que fait le temps sur une affiche" id="temps">Ce que fait le temps sur une affiche</h2>
+    <p><strong>Encadrée au mur.</strong> Ce qui fait pâlir une encre, c’est la lumière, et surtout la part ultraviolette du jour. Une affiche accrochée face à une fenêtre exposée au sud vieillit plus vite que la même affiche dans un couloir. Un verre ou un plexiglas filtrant les ultraviolets ralentit nettement le phénomène ; un passe-partout épais tient la feuille à distance du verre et lui laisse respirer. Nous n’encadrons pas, mais nous décrivons volontiers ce qu’un encadreur fera de votre tirage si vous le lui demandez.</p>
+    <p><strong>Roulée dans son tube.</strong> Une feuille roulée garde sa couleur, à l’abri de la lumière, mais prend la forme du rouleau : plus le tube est étroit et plus le séjour est long, plus la feuille garde une courbure. Un papier lourd la perd en quelques jours à plat sous un poids réparti ; un papier léger met plus de temps. Nous expédions dans des tubes larges, l’image tournée vers l’intérieur, pour que la face imprimée ne frotte pas contre la paroi.</p>
+    <p><strong>À plat, dans un carton.</strong> C’est la meilleure façon de garder une estampe qu’on n’accroche pas tout de suite : à plat, entre deux feuilles de papier de soie, dans un carton sans acide, loin d’un radiateur et d’un mur humide. Le papier reprend et rend l’humidité de l’air ; il ondule quand cette humidité change vite, et se recalme quand elle se stabilise.</p>
+    <p><strong>Ce qui ne bouge pas.</strong> Le foulage d’une gravure, la trace de la maille aux bords d’un aplat, la mention au crayon sous l’image : ces marques restent. Ce sont elles qui, dans dix ans comme aujourd’hui, disent qu’une feuille a été tirée à la main.</p>
+    <div class="groupe-racles"><a class="racle-bouton" href="reserver-un-tirage.html">Réserver un tirage <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M2 8h11M8 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2"/></svg></a><a class="racle-secondaire" href="les-tirages.html">Lire ce que dit une fiche</a></div>
+  </div>
+</div>
+</section>
+</main>
+<footer class="pied-planche">
+  <div>
+    <p class="pied-griffe">Nicolas Francoual</p>
+    <p>Atelier de sérigraphie et de gravure, à Toulouse (Occitanie). Affiches et gravures, tirées à la main, vendues à la pièce.</p>
+    <p><a href="mailto:bureau@nicolasfrancoual.com">bureau@nicolasfrancoual.com</a></p>
+  </div>
+  <div>
+    <p class="pied-etiquette">Parcourir</p>
+    <ul class="pied-reperes">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="les-tirages.html">Les tirages</a></li>
+      <li><a href="papiers-et-encres.html">Papiers et encres</a></li>
+      <li><a href="atelier-et-methode.html">Atelier et méthode</a></li>
+      <li><a href="reserver-un-tirage.html">Réserver un tirage</a></li>
+    </ul>
+  </div>
+  <div>
+    <p class="pied-etiquette">Mentions</p>
+    <ul class="pied-reperes">
+      <li><a href="privacy.html">Politique de confidentialité (Privacy)</a></li>
+      <li><a href="terms.html">Conditions d’utilisation (Terms)</a></li>
+      <li><a href="terms.html#image-credits">Crédits des photographies</a></li>
+    </ul>
+  </div>
+  <div class="pied-rognage"><span>© 2026 Nicolas Francoual</span><span>Toulouse, Occitanie, France</span><span>nicolasfrancoual.com</span></div>
+</footer>
+<aside class="encart-consentement" id="consentement" hidden aria-label="Cookies et consentement">
+  <h2>Cookies : rien d’installé</h2>
+  <p>Aucun cookie de mesure ni de publicité ici : le site retient seulement votre choix, dans votre navigateur. Détails dans la <a href="privacy.html">politique de confidentialité</a>.</p>
+  <div class="encart-actions">
+    <button class="racle-bouton" type="button" id="accepter-tout">Tout accepter</button>
+    <button class="racle-sobre" type="button" id="gerer-options" aria-expanded="false" aria-controls="encart-panneau">Gérer les options</button>
+  </div>
+  <div class="encart-panneau" id="encart-panneau" hidden>
+    <label class="ligne-bascule"><input type="checkbox" id="bascule-analytique"> Analyse et performance <span class="hors-maille">(aucun outil de mesure n’est installé aujourd’hui)</span></label>
+    <p>Aucun outil de mesure n’est en place aujourd’hui ; ce réglage ne serait lu que si l’atelier en ajoutait un.</p>
+    <button class="racle-sobre" type="button" id="enregistrer-choix">Enregistrer mes choix</button>
+  </div>
+</aside>
+<script>
+(function(){
+  var d=document,CLE="nf_atelier_pref",stock=null;
+  try{stock=window.localStorage}catch(e){stock=null}
+  var carte=d.getElementById("consentement");
+  if(carte){
+    var deja=null;try{deja=stock&&stock.getItem(CLE)}catch(e){deja=null}
+    if(!deja){carte.hidden=false}
+    var panneau=d.getElementById("encart-panneau"),bascule=d.getElementById("bascule-analytique");
+    var garder=function(v){try{if(stock){stock.setItem(CLE,JSON.stringify({analytique:v}))}}catch(e){}carte.hidden=true};
+    var bTout=d.getElementById("accepter-tout");if(bTout){bTout.addEventListener("click",function(){garder(true)})}
+    var bGerer=d.getElementById("gerer-options");if(bGerer&&panneau){bGerer.addEventListener("click",function(){var ferme=panneau.hidden;panneau.hidden=!ferme;bGerer.setAttribute("aria-expanded",ferme?"true":"false")})}
+    var bSauve=d.getElementById("enregistrer-choix");if(bSauve){bSauve.addEventListener("click",function(){garder(!!(bascule&&bascule.checked))})}
+  }
+  var bMenu=d.getElementById("calage-bascule"),liens=d.getElementById("calage-liens");
+  if(bMenu&&liens){bMenu.addEventListener("click",function(){var ouvert=liens.classList.toggle("est-ouvert");bMenu.setAttribute("aria-expanded",ouvert?"true":"false");bMenu.setAttribute("aria-label",ouvert?"Fermer le menu":"Ouvrir le menu")})}
+  var titres=d.querySelectorAll(".couche-titre");
+  if("IntersectionObserver" in window){
+    var obs=new IntersectionObserver(function(entrees){entrees.forEach(function(en){if(en.isIntersecting){en.target.classList.add("en-registre");obs.unobserve(en.target)}})},{threshold:0.15});
+    titres.forEach(function(t){obs.observe(t)});
+  }else{titres.forEach(function(t){t.classList.add("en-registre")})}
+  var plis=d.querySelectorAll(".question-pli");
+  plis.forEach(function(p){p.addEventListener("toggle",function(){if(p.open){plis.forEach(function(q){if(q!==p){q.open=false}})}})});
+  var suivant=d.querySelector('input[name="_next"]');
+  if(suivant){suivant.value=new URL("thanks.html",location.href).href}
+})();
+</script>
+</body>
+</html>

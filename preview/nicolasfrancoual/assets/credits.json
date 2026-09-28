@@ -1,0 +1,114 @@
+{
+ "picks": [
+  {
+   "asset": "rouleaux-plaque-verre.webp",
+   "source": "openverse",
+   "creator": "TrotterFechan",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "url": "https://www.flickr.com/photos/89786933@N02/31721953216",
+   "short_url": "https://flic.kr/p/QkaivS",
+   "title": "Inking",
+   "needs_attribution": true
+  },
+  {
+   "asset": "encres-plaque-melange.webp",
+   "source": "openverse",
+   "creator": "ms.Tea",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "url": "https://www.flickr.com/photos/59089068@N00/94110317",
+   "short_url": "https://flic.kr/p/9jkHF",
+   "title": "the ink slab",
+   "needs_attribution": true
+  },
+  {
+   "asset": "encres-couteaux.webp",
+   "source": "openverse",
+   "creator": "ms.Tea",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "url": "https://www.flickr.com/photos/59089068@N00/94110316",
+   "short_url": "https://flic.kr/p/9jkHE",
+   "title": "inks",
+   "needs_attribution": true
+  },
+  {
+   "asset": "table-insolation.webp",
+   "source": "openverse",
+   "creator": "ahhhnice",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "url": "https://www.flickr.com/photos/72194988@N00/4060686995",
+   "short_url": "https://flic.kr/p/7bQ5LK",
+   "title": "Screen print setup",
+   "needs_attribution": true
+  },
+  {
+   "asset": "detail-serigraphie-noir.webp",
+   "source": "openverse",
+   "creator": "bohemiannie",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "url": "https://www.flickr.com/photos/46019004@N04/12834148463",
+   "short_url": "https://flic.kr/p/ky7ncM",
+   "title": "screen print detail",
+   "needs_attribution": true
+  },
+  {
+   "asset": "linogravures-table.webp",
+   "source": "wikimedia",
+   "creator": "RealityBites",
+   "license": "CC0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "url": "https://commons.wikimedia.org/wiki/File:Celtic_Knot_2024_Prints_by_Attendees_of_Aoife_Cawley_Linocut_Workshop_1.jpg",
+   "short_url": "https://commons.wikimedia.org/wiki/File:Celtic_Knot_2024_Prints_by_Attendees_of_Aoife_Cawley_Linocut_Workshop_1.jpg",
+   "title": "Celtic Knot 2024 Prints by Attendees of Aoife Cawley Linocut Workshop 1.jpg",
+   "needs_attribution": false
+  },
+  {
+   "asset": "bloc-lino-calque.webp",
+   "source": "wikimedia",
+   "creator": "RealityBites",
+   "license": "CC0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "url": "https://commons.wikimedia.org/wiki/File:Celtic_Knot_2024_Print_Materials_by_Attendee_of_Aoife_Cawley_Linocut_Workshop.jpg",
+   "short_url": "https://commons.wikimedia.org/wiki/File:Celtic_Knot_2024_Print_Materials_by_Attendee_of_Aoife_Cawley_Linocut_Workshop.jpg",
+   "title": "Celtic Knot 2024 Print Materials by Attendee of Aoife Cawley Linocut Workshop.jpg",
+   "needs_attribution": false
+  },
+  {
+   "asset": "motif-rouleaux-lino.webp",
+   "source": "openverse",
+   "creator": "Amanda Niekamp",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "url": "https://www.flickr.com/photos/35479134@N06/3347756653",
+   "short_url": "https://flic.kr/p/66Q8qi",
+   "title": "Paint Roller Lino Repeat",
+   "needs_attribution": true
+  },
+  {
+   "asset": "rouleau-encre-bleue.webp",
+   "source": "openverse",
+   "creator": "thepaintedcrane",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "url": "https://www.flickr.com/photos/94416144@N08/8722598774",
+   "short_url": "https://flic.kr/p/ehMAJ3",
+   "title": "brayer and splash inks-finish with gelatos",
+   "needs_attribution": true
+  },
+  {
+   "asset": "linogravure-noir-trait.webp",
+   "source": "openverse",
+   "creator": "nicolesimoes",
+   "license": "CC BY",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "url": "https://www.flickr.com/photos/28756834@N00/7256833540",
+   "short_url": "https://flic.kr/p/c4gaME",
+   "title": "bballer relief print",
+   "needs_attribution": true
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+# Almu Gutiérrez — almugutierrez.com
+
+Taller de cerámica de gres en Valencia (Comunidad Valenciana, España). Tornea vajilla de mesa a mano en series
+cortas: platos y cuencos en tres medidas, jarras y tazas con asa tirada, fuentes y bandejas de horno con la base
+sin esmaltar, y reposiciones de una serie mientras su esmalte siga en uso. Tres esmaltes fijos: blanco hueso,
+verde ceniza y marrón hierro. Cada pieza se vende por unidad y por consulta, con diámetro, alto, peso y esmalte en
+su ficha. La web está en castellano.
+
+## Páginas
+- /index.html — qué tornea el taller, cómo va un pedido, preguntas frecuentes, contacto
+- /platos-y-cuencos.html — medidas, pesos y esmaltes de cada plato y cuenco; por qué dos piezas difieren
+- /jarras-y-tazas.html — capacidad hasta el borde y hasta el punto cómodo, el asa tirada, el gres y el calor
+- /esmaltes-y-uso.html — de qué están hechos los tres esmaltes, lavavajillas, microondas, horno, piezas rayadas
+- /preguntar-por-una-pieza.html — formulario de consulta y qué pasa después de enviarlo
+- /privacy.html — privacidad · /terms.html — términos de uso y créditos de imagen
+
+## Lo que el taller no hace
+Clases de torno, diseños de terceros o marca blanca, restauración de cerámica rota, certificación de seguridad
+alimentaria (se dice qué lleva cada esmalte y cómo se comporta), o prometer que una reposición tenga el mismo tono.
+
+Contacto: tienda@almugutierrez.com. Sin teléfono ni tienda abierta al público.

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Confidentialité — Bonheurons</title>
+<meta name="description" content="Ce que le formulaire de devis de bonheurons.com transmet, où va votre choix de consentement, l'absence de cookies de mesure, et vos droits.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="/privacy.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Confidentialité — Bonheurons">
+<meta property="og:description" content="Ce que le formulaire de devis de bonheurons.com transmet, où va votre choix de consentement, l'absence de cookies de mesure, et vos droits.">
+<meta property="og:image" content="/assets/og.png">
+<meta property="og:url" content="/privacy.html">
+<meta property="og:locale" content="fr_FR">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,700;1,400&amp;family=Jura:wght@500;700&amp;display=swap">
+<script>document.documentElement.classList.add('js');</script>
+<style>
+:root{--prune:#7A3E6B;--prune-fonce:#5E2E52;--jaune:#F2C94C;--jaune-fonce:#E0B32A;--encre:#241B22;--encre-douce:#5E4A58;--nappe:#FFFDF7;--papier:#FFFFFF;--papier-teinte:#F7EEF4;--lilas:#E9D6E3;--onglet:#EFE3EB;--trait:rgba(122,62,107,.32);--marge-x:clamp(1.35rem,4.5vw,4rem);--marge-y:clamp(2.2rem,5vw,4.25rem)}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html:focus-within{scroll-behavior:smooth}}
+body{margin:0;background:var(--nappe);color:var(--encre);font-family:"Jura",system-ui,sans-serif;font-weight:500;font-size:1.0625rem;line-height:1.62}
+img{max-width:100%;height:auto;display:block}
+h1,h2,h3{font-family:"Gelasio",Georgia,"Times New Roman",serif;font-weight:700;line-height:1.08;margin:0 0 .55em;letter-spacing:-.012em}
+h1{font-size:clamp(2.1rem,4.6vw,3.9rem)}
+h2{font-size:clamp(1.65rem,3vw,2.5rem)}
+h3{font-size:1.3rem;line-height:1.2}
+p{margin:0 0 1.1em}
+a{color:var(--prune);text-decoration-thickness:1px;text-underline-offset:.16em}
+a:hover{color:var(--prune-fonce)}
+:focus-visible{outline:3px solid var(--jaune);outline-offset:3px}
+.texte-cache{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.table-nappe{overflow-x:clip;min-height:100vh;display:flex;flex-direction:column}
+
+
+.entete-dossier{position:relative;z-index:6}
+.dossier-bande{max-width:1240px;margin:0 auto;padding:1rem 2.25rem 0;display:flex;align-items:flex-end;justify-content:space-between;gap:1.5rem;border-bottom:1px solid var(--trait)}
+.marque-bloc{display:flex;flex-direction:column;text-decoration:none;color:var(--encre);padding-bottom:.85rem;position:relative}
+.marque-nom{font-family:"Gelasio",Georgia,serif;font-weight:700;font-size:1.85rem;letter-spacing:-.025em;line-height:1;display:flex;align-items:center;gap:.5rem}
+.marque-nom::before{content:"";width:.85rem;height:.85rem;background:var(--jaune);clip-path:polygon(0 0,100% 0,100% 100%);flex:none}
+.marque-ligne{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--encre-douce);font-weight:700;margin-top:.45rem}
+.onglet-rangee{display:flex;align-items:flex-end;gap:.3rem;margin-bottom:-1px}
+.onglet-tab{display:inline-block;padding:.62rem 1rem .72rem;background:var(--onglet);color:var(--prune);text-decoration:none;font-weight:700;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--trait);border-bottom:0;border-radius:.6rem .6rem 0 0;line-height:1.1;white-space:nowrap}
+.onglet-tab:hover{background:var(--lilas);color:var(--prune-fonce)}
+.onglet-tab[aria-current="page"]{background:var(--papier);color:var(--encre);padding-top:.85rem;position:relative;z-index:2;box-shadow:0 1px 0 var(--papier)}
+.onglet-tab.onglet-devis{background:var(--jaune);color:var(--encre);border-color:rgba(36,27,34,.18)}
+.onglet-tab.onglet-devis:hover{background:var(--jaune-fonce)}
+.onglet-bouton{display:none;background:var(--onglet);border:1px solid var(--trait);border-radius:.5rem;width:2.9rem;height:2.9rem;margin-bottom:.6rem;padding:0;cursor:pointer;position:relative}
+.onglet-trait{position:absolute;left:.75rem;right:.75rem;height:2px;background:var(--prune);border-radius:2px;transition:transform .3s ease,opacity .2s ease}
+.onglet-trait:nth-child(1){top:.85rem}.onglet-trait:nth-child(2){top:calc(50% - 1px)}.onglet-trait:nth-child(3){bottom:.85rem}
+.onglets-ouverts .onglet-trait:nth-child(1){transform:translateY(.58rem) rotate(45deg)}
+.onglets-ouverts .onglet-trait:nth-child(2){opacity:0;transform:scaleX(0)}
+.onglets-ouverts .onglet-trait:nth-child(3){transform:translateY(-.58rem) rotate(-45deg)}
+
+
+.dossier-pile{max-width:1240px;width:100%;margin:0 auto;padding:0 2.25rem 4.5rem;position:relative;flex:1}
+.pli-sheet{position:relative;background:var(--papier);width:calc(100% - 2.5rem);padding:var(--marge-y) var(--marge-x);box-shadow:0 1px 2px rgba(36,27,34,.08),0 26px 50px -30px rgba(122,62,107,.5);transform-origin:0 0;--pli-y:0}
+.pli-sheet:nth-of-type(even){margin-left:auto}
+.pli-sheet+.pli-sheet{margin-top:-2rem}
+.pli-premiere{width:100%}
+.pli-teinte{background:var(--papier-teinte)}
+.pli-sombre{background:var(--prune);color:var(--nappe)}
+.pli-sombre a{color:var(--jaune)}
+.pli-sombre a:hover{color:var(--nappe)}
+.pli-jaune{background:var(--jaune);color:var(--encre)}
+.pli-jaune a{color:var(--prune-fonce)}
+.coin-plie::before{content:"";position:absolute;top:0;right:0;width:2.75rem;height:2.75rem;background:linear-gradient(225deg,var(--nappe) 0 50%,var(--papier-teinte) 50% 100%);box-shadow:-3px 3px 6px -2px rgba(36,27,34,.18);pointer-events:none}
+.pli-jaune.coin-plie::before{background:linear-gradient(225deg,var(--nappe) 0 50%,var(--jaune-fonce) 50% 100%)}
+.pli-ligne{height:1px;background:var(--trait);margin:2.1rem calc(-1 * var(--marge-x));box-shadow:0 3px 10px -1px rgba(36,27,34,.11);transform-origin:left center}
+.pli-sombre .pli-ligne{background:rgba(255,253,247,.4);box-shadow:0 3px 10px -1px rgba(0,0,0,.25)}
+.pli-jaune .pli-ligne{background:rgba(36,27,34,.35)}
+.onglet-marge{position:absolute;top:2.4rem;left:0;transform:translateX(-100%) rotate(180deg);writing-mode:vertical-rl;background:var(--prune);color:var(--nappe);font-size:.68rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;padding:.8rem .5rem;border-radius:.35rem;white-space:nowrap;line-height:1}
+.pli-sheet:nth-of-type(even) .onglet-marge{left:auto;right:0;transform:translateX(100%)}
+.pli-jaune .onglet-marge{background:var(--encre);color:var(--jaune)}
+.pli-sombre .onglet-marge{background:var(--jaune);color:var(--encre)}
+.repere-mot{display:inline-block;font-size:.74rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--prune);margin-bottom:1rem}
+.pli-sombre .repere-mot{color:var(--jaune)}
+.pli-jaune .repere-mot{color:var(--prune-fonce)}
+.corps-doux{color:var(--encre-douce)}
+.pli-sombre .corps-doux{color:var(--lilas)}
+.mesure-large{font-size:1.2rem;line-height:1.55;max-width:60ch}
+
+
+@media (prefers-reduced-motion:no-preference){
+html.js .pli-sheet{transition:transform .5s cubic-bezier(.2,.85,.25,1)}
+html.js .pli-sheet .pli-ligne{transition:transform .65s cubic-bezier(.4,0,.2,1) .28s}
+html.js .pli-sheet:not(.pli-ouvert){transform:rotate(6deg)}
+html.js .pli-sheet:not(.pli-ouvert) .pli-ligne{transform:scaleX(0)}
+}
+@media (prefers-reduced-motion:reduce){
+.pli-sheet,.pli-ligne,.onglet-trait{transition:none!important}
+}
+
+
+.premiere-grille{display:grid;grid-template-columns:1.04fr .96fr;grid-template-areas:"titre titre" "ligne ligne" "texte figure" "geste figure";gap:0 clamp(1.5rem,4vw,3.5rem);align-items:start}
+.premiere-titre{grid-area:titre}
+.premiere-titre h1{max-width:21ch}
+.premiere-grille>.pli-ligne{grid-area:ligne;margin-top:1.4rem}
+.premiere-texte{grid-area:texte;padding-top:.4rem}
+.premiere-grille>.geste-rangee{grid-area:geste;align-self:start;margin-top:.2rem}
+.premiere-figure{grid-area:figure}
+.premiere-figure{margin:0;position:relative}
+.premiere-figure img{width:100%;box-shadow:0 14px 30px -18px rgba(36,27,34,.6)}
+.premiere-figure figcaption{font-size:.8rem;color:var(--encre-douce);margin-top:.6rem;letter-spacing:.04em}
+.geste-rangee{display:flex;flex-wrap:wrap;gap:.8rem 1.4rem;align-items:center;margin-top:1.4rem}
+.geste-devis{display:inline-block;background:var(--prune);color:var(--nappe);text-decoration:none;font-weight:700;font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;padding:.95rem 1.5rem;border-radius:.3rem;border:0;cursor:pointer;font-family:inherit;line-height:1.1}
+.geste-devis:hover{background:var(--prune-fonce);color:var(--nappe)}
+.pli-jaune .geste-devis{background:var(--encre);color:var(--jaune)}
+.pli-jaune .geste-devis:hover{background:var(--prune-fonce);color:var(--nappe)}
+.geste-second{font-weight:700;font-size:.9rem;letter-spacing:.04em;text-transform:uppercase}
+
+
+.repere-bande{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.etiquette-fait{padding:.2rem 1.5rem .2rem 1.5rem;border-left:1px dashed var(--trait)}
+.etiquette-fait:first-child{padding-left:0;border-left:0}
+.etiquette-fait h3{font-size:1.18rem;margin-bottom:.45rem}
+.etiquette-fait p{font-size:.95rem;color:var(--encre-douce);margin:0}
+
+
+.fiche-rangee{display:grid;grid-template-columns:1fr 1fr;gap:2rem clamp(2rem,5vw,4.5rem)}
+.fiche-objet{display:grid;grid-template-columns:3rem 1fr;gap:1.1rem;align-items:start}
+.fiche-glyphe{width:3rem;height:3rem;color:var(--prune)}
+.fiche-glyphe svg{width:100%;height:100%;display:block}
+.fiche-objet p{font-size:1rem;margin-bottom:.6rem}
+.fiche-lien{font-weight:700;font-size:.86rem;letter-spacing:.06em;text-transform:uppercase}
+.fiche-lien svg{width:.9rem;height:.9rem;display:inline-block;vertical-align:-.12em;margin-left:.3rem}
+
+
+.atelier-grille{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(1.5rem,4vw,3.5rem);align-items:stretch}
+.atelier-marge{display:flex;flex-direction:column;justify-content:space-between}
+.lot-etapes{list-style:none;margin:0;padding:0;counter-reset:etape}
+.lot-etape{position:relative;padding:.9rem 0 .9rem 3.4rem;border-top:1px solid var(--trait);counter-increment:etape}
+.lot-etape:last-child{border-bottom:1px solid var(--trait)}
+.lot-etape::before{content:counter(etape,decimal-leading-zero);position:absolute;left:0;top:.95rem;font-weight:700;color:var(--prune);font-size:1.05rem;letter-spacing:.04em}
+.lot-etape h3{font-size:1.12rem;margin-bottom:.25rem}
+.lot-etape p{margin:0;font-size:.98rem;color:var(--encre-douce)}
+.marge-note{border-left:3px solid var(--jaune);padding:.2rem 0 .2rem 1.2rem;margin-top:1.6rem}
+.marge-note h3{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;font-family:"Jura",sans-serif;color:var(--prune);margin-bottom:.6rem}
+.marge-note ul{margin:0;padding-left:1.1rem}
+.marge-note li{margin-bottom:.35rem;font-size:.97rem}
+.epreuve-figure{margin:0}
+.epreuve-figure img{width:100%;box-shadow:0 14px 30px -18px rgba(36,27,34,.6)}
+.epreuve-figure figcaption{font-size:.8rem;color:var(--encre-douce);margin-top:.6rem;letter-spacing:.04em}
+
+
+.question-liste{margin:0;display:grid;grid-template-columns:1fr;gap:0}
+.question-bloc{display:grid;grid-template-columns:1fr 1.7fr;gap:1rem 3rem;padding:1.35rem 0;border-top:1px solid rgba(255,253,247,.22)}
+.question-bloc:last-child{border-bottom:1px solid rgba(255,253,247,.22)}
+.question-marge{font-family:"Gelasio",Georgia,serif;font-style:italic;font-weight:400;font-size:1.32rem;line-height:1.3;color:var(--jaune);margin:0}
+.reponse-corps{margin:0;color:var(--lilas);font-size:1rem}
+
+
+.joindre-grille{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem 3rem}
+.joindre-bloc h3{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;font-family:"Jura",sans-serif;color:var(--prune);margin-bottom:.6rem}
+.joindre-bloc p{margin-bottom:.5rem}
+.joindre-bloc a{font-weight:700;word-break:break-word}
+.courriel-grand{font-family:"Gelasio",Georgia,serif;font-size:1.35rem;font-weight:700;letter-spacing:-.01em}
+
+
+.grammage-cadre{overflow-x:auto;margin:1.4rem 0 1.8rem}
+.grammage-tableau{width:100%;border-collapse:collapse;font-size:.95rem;min-width:620px}
+.grammage-tableau th{text-align:left;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--prune);background:var(--papier-teinte);padding:.7rem .8rem;border-bottom:1px solid var(--trait)}
+.grammage-tableau td{padding:.75rem .8rem;border-bottom:1px solid rgba(122,62,107,.16);vertical-align:top}
+.grammage-tableau td:first-child{font-weight:700}
+.feuille-colonnes{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(1.5rem,4vw,3.5rem);align-items:start}
+.feuille-colonnes.figure-avant{grid-template-columns:.9fr 1.1fr}
+.encart-limites{background:var(--papier-teinte);padding:1.4rem 1.6rem;border-radius:.3rem;margin-top:1.4rem}
+.encart-limites h3{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;font-family:"Jura",sans-serif;color:var(--prune);margin-bottom:.6rem}
+.encart-limites p:last-child,.encart-limites ul{margin-bottom:0}
+.encart-limites ul{padding-left:1.1rem;margin-top:0}
+.tirage-liste{padding-left:1.2rem;margin:0 0 1.1em}
+.tirage-liste li{margin-bottom:.4rem}
+.chiffre-repere{font-family:"Gelasio",Georgia,serif;font-size:2.4rem;font-weight:700;line-height:1;color:var(--prune);display:block;margin-bottom:.3rem}
+
+
+.devis-grille{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(1.5rem,4vw,3.5rem);align-items:start}
+.champ-ligne{display:grid;gap:.4rem;margin-bottom:1.15rem}
+.champ-ligne label,.champ-etiquette{font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--prune)}
+.champ-ligne input,.champ-ligne select,.champ-ligne textarea{font:inherit;color:var(--encre);background:var(--nappe);border:1px solid var(--trait);border-radius:.25rem;padding:.8rem .9rem;width:100%}
+.champ-ligne textarea{min-height:9rem;resize:vertical}
+.champ-ligne input:focus,.champ-ligne select:focus,.champ-ligne textarea:focus{outline:3px solid var(--jaune);outline-offset:2px;border-color:var(--prune)}
+.champ-note{font-size:.85rem;color:var(--encre-douce);margin:0}
+.champ-deux{display:grid;grid-template-columns:1fr 1fr;gap:0 1.2rem}
+.champ-piege{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}
+.apres-envoi h2{font-size:1.5rem;margin-top:0}
+.apres-envoi figure{margin:1.5rem 0 0}
+.apres-envoi ol{padding-left:1.2rem;margin:0 0 1.1em}
+.apres-envoi li{margin-bottom:.5rem}
+
+
+.juridique-corps{max-width:72ch}
+.juridique-corps h2{font-size:1.45rem;margin-top:2rem}
+.juridique-corps ul{padding-left:1.2rem}
+.credits-liste{padding-left:1.2rem;font-size:.95rem}
+.credits-liste li{margin-bottom:.6rem}
+.credits-liste code{font-family:"Jura",monospace;font-weight:700;background:var(--papier-teinte);padding:.05rem .35rem;border-radius:.2rem}
+
+
+.pied-feuille{border-top:1px solid var(--trait);background:var(--nappe)}
+.pied-grille{max-width:1240px;margin:0 auto;padding:2.2rem 2.25rem 2.6rem;display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:1.6rem 3rem;font-size:.92rem;color:var(--encre-douce)}
+.pied-grille h3{font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;font-family:"Jura",sans-serif;color:var(--prune);margin-bottom:.6rem}
+.pied-grille ul{list-style:none;margin:0;padding:0}
+.pied-grille li{margin-bottom:.35rem}
+.pied-grille a{color:var(--encre);text-decoration:none;border-bottom:1px solid var(--trait)}
+.pied-grille a:hover{color:var(--prune)}
+.pied-marque{font-family:"Gelasio",Georgia,serif;font-weight:700;font-size:1.3rem;color:var(--encre);margin-bottom:.3rem}
+.pied-copie{grid-column:1/-1;border-top:1px dashed var(--trait);padding-top:1rem;font-size:.82rem;letter-spacing:.04em}
+
+
+.choix-carte{position:fixed;right:1.1rem;bottom:1.1rem;width:min(23rem,calc(100% - 2.2rem));background:var(--papier);color:var(--encre);border:1px solid var(--trait);border-top:5px solid var(--jaune);box-shadow:0 24px 50px -22px rgba(36,27,34,.55);padding:.8rem .95rem .85rem;z-index:40;font-size:.85rem;line-height:1.42}
+.choix-carte[hidden]{display:none}
+.choix-mot{margin:0 0 .6rem}
+.choix-carte p{margin-bottom:.7rem}
+.choix-boutons{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
+.choix-accepter,.choix-options,.choix-garder{font:inherit;font-weight:700;font-size:.76rem;letter-spacing:.06em;text-transform:uppercase;padding:.5rem .8rem;border-radius:.25rem;cursor:pointer;border:1px solid var(--prune)}
+.choix-accepter{background:var(--prune);color:var(--nappe)}
+.choix-accepter:hover{background:var(--prune-fonce)}
+.choix-options,.choix-garder{background:var(--papier);color:var(--prune)}
+.choix-options:hover,.choix-garder:hover{background:var(--onglet)}
+.choix-lien{font-size:.82rem;margin-left:auto}
+.choix-panneau{margin-top:.9rem;padding-top:.9rem;border-top:1px dashed var(--trait)}
+.choix-panneau[hidden]{display:none}
+.choix-bascule{display:flex;align-items:center;gap:.7rem;margin-bottom:.8rem;cursor:pointer}
+.choix-bascule input{width:2.4rem;height:1.3rem;margin:0;accent-color:var(--prune)}
+.choix-bascule span{font-weight:700}
+.choix-fixe{font-size:.82rem;color:var(--encre-douce);margin:0 0 .8rem}
+
+
+.absente-corps{text-align:left;max-width:56ch}
+
+@media (max-width:980px){
+.repere-bande{grid-template-columns:1fr 1fr;gap:1.4rem 0}
+.etiquette-fait:nth-child(3){border-left:0;padding-left:0}
+.joindre-grille{grid-template-columns:1fr 1fr}
+.pied-grille{grid-template-columns:1fr 1fr}
+}
+@media (max-width:900px){
+.dossier-bande{flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.6rem 1rem;padding:.75rem 1.25rem 0}
+.marque-bloc{padding-bottom:.7rem;flex:1 1 auto;min-width:0}
+.marque-ligne{font-size:.62rem;letter-spacing:.14em;line-height:1.35}
+.onglet-bouton{display:block;margin:0 0 .7rem;flex:none}
+.onglet-rangee{display:none;flex-basis:100%;width:100%;flex-direction:column;align-items:stretch;gap:.25rem;padding:.2rem 0 .9rem;margin:0}
+.onglets-ouverts .onglet-rangee{display:flex}
+.onglet-tab,.onglet-tab[aria-current="page"]{border-radius:.35rem;border-bottom:1px solid var(--trait);padding:.85rem 1rem;white-space:normal}
+.dossier-pile{padding:0 1rem 3rem}
+.pli-sheet{width:calc(100% - .9rem)}
+.pli-sheet+.pli-sheet{margin-top:-1.1rem}
+.onglet-marge{writing-mode:horizontal-tb;top:0;left:1.1rem;right:auto;transform:translateY(-100%);padding:.45rem .7rem;border-radius:.35rem .35rem 0 0}
+.pli-sheet:nth-of-type(even) .onglet-marge{left:auto;right:1.1rem;transform:translateY(-100%)}
+.pli-sheet+.pli-sheet .onglet-marge{transform:translateY(-45%)}
+.pli-premiere .onglet-marge{transform:none;border-radius:0 0 .35rem .35rem}
+.pli-premiere{padding-top:3.6rem}
+.premiere-grille,.atelier-grille,.feuille-colonnes,.feuille-colonnes.figure-avant,.devis-grille,.fiche-rangee{grid-template-columns:1fr}
+.premiere-grille{grid-template-areas:"titre" "geste" "ligne" "texte" "figure"}
+.premiere-grille>.geste-rangee{margin-top:.6rem}
+.premiere-grille>.pli-ligne{margin-top:2.1rem}
+.feuille-colonnes.figure-avant .epreuve-figure{order:-1}
+.question-bloc{grid-template-columns:1fr;gap:.5rem}
+.premiere-figure{margin-top:1.6rem}
+}
+@media (max-width:600px){
+.repere-bande{grid-template-columns:1fr}
+.etiquette-fait{border-left:0;padding:0 0 1.1rem;border-bottom:1px dashed var(--trait)}
+.etiquette-fait:last-child{border-bottom:0;padding-bottom:0}
+.joindre-grille,.pied-grille{grid-template-columns:1fr}
+.champ-deux{grid-template-columns:1fr}
+.fiche-objet{grid-template-columns:2.4rem 1fr}
+.marque-nom{font-size:1.55rem}
+.choix-carte{right:.7rem;bottom:.7rem;left:.7rem;width:auto;padding:.75rem .85rem .8rem;font-size:.83rem}
+.grammage-tableau{min-width:560px}
+}
+</style>
+</head>
+<body>
+<div class="table-nappe">
+<header class="entete-dossier">
+<div class="dossier-bande">
+<a class="marque-bloc" href="index.html"><span class="marque-nom">Bonheurons</span><span class="marque-ligne">Papeterie de table et petits objets</span></a>
+<button class="onglet-bouton" type="button" aria-expanded="false" aria-controls="onglets-dossier" aria-label="Ouvrir le menu"><span class="onglet-trait"></span><span class="onglet-trait"></span><span class="onglet-trait"></span></button>
+<nav class="onglet-rangee" id="onglets-dossier" aria-label="Feuilles du dossier">
+<a class="onglet-tab" href="index.html">Accueil</a>
+<a class="onglet-tab" href="marque-places.html">Marque-places</a>
+<a class="onglet-tab" href="menus-et-cartons.html">Menus et cartons</a>
+<a class="onglet-tab" href="guirlandes-et-papiers.html">Guirlandes et papiers</a>
+<a class="onglet-tab onglet-devis" href="demander-un-devis.html">Demander un devis papier</a>
+</nav>
+</div>
+</header>
+<main class="dossier-pile">
+
+<section class="pli-sheet pli-premiere coin-plie" aria-labelledby="titre-conf">
+<span class="onglet-marge">Confidentialité</span>
+<div class="juridique-corps">
+<span class="repere-mot">Dernière mise à jour : 28 septembre 2026</span>
+<h1 id="titre-conf">Ce que ce site sait de vous, et ce qu’il en fait.</h1>
+<div class="pli-ligne" aria-hidden="true"></div>
+<p class="mesure-large">Bonheurons est un atelier de papeterie de table à Nantes ; bonheurons.com est son site. Cette page dit, sans détour, quelles informations le site reçoit, pourquoi, et comment les faire corriger ou effacer.</p>
+
+<h2>Le formulaire de devis</h2>
+<p>Quand vous envoyez une demande depuis la page <a href="demander-un-devis.html">Demander un devis papier</a>, le formulaire transmet votre nom, votre courriel, l’objet choisi, la quantité, la date souhaitée et votre message. Ces champs servent à une seule chose : vous répondre avec un devis. Nous ne vous demandons rien d’autre, et les champs facultatifs peuvent rester vides.</p>
+<p>L’envoi passe par le service FormSubmit, qui reçoit le contenu du formulaire et le remet par courriel à l’atelier, à l’adresse atelier@bonheurons.com. Le service voit donc ce que vous avez tapé le temps de le transmettre ; il agit selon ses propres conditions, que nous n’écrivons pas ici. Le site lui-même ne garde rien : il n’a pas de base de données.</p>
+<p>Un champ caché, invisible pour vous, sert à écarter les robots qui remplissent les formulaires au hasard. Il ne collecte rien sur une personne.</p>
+
+<h2>Le choix de consentement</h2>
+<p>À la première visite, une petite carte vous propose d’accepter ou de régler vos options. Ce que vous décidez est rangé dans votre navigateur, sous une seule clé, <code>bh_choix_v1</code>, pour que la carte ne revienne pas à chaque page. Cette clé reste sur votre appareil ; elle n’est envoyée nulle part.</p>
+<p>Le réglage « analyse et performance » est désactivé par défaut. Aujourd’hui, rien ne le lit : aucun outil de mesure d’audience, aucun script publicitaire, aucun gestionnaire de balises n’est installé sur bonheurons.com, et le site ne pose aucun cookie de lui-même. Si un jour un outil de mesure était ajouté, il ne se chargerait qu’après votre accord, et cette page serait modifiée avant.</p>
+<p>La seule requête sortante du site est le chargement de ses deux polices de caractères chez un hébergeur de polices tiers, qui voit à cette occasion votre adresse IP, comme n’importe quel serveur qui vous envoie un fichier.</p>
+
+<h2>Ce que nous ne faisons pas de vos données</h2>
+<p>Nous ne vendons, ne louons et ne cédons à personne ce que vous nous écrivez. Nous n’envoyons pas de lettre d’information. Nous ne croisons pas votre demande avec d’autres fichiers. Une demande de devis est lue par l’atelier, puis conservée dans sa boîte de courriel le temps de traiter le lot et de répondre aux questions qui suivent.</p>
+
+<h2>Vos droits</h2>
+<p>Le règlement général sur la protection des données, qui s’applique en France, vous permet de consulter ce que nous détenons sur vous, de le faire corriger, de le faire effacer, d’en recevoir une copie dans un format lisible par une machine, et de vous opposer à un usage que vous jugez injustifié. Vous pouvez aussi saisir l’autorité de contrôle française si vous estimez que nous n’avons pas répondu comme il faut.</p>
+<p>Si vous résidez en Californie, la loi de cet État vous donne des droits voisins : savoir quelles informations sont recueillies et pourquoi, en obtenir la suppression, refuser qu’elles soient vendues — ce que nous ne faisons de toute façon pas —, et ne subir aucune différence de traitement pour avoir exercé ces droits.</p>
+<p>Pour exercer l’un de ces droits, écrivez à <a href="mailto:atelier@bonheurons.com">atelier@bonheurons.com</a> en précisant ce que vous demandez. Nous répondons par courriel, à l’adresse depuis laquelle vous écrivez, dans le délai que la loi prévoit.</p>
+
+<h2>Les photographies</h2>
+<p>Les images du site sont des photographies publiées sous licence libre par leurs auteurs. Leurs crédits figurent sur la page des <a href="terms.html#image-credits">conditions d’utilisation</a>.</p>
+
+<h2>Modifications</h2>
+<p>Cette page peut changer si le site change — un outil ajouté, un service remplacé. La date en haut de la feuille est celle de la dernière version.</p>
+</div>
+</section>
+
+</main>
+<footer class="pied-feuille">
+<div class="pied-grille">
+<div>
+<p class="pied-marque">Bonheurons</p>
+<p>Atelier de papeterie de table, à Nantes, en Pays de la Loire. Marque-places, menus, cartons, guirlandes et papiers d’emballage, imprimés et découpés par lot.</p>
+<p><a href="mailto:atelier@bonheurons.com">atelier@bonheurons.com</a></p>
+</div>
+<div>
+<h3>Le dossier</h3>
+<ul>
+<li><a href="index.html">Accueil</a></li>
+<li><a href="marque-places.html">Marque-places</a></li>
+<li><a href="menus-et-cartons.html">Menus et cartons</a></li>
+<li><a href="guirlandes-et-papiers.html">Guirlandes et papiers</a></li>
+<li><a href="demander-un-devis.html">Demander un devis papier</a></li>
+</ul>
+</div>
+<div>
+<h3>Pages légales</h3>
+<ul>
+<li><a href="privacy.html">Confidentialité<span class="texte-cache">Privacy</span></a></li>
+<li><a href="terms.html">Conditions d’utilisation<span class="texte-cache">Terms</span></a></li>
+<li><a href="terms.html#image-credits">Crédits des photographies</a></li>
+</ul>
+</div>
+<p class="pied-copie">© 2026 Bonheurons · Nantes · Expédition en France métropolitaine</p>
+</div>
+</footer>
+</div>
+<aside class="choix-carte" hidden aria-label="Vos choix de consentement">
+<p class="choix-mot">Un seul choix, rangé dans votre navigateur : aucun cookie de mesure sans votre accord.</p>
+<div class="choix-boutons">
+<button type="button" class="choix-accepter">Tout accepter</button>
+<button type="button" class="choix-options" aria-expanded="false" aria-controls="choix-panneau">Mes options</button>
+<a class="choix-lien" href="privacy.html">Confidentialité</a>
+</div>
+<div class="choix-panneau" id="choix-panneau" hidden>
+<label class="choix-bascule"><input type="checkbox" name="analyse" value="oui"><span>Analyse et performance</span></label>
+<p class="choix-fixe">Désactivé par défaut. Rien ne lit ce réglage aujourd’hui : il est seulement conservé.</p>
+<button type="button" class="choix-garder">Enregistrer mes choix</button>
+</div>
+</aside>
+<script>
+(function(){
+  var root=document.documentElement;
+  var head=document.querySelector('.entete-dossier');
+  var btn=document.querySelector('.onglet-bouton');
+  if(btn&&head){btn.addEventListener('click',function(){var o=head.classList.toggle('onglets-ouverts');btn.setAttribute('aria-expanded',o?'true':'false');btn.setAttribute('aria-label',o?'Fermer le menu':'Ouvrir le menu');});}
+  var sheets=[].slice.call(document.querySelectorAll('.pli-sheet'));
+  var calm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(calm||!('IntersectionObserver' in window)){sheets.forEach(function(s){s.classList.add('pli-ouvert');});}
+  else{var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('pli-ouvert');io.unobserve(e.target);}});},{threshold:0.08,rootMargin:'0px 0px -4% 0px'});sheets.forEach(function(s){io.observe(s);});}
+  var CLE='bh_choix_v1';
+  var carte=document.querySelector('.choix-carte');
+  if(carte){
+    var lu=null;try{lu=localStorage.getItem(CLE);}catch(err){lu=null;}
+    if(!lu){carte.hidden=false;}
+    var pan=carte.querySelector('.choix-panneau');
+    var opt=carte.querySelector('.choix-options');
+    var acc=carte.querySelector('.choix-accepter');
+    var gard=carte.querySelector('.choix-garder');
+    var bas=carte.querySelector('.choix-bascule input');
+    function garder(v){try{localStorage.setItem(CLE,JSON.stringify({analyse:!!v,date:new Date().toISOString().slice(0,10)}));}catch(err){}carte.hidden=true;}
+    if(opt&&pan){opt.addEventListener('click',function(){var o=pan.hidden;pan.hidden=!o;opt.setAttribute('aria-expanded',o?'true':'false');});}
+    if(acc){acc.addEventListener('click',function(){if(bas){bas.checked=true;}garder(true);});}
+    if(gard){gard.addEventListener('click',function(){garder(bas&&bas.checked);});}
+  }
+  var suite=document.querySelector('input[name="_next"]');
+  if(suite){suite.value=new URL('thanks.html',location.href).href;}
+})();
+</script>
+</body>
+</html>

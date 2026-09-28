@@ -1,0 +1,92 @@
+{
+ "picks": [
+  {
+   "asset": "mineral-paint-box.webp",
+   "source": "wikimedia",
+   "creator": "Daderot",
+   "license": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Paint_box_with_mineral_pigments,_Egypt,_Third_Intermediate_Period_or_later,_Dynasties_21-31,_c._1070-332_BC,_wood,_minerals_-_Oriental_Institute_Museum,_University_of_Chicago_-_DSC07865.JPG",
+   "short_url": "https://commons.wikimedia.org/wiki/File:Paint_box_with_mineral_pigments,_Egypt,_Third_Intermediate_Period_or_later,_Dynasties_21-31,_c._1070-332_BC,_wood,_minerals_-_Oriental_Institute_Museum,_University_of_Chicago_-_DSC07865.JPG",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "title": "Paint box with mineral pigments, Egypt, Third Intermediate Period or later, Dynasties 21-31, c. 1070-332 BC, wood, minerals - Oriental Insti",
+   "needs_attribution": false
+  },
+  {
+   "asset": "pigment-case.webp",
+   "source": "wikimedia",
+   "creator": "Wikimedia Commons contributor",
+   "license": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Set_of_powder_paint_pigments_in_leather_case_-_DPLA_-_546b483196518e3781e6a8b578dbb345.jpg",
+   "short_url": "https://commons.wikimedia.org/wiki/File:Set_of_powder_paint_pigments_in_leather_case_-_DPLA_-_546b483196518e3781e6a8b578dbb345.jpg",
+   "license_url": "",
+   "title": "Set of powder paint pigments in leather case - DPLA - 546b483196518e3781e6a8b578dbb345.jpg",
+   "needs_attribution": false
+  },
+  {
+   "asset": "mineral-hillside.webp",
+   "source": "openverse",
+   "creator": "MarcCooper_1950",
+   "license": "CC0",
+   "url": "https://www.flickr.com/photos/125843178@N06/20716726362",
+   "short_url": "https://flic.kr/p/xyECZh",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "title": "Artists Palette",
+   "needs_attribution": false
+  },
+  {
+   "asset": "brush-jar.webp",
+   "source": "pxhere",
+   "creator": "PxHere contributor",
+   "license": "CC0",
+   "url": "https://pxhere.com/",
+   "short_url": "https://pxhere.com/",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "title": "artist,flower,color,artistic,paint,paintbrush",
+   "needs_attribution": false
+  },
+  {
+   "asset": "granite-mortar.webp",
+   "source": "openverse",
+   "creator": "Gary Todd",
+   "license": "CC0",
+   "url": "https://commons.wikimedia.org/w/index.php?curid=78718927",
+   "short_url": "https://commons.wikimedia.org/w/index.php?curid=78718927",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "title": "Stone Age Stone Mortar & Pestle, Kebaran culture, 22000-18000 BP",
+   "needs_attribution": false
+  },
+  {
+   "asset": "flaking-paint.webp",
+   "source": "openverse",
+   "creator": "jenny downing",
+   "license": "CC BY",
+   "url": "https://www.flickr.com/photos/7941044@N06/5865868165",
+   "short_url": "https://flic.kr/p/9Wm7f2",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "title": "flake",
+   "needs_attribution": true
+  },
+  {
+   "asset": "porcelain-mortar.webp",
+   "source": "openverse",
+   "creator": "ani!",
+   "license": "CC0",
+   "url": "https://www.flickr.com/photos/53018729@N00/449533818",
+   "short_url": "https://flic.kr/p/FHYK5",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "title": "mortar & pestle",
+   "needs_attribution": false
+  },
+  {
+   "asset": "basalt-mortar.webp",
+   "source": "openverse",
+   "creator": "Gary Todd",
+   "license": "CC0",
+   "url": "https://commons.wikimedia.org/w/index.php?curid=78717189",
+   "short_url": "https://commons.wikimedia.org/w/index.php?curid=78717189",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "title": "Basalt & Limestone Mortar & Pestle, Natufian Culture",
+   "needs_attribution": false
+  }
+ ]
+}

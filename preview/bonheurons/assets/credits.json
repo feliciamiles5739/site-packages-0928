@@ -1,0 +1,92 @@
+{
+ "picks": [
+  {
+   "asset": "pliages-sur-table.webp",
+   "source": "wm_unsplash",
+   "creator": "Dev Benjamin dev_irl",
+   "license": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Paper_crane_table_(Unsplash).jpg",
+   "short_url": "https://commons.wikimedia.org/wiki/File:Paper_crane_table_(Unsplash).jpg",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "title": "Paper crane table (Unsplash).jpg",
+   "needs_attribution": false
+  },
+  {
+   "asset": "tranche-couleurs.webp",
+   "source": "openverse",
+   "creator": "Genevieve719",
+   "license": "CC BY 2.0",
+   "url": "https://www.flickr.com/photos/87671668@N00/8709537070",
+   "short_url": "https://flic.kr/p/egCDWf",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "title": "118/365: Cardstock",
+   "needs_attribution": true
+  },
+  {
+   "asset": "fibres-papier.webp",
+   "source": "openverse",
+   "creator": "Geetesh Bajaj",
+   "license": "CC BY 2.0",
+   "url": "https://www.flickr.com/photos/62575790@N00/2921268020",
+   "short_url": "https://flic.kr/p/5s9gd1",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "title": "Handmade Paper",
+   "needs_attribution": true
+  },
+  {
+   "asset": "papier-brun.webp",
+   "source": "openverse",
+   "creator": "HA! Designs - Artbyheather",
+   "license": "CC BY 2.0",
+   "url": "https://www.flickr.com/photos/10533549@N08/2693289574",
+   "short_url": "https://flic.kr/p/56ZPa9",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "title": "Vintage Handmade Paper Book Cover",
+   "needs_attribution": true
+  },
+  {
+   "asset": "papier-dore.webp",
+   "source": "openverse",
+   "creator": "Cornelia Kopp",
+   "license": "CC BY 2.0",
+   "url": "https://www.flickr.com/photos/14111752@N07/2621954061",
+   "short_url": "https://flic.kr/p/4ZGcAv",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "title": "handmade paper",
+   "needs_attribution": true
+  },
+  {
+   "asset": "kraft-plisse.webp",
+   "source": "openverse",
+   "creator": "Creativity103",
+   "license": "CC BY 2.0",
+   "url": "https://www.flickr.com/photos/36894712@N04/14705217522",
+   "short_url": "https://flic.kr/p/ops5R9",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "title": "grunge kraft paper surface",
+   "needs_attribution": true
+  },
+  {
+   "asset": "chutes-decoupe.webp",
+   "source": "openverse",
+   "creator": "Art Aspirations",
+   "license": "CC BY 2.0",
+   "url": "https://www.flickr.com/photos/23471014@N03/16501008460",
+   "short_url": "https://flic.kr/p/r98YVS",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "title": "Shredded kraft paper",
+   "needs_attribution": true
+  },
+  {
+   "asset": "grain-loupe.webp",
+   "source": "wikimedia",
+   "creator": "Gustamons",
+   "license": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Tissue_paper_under_a_microscope.jpg",
+   "short_url": "https://commons.wikimedia.org/wiki/File:Tissue_paper_under_a_microscope.jpg",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "title": "Tissue paper under a microscope.jpg",
+   "needs_attribution": false
+  }
+ ]
+}

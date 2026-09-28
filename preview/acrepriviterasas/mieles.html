@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mieles por floración · Acre Privitera</title>
+<meta name="description" content="Cada miel del apiario por floración: tono, sabor, cuándo se cosecha y cómo cristaliza. Frascos de vidrio de tres tamaños, por caja de doce o veinticuatro.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="/mieles.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mieles por floración · Acre Privitera">
+<meta property="og:description" content="Cada miel del apiario por floración: tono, sabor, cuándo se cosecha y cómo cristaliza. Frascos de vidrio de tres tamaños, por caja de doce o veinticuatro.">
+<meta property="og:image" content="/assets/og.png">
+<meta property="og:url" content="/mieles.html">
+<meta property="og:locale" content="es_CO">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="48x48 32x32 16x16">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Eczar:wght@500;600;700&family=Gothic+A1:wght@400;500;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('colmena-viva');</script>
+<style>
+:root{--miel:#8A5A12;--cera:#F0E2C0;--tinta:#241C0E;--fondo:#FFFBF2;--madera:#5C3B08;--tinta-suave:#5A4630;
+--panal-luz:#F7EDD6;--celda-llena:#E9C97A;--celda-borde:#A9782A;--borde:#DCC89C;--miel-clara:#E5B54A;
+--letra-titulo:'Eczar',Georgia,'Times New Roman',serif;--letra-cuerpo:'Gothic A1','Helvetica Neue',Arial,sans-serif}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--cera);color:var(--tinta);font:400 17px/1.65 var(--letra-cuerpo);overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--miel)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid var(--miel);outline-offset:3px}
+h1,h2,h3,h4{font-family:var(--letra-titulo);font-weight:600;line-height:1.12;margin:0 0 .6em;color:var(--tinta)}
+p{margin:0 0 1.1em}
+.salto-contenido{position:absolute;left:-999px;top:0;background:var(--madera);color:var(--fondo);padding:.6rem 1rem;z-index:50}
+.salto-contenido:focus{left:12px;top:12px}
+/* ---- techo de la colmena: cabecera ---- */
+.cabecera-colmena{position:sticky;top:0;z-index:30;background:var(--madera);color:var(--fondo);border-bottom:4px solid var(--miel)}
+.techo-linea{max-width:1440px;margin:0 auto;padding:.7rem 1.2rem;display:flex;align-items:center;gap:1.4rem;flex-wrap:wrap}
+.marca-apiario{display:flex;align-items:center;gap:.7rem;text-decoration:none;color:var(--fondo)}
+.marca-apiario svg{width:38px;height:38px;flex:none}
+.nombre-colmena{font:700 1.45rem/1 var(--letra-titulo);letter-spacing:.01em;display:block}
+.lema-colmena{display:block;font:500 .72rem/1.2 var(--letra-cuerpo);letter-spacing:.09em;text-transform:uppercase;color:var(--celda-llena);margin-top:.28rem}
+.menu-colmena{margin-left:auto;display:flex;align-items:center;gap:.2rem}
+.menu-colmena a{color:var(--fondo);text-decoration:none;padding:.5rem .7rem;font-weight:500;border-bottom:2px solid transparent}
+.menu-colmena a:hover{border-bottom-color:var(--miel-clara)}
+.menu-colmena a[aria-current="page"]{border-bottom-color:var(--celda-llena);color:var(--celda-llena)}
+.boton-miel{display:inline-block;background:var(--miel-clara);color:var(--tinta);font:700 .98rem/1 var(--letra-cuerpo);padding:.9rem 1.35rem;border:0;text-decoration:none;cursor:pointer;
+  clip-path:polygon(10px 0,calc(100% - 10px) 0,100% 50%,calc(100% - 10px) 100%,10px 100%,0 50%);transition:background .2s}
+.boton-miel:hover{background:var(--cera)}
+.menu-colmena .boton-miel{margin-left:.6rem;padding:.8rem 1.4rem;color:var(--tinta);font-weight:700}
+.boton-cera{display:inline-block;color:var(--miel);background:var(--cera);font:700 .98rem/1 var(--letra-cuerpo);padding:.95rem 1.4rem;border:0;text-decoration:none;
+  clip-path:polygon(10px 0,calc(100% - 10px) 0,100% 50%,calc(100% - 10px) 100%,10px 100%,0 50%);transition:background .2s,color .2s}
+.boton-cera:hover{background:var(--celda-llena);color:var(--tinta)}
+.abrir-colmena{display:none;margin-left:auto;background:none;border:2px solid var(--celda-llena);width:46px;height:42px;padding:8px;cursor:pointer;flex-direction:column;justify-content:space-between}
+.abrir-colmena span{display:block;height:3px;background:var(--fondo);transition:transform .3s,opacity .3s}
+.cabecera-colmena.panal-abierto .abrir-colmena span:nth-child(1){transform:translateY(9.5px) rotate(45deg)}
+.cabecera-colmena.panal-abierto .abrir-colmena span:nth-child(2){opacity:0}
+.cabecera-colmena.panal-abierto .abrir-colmena span:nth-child(3){transform:translateY(-9.5px) rotate(-45deg)}
+/* ---- la pila de cuadros ---- */
+.pila-cuadros{max-width:1440px;margin:0 auto;padding:14px 10px 0;display:flex;flex-direction:column;gap:14px}
+.cuadro-band{background:var(--fondo);border-top:12px solid var(--madera);border-bottom:6px solid var(--madera);border-left:7px solid var(--miel);border-right:7px solid var(--miel);position:relative}
+.cuadro-band.cuadro-tibio{background:var(--panal-luz)}
+.cuadro-band.cuadro-oscuro{background:var(--madera);color:var(--fondo);border-left-color:var(--celda-llena);border-right-color:var(--celda-llena)}
+.cuadro-oscuro h2,.cuadro-oscuro h3,.cuadro-oscuro p{color:var(--fondo)}
+.panal-edge{display:block;height:30px}
+.celda-panal{fill:var(--celda-llena);stroke:var(--celda-borde);stroke-width:1.4}
+.cuadro-oscuro .celda-panal{fill:var(--miel);stroke:var(--celda-llena)}
+.colmena-viva .cuadro-band .celda-panal{fill:transparent;transition:fill .4s ease-out calc(var(--i) * 28ms)}
+.colmena-viva .cuadro-band.cuadro-lleno .celda-panal{fill:var(--celda-llena)}
+.colmena-viva .cuadro-band.cuadro-oscuro.cuadro-lleno .celda-panal{fill:var(--miel)}
+.cuadro-cuerpo{display:grid;grid-template-columns:68px minmax(0,1fr)}
+.cuadro-rotulo{grid-column:1;writing-mode:vertical-rl;transform:rotate(180deg);align-self:start;justify-self:center;margin:0;padding:1.6rem .2rem 1.2rem;
+  font:500 1.35rem/1.1 var(--letra-titulo);letter-spacing:.06em;text-transform:uppercase;color:var(--miel);white-space:nowrap}
+.cuadro-oscuro .cuadro-rotulo{color:var(--celda-llena)}
+.riel-lateral{grid-column:1;grid-row:1;border-right:1px solid var(--borde)}
+.cuadro-oscuro .riel-lateral{border-right-color:#8A5A12}
+.cuadro-interior{grid-column:2;padding:2.6rem 3rem 2.6rem 2.4rem;min-width:0}
+.cuadro-band.cuadro-portada{border-top-width:16px}
+/* ---- portada ---- */
+.alza-row{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:3rem;align-items:center}
+.alza-row .foto-cuadro img{width:100%;height:auto}
+.portada-texto h1{font-size:clamp(2.3rem,4.6vw,4.3rem);font-weight:700;line-height:1.04;letter-spacing:-.01em;margin:.5rem 0 1rem}
+.portada-texto h1 em{font-style:normal;color:var(--miel)}
+.linea-finca{font:700 .8rem/1.3 var(--letra-cuerpo);letter-spacing:.14em;text-transform:uppercase;color:var(--miel);margin:0}
+.portada-texto .entrada-larga{font-size:1.16rem;max-width:36rem;color:var(--tinta-suave)}
+.fila-botones{display:flex;flex-wrap:wrap;gap:.9rem;align-items:center;margin-top:1.4rem}
+.foto-cuadro{border:6px solid var(--cera);outline:1px solid var(--borde)}
+.foto-cuadro.foto-alzada img{aspect-ratio:4/5;object-fit:cover}
+.nota-foto{font-size:.84rem;color:var(--tinta-suave);margin:.55rem 0 1.4rem}
+/* ---- datos de finca ---- */
+.datos-finca{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.2rem}
+.dato-celda{border-left:3px solid var(--miel);padding:.3rem 0 .3rem 1.1rem}
+.dato-celda strong{display:block;font:600 1.18rem/1.25 var(--letra-titulo);margin-bottom:.3rem}
+.dato-celda p{margin:0;color:var(--tinta-suave);font-size:.98rem}
+/* ---- productos ---- */
+.entrada-cuadro{max-width:46rem;margin-bottom:2rem}
+.entrada-cuadro h3{font-size:clamp(1.7rem,3vw,2.5rem);font-weight:600}
+.entrada-cuadro p{font-size:1.08rem;color:var(--tinta-suave)}
+.rejilla-productos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.3rem}
+.producto-celda{background:var(--fondo);border:1px solid var(--borde);border-top:5px solid var(--miel);padding:1.5rem 1.5rem 1.3rem;display:flex;flex-direction:column;gap:.5rem}
+.cuadro-tibio .producto-celda{background:var(--fondo)}
+.producto-celda svg{width:46px;height:46px;stroke:var(--miel);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.producto-celda h4{font-size:1.32rem;margin:.4rem 0 .2rem}
+.producto-celda p{margin:0;font-size:.98rem;color:var(--tinta-suave);flex:1}
+.producto-celda a{font-weight:700;text-decoration:none;font-size:.95rem;margin-top:.5rem}
+.producto-celda a:hover{text-decoration:underline}
+/* ---- cómo trabajamos ---- */
+.taller-columnas{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:3rem;align-items:start}
+.taller-columnas h3{font-size:clamp(1.7rem,3vw,2.4rem)}
+.columna-lateral{align-self:start;position:sticky;top:110px}
+.lista-pasos{list-style:none;padding:0;margin:0 0 1.4rem;counter-reset:paso}
+.lista-pasos li{position:relative;padding:.35rem 0 .35rem 3rem;counter-increment:paso}
+.lista-pasos li::before{content:counter(paso);position:absolute;left:0;top:.35rem;width:34px;height:38px;background:var(--miel);color:var(--fondo);font:700 1rem/38px var(--letra-titulo);text-align:center;
+  clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%)}
+.no-hacemos{background:var(--cera);padding:1.3rem 1.5rem;border-left:5px solid var(--madera);margin-top:1.6rem}
+.no-hacemos h4{margin:0 0 .6rem;font-size:1.25rem}
+.no-hacemos ul{margin:0;padding-left:1.2rem}
+.no-hacemos li{margin:.3rem 0}
+/* ---- preguntas ---- */
+.panal-preguntas{max-width:52rem}
+.pregunta-panal{border-bottom:1px solid var(--borde)}
+.pregunta-panal summary{cursor:pointer;list-style:none;padding:1.1rem 2.6rem 1.1rem 0;font:600 1.22rem/1.3 var(--letra-titulo);position:relative}
+.pregunta-panal summary::-webkit-details-marker{display:none}
+.pregunta-panal summary::after{content:"";position:absolute;right:.4rem;top:1.25rem;width:16px;height:16px;border-right:2px solid var(--miel);border-bottom:2px solid var(--miel);transform:rotate(45deg);transition:transform .25s}
+.pregunta-panal[open] summary::after{transform:rotate(225deg);top:1.6rem}
+.pregunta-panal p{margin:0 0 1.2rem;color:var(--tinta-suave);max-width:46rem}
+/* ---- llamado y contacto ---- */
+.llamado-miel{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2rem;align-items:center}
+.llamado-miel h3{font-size:clamp(1.8rem,3.2vw,2.7rem);font-weight:600;margin-bottom:.4rem}
+.llamado-miel p{margin:0;color:var(--cera);font-size:1.08rem;max-width:40rem}
+.contacto-finca{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2rem}
+.contacto-finca h4{font-size:1.2rem;margin-bottom:.4rem}
+.contacto-finca p{margin:0 0 .5rem;color:var(--tinta-suave)}
+.contacto-finca a{font-weight:700;overflow-wrap:anywhere}
+/* ---- páginas interiores ---- */
+.titulo-pagina h1{font-size:clamp(2.1rem,4.2vw,3.6rem);font-weight:700;line-height:1.06;margin:.4rem 0 .8rem}
+.titulo-pagina .entrada-larga{font-size:1.14rem;color:var(--tinta-suave);max-width:40rem}
+.prosa-cuadro{max-width:46rem}
+.prosa-cuadro h3{font-size:clamp(1.5rem,2.6vw,2.1rem);margin-top:1.6rem}
+.prosa-cuadro h4{font-size:1.28rem;margin:1.3rem 0 .4rem}
+.prosa-cuadro ul{padding-left:1.25rem}
+.prosa-cuadro li{margin:.3rem 0}
+.mitad-mitad{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:2.6rem;align-items:start}
+.tabla-cuadro{overflow-x:auto;margin:1.2rem 0 1.6rem}
+.tabla-cuadro table{border-collapse:collapse;width:100%;min-width:520px;font-size:.96rem}
+.tabla-cuadro th,.tabla-cuadro td{text-align:left;padding:.6rem .8rem;border-bottom:1px solid var(--borde);vertical-align:top}
+.tabla-cuadro th{font:700 .78rem/1.3 var(--letra-cuerpo);letter-spacing:.1em;text-transform:uppercase;color:var(--miel);border-bottom:2px solid var(--miel)}
+.ficha-floracion{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.3rem;margin:1rem 0 .4rem}
+.floracion-celda{background:var(--fondo);border:1px solid var(--borde);padding:1.3rem 1.4rem}
+.cuadro-tibio .floracion-celda{background:var(--fondo)}
+.floracion-celda h4{margin:0 0 .5rem;font-size:1.3rem}
+.floracion-celda dl{margin:0;display:grid;grid-template-columns:auto minmax(0,1fr);gap:.25rem .9rem;font-size:.95rem}
+.floracion-celda dt{font-weight:700;color:var(--miel)}
+.floracion-celda dd{margin:0;color:var(--tinta-suave)}
+.cera-note{background:var(--cera);border-left:5px solid var(--miel);padding:1rem 1.3rem;margin:1.4rem 0;font-size:.98rem}
+.cera-note p{margin:0}
+code{font-size:.92em;overflow-wrap:anywhere}
+#image-credits li{overflow-wrap:anywhere}
+.foto-fila{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.4rem;margin:1.6rem 0}
+/* ---- formulario ---- */
+.formulario-cotizacion{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:3rem;align-items:start}
+.campo-cuadro{display:block;margin-bottom:1.1rem}
+.campo-cuadro span{display:block;font:700 .82rem/1.3 var(--letra-cuerpo);letter-spacing:.08em;text-transform:uppercase;color:var(--miel);margin-bottom:.35rem}
+.campo-cuadro input,.campo-cuadro select,.campo-cuadro textarea{width:100%;font:400 1rem/1.4 var(--letra-cuerpo);color:var(--tinta);background:var(--fondo);border:1px solid var(--celda-borde);border-bottom-width:2px;padding:.75rem .85rem;border-radius:0}
+.campo-cuadro textarea{min-height:150px;resize:vertical}
+.campo-doble{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.celda-trampa{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+.despues-enviar{background:var(--cera);padding:1.5rem 1.6rem;border-top:5px solid var(--miel)}
+.despues-enviar h3{font-size:1.5rem;margin-bottom:.6rem}
+.despues-enviar ol{padding-left:1.2rem;margin:0 0 1rem}
+.despues-enviar li{margin:.35rem 0}
+/* ---- pie ---- */
+.pie-colmena{background:var(--madera);color:var(--fondo);margin-top:14px;border-top:6px solid var(--miel)}
+.pie-interior{max-width:1440px;margin:0 auto;padding:2.4rem 1.4rem 1.6rem;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) minmax(0,1fr);gap:2rem}
+.pie-colmena h4{color:var(--celda-llena);font:700 .8rem/1.3 var(--letra-cuerpo);letter-spacing:.12em;text-transform:uppercase;margin-bottom:.7rem}
+.pie-colmena p{margin:0 0 .5rem;color:var(--cera)}
+.pie-colmena a{color:var(--fondo)}
+.pie-colmena ul{list-style:none;margin:0;padding:0}
+.pie-colmena li{margin:.3rem 0}
+.piquera-final{max-width:1440px;margin:0 auto;padding:1rem 1.4rem 1.4rem;border-top:1px solid #8A5A12;color:var(--cera);font-size:.9rem;display:flex;flex-wrap:wrap;gap:.4rem 1.6rem}
+/* ---- aviso de cookies ---- */
+.aviso-cookies{position:fixed;right:18px;bottom:18px;z-index:40;width:min(380px,calc(100vw - 36px));background:var(--fondo);color:var(--tinta);border:1px solid var(--celda-borde);border-top:6px solid var(--miel);padding:1.1rem 1.2rem 1rem;box-shadow:0 10px 30px rgba(36,28,14,.22);font-size:.93rem}
+.aviso-cookies[hidden]{display:none}
+.aviso-cookies h2{font-size:1.2rem;margin:0 0 .4rem}
+.aviso-cookies p{margin:0 0 .8rem;color:var(--tinta-suave)}
+.aviso-botones{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
+.aviso-botones button{font:700 .88rem/1 var(--letra-cuerpo);padding:.7rem .95rem;border:2px solid var(--miel);background:var(--fondo);color:var(--miel);cursor:pointer}
+.aviso-botones button.aceptar-miel{background:var(--miel);color:var(--fondo)}
+.aviso-botones a{font-size:.86rem;margin-left:auto}
+.panel-preferencias{margin:.9rem 0 .4rem;padding:.9rem 1rem;background:var(--cera);border:1px solid var(--borde)}
+.panel-preferencias[hidden]{display:none}
+.panel-preferencias label{display:flex;gap:.7rem;align-items:flex-start;font-size:.9rem}
+.panel-preferencias input{margin-top:.25rem;width:18px;height:18px;accent-color:#8A5A12}
+.panel-preferencias button{margin-top:.8rem}
+/* ---- responsivo ---- */
+@media (max-width:1100px){
+  .rejilla-productos{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .datos-finca{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .contacto-finca,.pie-interior{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:900px){
+  .abrir-colmena{display:flex}
+  .menu-colmena{display:none;flex-basis:100%;flex-direction:column;align-items:stretch;padding:.6rem 0 .4rem;border-top:1px solid #8A5A12}
+  .cabecera-colmena.panal-abierto .menu-colmena{display:flex}
+  html:not(.colmena-viva) .menu-colmena{display:flex;flex-direction:row;flex-wrap:wrap}
+  html:not(.colmena-viva) .abrir-colmena{display:none}
+  .menu-colmena a{padding:.7rem .4rem}
+  .menu-colmena .boton-miel{margin:.6rem 0 0;text-align:center}
+  .alza-row,.taller-columnas,.mitad-mitad,.formulario-cotizacion,.llamado-miel{grid-template-columns:minmax(0,1fr)}
+  .columna-lateral{position:static}
+  .cuadro-interior{padding:2rem 1.6rem 2rem 1.4rem}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .pila-cuadros{padding:10px 6px 0;gap:10px}
+  .cuadro-band{border-left-width:5px;border-right-width:5px;border-top-width:9px}
+  .cuadro-cuerpo{grid-template-columns:44px minmax(0,1fr)}
+  .cuadro-rotulo{font-size:1rem;padding:1.2rem .1rem 1rem;letter-spacing:.05em}
+  .cuadro-interior{padding:1.5rem 1rem 1.6rem .9rem}
+  .rejilla-productos,.datos-finca,.contacto-finca,.pie-interior,.ficha-floracion,.foto-fila,.campo-doble{grid-template-columns:minmax(0,1fr)}
+  .portada-texto h1{font-size:2rem}
+  .nombre-colmena{font-size:1.2rem}
+  .lema-colmena{font-size:.62rem}
+  .aviso-cookies{right:8px;bottom:8px;width:calc(100vw - 16px);padding:.7rem .9rem .7rem;font-size:.84rem;border-top-width:4px}
+  .aviso-cookies h2{display:none}
+  .aviso-cookies p{margin-bottom:.55rem;line-height:1.4}
+  .aviso-botones button{font-size:.8rem;padding:.55rem .7rem}
+  .portada-texto .entrada-larga,.titulo-pagina .entrada-larga{font-size:1rem}
+  .cuadro-portada .cuadro-interior{padding-top:1.2rem}
+  .aviso-botones a{margin-left:0}
+  .lista-pasos li{padding-left:2.7rem}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .colmena-viva .cuadro-band .celda-panal{fill:var(--celda-llena);transition:none}
+  .colmena-viva .cuadro-band.cuadro-oscuro .celda-panal{fill:var(--miel)}
+  .abrir-colmena span,.boton-miel,.boton-cera,.pregunta-panal summary::after{transition:none}
+}
+</style>
+</head>
+<body>
+<a class="salto-contenido" href="#panal-principal">Ir al contenido</a>
+<header class="cabecera-colmena" id="techo-colmena">
+<div class="techo-linea">
+<a class="marca-apiario" href="index.html"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><polygon points="62.0,32.0 47.0,58.0 17.0,58.0 2.0,32.0 17.0,6.0 47.0,6.0" fill="#E9C97A"/><polygon points="51.0,32.0 41.5,48.5 22.5,48.5 13.0,32.0 22.5,15.5 41.5,15.5" fill="#8A5A12"/><polygon points="40.0,32.0 36.0,38.9 28.0,38.9 24.0,32.0 28.0,25.1 36.0,25.1" fill="#E9C97A"/></svg><span><span class="nombre-colmena">Acre Privitera</span><span class="lema-colmena">Miel, cera y utensilios de colmena</span></span></a>
+<button class="abrir-colmena" type="button" aria-label="Abrir el menú" aria-expanded="false" aria-controls="menu-colmena"><span></span><span></span><span></span></button>
+<nav class="menu-colmena" id="menu-colmena" aria-label="Páginas del apiario"><a href="index.html">Inicio</a><a href="mieles.html" aria-current="page">Mieles</a><a href="cera-y-velas.html">Cera y velas</a><a href="utensilios-de-colmena.html">Utensilios</a><a href="solicitar-cotizacion.html">Cotización</a><a class="boton-miel" href="solicitar-cotizacion.html">Solicitar una cotización</a></nav>
+</div>
+</header>
+<main id="panal-principal">
+<div class="pila-cuadros">
+<section class="cuadro-band cuadro-portada" id="portada"><svg class="panal-edge" aria-hidden="true" focusable="false" width="100%" height="30" viewBox="0 0 1535 30" preserveAspectRatio="xMinYMid slice"><polygon class="celda-panal" style="--i:0" points="1,15 9,1 25,1 33,15 25,29 9,29"/><polygon class="celda-panal" style="--i:1" points="34,15 42,1 58,1 66,15 58,29 42,29"/><polygon class="celda-panal" style="--i:2" points="67,15 75,1 91,1 99,15 91,29 75,29"/><polygon class="celda-panal" style="--i:3" points="100,15 108,1 124,1 132,15 124,29 108,29"/><polygon class="celda-panal" style="--i:4" points="133,15 141,1 157,1 165,15 157,29 141,29"/><polygon class="celda-panal" style="--i:5" points="166,15 174,1 190,1 198,15 190,29 174,29"/><polygon class="celda-panal" style="--i:6" points="199,15 207,1 223,1 231,15 223,29 207,29"/><polygon class="celda-panal" style="--i:7" points="232,15 240,1 256,1 264,15 256,29 240,29"/><polygon class="celda-panal" style="--i:8" points="265,15 273,1 289,1 297,15 289,29 273,29"/><polygon class="celda-panal" style="--i:9" points="298,15 306,1 322,1 330,15 322,29 306,29"/><polygon class="celda-panal" style="--i:10" points="331,15 339,1 355,1 363,15 355,29 339,29"/><polygon class="celda-panal" style="--i:11" points="364,15 372,1 388,1 396,15 388,29 372,29"/><polygon class="celda-panal" style="--i:12" points="397,15 405,1 421,1 429,15 421,29 405,29"/><polygon class="celda-panal" style="--i:13" points="430,15 438,1 454,1 462,15 454,29 438,29"/><polygon class="celda-panal" style="--i:14" points="463,15 471,1 487,1 495,15 487,29 471,29"/><polygon class="celda-panal" style="--i:15" points="496,15 504,1 520,1 528,15 520,29 504,29"/><polygon class="celda-panal" style="--i:16" points="529,15 537,1 553,1 561,15 553,29 537,29"/><polygon class="celda-panal" style="--i:17" points="562,15 570,1 586,1 594,15 586,29 570,29"/><polygon class="celda-panal" style="--i:18" points="595,15 603,1 619,1 627,15 619,29 603,29"/><polygon class="celda-panal" style="--i:19" points="628,15 636,1 652,1 660,15 652,29 636,29"/><polygon class="celda-panal" style="--i:20" points="661,15 669,1 685,1 693,15 685,29 669,29"/><polygon class="celda-panal" style="--i:21" points="694,15 702,1 718,1 726,15 718,29 702,29"/><polygon class="celda-panal" style="--i:22" points="727,15 735,1 751,1 759,15 751,29 735,29"/><polygon class="celda-panal" style="--i:23" points="760,15 768,1 784,1 792,15 784,29 768,29"/><polygon class="celda-panal" style="--i:24" points="793,15 801,1 817,1 825,15 817,29 801,29"/><polygon class="celda-panal" style="--i:25" points="826,15 834,1 850,1 858,15 850,29 834,29"/><polygon class="celda-panal" style="--i:26" points="859,15 867,1 883,1 891,15 883,29 867,29"/><polygon class="celda-panal" style="--i:27" points="892,15 900,1 916,1 924,15 916,29 900,29"/><polygon class="celda-panal" style="--i:28" points="925,15 933,1 949,1 957,15 949,29 933,29"/><polygon class="celda-panal" style="--i:29" points="958,15 966,1 982,1 990,15 982,29 966,29"/><polygon class="celda-panal" style="--i:30" points="991,15 999,1 1015,1 1023,15 1015,29 999,29"/><polygon class="celda-panal" style="--i:31" points="1024,15 1032,1 1048,1 1056,15 1048,29 1032,29"/><polygon class="celda-panal" style="--i:32" points="1057,15 1065,1 1081,1 1089,15 1081,29 1065,29"/><polygon class="celda-panal" style="--i:33" points="1090,15 1098,1 1114,1 1122,15 1114,29 1098,29"/><polygon class="celda-panal" style="--i:34" points="1123,15 1131,1 1147,1 1155,15 1147,29 1131,29"/><polygon class="celda-panal" style="--i:35" points="1156,15 1164,1 1180,1 1188,15 1180,29 1164,29"/><polygon class="celda-panal" style="--i:36" points="1189,15 1197,1 1213,1 1221,15 1213,29 1197,29"/><polygon class="celda-panal" style="--i:37" points="1222,15 1230,1 1246,1 1254,15 1246,29 1230,29"/><polygon class="celda-panal" style="--i:38" points="1255,15 1263,1 1279,1 1287,15 1279,29 1263,29"/><polygon class="celda-panal" style="--i:39" points="1288,15 1296,1 1312,1 1320,15 1312,29 1296,29"/><polygon class="celda-panal" style="--i:40" points="1321,15 1329,1 1345,1 1353,15 1345,29 1329,29"/><polygon class="celda-panal" style="--i:41" points="1354,15 1362,1 1378,1 1386,15 1378,29 1362,29"/><polygon class="celda-panal" style="--i:42" points="1387,15 1395,1 1411,1 1419,15 1411,29 1395,29"/><polygon class="celda-panal" style="--i:43" points="1420,15 1428,1 1444,1 1452,15 1444,29 1428,29"/><polygon class="celda-panal" style="--i:44" points="1453,15 1461,1 1477,1 1485,15 1477,29 1461,29"/><polygon class="celda-panal" style="--i:45" points="1486,15 1494,1 1510,1 1518,15 1510,29 1494,29"/></svg><div class="cuadro-cuerpo"><div class="riel-lateral"></div><h2 class="cuadro-rotulo">Mieles</h2><div class="cuadro-interior"><div class="alza-row">
+<div class="titulo-pagina">
+<p class="linea-finca">Mieles del apiario</p>
+<h1>Una floración por caja, una cosecha por lote.</h1>
+<p class="entrada-larga">Las colmenas se reparten por potreros con floraciones distintas y la miel de cada grupo se extrae, decanta y envasa por separado. Aquí está cada miel tal como la describimos en la cotización: su tono, su sabor, cuándo se cosecha y cómo se comporta en el frasco con el paso de las semanas.</p>
+<div class="fila-botones"><a class="boton-miel" href="solicitar-cotizacion.html">Solicitar una cotización</a><a class="boton-cera" href="#tamanos">Tamaños de frasco y caja</a></div>
+</div>
+<figure class="foto-cuadro" style="margin:0"><img src="assets/img/frascos-mesa-oscura.webp" alt="Dos frascos de vidrio con miel y un palito de madera para servirla, sobre un fondo oscuro" width="960" height="540"></figure>
+</div></div></div></section>
+<section class="cuadro-band cuadro-tibio" id="floraciones"><svg class="panal-edge" aria-hidden="true" focusable="false" width="100%" height="30" viewBox="0 0 1535 30" preserveAspectRatio="xMinYMid slice"><polygon class="celda-panal" style="--i:0" points="1,15 9,1 25,1 33,15 25,29 9,29"/><polygon class="celda-panal" style="--i:1" points="34,15 42,1 58,1 66,15 58,29 42,29"/><polygon class="celda-panal" style="--i:2" points="67,15 75,1 91,1 99,15 91,29 75,29"/><polygon class="celda-panal" style="--i:3" points="100,15 108,1 124,1 132,15 124,29 108,29"/><polygon class="celda-panal" style="--i:4" points="133,15 141,1 157,1 165,15 157,29 141,29"/><polygon class="celda-panal" style="--i:5" points="166,15 174,1 190,1 198,15 190,29 174,29"/><polygon class="celda-panal" style="--i:6" points="199,15 207,1 223,1 231,15 223,29 207,29"/><polygon class="celda-panal" style="--i:7" points="232,15 240,1 256,1 264,15 256,29 240,29"/><polygon class="celda-panal" style="--i:8" points="265,15 273,1 289,1 297,15 289,29 273,29"/><polygon class="celda-panal" style="--i:9" points="298,15 306,1 322,1 330,15 322,29 306,29"/><polygon class="celda-panal" style="--i:10" points="331,15 339,1 355,1 363,15 355,29 339,29"/><polygon class="celda-panal" style="--i:11" points="364,15 372,1 388,1 396,15 388,29 372,29"/><polygon class="celda-panal" style="--i:12" points="397,15 405,1 421,1 429,15 421,29 405,29"/><polygon class="celda-panal" style="--i:13" points="430,15 438,1 454,1 462,15 454,29 438,29"/><polygon class="celda-panal" style="--i:14" points="463,15 471,1 487,1 495,15 487,29 471,29"/><polygon class="celda-panal" style="--i:15" points="496,15 504,1 520,1 528,15 520,29 504,29"/><polygon class="celda-panal" style="--i:16" points="529,15 537,1 553,1 561,15 553,29 537,29"/><polygon class="celda-panal" style="--i:17" points="562,15 570,1 586,1 594,15 586,29 570,29"/><polygon class="celda-panal" style="--i:18" points="595,15 603,1 619,1 627,15 619,29 603,29"/><polygon class="celda-panal" style="--i:19" points="628,15 636,1 652,1 660,15 652,29 636,29"/><polygon class="celda-panal" style="--i:20" points="661,15 669,1 685,1 693,15 685,29 669,29"/><polygon class="celda-panal" style="--i:21" points="694,15 702,1 718,1 726,15 718,29 702,29"/><polygon class="celda-panal" style="--i:22" points="727,15 735,1 751,1 759,15 751,29 735,29"/><polygon class="celda-panal" style="--i:23" points="760,15 768,1 784,1 792,15 784,29 768,29"/><polygon class="celda-panal" style="--i:24" points="793,15 801,1 817,1 825,15 817,29 801,29"/><polygon class="celda-panal" style="--i:25" points="826,15 834,1 850,1 858,15 850,29 834,29"/><polygon class="celda-panal" style="--i:26" points="859,15 867,1 883,1 891,15 883,29 867,29"/><polygon class="celda-panal" style="--i:27" points="892,15 900,1 916,1 924,15 916,29 900,29"/><polygon class="celda-panal" style="--i:28" points="925,15 933,1 949,1 957,15 949,29 933,29"/><polygon class="celda-panal" style="--i:29" points="958,15 966,1 982,1 990,15 982,29 966,29"/><polygon class="celda-panal" style="--i:30" points="991,15 999,1 1015,1 1023,15 1015,29 999,29"/><polygon class="celda-panal" style="--i:31" points="1024,15 1032,1 1048,1 1056,15 1048,29 1032,29"/><polygon class="celda-panal" style="--i:32" points="1057,15 1065,1 1081,1 1089,15 1081,29 1065,29"/><polygon class="celda-panal" style="--i:33" points="1090,15 1098,1 1114,1 1122,15 1114,29 1098,29"/><polygon class="celda-panal" style="--i:34" points="1123,15 1131,1 1147,1 1155,15 1147,29 1131,29"/><polygon class="celda-panal" style="--i:35" points="1156,15 1164,1 1180,1 1188,15 1180,29 1164,29"/><polygon class="celda-panal" style="--i:36" points="1189,15 1197,1 1213,1 1221,15 1213,29 1197,29"/><polygon class="celda-panal" style="--i:37" points="1222,15 1230,1 1246,1 1254,15 1246,29 1230,29"/><polygon class="celda-panal" style="--i:38" points="1255,15 1263,1 1279,1 1287,15 1279,29 1263,29"/><polygon class="celda-panal" style="--i:39" points="1288,15 1296,1 1312,1 1320,15 1312,29 1296,29"/><polygon class="celda-panal" style="--i:40" points="1321,15 1329,1 1345,1 1353,15 1345,29 1329,29"/><polygon class="celda-panal" style="--i:41" points="1354,15 1362,1 1378,1 1386,15 1378,29 1362,29"/><polygon class="celda-panal" style="--i:42" points="1387,15 1395,1 1411,1 1419,15 1411,29 1395,29"/><polygon class="celda-panal" style="--i:43" points="1420,15 1428,1 1444,1 1452,15 1444,29 1428,29"/><polygon class="celda-panal" style="--i:44" points="1453,15 1461,1 1477,1 1485,15 1477,29 1461,29"/><polygon class="celda-panal" style="--i:45" points="1486,15 1494,1 1510,1 1518,15 1510,29 1494,29"/></svg><div class="cuadro-cuerpo"><div class="riel-lateral"></div><h2 class="cuadro-rotulo">Floraciones</h2><div class="cuadro-interior"><div class="entrada-cuadro"><h3>Las cuatro mieles que cosechamos</h3><p>No hay miel “de la casa” ni mezcla de temporadas. Cuando una floración se acaba, esa miel se acaba hasta el año siguiente, y así se lo decimos en el correo.</p></div>
+<div class="ficha-floracion">
+<div class="floracion-celda"><h4>Miel de cafetal</h4><dl>
+<dt>Tono</dt><dd>Ámbar medio, tirando a rojizo cuando la cosecha viene de cafetales con sombrío.</dd>
+<dt>Sabor</dt><dd>Suave, con un final ligeramente cítrico; es la que más piden las panaderías para masas y glaseados.</dd>
+<dt>Cosecha</dt><dd>Después de la floración del café, que en el oriente antioqueño viene con las primeras lluvias del año; la cosecha entra entre marzo y abril.</dd>
+<dt>Cristalización</dt><dd>Cristaliza fino y parejo en unas seis a ocho semanas; queda cremosa, fácil de untar.</dd>
+</dl></div>
+<div class="floracion-celda"><h4>Miel de eucalipto</h4><dl>
+<dt>Tono</dt><dd>Ámbar oscuro, casi caoba en el frasco de un kilo.</dd>
+<dt>Sabor</dt><dd>Fuerte, resinoso, con un dejo mentolado al final. Es la miel de más carácter y la que mejor aguanta en recetas con especias.</dd>
+<dt>Cosecha</dt><dd>De las plantaciones altas del oriente, en el verano de mitad de año; sale de las alzas entre agosto y septiembre.</dd>
+<dt>Cristalización</dt><dd>Cristaliza en grano grueso y lo hace rápido: en tres o cuatro semanas ya está firme. Se ablanda al baño de agua tibia sin perder sabor.</dd>
+</dl></div>
+<div class="floracion-celda"><h4>Miel de cítricos</h4><dl>
+<dt>Tono</dt><dd>Ámbar muy claro, casi dorado pálido; es la más transparente de las cuatro.</dd>
+<dt>Sabor</dt><dd>Floral, limpio, con el perfume del azahar. Es la que ponemos primero en la mesa cuando alguien quiere probar.</dd>
+<dt>Cosecha</dt><dd>De los naranjales y mandarinales de las partes bajas, con la floración del azahar tras el verano; una cosecha corta, y por eso las cajas se agotan primero.</dd>
+<dt>Cristalización</dt><dd>Lenta. Puede pasar medio año líquida en un frasco bien cerrado, y cuando cristaliza lo hace en cristal fino.</dd>
+</dl></div>
+<div class="floracion-celda"><h4>Miel de monte</h4><dl>
+<dt>Tono</dt><dd>Cambia de un lote a otro, del ámbar claro al oscuro, según qué florezca ese año en el bosque y los rastrojos.</dd>
+<dt>Sabor</dt><dd>Amplio y variable: una cosecha puede venir más frutal y la siguiente más herbal. Por eso cada lote lleva su nota escrita en la caja.</dd>
+<dt>Cosecha</dt><dd>De las colmenas que están al borde del monte, en las dos temporadas secas del año.</dd>
+<dt>Cristalización</dt><dd>Depende del lote. Lo que sí es constante es que ninguna miel de monte se calienta ni se mezcla para uniformarla.</dd>
+</dl></div>
+</div>
+<div class="cera-note"><p>Las mieles se describen por su tono, su sabor, su humedad y su cristalización, porque eso es lo que un comprador puede comprobar al abrir el frasco. No decimos nada sobre salud, propiedades ni alergias, y le pedimos a quien revende nuestra miel que tampoco lo diga.</p></div></div></div></section>
+<section class="cuadro-band" id="tamanos"><svg class="panal-edge" aria-hidden="true" focusable="false" width="100%" height="30" viewBox="0 0 1535 30" preserveAspectRatio="xMinYMid slice"><polygon class="celda-panal" style="--i:0" points="1,15 9,1 25,1 33,15 25,29 9,29"/><polygon class="celda-panal" style="--i:1" points="34,15 42,1 58,1 66,15 58,29 42,29"/><polygon class="celda-panal" style="--i:2" points="67,15 75,1 91,1 99,15 91,29 75,29"/><polygon class="celda-panal" style="--i:3" points="100,15 108,1 124,1 132,15 124,29 108,29"/><polygon class="celda-panal" style="--i:4" points="133,15 141,1 157,1 165,15 157,29 141,29"/><polygon class="celda-panal" style="--i:5" points="166,15 174,1 190,1 198,15 190,29 174,29"/><polygon class="celda-panal" style="--i:6" points="199,15 207,1 223,1 231,15 223,29 207,29"/><polygon class="celda-panal" style="--i:7" points="232,15 240,1 256,1 264,15 256,29 240,29"/><polygon class="celda-panal" style="--i:8" points="265,15 273,1 289,1 297,15 289,29 273,29"/><polygon class="celda-panal" style="--i:9" points="298,15 306,1 322,1 330,15 322,29 306,29"/><polygon class="celda-panal" style="--i:10" points="331,15 339,1 355,1 363,15 355,29 339,29"/><polygon class="celda-panal" style="--i:11" points="364,15 372,1 388,1 396,15 388,29 372,29"/><polygon class="celda-panal" style="--i:12" points="397,15 405,1 421,1 429,15 421,29 405,29"/><polygon class="celda-panal" style="--i:13" points="430,15 438,1 454,1 462,15 454,29 438,29"/><polygon class="celda-panal" style="--i:14" points="463,15 471,1 487,1 495,15 487,29 471,29"/><polygon class="celda-panal" style="--i:15" points="496,15 504,1 520,1 528,15 520,29 504,29"/><polygon class="celda-panal" style="--i:16" points="529,15 537,1 553,1 561,15 553,29 537,29"/><polygon class="celda-panal" style="--i:17" points="562,15 570,1 586,1 594,15 586,29 570,29"/><polygon class="celda-panal" style="--i:18" points="595,15 603,1 619,1 627,15 619,29 603,29"/><polygon class="celda-panal" style="--i:19" points="628,15 636,1 652,1 660,15 652,29 636,29"/><polygon class="celda-panal" style="--i:20" points="661,15 669,1 685,1 693,15 685,29 669,29"/><polygon class="celda-panal" style="--i:21" points="694,15 702,1 718,1 726,15 718,29 702,29"/><polygon class="celda-panal" style="--i:22" points="727,15 735,1 751,1 759,15 751,29 735,29"/><polygon class="celda-panal" style="--i:23" points="760,15 768,1 784,1 792,15 784,29 768,29"/><polygon class="celda-panal" style="--i:24" points="793,15 801,1 817,1 825,15 817,29 801,29"/><polygon class="celda-panal" style="--i:25" points="826,15 834,1 850,1 858,15 850,29 834,29"/><polygon class="celda-panal" style="--i:26" points="859,15 867,1 883,1 891,15 883,29 867,29"/><polygon class="celda-panal" style="--i:27" points="892,15 900,1 916,1 924,15 916,29 900,29"/><polygon class="celda-panal" style="--i:28" points="925,15 933,1 949,1 957,15 949,29 933,29"/><polygon class="celda-panal" style="--i:29" points="958,15 966,1 982,1 990,15 982,29 966,29"/><polygon class="celda-panal" style="--i:30" points="991,15 999,1 1015,1 1023,15 1015,29 999,29"/><polygon class="celda-panal" style="--i:31" points="1024,15 1032,1 1048,1 1056,15 1048,29 1032,29"/><polygon class="celda-panal" style="--i:32" points="1057,15 1065,1 1081,1 1089,15 1081,29 1065,29"/><polygon class="celda-panal" style="--i:33" points="1090,15 1098,1 1114,1 1122,15 1114,29 1098,29"/><polygon class="celda-panal" style="--i:34" points="1123,15 1131,1 1147,1 1155,15 1147,29 1131,29"/><polygon class="celda-panal" style="--i:35" points="1156,15 1164,1 1180,1 1188,15 1180,29 1164,29"/><polygon class="celda-panal" style="--i:36" points="1189,15 1197,1 1213,1 1221,15 1213,29 1197,29"/><polygon class="celda-panal" style="--i:37" points="1222,15 1230,1 1246,1 1254,15 1246,29 1230,29"/><polygon class="celda-panal" style="--i:38" points="1255,15 1263,1 1279,1 1287,15 1279,29 1263,29"/><polygon class="celda-panal" style="--i:39" points="1288,15 1296,1 1312,1 1320,15 1312,29 1296,29"/><polygon class="celda-panal" style="--i:40" points="1321,15 1329,1 1345,1 1353,15 1345,29 1329,29"/><polygon class="celda-panal" style="--i:41" points="1354,15 1362,1 1378,1 1386,15 1378,29 1362,29"/><polygon class="celda-panal" style="--i:42" points="1387,15 1395,1 1411,1 1419,15 1411,29 1395,29"/><polygon class="celda-panal" style="--i:43" points="1420,15 1428,1 1444,1 1452,15 1444,29 1428,29"/><polygon class="celda-panal" style="--i:44" points="1453,15 1461,1 1477,1 1485,15 1477,29 1461,29"/><polygon class="celda-panal" style="--i:45" points="1486,15 1494,1 1510,1 1518,15 1510,29 1494,29"/></svg><div class="cuadro-cuerpo"><div class="riel-lateral"></div><h2 class="cuadro-rotulo">Tamaños</h2><div class="cuadro-interior"><div class="mitad-mitad">
+<div class="prosa-cuadro">
+<h3>Tamaños de frasco y de caja</h3>
+<p>La miel va siempre en vidrio, con tapa metálica de rosca y sello. Envasamos en tres tamaños y armamos dos cajas. El peso que aparece en la etiqueta es peso neto de miel, no del frasco.</p>
+<div class="tabla-cuadro"><table>
+<thead><tr><th>Frasco</th><th>Peso neto</th><th>Caja de doce</th><th>Caja de veinticuatro</th></tr></thead>
+<tbody>
+<tr><td>Frasco pequeño</td><td>Doscientos cincuenta gramos</td><td>Tres kilos de miel</td><td>Seis kilos de miel</td></tr>
+<tr><td>Frasco mediano</td><td>Quinientos gramos</td><td>Seis kilos de miel</td><td>Doce kilos de miel</td></tr>
+<tr><td>Frasco grande</td><td>Un kilo</td><td>Doce kilos de miel</td><td>Se despacha en dos cajas de doce</td></tr>
+</tbody></table></div>
+<p>Cada caja es de una sola floración y de un solo lote. Si necesita surtido, se cotizan cajas separadas. Las panaderías que consumen miel al peso pueden pedir el frasco grande por caja de doce, que es la forma más económica de comprar por kilo.</p>
+<h4>Lo que va escrito en la caja</h4>
+<ul>
+<li>Floración y potrero de origen.</li>
+<li>Mes de cosecha y número de lote.</li>
+<li>Humedad de la miel medida con refractómetro el día del envasado.</li>
+<li>Peso neto por frasco y por caja.</li>
+</ul>
+</div>
+<div>
+<h3>Humedad y decantación</h3>
+<p>Cosechamos solo cuadros con al menos tres cuartas partes de las celdas operculadas, porque la miel que las abejas ya sellaron tiene la humedad correcta. Después de desopercular y centrifugar, la miel pasa a tanques de acero inoxidable y se deja decantar varios días: la espuma, las partículas de cera y el polen grueso suben, y se retiran de arriba. Luego se pasa por malla fina y se envasa. En ningún punto se calienta.</p>
+<p>La humedad se mide con refractómetro antes de envasar y se anota en la caja. Una miel bien madura se conserva en frasco cerrado y a la sombra durante mucho tiempo; lo que cambia es su estado, líquido o cristalizado, no su calidad.</p>
+<figure class="foto-cuadro" style="margin:0"><img src="assets/img/frasco-cuchara.webp" alt="Una cuchara levanta miel de un frasco abierto que lleva un trozo de panal adentro" width="1024" height="683" loading="lazy"></figure>
+<p class="nota-foto">Miel ya decantada: sin espuma en la superficie y sin partículas de cera en suspensión.</p>
+</div>
+</div></div></div></section>
+<section class="cuadro-band cuadro-tibio" id="cristalizacion"><svg class="panal-edge" aria-hidden="true" focusable="false" width="100%" height="30" viewBox="0 0 1535 30" preserveAspectRatio="xMinYMid slice"><polygon class="celda-panal" style="--i:0" points="1,15 9,1 25,1 33,15 25,29 9,29"/><polygon class="celda-panal" style="--i:1" points="34,15 42,1 58,1 66,15 58,29 42,29"/><polygon class="celda-panal" style="--i:2" points="67,15 75,1 91,1 99,15 91,29 75,29"/><polygon class="celda-panal" style="--i:3" points="100,15 108,1 124,1 132,15 124,29 108,29"/><polygon class="celda-panal" style="--i:4" points="133,15 141,1 157,1 165,15 157,29 141,29"/><polygon class="celda-panal" style="--i:5" points="166,15 174,1 190,1 198,15 190,29 174,29"/><polygon class="celda-panal" style="--i:6" points="199,15 207,1 223,1 231,15 223,29 207,29"/><polygon class="celda-panal" style="--i:7" points="232,15 240,1 256,1 264,15 256,29 240,29"/><polygon class="celda-panal" style="--i:8" points="265,15 273,1 289,1 297,15 289,29 273,29"/><polygon class="celda-panal" style="--i:9" points="298,15 306,1 322,1 330,15 322,29 306,29"/><polygon class="celda-panal" style="--i:10" points="331,15 339,1 355,1 363,15 355,29 339,29"/><polygon class="celda-panal" style="--i:11" points="364,15 372,1 388,1 396,15 388,29 372,29"/><polygon class="celda-panal" style="--i:12" points="397,15 405,1 421,1 429,15 421,29 405,29"/><polygon class="celda-panal" style="--i:13" points="430,15 438,1 454,1 462,15 454,29 438,29"/><polygon class="celda-panal" style="--i:14" points="463,15 471,1 487,1 495,15 487,29 471,29"/><polygon class="celda-panal" style="--i:15" points="496,15 504,1 520,1 528,15 520,29 504,29"/><polygon class="celda-panal" style="--i:16" points="529,15 537,1 553,1 561,15 553,29 537,29"/><polygon class="celda-panal" style="--i:17" points="562,15 570,1 586,1 594,15 586,29 570,29"/><polygon class="celda-panal" style="--i:18" points="595,15 603,1 619,1 627,15 619,29 603,29"/><polygon class="celda-panal" style="--i:19" points="628,15 636,1 652,1 660,15 652,29 636,29"/><polygon class="celda-panal" style="--i:20" points="661,15 669,1 685,1 693,15 685,29 669,29"/><polygon class="celda-panal" style="--i:21" points="694,15 702,1 718,1 726,15 718,29 702,29"/><polygon class="celda-panal" style="--i:22" points="727,15 735,1 751,1 759,15 751,29 735,29"/><polygon class="celda-panal" style="--i:23" points="760,15 768,1 784,1 792,15 784,29 768,29"/><polygon class="celda-panal" style="--i:24" points="793,15 801,1 817,1 825,15 817,29 801,29"/><polygon class="celda-panal" style="--i:25" points="826,15 834,1 850,1 858,15 850,29 834,29"/><polygon class="celda-panal" style="--i:26" points="859,15 867,1 883,1 891,15 883,29 867,29"/><polygon class="celda-panal" style="--i:27" points="892,15 900,1 916,1 924,15 916,29 900,29"/><polygon class="celda-panal" style="--i:28" points="925,15 933,1 949,1 957,15 949,29 933,29"/><polygon class="celda-panal" style="--i:29" points="958,15 966,1 982,1 990,15 982,29 966,29"/><polygon class="celda-panal" style="--i:30" points="991,15 999,1 1015,1 1023,15 1015,29 999,29"/><polygon class="celda-panal" style="--i:31" points="1024,15 1032,1 1048,1 1056,15 1048,29 1032,29"/><polygon class="celda-panal" style="--i:32" points="1057,15 1065,1 1081,1 1089,15 1081,29 1065,29"/><polygon class="celda-panal" style="--i:33" points="1090,15 1098,1 1114,1 1122,15 1114,29 1098,29"/><polygon class="celda-panal" style="--i:34" points="1123,15 1131,1 1147,1 1155,15 1147,29 1131,29"/><polygon class="celda-panal" style="--i:35" points="1156,15 1164,1 1180,1 1188,15 1180,29 1164,29"/><polygon class="celda-panal" style="--i:36" points="1189,15 1197,1 1213,1 1221,15 1213,29 1197,29"/><polygon class="celda-panal" style="--i:37" points="1222,15 1230,1 1246,1 1254,15 1246,29 1230,29"/><polygon class="celda-panal" style="--i:38" points="1255,15 1263,1 1279,1 1287,15 1279,29 1263,29"/><polygon class="celda-panal" style="--i:39" points="1288,15 1296,1 1312,1 1320,15 1312,29 1296,29"/><polygon class="celda-panal" style="--i:40" points="1321,15 1329,1 1345,1 1353,15 1345,29 1329,29"/><polygon class="celda-panal" style="--i:41" points="1354,15 1362,1 1378,1 1386,15 1378,29 1362,29"/><polygon class="celda-panal" style="--i:42" points="1387,15 1395,1 1411,1 1419,15 1411,29 1395,29"/><polygon class="celda-panal" style="--i:43" points="1420,15 1428,1 1444,1 1452,15 1444,29 1428,29"/><polygon class="celda-panal" style="--i:44" points="1453,15 1461,1 1477,1 1485,15 1477,29 1461,29"/><polygon class="celda-panal" style="--i:45" points="1486,15 1494,1 1510,1 1518,15 1510,29 1494,29"/></svg><div class="cuadro-cuerpo"><div class="riel-lateral"></div><h2 class="cuadro-rotulo">Cristalización</h2><div class="cuadro-interior"><div class="mitad-mitad">
+<div class="prosa-cuadro">
+<h3>Cómo cristaliza y en cuánto tiempo</h3>
+<p>Cristalizar es lo normal en una miel sin calentar. La miel es una solución muy concentrada de azúcares, y una parte de la glucosa termina ordenándose en cristales; cuánto tarda y qué tan grueso sale el cristal depende de la proporción entre glucosa y fructosa de cada floración, de la temperatura del lugar donde se guarda y de las partículas finas que quedan en suspensión.</p>
+<ul>
+<li><strong>Cafetal:</strong> seis a ocho semanas, cristal fino, textura cremosa.</li>
+<li><strong>Eucalipto:</strong> tres a cuatro semanas, cristal grueso, muy firme.</li>
+<li><strong>Cítricos:</strong> varios meses, a veces medio año, cristal fino.</li>
+<li><strong>Monte:</strong> depende del lote; se anota en la caja lo observado en la cosecha anterior.</li>
+</ul>
+<p>Para devolver una miel cristalizada a su estado líquido, el frasco cerrado se pone en agua tibia —tibia, no hirviendo— hasta que se aclare. Si se calienta de más, se oscurece y pierde aroma. Recomendamos a las tiendas rotar primero las cajas de eucalipto, porque son las que cambian de estado más pronto en el estante.</p>
+</div>
+<figure class="foto-cuadro columna-lateral" style="margin:0"><img src="assets/img/celdas-de-miel.webp" alt="Celdas de cera vistas muy de cerca y a contraluz, con las paredes de cera doradas" width="1024" height="576" loading="lazy"></figure>
+</div></div></div></section>
+<section class="cuadro-band cuadro-oscuro" id="cotizar"><svg class="panal-edge" aria-hidden="true" focusable="false" width="100%" height="30" viewBox="0 0 1535 30" preserveAspectRatio="xMinYMid slice"><polygon class="celda-panal" style="--i:0" points="1,15 9,1 25,1 33,15 25,29 9,29"/><polygon class="celda-panal" style="--i:1" points="34,15 42,1 58,1 66,15 58,29 42,29"/><polygon class="celda-panal" style="--i:2" points="67,15 75,1 91,1 99,15 91,29 75,29"/><polygon class="celda-panal" style="--i:3" points="100,15 108,1 124,1 132,15 124,29 108,29"/><polygon class="celda-panal" style="--i:4" points="133,15 141,1 157,1 165,15 157,29 141,29"/><polygon class="celda-panal" style="--i:5" points="166,15 174,1 190,1 198,15 190,29 174,29"/><polygon class="celda-panal" style="--i:6" points="199,15 207,1 223,1 231,15 223,29 207,29"/><polygon class="celda-panal" style="--i:7" points="232,15 240,1 256,1 264,15 256,29 240,29"/><polygon class="celda-panal" style="--i:8" points="265,15 273,1 289,1 297,15 289,29 273,29"/><polygon class="celda-panal" style="--i:9" points="298,15 306,1 322,1 330,15 322,29 306,29"/><polygon class="celda-panal" style="--i:10" points="331,15 339,1 355,1 363,15 355,29 339,29"/><polygon class="celda-panal" style="--i:11" points="364,15 372,1 388,1 396,15 388,29 372,29"/><polygon class="celda-panal" style="--i:12" points="397,15 405,1 421,1 429,15 421,29 405,29"/><polygon class="celda-panal" style="--i:13" points="430,15 438,1 454,1 462,15 454,29 438,29"/><polygon class="celda-panal" style="--i:14" points="463,15 471,1 487,1 495,15 487,29 471,29"/><polygon class="celda-panal" style="--i:15" points="496,15 504,1 520,1 528,15 520,29 504,29"/><polygon class="celda-panal" style="--i:16" points="529,15 537,1 553,1 561,15 553,29 537,29"/><polygon class="celda-panal" style="--i:17" points="562,15 570,1 586,1 594,15 586,29 570,29"/><polygon class="celda-panal" style="--i:18" points="595,15 603,1 619,1 627,15 619,29 603,29"/><polygon class="celda-panal" style="--i:19" points="628,15 636,1 652,1 660,15 652,29 636,29"/><polygon class="celda-panal" style="--i:20" points="661,15 669,1 685,1 693,15 685,29 669,29"/><polygon class="celda-panal" style="--i:21" points="694,15 702,1 718,1 726,15 718,29 702,29"/><polygon class="celda-panal" style="--i:22" points="727,15 735,1 751,1 759,15 751,29 735,29"/><polygon class="celda-panal" style="--i:23" points="760,15 768,1 784,1 792,15 784,29 768,29"/><polygon class="celda-panal" style="--i:24" points="793,15 801,1 817,1 825,15 817,29 801,29"/><polygon class="celda-panal" style="--i:25" points="826,15 834,1 850,1 858,15 850,29 834,29"/><polygon class="celda-panal" style="--i:26" points="859,15 867,1 883,1 891,15 883,29 867,29"/><polygon class="celda-panal" style="--i:27" points="892,15 900,1 916,1 924,15 916,29 900,29"/><polygon class="celda-panal" style="--i:28" points="925,15 933,1 949,1 957,15 949,29 933,29"/><polygon class="celda-panal" style="--i:29" points="958,15 966,1 982,1 990,15 982,29 966,29"/><polygon class="celda-panal" style="--i:30" points="991,15 999,1 1015,1 1023,15 1015,29 999,29"/><polygon class="celda-panal" style="--i:31" points="1024,15 1032,1 1048,1 1056,15 1048,29 1032,29"/><polygon class="celda-panal" style="--i:32" points="1057,15 1065,1 1081,1 1089,15 1081,29 1065,29"/><polygon class="celda-panal" style="--i:33" points="1090,15 1098,1 1114,1 1122,15 1114,29 1098,29"/><polygon class="celda-panal" style="--i:34" points="1123,15 1131,1 1147,1 1155,15 1147,29 1131,29"/><polygon class="celda-panal" style="--i:35" points="1156,15 1164,1 1180,1 1188,15 1180,29 1164,29"/><polygon class="celda-panal" style="--i:36" points="1189,15 1197,1 1213,1 1221,15 1213,29 1197,29"/><polygon class="celda-panal" style="--i:37" points="1222,15 1230,1 1246,1 1254,15 1246,29 1230,29"/><polygon class="celda-panal" style="--i:38" points="1255,15 1263,1 1279,1 1287,15 1279,29 1263,29"/><polygon class="celda-panal" style="--i:39" points="1288,15 1296,1 1312,1 1320,15 1312,29 1296,29"/><polygon class="celda-panal" style="--i:40" points="1321,15 1329,1 1345,1 1353,15 1345,29 1329,29"/><polygon class="celda-panal" style="--i:41" points="1354,15 1362,1 1378,1 1386,15 1378,29 1362,29"/><polygon class="celda-panal" style="--i:42" points="1387,15 1395,1 1411,1 1419,15 1411,29 1395,29"/><polygon class="celda-panal" style="--i:43" points="1420,15 1428,1 1444,1 1452,15 1444,29 1428,29"/><polygon class="celda-panal" style="--i:44" points="1453,15 1461,1 1477,1 1485,15 1477,29 1461,29"/><polygon class="celda-panal" style="--i:45" points="1486,15 1494,1 1510,1 1518,15 1510,29 1494,29"/></svg><div class="cuadro-cuerpo"><div class="riel-lateral"></div><h2 class="cuadro-rotulo">Cotizar</h2><div class="cuadro-interior"><div class="llamado-miel"><div><h3>Pida las floraciones que hay en existencia</h3><p>Escríbanos con la floración, el tamaño de frasco y el número de cajas. Le respondemos con lo que hay, su fecha de cosecha y su humedad medida.</p></div><a class="boton-miel" href="solicitar-cotizacion.html">Solicitar una cotización</a></div></div></div></section>
+</div>
+</main>
+<footer class="pie-colmena">
+<div class="pie-interior">
+<div><h4>Acre Privitera</h4><p>Miel, cera y utensilios de colmena. Un apiario pequeño en Rionegro, Antioquia, que vende por caja a tiendas, panaderías y apicultores.</p><p>Área de entrega: el oriente antioqueño y el área metropolitana de Medellín; envíos por transportadora al resto de Colombia cuando el pedido lo justifica.</p></div>
+<div><h4>Páginas</h4><ul><li><a href="index.html">Inicio</a></li><li><a href="mieles.html">Mieles por floración</a></li><li><a href="cera-y-velas.html">Cera y velas</a></li><li><a href="utensilios-de-colmena.html">Utensilios de colmena</a></li><li><a href="solicitar-cotizacion.html">Solicitar una cotización</a></li></ul></div>
+<div><h4>Escríbanos</h4><p><a href="mailto:pedidos@acrepriviterasas.com">pedidos@acrepriviterasas.com</a></p><p>Lunes a viernes de siete de la mañana a cuatro de la tarde; sábados hasta el mediodía.</p><ul><li><a href="privacy.html">Privacidad (<span lang="en">Privacy</span>)</a></li><li><a href="terms.html">Términos de uso (<span lang="en">Terms</span>)</a></li></ul></div>
+</div>
+<div class="piquera-final"><span>© 2026 Acre Privitera</span><span>Rionegro, Antioquia, Colombia</span><span>acrepriviterasas.com</span></div>
+</footer>
+<aside class="aviso-cookies" id="aviso-cookies" hidden aria-label="Aviso sobre cookies y preferencias">
+<h2>Cookies en este sitio</h2>
+<p>Guardamos una sola preferencia de consentimiento en su navegador; hoy no hay cookies de analítica ni de publicidad. Puede aceptar o elegir qué permitir.</p>
+<div class="panel-preferencias" id="panel-preferencias" hidden>
+<label><input type="checkbox" id="pref-analitica" name="pref-analitica"><span>Analítica y rendimiento: apagado. Ninguna herramienta de este tipo está instalada por ahora; si se instala, respetará esta elección.</span></label>
+<button type="button" id="guardar-preferencias">Guardar preferencias</button>
+</div>
+<div class="aviso-botones">
+<button type="button" class="aceptar-miel" id="aceptar-cookies">Aceptar todas (<span lang="en">Accept all</span>)</button>
+<button type="button" id="administrar-cookies" aria-expanded="false" aria-controls="panel-preferencias">Administrar preferencias</button>
+<a href="privacy.html">Aviso de privacidad</a>
+</div>
+</aside>
+
+<script>(function(){
+var raiz=document.documentElement,cab=document.getElementById('techo-colmena'),bot=document.querySelector('.abrir-colmena');
+if(bot&&cab){bot.addEventListener('click',function(){var abierto=cab.classList.toggle('panal-abierto');bot.setAttribute('aria-expanded',abierto?'true':'false');bot.setAttribute('aria-label',abierto?'Cerrar el menú':'Abrir el menú');});}
+var CLAVE='ap_pref_colmena',aviso=document.getElementById('aviso-cookies'),panel=document.getElementById('panel-preferencias');
+function leer(){try{return localStorage.getItem(CLAVE);}catch(e){return null;}}
+function guardar(analitica){try{localStorage.setItem(CLAVE,JSON.stringify({analitica:!!analitica,guardado:new Date().toISOString()}));}catch(e){}if(aviso)aviso.hidden=true;}
+if(aviso&&!leer()){aviso.hidden=false;}
+var ac=document.getElementById('aceptar-cookies'),ad=document.getElementById('administrar-cookies'),gu=document.getElementById('guardar-preferencias');
+if(ac)ac.addEventListener('click',function(){guardar(true);});
+if(ad&&panel)ad.addEventListener('click',function(){var v=panel.hidden;panel.hidden=!v;ad.setAttribute('aria-expanded',v?'true':'false');});
+if(gu)gu.addEventListener('click',function(){var c=document.getElementById('pref-analitica');guardar(c&&c.checked);});
+var bandas=document.querySelectorAll('.cuadro-band');
+if('IntersectionObserver' in window){var ob=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('cuadro-lleno');ob.unobserve(e.target);}});},{threshold:0.12});bandas.forEach(function(b){ob.observe(b);});}
+else{bandas.forEach(function(b){b.classList.add('cuadro-lleno');});}
+var preguntas=document.querySelectorAll('.pregunta-panal');preguntas.forEach(function(d,i){if(i>0)d.removeAttribute('open');});
+var sig=document.querySelector('input[name="_next"]');if(sig){sig.value=new URL('thanks.html',location.href).href;}
+})();</script>
+</body>
+</html>

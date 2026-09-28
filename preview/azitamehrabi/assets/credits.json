@@ -1,0 +1,124 @@
+{
+ "picks": [
+  {
+   "asset": "pile-deer-blue.webp",
+   "source": "openverse",
+   "creator": "Carpetbeggers",
+   "license": "CC BY",
+   "url": "https://www.flickr.com/photos/45445188@N06/9521583746",
+   "title": "Antique Bakhtiari Persian Rug Deer Rabbits",
+   "needs_attribution": true,
+   "short_url": "https://flic.kr/p/fvoB81",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  {
+   "asset": "pile-deer-close.webp",
+   "source": "openverse",
+   "creator": "Carpetbeggers",
+   "license": "CC BY",
+   "url": "https://www.flickr.com/photos/45445188@N06/9521583746",
+   "title": "Antique Bakhtiari Persian Rug Deer Rabbits",
+   "needs_attribution": true,
+   "short_url": "https://flic.kr/p/fvoB81",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  {
+   "asset": "rug-on-the-floor.webp",
+   "source": "openverse",
+   "creator": "Carpetbeggers",
+   "license": "CC BY",
+   "url": "https://www.flickr.com/photos/45445188@N06/9518780957",
+   "title": "8a-Antique Bakhtiari Persian Rug Deer Rabbits",
+   "needs_attribution": true,
+   "short_url": "https://flic.kr/p/fv9eX4",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  {
+   "asset": "niche-kilim-whole.webp",
+   "source": "wikimedia",
+   "creator": "Unknown artistUnknown artist",
+   "license": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Niche_Kilim.jpg",
+   "title": "Niche Kilim.jpg",
+   "needs_attribution": false
+  },
+  {
+   "asset": "niche-kilim-pair.webp",
+   "source": "wikimedia",
+   "creator": "Unknown artistUnknown artist",
+   "license": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Niche_Kilim.jpg",
+   "title": "Niche Kilim.jpg",
+   "needs_attribution": false
+  },
+  {
+   "asset": "two-panel-kilim.webp",
+   "source": "openverse",
+   "creator": "Pete Tillman",
+   "license": "Public domain",
+   "url": "https://www.flickr.com/photos/29050464@N06/52200534532",
+   "title": "Two-panel Aksaray kilim, ex-VOK collection, 18th century",
+   "needs_attribution": false,
+   "short_url": "https://flic.kr/p/2nwMoh5"
+  },
+  {
+   "asset": "hexagon-medallion.webp",
+   "source": "openverse",
+   "creator": "Pete Tillman",
+   "license": "Public domain",
+   "url": "https://www.flickr.com/photos/29050464@N06/52200534532",
+   "title": "Two-panel Aksaray kilim, ex-VOK collection, 18th century",
+   "needs_attribution": false,
+   "short_url": "https://flic.kr/p/2nwMoh5"
+  },
+  {
+   "asset": "grey-kilim-fringe.webp",
+   "source": "wikimedia",
+   "creator": "Unknown authorUnknown author",
+   "license": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Kilim_Gwiazdkowy_-_Tarkos_-_Wanda_Kossecka.jpg",
+   "title": "Kilim Gwiazdkowy - Tarkos - Wanda Kossecka.jpg",
+   "needs_attribution": false
+  },
+  {
+   "asset": "grey-kilim-border.webp",
+   "source": "wikimedia",
+   "creator": "Unknown authorUnknown author",
+   "license": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Kilim_Gwiazdkowy_-_Tarkos_-_Wanda_Kossecka.jpg",
+   "title": "Kilim Gwiazdkowy - Tarkos - Wanda Kossecka.jpg",
+   "needs_attribution": false
+  },
+  {
+   "asset": "red-corner-fringe.webp",
+   "source": "openverse",
+   "creator": "Mr Thinktank",
+   "license": "CC BY",
+   "url": "https://www.flickr.com/photos/34621580@N00/4048780556",
+   "title": "imitation persian rug",
+   "needs_attribution": true,
+   "short_url": "https://flic.kr/p/7aM4pj",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  {
+   "asset": "red-rug-edge.webp",
+   "source": "openverse",
+   "creator": "Mr Thinktank",
+   "license": "CC BY",
+   "url": "https://www.flickr.com/photos/34621580@N00/4048780556",
+   "title": "imitation persian rug",
+   "needs_attribution": true,
+   "short_url": "https://flic.kr/p/7aM4pj",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  {
+   "asset": "red-cushion-face.webp",
+   "source": "wikimedia",
+   "creator": "Wikimedia Commons contributor",
+   "license": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Cushion_Cover_(Yastik)_MET_TP316.jpg",
+   "title": "Cushion Cover (Yastik) MET TP316.jpg",
+   "needs_attribution": false
+  }
+ ]
+}

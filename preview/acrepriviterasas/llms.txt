@@ -1,0 +1,15 @@
+# Acre Privitera
+
+> Miel, cera y utensilios de colmena. Apiario pequeño en Rionegro, Antioquia, Colombia, que vende por caja a tiendas, panaderías y apicultores, por cotización escrita.
+
+## Páginas
+- /: portada, productos, cómo trabajamos, preguntas frecuentes
+- /mieles.html: cada miel por floración (cafetal, eucalipto, cítricos, monte), tamaños de frasco y caja, cristalización
+- /cera-y-velas.html: cera de opérculo filtrada en bloque, temperaturas de trabajo, velas, cera estampada
+- /utensilios-de-colmena.html: ahumador, cepillo, palanca, cuadros y alzas con sus medidas; qué conviene tener para empezar
+- /solicitar-cotizacion.html: formulario de cotización
+
+## Lo que no hacemos
+Ninguna afirmación de salud sobre la miel; sin certificación orgánica; no vendemos abejas, núcleos ni reinas; no prestamos polinización ni retiro de enjambres; no revendemos cera ni miel de terceros.
+
+Contacto: pedidos@acrepriviterasas.com

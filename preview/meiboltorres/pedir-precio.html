@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pedir precio de una pieza · Meibol Torres</title>
+<meta name="description" content="Pida el precio de un canasto, una bandeja, individuales o una cesta de fique: diga la pieza, la fibra y la medida y el taller responde por correo.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="/pedir-precio.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Meibol Torres">
+<meta property="og:locale" content="es_CO">
+<meta property="og:title" content="Pedir precio de una pieza · Meibol Torres">
+<meta property="og:description" content="Pida el precio de un canasto, una bandeja, individuales o una cesta de fique: diga la pieza, la fibra y la medida y el taller responde por correo.">
+<meta property="og:image" content="/assets/og.png">
+<meta property="og:url" content="/pedir-precio.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="48x48 32x32 16x16">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,400;0,8..30,600;0,8..30,700;1,8..30,400&amp;family=Lunasima:wght@400;700&amp;display=swap">
+<script>document.documentElement.className+=' js';</script>
+<style>
+:root{--verde:#2F5D50;--verde-hondo:#234A3F;--ocre:#D98C3F;--ocre-hondo:#8A4E14;--tinta:#1B2B26;--tinta-suave:#4A5A54;--crema:#FAF4E8;--crema-honda:#F1E6D0;--paja:#E6D5B0;--crema-borde:#D9C7A3;--crema-suave:#D9E3DD;--letra-cuerpo:'Lunasima',Arial,Helvetica,sans-serif;--letra-marca:'Piazzolla',Georgia,'Times New Roman',serif}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--crema);color:var(--tinta);font-family:var(--letra-cuerpo);font-size:1.0625rem;line-height:1.6}
+img{max-width:100%;height:auto}
+[hidden]{display:none!important}
+h1,h2,h3{font-family:var(--letra-marca);font-weight:600;line-height:1.08;margin:0 0 .5em;color:var(--tinta);letter-spacing:-.01em}
+h1{font-size:clamp(2rem,3.6vw,3.25rem);font-variation-settings:'opsz' 30}
+h2{font-size:clamp(1.55rem,2.5vw,2.3rem);font-variation-settings:'opsz' 24}
+h3{font-size:1.3rem;font-variation-settings:'opsz' 18}
+p{margin:0 0 1em}
+a{color:var(--verde);text-decoration-thickness:.08em;text-underline-offset:.16em}
+a:hover{color:var(--verde-hondo)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--ocre);outline-offset:3px}
+ul,ol{padding-left:1.25em;margin:0 0 1em}
+li{margin-bottom:.35em}
+strong{font-weight:700}
+.salto-tejido{position:absolute;left:-200vw;top:8px;background:var(--verde);color:var(--crema);padding:.6em 1em;border-radius:4px;z-index:50}
+.salto-tejido:focus{left:8px}
+.remate-cabecera{background:var(--crema);position:relative;z-index:5}
+.cabecera-ancho{max-width:1560px;margin:0 auto;padding:.9rem clamp(14px,2vw,28px);display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.boca-marca{text-decoration:none;color:var(--tinta);display:flex;flex-direction:column;line-height:1.15}
+.marca-nombre{font-family:var(--letra-marca);font-weight:600;font-size:1.6rem;letter-spacing:-.01em;font-variation-settings:'opsz' 24}
+.marca-lema{font-size:.8rem;color:var(--tinta-suave);letter-spacing:.04em;margin-top:.15rem}
+.hebra-lista{list-style:none;margin:0;padding:0;display:flex;align-items:center;gap:clamp(.6rem,1.6vw,1.6rem);flex-wrap:wrap}
+.hebra-lista a{text-decoration:none;color:var(--tinta);font-weight:700;font-size:.95rem;padding:.35rem 0;border-bottom:2px solid transparent}
+.hebra-lista a:hover,.hebra-lista a[aria-current=page]{border-bottom-color:var(--ocre);color:var(--tinta)}
+.asa-llamado{display:inline-block;background:var(--ocre);color:var(--tinta)!important;font-weight:700;padding:.75rem 1.3rem;border-radius:3px;text-decoration:none!important;border-bottom:0!important;box-shadow:inset 0 -3px 0 rgba(27,43,38,.28)}
+.asa-llamado:hover{background:#E39A50}
+.hebra-lista .asa-llamado{padding:.6rem 1.1rem}
+.hebra-conmutador{display:none;background:transparent;border:2px solid var(--verde);border-radius:4px;width:46px;height:42px;padding:8px;cursor:pointer;flex-direction:column;justify-content:space-between}
+.hebra-linea{display:block;height:3px;background:var(--verde);border-radius:2px;transition:transform .3s,opacity .3s}
+.cabecera-franja{height:8px;background:repeating-linear-gradient(90deg,var(--verde) 0 18px,var(--crema) 18px 22px,var(--ocre) 22px 40px,var(--crema) 40px 44px)}
+.tejido-mesa{max-width:1560px;margin:0 auto;padding:0 clamp(10px,1.5vw,24px) 2rem;overflow-x:clip}
+.trama-fila{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));border-top:3px solid var(--crema);position:relative}
+.trama-fila>*{grid-column:span 2;min-width:0}
+.trama-fila>.orillo-tira{grid-column:span 1}
+.trama-fila>.celda-ancha{grid-column:span 4}
+.trama-fila>.celda-entera{grid-column:span 6}
+.urdimbre-celda{background:var(--crema-honda);padding:clamp(1.3rem,2.6vw,2.6rem);border-left:3px solid var(--crema);border-right:3px solid var(--crema)}
+.urdimbre-celda>:last-child{margin-bottom:0}
+.celda-paja{background:var(--paja)}
+.celda-clara{background:var(--crema);box-shadow:inset 0 0 0 1px var(--crema-borde)}
+.celda-verde{background:var(--verde);color:var(--crema)}
+.celda-verde h1,.celda-verde h2,.celda-verde h3{color:var(--crema)}
+.celda-verde a{color:var(--crema)}
+.celda-verde .fibra-nota{color:var(--crema-suave)}
+.celda-tinta{background:var(--tinta);color:var(--crema)}
+.celda-tinta h2,.celda-tinta h3{color:var(--crema)}
+.celda-tinta .fibra-nota{color:var(--ocre)}
+.canasto-foto{margin:0;min-height:300px;display:flex;flex-direction:column;justify-content:center;overflow:hidden;background-color:var(--paja);background-image:repeating-linear-gradient(90deg,rgba(35,74,63,.14) 0 13px,rgba(35,74,63,0) 13px 26px),repeating-linear-gradient(180deg,rgba(27,43,38,.11) 0 13px,rgba(27,43,38,0) 13px 26px);border-left:3px solid var(--crema);border-right:3px solid var(--crema)}
+.canasto-foto img{display:block;width:100%;height:auto;flex:none;object-fit:cover}
+.foto-pie{align-self:flex-start;flex:none;background:var(--tinta);color:var(--crema);font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;padding:.35rem .7rem;margin:0}
+.orillo-tira{background:var(--verde);color:var(--crema);display:flex;align-items:center;justify-content:center;min-height:100%;border-left:3px solid var(--crema);border-right:3px solid var(--crema);background-image:repeating-linear-gradient(0deg,transparent 0 22px,rgba(250,244,232,.14) 22px 26px)}
+.orillo-tira span{writing-mode:vertical-rl;transform:rotate(180deg);font-size:.8rem;letter-spacing:.28em;text-transform:uppercase;background:var(--verde);padding:.9rem .15rem}
+.fibra-nota{display:block;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ocre-hondo);font-weight:700;margin-bottom:.7rem}
+.celda-entrada h1{margin-bottom:.6rem}
+.celda-entrada p{font-size:1.1rem}
+.asas-par{display:flex;flex-wrap:wrap;gap:.8rem 1.4rem;align-items:center;margin-top:1.4rem}
+.asa-secundaria{font-weight:700}
+.fila-titulo{grid-template-columns:repeat(6,minmax(0,1fr));align-items:end;background:var(--crema)}
+.fila-titulo .tramo-titulo{grid-column:span 3;padding:2.4rem clamp(1.3rem,2.6vw,2.6rem) .9rem}
+.fila-titulo .tramo-nota{grid-column:span 3;padding:1rem clamp(1.3rem,2.6vw,2.6rem) 1rem;color:var(--tinta-suave);max-width:60ch}
+.tramo-titulo h2{margin:0}
+.hechos-fila{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:3px solid var(--crema)}
+.hecho-tira{padding:1.2rem clamp(1rem,2vw,1.8rem);display:flex;gap:.9rem;align-items:center;font-weight:700;border-left:3px solid var(--crema);border-right:3px solid var(--crema);font-size:.98rem}
+.hecho-tira:nth-child(odd){background:var(--paja)}
+.hecho-tira:nth-child(even){background:var(--crema-honda)}
+.hecho-tira svg{flex:none;width:34px;height:34px;color:var(--verde)}
+.pieza-celda svg.pieza-icono{width:52px;height:52px;color:var(--verde);display:block;margin-bottom:.9rem}
+.celda-verde svg.pieza-icono{color:var(--crema)}
+.pieza-celda h3{margin-bottom:.5rem}
+.lista-limpia{list-style:none;padding:0}
+.lista-limpia li{padding-left:1.4em;position:relative;margin-bottom:.55em}
+.lista-limpia li::before{content:"";position:absolute;left:0;top:.62em;width:.8em;height:.35em;background:var(--ocre);border-radius:2px}
+.pasos-lista{counter-reset:paso;list-style:none;padding:0}
+.pasos-lista li{counter-increment:paso;padding-left:2.6em;position:relative;margin-bottom:.8em}
+.pasos-lista li::before{content:counter(paso);position:absolute;left:0;top:.05em;width:1.9em;height:1.9em;border-radius:50%;background:var(--verde);color:var(--crema);font-family:var(--letra-marca);font-weight:600;display:flex;align-items:center;justify-content:center}
+.pregunta-celda h3{font-size:1.2rem;margin-bottom:.6rem;padding-bottom:.5rem;border-bottom:2px solid var(--ocre)}
+.contacto-dato{margin:0 0 .9em}
+.contacto-dato dt{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ocre-hondo);font-weight:700}
+.contacto-dato dd{margin:0 0 .2em}
+.celda-verde .contacto-dato dt{color:var(--crema-suave)}
+.tabla-desliza{overflow-x:auto;margin:0 0 1.2rem}
+table.ficha-tabla{border-collapse:collapse;width:100%;min-width:640px;font-size:.95rem;background:var(--crema)}
+.ficha-tabla th,.ficha-tabla td{text-align:left;padding:.6rem .7rem;border-bottom:1px solid var(--crema-borde);vertical-align:top}
+.ficha-tabla th{background:var(--verde);color:var(--crema);font-weight:700;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase}
+.ficha-tabla tbody tr:nth-child(even) td{background:var(--crema-honda)}
+#image-credits li{overflow-wrap:anywhere}
+.ficha-tabla caption{text-align:left;font-family:var(--letra-marca);font-weight:600;font-size:1.15rem;padding:0 0 .6rem;color:var(--tinta)}
+.medida-caja{background:var(--crema);color:var(--tinta);border:2px solid var(--verde);padding:1.2rem;border-radius:4px}
+.medida-caja label{display:block;font-weight:700;margin-bottom:.4rem;color:var(--tinta)}
+.medida-caja input{font:inherit;padding:.55rem .7rem;border:2px solid var(--crema-borde);border-radius:3px;width:min(13rem,100%);background:#fff;color:var(--tinta)}
+.medida-salida{margin:.9rem 0 0;font-weight:700;color:var(--verde);min-height:1.5em}
+.pedido-forma{display:grid;gap:1rem}
+.pedido-forma label{font-weight:700;display:block;margin-bottom:.35rem}
+.pedido-forma input,.pedido-forma select,.pedido-forma textarea{font:inherit;width:100%;padding:.7rem .8rem;border:2px solid var(--crema-borde);border-radius:3px;background:#fff;color:var(--tinta)}
+.pedido-forma textarea{min-height:9rem;resize:vertical}
+.pedido-forma .campo-aviso{display:block;font-size:.88rem;color:#8F2D1D;margin-top:.3rem;min-height:1.2em}
+.pedido-forma .campo-guia{display:block;font-size:.88rem;color:var(--tinta-suave);margin-top:.3rem}
+.pedido-forma button{font:inherit;font-weight:700;background:var(--ocre);color:var(--tinta);border:0;padding:.85rem 1.4rem;border-radius:3px;cursor:pointer;box-shadow:inset 0 -3px 0 rgba(27,43,38,.28);justify-self:start}
+.pedido-forma button:hover{background:#E39A50}
+.miel-oculta{position:absolute;left:-200vw;top:0;width:1px;height:1px;overflow:hidden}
+.base-pie{background:var(--tinta);color:var(--crema);margin-top:1rem}
+.pie-ancho{max-width:1560px;margin:0 auto;padding:2.4rem clamp(14px,2vw,28px) 2rem;display:grid;grid-template-columns:2fr 1fr 1fr;gap:2rem}
+.pie-marca{font-family:var(--letra-marca);font-weight:600;font-size:1.5rem;color:var(--crema);margin:0 0 .3rem}
+.pie-ancho p{color:var(--crema-suave)}
+.pie-ancho h2{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ocre);font-family:var(--letra-cuerpo);margin-bottom:.7rem}
+.pie-lista{list-style:none;padding:0;margin:0}
+.pie-lista a{color:var(--crema);text-decoration:none}
+.pie-lista a:hover{text-decoration:underline;color:var(--crema)}
+.pie-glosa{font-size:.86rem}
+.pie-glosa a{color:var(--crema);text-decoration-thickness:.07em;text-underline-offset:.18em}
+.cesta-glosa{display:block;font-size:.8em;font-weight:400;letter-spacing:.02em}
+.pie-cierre{border-top:1px solid rgba(250,244,232,.18);max-width:1560px;margin:0 auto;padding:1rem clamp(14px,2vw,28px);display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;color:var(--crema-suave);font-size:.9rem}
+.cookies-cesta{position:fixed;right:18px;bottom:18px;width:min(400px,calc(100vw - 36px));background:var(--tinta);color:var(--crema);padding:1.1rem 1.2rem;border-radius:6px;box-shadow:0 12px 32px rgba(27,43,38,.35);z-index:60;font-size:.92rem;border-top:5px solid var(--ocre)}
+.cookies-cesta p{margin:0 0 .8rem}
+.cookies-cesta a{color:var(--crema)}
+.cookies-botones{display:flex;flex-wrap:wrap;gap:.5rem}
+.cookies-cesta button{font:inherit;font-weight:700;border-radius:3px;padding:.55rem .9rem;cursor:pointer;border:2px solid var(--ocre);background:var(--ocre);color:var(--tinta);font-size:.88rem}
+.cookies-cesta button.cesta-secundario{background:transparent;color:var(--crema);border-color:var(--crema-suave)}
+.cookies-panel{margin-top:.9rem;padding-top:.9rem;border-top:1px solid rgba(250,244,232,.2)}
+.cookies-panel label{display:flex;gap:.6rem;align-items:flex-start;cursor:pointer}
+.cookies-panel input{width:1.2rem;height:1.2rem;margin-top:.15rem;accent-color:#D98C3F}
+@media (prefers-reduced-motion:no-preference){.js .cookies-cesta{animation:cesta-sube .5s ease-out}}
+@keyframes cesta-sube{from{transform:translateY(24px);opacity:0}to{transform:none;opacity:1}}
+.js .trama-fila>*{opacity:0;transform:translateX(-56px);transition:opacity .45s ease-out,transform .45s cubic-bezier(.2,.7,.2,1)}
+.js .trama-fila>:nth-child(even){transform:translateX(56px)}
+.js .trama-fila>:nth-child(2){transition-delay:80ms}
+.js .trama-fila>:nth-child(3){transition-delay:160ms}
+.js .trama-fila>:nth-child(4){transition-delay:240ms}
+.js .trama-fila>:nth-child(5){transition-delay:320ms}
+.js .trama-fila.fila-tejida>:nth-child(n){opacity:1;transform:none}
+.js .trama-fila,.js .hechos-fila{overflow:hidden}
+.js .hechos-fila>*{opacity:0;transform:translateX(-40px);transition:opacity .45s ease-out,transform .45s cubic-bezier(.2,.7,.2,1)}
+.js .hechos-fila>:nth-child(even){transform:translateX(40px)}
+.js .hechos-fila>:nth-child(2){transition-delay:80ms}
+.js .hechos-fila>:nth-child(3){transition-delay:160ms}
+.js .hechos-fila>:nth-child(4){transition-delay:240ms}
+.js .hechos-fila.fila-tejida>:nth-child(n){opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .trama-fila>*,.js .hechos-fila>*{opacity:1;transform:none;transition:none}.js .cookies-cesta{animation:none}.hebra-linea{transition:none}}
+@media (max-width:1024px){
+.trama-fila{grid-template-columns:repeat(4,minmax(0,1fr))}
+.trama-fila>*{grid-column:span 2}
+.trama-fila>.orillo-tira{grid-column:1/-1;min-height:26px;background-image:repeating-linear-gradient(90deg,transparent 0 22px,rgba(250,244,232,.14) 22px 26px)}
+.orillo-tira span{writing-mode:horizontal-tb;transform:none;padding:.15rem 1rem}
+.trama-fila>.celda-ancha{grid-column:span 4}
+.trama-fila>.celda-entera{grid-column:1/-1}
+.fila-titulo .tramo-titulo,.fila-titulo .tramo-nota{grid-column:1/-1}
+.fila-titulo .tramo-nota{padding-top:0}
+.hechos-fila{grid-template-columns:repeat(2,minmax(0,1fr))}
+.pie-ancho{grid-template-columns:1fr 1fr}
+}
+@media (max-width:860px){
+.js .hebra-conmutador{display:flex}
+.js .hebra-menu{display:none;width:100%}
+.js.menu-abierto .hebra-menu{display:block}
+.hebra-lista{flex-direction:column;align-items:flex-start;gap:.2rem;padding:.6rem 0 .4rem}
+.hebra-lista li{margin:0;width:100%}
+.hebra-lista a{display:block;padding:.55rem 0}
+.hebra-lista .asa-llamado{display:inline-block;margin-top:.5rem}
+.menu-abierto .hebra-linea:nth-child(1){transform:translateY(9.5px) rotate(45deg)}
+.menu-abierto .hebra-linea:nth-child(2){opacity:0}
+.menu-abierto .hebra-linea:nth-child(3){transform:translateY(-9.5px) rotate(-45deg)}
+}
+@media (max-width:640px){
+body{font-size:1rem}
+.trama-fila{grid-template-columns:1fr}
+.trama-fila>*,.trama-fila>.celda-ancha,.trama-fila>.celda-entera{grid-column:1/-1}
+.canasto-foto{min-height:0}
+.canasto-foto img{aspect-ratio:16/9}
+.celda-entrada .asas-par{margin-top:1rem}
+.celda-entrada .fibra-nota{margin-bottom:.45rem}
+.js .trama-fila>*{transform:translateX(-32px)}
+.js .trama-fila>:nth-child(even){transform:translateX(32px)}
+.hechos-fila{grid-template-columns:1fr}
+.pie-ancho{grid-template-columns:1fr;gap:1.4rem}
+.cookies-cesta{right:10px;bottom:10px;left:10px;width:auto;padding:.65rem .8rem;font-size:.8rem;line-height:1.45;border-top-width:4px}
+.cookies-cesta p{margin-bottom:.45rem}
+.cookies-cesta button{padding:.38rem .6rem;font-size:.8rem}
+.cookies-botones{gap:.4rem}
+h1{font-size:1.7rem}
+.celda-entrada p{font-size:.98rem}
+}
+</style>
+</head>
+<body>
+<a class="salto-tejido" href="#tejido-principal">Ir al contenido</a>
+<header class="remate-cabecera">
+<div class="cabecera-ancho">
+<a class="boca-marca" href="index.html"><span class="marca-nombre">Meibol Torres</span><span class="marca-lema">Cestería y fibra natural, hecha a mano</span></a>
+<button class="hebra-conmutador" type="button" aria-expanded="false" aria-controls="hebra-menu" aria-label="Abrir el menú de páginas"><span class="hebra-linea"></span><span class="hebra-linea"></span><span class="hebra-linea"></span></button>
+<nav class="hebra-menu" id="hebra-menu" aria-label="Páginas del taller">
+<ul class="hebra-lista"><li><a href="index.html">Inicio</a></li><li><a href="canastos.html">Canastos</a></li><li><a href="fibras-y-tintes.html">Fibras y tintes</a></li><li><a href="cuidado-y-medidas.html">Cuidado y medidas</a></li><li><a href="pedir-precio.html" aria-current="page">Pedir precio</a></li><li><a class="asa-llamado" href="pedir-precio.html">Pedir precio de una pieza</a></li></ul>
+</nav>
+</div>
+<div class="cabecera-franja" aria-hidden="true"></div>
+</header>
+<main id="tejido-principal" class="tejido-mesa">
+<div class="trama-fila "><figure class="canasto-foto "><img src="assets/img/canastos-boca-redonda.webp" alt="Varios canastos tejidos de boca redonda y ovalada, vistos desde arriba sobre tablas pintadas de blanco" width="722" height="542" fetchpriority="high"><figcaption class="foto-pie">Boca redonda</figcaption></figure><div class="urdimbre-celda celda-entrada celda-clara"><span class="fibra-nota">Pedir precio</span><h1>Diga la pieza, la fibra y la medida</h1><p>Con esos tres datos le respondemos con el precio de esa pieza y con las jornadas que tarda. Si no sabe la fibra o la medida, cuente para qué la quiere y le proponemos una.</p></div><figure class="canasto-foto "><img src="assets/img/canasto-con-tapa.webp" alt="Canasto tejido en espiral con su tapa cónica apoyada al lado, en fibra blanca con dibujos en azul y rojo" width="1000" height="563" fetchpriority="high"><figcaption class="foto-pie">Con tapa</figcaption></figure></div><div class="trama-fila "><div class="orillo-tira" aria-hidden="true"><span>pedido</span></div><div class="urdimbre-celda celda-ancha celda-clara"><span class="fibra-nota">Formulario</span><h2>Lo que necesitamos saber</h2><form id="pedido-forma" class="pedido-forma" action="https://formsubmit.co/taller@meiboltorres.com" method="post"><input type="hidden" name="_subject" value="Pedido de precio desde meiboltorres.com"><input type="hidden" name="_next" value=""><div class="miel-oculta" aria-hidden="true"><label for="campo-miel">No llene este campo</label><input type="text" id="campo-miel" name="_honey" tabindex="-1" autocomplete="off"></div><div><label for="nombre">Nombre</label><input type="text" id="nombre" name="nombre" required autocomplete="name"><span class="campo-aviso" id="aviso-nombre" aria-live="polite"></span></div><div><label for="correo">Correo</label><input type="email" id="correo" name="correo" required autocomplete="email"><span class="campo-guia">Ahí llega la respuesta con el precio.</span><span class="campo-aviso" id="aviso-correo" aria-live="polite"></span></div><div><label for="pieza">Pieza</label><select id="pieza" name="pieza"><option value="canasto boca redonda">Canasto de boca redonda (iraca)</option><option value="canasto boca cuadrada">Canasto de boca cuadrada (caña flecha)</option><option value="bandeja">Bandeja de tejido plano</option><option value="individuales">Individuales de mesa</option><option value="cesta fique">Cesta grande de fique</option><option value="reparacion">Reparación de una pieza nuestra</option><option value="no se">No sé; cuento para qué la quiero</option></select></div><div><label for="medida">Medida o cantidad</label><input type="text" id="medida" name="medida" autocomplete="off" placeholder="por ejemplo: 28 cm de boca, o seis individuales"><span class="campo-guia">Opcional. En centímetros, o el número de piezas.</span></div><div><label for="mensaje">Mensaje</label><textarea id="mensaje" name="mensaje" required placeholder="Para qué es la pieza, si va con tinte o al natural, y si la medida es fija."></textarea><span class="campo-aviso" id="aviso-mensaje" aria-live="polite"></span></div><button type="submit">Enviar la consulta</button></form></div><div class="orillo-tira" aria-hidden="true"><span>precio</span></div></div><div class="trama-fila "><div class="urdimbre-celda celda-paja"><span class="fibra-nota">Después de enviar</span><h2>Qué pasa con su consulta</h2><p>El formulario llega al correo del taller, taller@meiboltorres.com. Lo lee una persona del taller y responde por correo, normalmente en dos días hábiles, con el precio de la pieza en esa medida, las jornadas que tarda y, si algo no se puede tejer como lo pidió, una alternativa.</p><p>Enviar el formulario no compromete a nada: es una consulta. El pedido queda en firme cuando usted confirma por correo el precio y el tiempo, y ahí le decimos cuándo empieza el tejido.</p><p>Si prefiere escribir directo, el correo es el mismo: <a href="mailto:taller@meiboltorres.com">taller@meiboltorres.com</a>. Los correos del fin de semana se contestan el lunes.</p></div><figure class="canasto-foto "><img src="assets/img/piezas-en-espiral.webp" alt="Bandejas redondas, canastos con tapa y cestas de asa tejidos en espiral, en fibra de tono paja, puestos uno junto a otro" width="640" height="480" loading="lazy"><figcaption class="foto-pie">En espiral</figcaption></figure><div class="urdimbre-celda celda-verde"><span class="fibra-nota">Ciudad y zona</span><h2>Popayán y el resto de Colombia</h2><dl class="contacto-dato"><dt>Ciudad</dt><dd>Popayán, Cauca. Las piezas se recogen en el taller con cita por correo.</dd></dl><dl class="contacto-dato"><dt>Zona de entrega</dt><dd>Entrega en mano en Popayán y despacho por encomienda a cualquier ciudad de Colombia, con la pieza envuelta en papel y cartón. El costo del envío se cotiza con la pieza.</dd></dl><dl class="contacto-dato"><dt>Fuera de Colombia</dt><dd>No despachamos al exterior.</dd></dl><dl class="contacto-dato"><dt>Horario</dt><dd>Lunes a viernes, de ocho de la mañana a cinco de la tarde; sábados de ocho a doce.</dd></dl></div></div><div class="trama-fila "><div class="urdimbre-celda celda-clara"><span class="fibra-nota">Antes de escribir</span><h3>Lo que ayuda a cotizar rápido</h3><ul class="lista-limpia"><li>La pieza y la fibra, si ya las tiene claras; si no, para qué la quiere.</li><li>La medida en centímetros: la boca y el alto, o el largo y el ancho de un individual.</li><li>Si la medida es fija o puede variar un centímetro.</li><li>Si la quiere al natural o con tinte, y en qué tono.</li><li>Cuántas piezas y para cuándo la necesita.</li></ul></div><div class="urdimbre-celda "><span class="fibra-nota">Lo que no cotizamos</span><h3>Para no hacerle perder tiempo</h3><p>No cotizamos clases, muebles, estructuras, reparaciones de piezas de otros talleres ni tinte de fibra para terceros. Tampoco cotizamos piezas más anchas de lo que la fibra aguanta: un canasto de iraca no pasa de unos 34 cm de boca sin que la base se venza. Si duda, pregunte igual; la respuesta es rápida.</p></div><figure class="canasto-foto "><img src="assets/img/tejido-detalle.webp" alt="Detalle de un tejido de fibra natural con hebras entrelazadas, en tono gris claro" width="658" height="493" loading="lazy"><figcaption class="foto-pie">Detalle del tejido</figcaption></figure></div>
+</main>
+<footer class="base-pie">
+<div class="pie-ancho">
+<div>
+<p class="pie-marca">Meibol Torres</p>
+<p>Cestería y fibra natural, hecha a mano. Taller en Popayán, Cauca; entregas en mano en la ciudad y despachos por encomienda dentro de Colombia.</p>
+<p>Correo del taller: <a href="mailto:taller@meiboltorres.com" style="color:#FAF4E8">taller@meiboltorres.com</a></p>
+</div>
+<div>
+<h2>Páginas</h2>
+<ul class="pie-lista"><li><a href="index.html">Inicio</a></li><li><a href="canastos.html">Canastos</a></li><li><a href="fibras-y-tintes.html">Fibras y tintes</a></li><li><a href="cuidado-y-medidas.html">Cuidado y medidas</a></li><li><a href="pedir-precio.html">Pedir precio</a></li></ul>
+</div>
+<div>
+<h2>Avisos</h2>
+<ul class="pie-lista">
+<li><a href="privacy.html">Privacidad</a></li>
+<li><a href="terms.html">Términos de uso</a></li>
+<li><a href="terms.html#image-credits">Créditos de las fotografías</a></li>
+</ul>
+</div>
+</div>
+<div class="pie-cierre"><span>© 2026 Meibol Torres</span><span>Popayán, Cauca, Colombia</span><span class="pie-glosa" lang="en">English: <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></span></div>
+</footer>
+<div id="cookies-cesta" class="cookies-cesta" hidden role="region" aria-label="Preferencias de cookies">
+<p>Este sitio guarda una sola preferencia en su navegador y no instala cookies de análisis ni de publicidad salvo que usted las acepte. Más en el <a href="privacy.html">aviso de privacidad</a>.</p>
+<div class="cookies-botones">
+<button type="button" id="cookies-aceptar"><span>Aceptar todas</span><span class="cesta-glosa" lang="en">Accept all</span></button>
+<button type="button" id="cookies-abrir" class="cesta-secundario" aria-expanded="false" aria-controls="cookies-panel">Preferencias</button>
+</div>
+<div id="cookies-panel" class="cookies-panel" hidden>
+<label><input type="checkbox" id="cookies-analitica"> <span>Análisis y rendimiento: permitir que, si algún día se instala una herramienta de medición, pueda usarse. Apagado por defecto.</span></label>
+<div class="cookies-botones" style="margin-top:.8rem"><button type="button" id="cookies-guardar">Guardar mi elección</button></div>
+</div>
+</div>
+<script>
+(function(){
+  var raiz=document.documentElement;
+  var reducido=!!(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  raiz.style.scrollBehavior='auto';
+  document.addEventListener('click',function(ev){
+    var enlace=ev.target.closest?ev.target.closest('a[href^="#"]'):null;
+    if(!enlace)return;
+    var id=enlace.getAttribute('href').slice(1);
+    var destino=id?document.getElementById(id):null;
+    if(!destino)return;
+    ev.preventDefault();
+    destino.scrollIntoView({behavior:reducido?'auto':'smooth',block:'start'});
+    if(history.pushState){history.pushState(null,'','#'+id);}
+    if(!destino.hasAttribute('tabindex')){destino.setAttribute('tabindex','-1');}
+    destino.focus({preventScroll:true});
+  });
+  var boton=document.querySelector('.hebra-conmutador');
+  if(boton){boton.addEventListener('click',function(){var abierto=raiz.classList.toggle('menu-abierto');boton.setAttribute('aria-expanded',abierto?'true':'false');boton.setAttribute('aria-label',abierto?'Cerrar el menú de páginas':'Abrir el menú de páginas');});}
+  var filas=document.querySelectorAll('.trama-fila,.hechos-fila');
+  if('IntersectionObserver' in window){
+    var vigia=new IntersectionObserver(function(entradas){entradas.forEach(function(e){if(e.isIntersecting){e.target.classList.add('fila-tejida');vigia.unobserve(e.target);}});},{rootMargin:'140px 0px 140px 0px',threshold:0.01});
+    filas.forEach(function(f){vigia.observe(f);});
+  }else{filas.forEach(function(f){f.classList.add('fila-tejida');});}
+  var cesta=document.getElementById('cookies-cesta');
+  if(!cesta)return;
+  var CLAVE='mt_preferencia';
+  var guardado=null;
+  try{guardado=window.localStorage.getItem(CLAVE);}catch(err){guardado=null;}
+  if(guardado)return;
+  cesta.hidden=false;
+  var panel=document.getElementById('cookies-panel');
+  var casilla=document.getElementById('cookies-analitica');
+  var abrir=document.getElementById('cookies-abrir');
+  function guardar(analitica){
+    try{window.localStorage.setItem(CLAVE,JSON.stringify({analitica:!!analitica,guardado:new Date().toISOString()}));}catch(err){}
+    cesta.hidden=true;
+  }
+  document.getElementById('cookies-aceptar').addEventListener('click',function(){guardar(true);});
+  abrir.addEventListener('click',function(){var visible=panel.hidden;panel.hidden=!visible;abrir.setAttribute('aria-expanded',visible?'true':'false');});
+  document.getElementById('cookies-guardar').addEventListener('click',function(){guardar(casilla.checked);});
+})();
+
+(function(){
+  var siguiente=document.querySelector('input[name="_next"]');
+  if(siguiente){siguiente.value=new URL('thanks.html',window.location.href).href;}
+  var forma=document.getElementById('pedido-forma');
+  if(!forma)return;
+  var mensajes={nombre:'Escriba el nombre con el que podemos responderle.',correo:'Escriba un correo válido; ahí llega la respuesta con el precio.',mensaje:'Cuéntenos qué pieza necesita para poder cotizarla.'};
+  Array.prototype.forEach.call(forma.querySelectorAll('[required]'),function(campo){
+    var aviso=document.getElementById('aviso-'+campo.id);
+    campo.addEventListener('invalid',function(){if(aviso){aviso.textContent=mensajes[campo.id]||'Este campo hace falta.';}});
+    campo.addEventListener('input',function(){if(aviso&&campo.validity.valid){aviso.textContent='';}});
+  });
+})();
+</script>
+</body>
+</html>

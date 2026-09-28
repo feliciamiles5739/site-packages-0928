@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Swaps and cover — Prefer Solutions</title>
+<meta name="description" content="How a shift swap is proposed, agreed and recorded in the Prefer Solutions planner, how cover is found, what changes on a published week and what the record is for.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="/swaps-and-cover.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Prefer Solutions">
+<meta property="og:title" content="Swaps and cover — Prefer Solutions">
+<meta property="og:description" content="How a shift swap is proposed, agreed and recorded in the Prefer Solutions planner, how cover is found, what changes on a published week and what the record is for.">
+<meta property="og:url" content="/swaps-and-cover.html">
+<meta property="og:image" content="/assets/og.png">
+<meta name="theme-color" content="#0E2F44">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400;0,600;1,400&family=Tektur:wght@400;500;600&display=swap">
+<style>
+:root{--theme:#0E2F44;--accent:#FF8A5B;--ink:#0B1A24;--ground:#F5F8FA;--sheet:#FFFFFF;--tint:#E6EEF3;--rule:#CFDBE3;--rule-2:#9FB4C1;--mute:#3E5A6C;--navy-2:#17405A;--accent-ink:#A8461F;--clash:#B3261E;--paper:#F5F8FA;--paper-2:#B8C9D4;--off:#E3E9ED;--serif:"Brygada 1918",Georgia,"Times New Roman",serif;--disp:"Tektur","Trebuchet MS",Arial,sans-serif}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--serif);font-size:1.0625rem;line-height:1.62}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--theme);text-underline-offset:.15em}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+h1,h2,h3{font-family:var(--disp);font-weight:500;line-height:1.08;margin:0 0 .5em;letter-spacing:-.005em;color:var(--theme)}
+h1{font-size:clamp(2.2rem,4.4vw,3.9rem);font-weight:600;line-height:1.02}
+h2{font-size:clamp(1.55rem,2.4vw,2.1rem)}
+h3{font-size:1.15rem;margin-bottom:.35em}
+p{margin:0 0 1em}
+ul,ol{margin:0 0 1em;padding-left:1.2em}
+li{margin-bottom:.35em}
+.reader-note{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.week-sheet{max-width:1480px;margin:0 auto;padding:0 clamp(16px,3vw,40px)}
+.slot-tag,.day-label,.foot-tag{font-family:var(--disp);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+
+.rota-top{background:var(--sheet);border-bottom:1px solid var(--rule);position:relative;z-index:5}
+.rota-topline{display:flex;align-items:center;gap:20px;min-height:72px}
+.rota-mark{display:inline-flex;align-items:center;gap:12px;font-family:var(--disp);font-weight:600;font-size:1.3rem;letter-spacing:.01em;color:var(--theme);text-decoration:none;margin-right:auto;white-space:nowrap}
+.mark-cells{display:inline-grid;grid-template-columns:repeat(7,4px);gap:3px;height:22px;align-items:stretch}
+.mark-cells span{background:var(--rule-2);border-radius:1px}
+.mark-cells span:nth-child(3),.mark-cells span:nth-child(4){background:var(--accent)}
+.rota-menu{list-style:none;margin:0;padding:0;display:flex;align-items:center;gap:6px}
+.menu-shift{display:inline-block;padding:10px 12px;font-family:var(--disp);font-size:.92rem;letter-spacing:.02em;color:var(--theme);text-decoration:none;border-bottom:2px solid transparent}
+.menu-shift:hover,.menu-shift[aria-current=page]{border-bottom-color:var(--accent)}
+.book-shift{display:inline-block;padding:12px 20px;background:var(--theme);color:var(--paper);font-family:var(--disp);font-weight:500;font-size:.95rem;letter-spacing:.02em;text-decoration:none;border:2px solid var(--theme);border-radius:3px;cursor:pointer;line-height:1.2}
+.book-shift:hover{background:var(--navy-2);border-color:var(--navy-2)}
+.book-loud{background:var(--accent);border-color:var(--accent);color:var(--ink)}
+.book-loud:hover{background:#FF9C75;border-color:#FF9C75}
+.book-quiet{background:transparent;color:var(--theme)}
+.book-quiet:hover{background:var(--tint);border-color:var(--theme)}
+.rota-menu .book-shift{margin-left:10px}
+.rota-toggle{display:none;background:none;border:2px solid var(--theme);border-radius:3px;width:46px;height:42px;padding:9px 10px;cursor:pointer;flex-direction:column;justify-content:space-between}
+.toggle-rung{display:block;height:2px;background:var(--theme);transition:transform .3s,opacity .3s}
+.menu-out .toggle-rung:nth-child(1){transform:translateY(9px) rotate(45deg)}
+.menu-out .toggle-rung:nth-child(2){opacity:0}
+.menu-out .toggle-rung:nth-child(3){transform:translateY(-9px) rotate(-45deg)}
+.slot-line{margin:0;background:var(--theme);color:var(--paper-2);font-family:var(--disp);font-size:.74rem;letter-spacing:.12em;text-transform:uppercase}
+.slot-line .week-sheet{display:flex;justify-content:space-between;gap:16px;padding-top:7px;padding-bottom:7px}
+.slot-line em{font-style:normal;color:var(--accent)}
+
+main{display:block}
+.week-strip{position:relative;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:14px 12px;padding:0 0 26px}
+.day-rule{position:absolute;inset:0;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));column-gap:12px;pointer-events:none}
+.day-rule span{border-left:1px solid var(--rule)}
+.day-rule span:last-child{border-right:1px solid var(--rule)}
+.label-run{grid-column:1/-1;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));column-gap:12px;margin-bottom:6px}
+.day-label{padding:10px 10px 8px;border-bottom:1px solid var(--rule-2)}
+.shift-block{grid-column:var(--col,1)/span var(--span,7);position:relative;z-index:1;background:var(--sheet);border:1px solid var(--rule);border-top:4px solid var(--theme);padding:20px 22px 14px;border-radius:2px}
+.shift-block[data-day]::before{content:attr(data-day);position:absolute;top:8px;right:12px;font-family:var(--disp);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--rule-2)}
+.open-shift{background:transparent;border:0;padding:0 0 10px}
+.open-shift[data-day]::before{display:none}
+.loud-shift{border-top-color:var(--accent)}
+.soft-shift{background:var(--tint)}
+.photo-shift{padding:0;border:0;overflow:hidden;background:var(--tint)}
+.photo-shift img{width:100%;height:100%;object-fit:cover}
+.photo-shift[data-day]::before{display:none}
+.week-head{grid-column:1/-1;padding:34px 0 8px}
+.week-head h2{margin-bottom:.2em}
+.week-head p{max-width:62ch;color:var(--mute);margin:0}
+.open-week .shift-block{padding-top:34px}
+.week-strip .photo-shift{padding:0}
+.open-week h1{margin-bottom:.45em}
+.open-week .lead-shift{font-size:1.2rem;line-height:1.5;max-width:56ch;margin-bottom:1.4em}
+.open-week .book-shift{margin:0 10px 10px 0}
+.rota-board{grid-column:1/-1;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px 12px;position:relative;z-index:1}
+.rota-cell{position:relative;min-height:64px;padding:10px 10px 8px;border-radius:3px;font-family:var(--disp);font-size:.84rem;letter-spacing:.02em;line-height:1.25;background:var(--sheet);border:1px solid var(--rule)}
+.rota-cell b{font-weight:500;display:block}
+.cell-shift{background:var(--theme);color:var(--paper);border-color:var(--theme)}
+.cell-cover{background:var(--navy-2);border-color:var(--navy-2)}
+.cell-off{background:var(--off);color:var(--mute);border-color:var(--off)}
+.cell-open{background:#FFF6F5;color:var(--clash);border:1px dashed var(--clash)}
+.cell-none{color:var(--mute)}
+.cover-note{display:block;margin-top:5px;font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.rota-board .rota-cell:nth-child(7n+1)::before{content:attr(data-role);position:absolute;left:0;top:-18px;font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.rota-board .rota-cell:nth-child(n+8){margin-top:22px}
+.board-legend{grid-column:1/-1;color:var(--mute);font-size:.92rem;margin:6px 0 0}
+.board-legend i{display:inline-block;width:12px;height:12px;border-radius:2px;vertical-align:-1px;margin:0 4px 0 12px}
+.fact-run .shift-block{border-top-color:var(--accent);padding-top:16px}
+.fact-run .shift-block p{margin:0;font-family:var(--disp);font-size:1.05rem;line-height:1.35;color:var(--theme)}
+.role-glyph{width:38px;height:38px;color:var(--accent-ink);margin-bottom:12px}
+.role-glyph svg{width:100%;height:100%;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.role-run .shift-block p{margin-bottom:.4em;font-size:1rem}
+.long-shift p{font-size:1.02rem}
+.question-run h3{font-size:1.08rem}
+.question-run p{font-size:.98rem;margin-bottom:.4em}
+.swap-strip{background:var(--theme);color:var(--paper);margin-top:40px}
+.swap-strip .day-rule span{border-color:#2C4E63}
+.swap-strip .day-label{color:var(--paper-2);border-bottom-color:#3E6A85}
+.swap-strip .shift-block{background:transparent;border:0;color:var(--paper);padding:26px 0 40px}
+.swap-strip .shift-block[data-day]::before{color:#5F7F94}
+.swap-strip h2{color:var(--paper);font-size:clamp(1.7rem,2.8vw,2.5rem)}
+.swap-strip p{color:var(--paper-2);font-size:1.1rem;max-width:60ch}
+.desk-run .shift-block h3{margin-top:0}
+.desk-run dl{margin:0}
+.desk-run dt{font-family:var(--disp);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin-top:12px}
+.desk-run dd{margin:2px 0 0}
+.week-foot{background:var(--ink);color:var(--paper-2);margin-top:56px;padding:34px 0 30px;font-size:.95rem}
+.foot-week{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:18px 12px}
+.foot-week>div{grid-column:var(--col,1)/span var(--span,2)}
+.foot-week a{color:var(--paper)}
+.foot-week .rota-mark{color:var(--paper);margin:0 0 8px}
+.foot-week ul{list-style:none;padding:0;margin:0}
+.foot-week li{margin-bottom:6px}
+.foot-week .foot-tag{color:#8FA6B5;margin-bottom:8px;display:block}
+.foot-week .book-shift{margin-top:6px}
+.foot-week .book-loud{color:var(--ink)}
+.foot-year{grid-column:1/-1;border-top:1px solid #23394A;padding-top:14px;margin-top:8px;font-size:.88rem;color:#8FA6B5}
+
+.rota-notice{position:fixed;right:18px;bottom:18px;width:min(380px,calc(100vw - 36px));background:var(--sheet);color:var(--ink);border:1px solid var(--rule);border-top:4px solid var(--accent);padding:16px 18px 14px;box-shadow:0 12px 34px rgba(11,26,36,.18);z-index:50;font-size:.92rem;border-radius:3px}
+.rota-notice[hidden]{display:none}
+.notice-copy{margin:0 0 12px;line-height:1.5}
+.notice-choices{display:flex;flex-wrap:wrap;gap:8px}
+.notice-choices .book-shift{padding:9px 14px;font-size:.86rem}
+.notice-panel{margin-top:12px;border-top:1px solid var(--rule);padding-top:12px}
+.notice-panel[hidden]{display:none}
+.notice-switch{display:flex;align-items:center;gap:10px;font-family:var(--disp);font-size:.9rem;color:var(--theme)}
+.notice-switch input{width:20px;height:20px;accent-color:#0E2F44}
+.notice-small{color:var(--mute);font-size:.84rem;margin:8px 0 10px}
+
+.enquiry-shift label{display:block;font-family:var(--disp);font-size:.8rem;letter-spacing:.06em;color:var(--theme);margin:0 0 5px}
+.entry-cell{margin-bottom:16px}
+.entry-cell input,.entry-cell select,.entry-cell textarea{width:100%;font:inherit;font-size:1rem;padding:11px 12px;border:1px solid var(--rule-2);border-radius:3px;background:var(--sheet);color:var(--ink)}
+.entry-cell textarea{min-height:150px;resize:vertical}
+.cell-hint{color:var(--mute);font-size:.88rem;margin:4px 0 0}
+.bee-cell{position:absolute;left:-6000px;top:auto;width:1px;height:1px;overflow:hidden}
+.hours-sum{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;align-items:end}
+.hours-sum .entry-cell{margin:0}
+.sum-out{grid-column:1/-1;margin-top:10px;padding:14px 16px;background:var(--tint);border-left:4px solid var(--accent);font-family:var(--disp);font-size:1.05rem;color:var(--theme)}
+.sum-out b{font-weight:600;font-size:1.4rem}
+.terms-run .shift-block{padding:24px 26px}
+.terms-run h2{font-size:1.35rem;margin-top:.2em}
+.terms-run p,.terms-run li{font-size:1rem}
+.photo-ledger{list-style:none;padding:0;margin:0}
+.photo-ledger li{padding:10px 0;border-bottom:1px solid var(--rule);font-size:.94rem;overflow-wrap:anywhere}
+.photo-ledger code{font-family:var(--disp);font-size:.84rem;color:var(--accent-ink)}
+.lost-week{padding-top:60px;padding-bottom:60px}
+
+@media (prefers-reduced-motion:no-preference){
+  .rota-live .strip-live .shift-block{animation:shift-drop .55s cubic-bezier(.22,.8,.3,1) backwards;animation-delay:calc((var(--col,1) - 1) * 95ms)}
+  @keyframes shift-drop{from{clip-path:inset(0 0 100% 0);transform:translateY(-30px)}to{clip-path:inset(0 0 0 0);transform:none}}
+}
+@media (max-width:1000px){
+  .rota-mark{font-size:1.15rem}
+  .menu-shift{padding:10px 8px;font-size:.86rem}
+  .open-week .shift-block{padding-top:18px}
+.open-week .photo-shift{padding:0}
+}
+@media (max-width:860px){
+  .rota-toggle{display:flex}
+  .week-menu{display:none;position:absolute;left:0;right:0;top:100%;background:var(--sheet);border-bottom:1px solid var(--rule);box-shadow:0 14px 30px rgba(11,26,36,.14)}
+  .menu-out .week-menu{display:block}
+  .rota-menu{flex-direction:column;align-items:stretch;padding:8px clamp(16px,3vw,40px) 18px;gap:0}
+  .menu-shift{padding:13px 4px;border-bottom:1px solid var(--rule);font-size:1rem}
+  .rota-menu .book-shift{margin:14px 0 0;text-align:center}
+}
+@media (max-width:760px){
+  .slot-line .week-sheet{flex-direction:column;gap:2px;font-size:.68rem}
+  .week-strip{display:flex;flex-direction:column;gap:10px;padding-bottom:22px}
+  .day-rule,.label-run{display:none}
+  .shift-block{display:grid;grid-template-columns:3.4rem 1fr;column-gap:12px;padding:16px 16px 10px 12px}
+  .shift-block>*{grid-column:2}
+  .shift-block[data-day]::before{position:static;grid-column:1;grid-row:1/span 40;writing-mode:vertical-rl;transform:rotate(180deg);justify-self:start;align-self:end;padding:0 0 2px;color:var(--mute);font-size:.66rem}
+  .open-shift{display:block;padding:8px 0 4px}
+  .photo-shift{display:block;padding:0}
+  .week-head{padding:26px 0 4px}
+  .open-week .shift-block{padding-top:14px}
+.open-week .photo-shift{padding:0}
+  .rota-board{grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-flow:column;grid-template-rows:auto repeat(7,auto);gap:6px}
+  .rota-cell{font-size:.72rem;min-height:56px;padding:8px 6px 6px}
+  .rota-board .rota-cell:nth-child(n+8){margin-top:0}
+  .rota-board .rota-cell:nth-child(7n+1)::before{content:attr(data-role);top:-20px;left:0;font-size:.62rem}
+  .rota-board .rota-cell:nth-child(7n+1){margin-top:24px}
+  .rota-board .rota-cell::after{content:attr(data-day);position:absolute;right:5px;top:3px;font-size:.56rem;letter-spacing:.1em;text-transform:uppercase;color:inherit}
+  .cell-shift::after,.cell-cover::after{color:var(--paper-2)}
+  .foot-week{display:flex;flex-direction:column}
+  .swap-strip .shift-block{padding:22px 0 30px}
+  .rota-notice{right:10px;left:10px;bottom:10px;width:auto;padding:11px 13px 10px;font-size:.84rem}
+  .notice-copy{margin-bottom:9px;line-height:1.42}
+  .open-week .lead-shift{font-size:1.04rem;line-height:1.5;margin-bottom:1.1em}
+  .hours-sum{grid-template-columns:1fr 1fr}
+  .terms-run .shift-block{padding:18px 14px 12px 12px}
+}
+@media (max-width:400px){
+  h1{font-size:2rem}
+  .rota-cell{font-size:.64rem;padding:7px 4px 5px}
+}
+@media print{
+  .rota-top,.week-foot,.rota-notice,.slot-line{display:none}
+  .shift-block{animation:none!important;clip-path:none!important;transform:none!important}
+  .week-strip{padding:0}
+  .shift-block{break-inside:avoid;border-top-width:2px}
+}
+</style>
+<script>document.documentElement.classList.add('rota-live');</script>
+</head>
+<body>
+<header class="rota-top"><div class="week-sheet rota-topline"><a class="rota-mark" href="index.html"><span class="mark-cells" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>Prefer Solutions</a><button class="rota-toggle" type="button" aria-label="Open the menu" aria-expanded="false" aria-controls="week-menu"><span class="toggle-rung"></span><span class="toggle-rung"></span><span class="toggle-rung"></span></button><nav class="week-menu" id="week-menu" aria-label="Pages"><ul class="rota-menu"><li><a class="menu-shift" href="index.html">Home</a></li><li><a class="menu-shift" href="building-a-rota.html">Building a rota</a></li><li><a class="menu-shift" href="swaps-and-cover.html" aria-current="page">Swaps and cover</a></li><li><a class="menu-shift" href="what-it-does-not-do.html">What it does not do</a></li><li><a class="menu-shift" href="see-it-on-your-week.html">See it on your week</a></li><li><a class="book-shift" href="see-it-on-your-week.html">See it on your own week</a></li></ul></nav></div><p class="slot-line"><span class="week-sheet"><span>Shift rotas that fit the people on them</span><span><em>Cork</em> · Ireland</span></span></p></header>
+<main>
+<section class="week-sheet open-week" id="top"><div class="week-strip"><div class="day-rule" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="label-run" aria-hidden="true"><span class="day-label">Mon</span><span class="day-label">Tue</span><span class="day-label">Wed</span><span class="day-label">Thu</span><span class="day-label">Fri</span><span class="day-label">Sat</span><span class="day-label">Sun</span></div><div class="shift-block open-shift" style="--col:1;--span:4" data-day="Mon–Thu"><h1>Swaps and cover</h1>
+<p class="lead-shift">A rota changes after it goes out — that is not a failure of planning, it is what a week does. The planner's job is to make every change visible, agreed and recorded against the shift it touched, so that nobody has to reconstruct Thursday from a group chat.</p>
+<a class="book-shift book-loud" href="see-it-on-your-week.html">See it on your own week</a></div><div class="shift-block photo-shift" style="--col:5;--span:3" data-day="Fri–Sun"><img src="assets/img/cafe-table-cups.webp" alt="Cups of coffee on a busy café table" width="1000" height="750" fetchpriority="high"></div></div></section><section class="week-sheet role-run" id="a-swap"><div class="week-strip"><div class="day-rule" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="label-run" aria-hidden="true"><span class="day-label">Mon</span><span class="day-label">Tue</span><span class="day-label">Wed</span><span class="day-label">Thu</span><span class="day-label">Fri</span><span class="day-label">Sat</span><span class="day-label">Sun</span></div><div class="week-head"><h2>How a swap runs</h2><p>Three states, each with a name and a time on it.</p></div><div class="shift-block" style="--col:1;--span:2" data-day="Mon–Tue"><h3>Proposed</h3>
+<p>From the shift itself, on the share link. The person opens their own shift, chooses swap, and picks who they would like to swap with from the people free that day. A manager can propose one the same way from the draft or the published week.</p></div><div class="shift-block" style="--col:3;--span:2" data-day="Wed–Thu"><h3>Agreed</h3>
+<p>The other person sees the proposal against the shift and answers yes or no. Then the manager answers. Both answers are needed; a swap is never live on one person's word, and a manager can decline with a short note that both people see.</p></div><div class="shift-block" style="--col:5;--span:3" data-day="Fri–Sun"><h3>Recorded</h3>
+<p>The two shifts change places on the published week, and each cell carries the record: who proposed, who agreed, who approved, and when each of those happened. The print view marks both cells as changed. Nothing about the original placement is erased — the record shows what the week was and what it became.</p></div></div></section><section class="week-sheet long-shift" id="cover"><div class="week-strip"><div class="day-rule" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="label-run" aria-hidden="true"><span class="day-label">Mon</span><span class="day-label">Tue</span><span class="day-label">Wed</span><span class="day-label">Thu</span><span class="day-label">Fri</span><span class="day-label">Sat</span><span class="day-label">Sun</span></div><div class="week-head"><h2>Finding cover</h2><p>Who is free, who said yes, written where the shift is.</p></div><div class="shift-block" style="--col:1;--span:4" data-day="Mon–Thu"><h3>Finding cover</h3>
+<p>Someone cannot make a shift. The manager opens that shift and chooses cover, and the planner lists the people who are available that day and not already on shift, in the order they last worked that role. The shift can be offered to one person or to all of them at once. The first yes takes it, everyone else's offer closes, and the shift moves.</p>
+<p>The cell shows a cover note — who covered, who agreed it, when — which is what you can see in the draft week on the home page. If nobody says yes, the cell turns red and stays red on the print view, which is an honest wall to look at: an open shift is not a quiet day.</p>
+<p>Cover offers go out on the share link only. The planner sends no messages to anyone's phone, so the person doing the asking is still you; the planner just shows you who can be asked and keeps the answers in one place.</p></div><div class="shift-block photo-shift" style="--col:5;--span:3" data-day="Fri–Sun"><img src="assets/img/wall-clock-plain.webp" alt="A round wall clock on a plain grey wall" width="1000" height="563" loading="lazy" decoding="async"></div></div></section><section class="week-sheet role-run" id="afterwards"><div class="week-strip"><div class="day-rule" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="label-run" aria-hidden="true"><span class="day-label">Mon</span><span class="day-label">Tue</span><span class="day-label">Wed</span><span class="day-label">Thu</span><span class="day-label">Fri</span><span class="day-label">Sat</span><span class="day-label">Sun</span></div><div class="week-head"><h2>After the week</h2><p>A published week keeps its own history.</p></div><div class="shift-block" style="--col:1;--span:3" data-day="Mon–Wed"><h3>On a week already published</h3>
+<p>Swaps and cover almost always happen after publishing, so the planner treats a published week as the normal case. The change is applied to the live week and the share link updates for everyone. The cells involved carry a small mark in the print view, so if the wall copy was printed on Monday and a swap happened on Wednesday, the difference is easy to spot and reprint.</p></div><div class="shift-block" style="--col:4;--span:4" data-day="Thu–Sun"><h3>What the record is for afterwards</h3>
+<p>The first use is the boring one: answering "who actually worked Tuesday" a fortnight later, in one look, with the names of the people who agreed the change. The second is fairness over a run of weeks — if one person has covered four Saturdays in a row, the record shows it plainly, and a manager can see it before the person has to say it. The third is hand-over: a new manager can read the last eight weeks and understand how the team really runs, not how the pattern says it should.</p>
+<p>What the record is not: a timesheet, or evidence for pay. It shows the plan and the agreed changes to it, and it will not tell you who arrived late. That distinction is spelled out on the <a href="what-it-does-not-do.html">what it does not do</a> page.</p></div></div></section><section class="swap-strip" id="walkthrough"><div class="week-sheet"><div class="week-strip"><div class="day-rule" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="label-run" aria-hidden="true"><span class="day-label">Mon</span><span class="day-label">Tue</span><span class="day-label">Wed</span><span class="day-label">Thu</span><span class="day-label">Fri</span><span class="day-label">Sat</span><span class="day-label">Sun</span></div><div class="shift-block" style="--col:2;--span:5" data-day="Tue–Sat"><h2>See a swap recorded on your own week.</h2><p>Send one real week and we will run a swap and a cover through it on the walkthrough, so you can see exactly what your staff would see on their phones.</p><a class="book-shift book-loud" href="see-it-on-your-week.html">See it on your own week</a></div></div></div></section>
+</main>
+<footer class="week-foot"><div class="week-sheet foot-week"><div style="--col:1;--span:2"><a class="rota-mark" href="index.html"><span class="mark-cells" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>Prefer Solutions</a><p>A shift-rota planner for small teams, made in Cork and shown on your own week.</p></div><div style="--col:3;--span:2"><span class="foot-tag">Pages</span><ul><li><a href="index.html">Home</a></li><li><a href="building-a-rota.html">Building a rota</a></li><li><a href="swaps-and-cover.html">Swaps and cover</a></li><li><a href="what-it-does-not-do.html">What it does not do</a></li><li><a href="see-it-on-your-week.html">See it on your week</a></li></ul></div><div style="--col:5;--span:2"><span class="foot-tag">The small print</span><ul><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms of use</a></li><li><a href="mailto:hello@prefersolutions.com">hello@prefersolutions.com</a></li></ul></div><div style="--col:7;--span:1"><span class="foot-tag">Walkthrough</span><a class="book-shift book-loud" href="see-it-on-your-week.html">See it on your own week</a></div><div class="foot-year">© 2026 Prefer Solutions · Cork, Ireland · Walkthroughs by enquiry across Ireland</div></div></footer>
+<aside class="rota-notice" id="consent-notice" hidden aria-label="Cookie preferences"><p class="notice-copy">One answer, yours, is all this site remembers, and it lives in your own browser. No measurement or advertising cookie is set here unless you turn one on yourself. <a href="privacy.html">How we handle data</a></p><div class="notice-choices"><button type="button" class="book-shift accept-shift">Accept all</button><button type="button" class="book-shift book-quiet manage-shift" aria-expanded="false" aria-controls="notice-panel">Manage preferences</button></div><div class="notice-panel" id="notice-panel" hidden><label class="notice-switch"><input type="checkbox" id="notice-analytics"><span>Analytics and performance</span></label><p class="notice-small">Nothing of the kind is installed today. The switch records your answer for the day something is.</p><button type="button" class="book-shift save-shift">Save choices</button></div></aside>
+<script>
+(function(){
+  var top=document.querySelector('.rota-top'),tg=document.querySelector('.rota-toggle');
+  if(tg){tg.addEventListener('click',function(){var out=top.classList.toggle('menu-out');tg.setAttribute('aria-expanded',out?'true':'false');tg.setAttribute('aria-label',out?'Close the menu':'Open the menu');});}
+  var strips=[].slice.call(document.querySelectorAll('.week-strip')),vh=window.innerHeight||800;
+  strips.forEach(function(s){if(s.getBoundingClientRect().top<vh){s.classList.add('strip-live');}});
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('strip-live');io.unobserve(e.target);}});},{threshold:0});
+    strips.forEach(function(s){if(!s.classList.contains('strip-live')){io.observe(s);}});
+  }
+  var K='ps_rota_pref',slip=document.getElementById('consent-notice');
+  if(slip){
+    var kept=null;try{kept=localStorage.getItem(K);}catch(err){}
+    if(!kept){
+      slip.hidden=false;
+      var keep=function(analytics){try{localStorage.setItem(K,JSON.stringify({analytics:!!analytics,kept:new Date().toISOString()}));}catch(err){}slip.hidden=true;};
+      slip.querySelector('.accept-shift').addEventListener('click',function(){keep(true);});
+      var man=slip.querySelector('.manage-shift'),pan=document.getElementById('notice-panel');
+      man.addEventListener('click',function(){var show=pan.hidden;pan.hidden=!show;man.setAttribute('aria-expanded',show?'true':'false');});
+      slip.querySelector('.save-shift').addEventListener('click',function(){keep(document.getElementById('notice-analytics').checked);});
+    }
+  }
+  var nx=document.querySelector('input[name="_next"]');
+  if(nx){nx.value=new URL('thanks.html',location.href).href;}
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+# Prefer Solutions
+
+> A shift-rota planner for small teams, placed in Cork, Ireland, and shown by walkthrough on the team's own week.
+
+Prefer Solutions holds one week at a time: days across, people down, a shift dropped into a cell. Availability is held per person so an unavailable day cannot be filled by accident; swaps and cover are recorded against the shift with who agreed and when; a published week prints for the wall and opens from a share link. It does not calculate pay, is not a time clock, tracks no location and gives no HR or employment advice.
+
+## Pages
+- https://prefersolutions.com/ — home: the draft week, what the planner does, how we work, questions, contact
+- https://prefersolutions.com/building-a-rota.html — adding people, availability, placing shifts, what turns a cell red, draft versus published
+- https://prefersolutions.com/swaps-and-cover.html — how a swap is proposed, agreed and recorded; finding cover; the record afterwards
+- https://prefersolutions.com/what-it-does-not-do.html — no payroll, no time clock, no HR advice, no tracking, no data sale
+- https://prefersolutions.com/see-it-on-your-week.html — the walkthrough request form
+- https://prefersolutions.com/privacy.html — privacy notice
+- https://prefersolutions.com/terms.html — terms of use and image credits
+
+## Contact
+hello@prefersolutions.com — read Monday to Friday, Irish time. Walkthroughs in person around Cork and by shared screen anywhere in Ireland.

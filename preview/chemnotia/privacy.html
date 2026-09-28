@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy notice · Chemnotia</title>
+<meta name="description" content="What chemnotia.com collects through its request form, where it goes, the single consent entry kept in your browser, and how to exercise your rights.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#134E4A">
+<link rel="canonical" href="/privacy.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Chemnotia">
+<meta property="og:title" content="Privacy notice · Chemnotia">
+<meta property="og:description" content="What chemnotia.com collects through its request form, where it goes, the single consent entry kept in your browser, and how to exercise your rights.">
+<meta property="og:image" content="/assets/og.png">
+<meta property="og:url" content="/privacy.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="48x48 32x32 16x16">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Teko:wght@500&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap">
+<style>
+:root{--ground:#F4FAF9;--ink:#0D1F1E;--theme:#134E4A;--accent:#9BE3D8;--mid:#3B6863;--tint:#E3F3F0;--rule:#B7D6D1;--pale:#C9EDE7;--dim:#9FC7C1;--alarm:#8A2C2C}
+*{box-sizing:border-box}
+html{background:var(--ground);color:var(--ink);font:400 17px/1.6 "Noto Serif",Georgia,"Times New Roman",serif;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;min-height:100vh;display:flex;flex-direction:column}
+main{flex:1 0 auto}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--theme);text-decoration-thickness:1px;text-underline-offset:3px}
+p{margin:0}
+:focus-visible{outline:3px solid var(--theme);outline-offset:3px}
+.stock-list{width:100%;max-width:1180px;margin:0 auto;padding:0 clamp(16px,4vw,48px)}
+
+/* the bar along the top: mark, tagline, shelf of links, order tab */
+.bench-top{display:grid;grid-template-columns:1fr auto auto;grid-template-areas:"mark tab tab" "shelf shelf shelf";align-items:center;gap:0 24px;padding:14px 0 0;position:relative}
+.mark-cell{grid-area:mark}
+.bar-tab{grid-area:tab;justify-self:end}
+.shelf-nav{grid-area:shelf;border-top:1px solid var(--rule);margin-top:12px}
+.bench-top::after{content:"";position:absolute;left:0;right:0;bottom:0;height:9px;
+ background:linear-gradient(var(--theme),var(--theme)) 0 0/100% 2px no-repeat,
+ repeating-linear-gradient(90deg,var(--theme) 0 1px,transparent 1px 10px) 0 2px/100% 5px no-repeat,
+ repeating-linear-gradient(90deg,var(--theme) 0 1px,transparent 1px 50px) 0 2px/100% 9px no-repeat}
+.bench-mark{font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:44px;line-height:1;letter-spacing:.06em;text-transform:uppercase;color:var(--theme);text-decoration:none;display:block}
+.mark-strap{display:block;font-size:13px;letter-spacing:.02em;color:var(--mid);margin-top:2px}
+.shelf-links{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:0 30px}
+.shelf-links a{display:block;white-space:nowrap;font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:23px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink);text-decoration:none;padding:12px 0 9px;border-bottom:3px solid transparent}
+.shelf-links a:hover{color:var(--theme)}
+.shelf-links a[aria-current=page]{border-bottom-color:var(--accent);color:var(--theme)}
+.order-tab{display:inline-block;font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:23px;letter-spacing:.05em;text-transform:uppercase;line-height:1;background:var(--theme);color:var(--ground);text-decoration:none;padding:12px 20px 9px;border:2px solid var(--theme)}
+.order-tab:hover{background:var(--ink);border-color:var(--ink);color:var(--ground)}
+.order-tab:focus-visible{outline-offset:4px}
+.shelf-toggle{display:none;grid-area:tog;justify-self:end;width:48px;height:44px;border:2px solid var(--theme);background:var(--ground);padding:0;cursor:pointer;position:relative}
+.shelf-toggle span{position:absolute;left:11px;right:11px;height:3px;background:var(--theme);transition:transform .22s,opacity .22s}
+.shelf-toggle span:nth-child(1){top:11px}
+.shelf-toggle span:nth-child(2){top:19px}
+.shelf-toggle span:nth-child(3){top:27px}
+.list-open .shelf-toggle span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.list-open .shelf-toggle span:nth-child(2){opacity:0}
+.list-open .shelf-toggle span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+
+/* opening lines of a page */
+.bench-lead{padding:clamp(48px,7vw,96px) 0 8px;display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:24px 40px;align-items:end}
+.ticket-code{font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:22px;letter-spacing:.12em;text-transform:uppercase;color:var(--mid);grid-column:1/-1;margin:0}
+.ticket-line{font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:clamp(58px,8.6vw,124px);line-height:.9;letter-spacing:-.005em;text-transform:uppercase;margin:0;max-width:12ch;color:var(--ink)}
+.ticket-copy{font-size:19px;line-height:1.55;max-width:44ch;margin:0 0 6px}
+.ticket-acts{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:14px 28px;align-items:center;margin-top:18px}
+.ticket-acts a:not(.order-tab){font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:22px;letter-spacing:.05em;text-transform:uppercase;color:var(--theme)}
+.ticket-stamp{font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:18px;letter-spacing:.1em;text-transform:uppercase;color:var(--mid);margin:0}
+
+/* a family rule: graduated bar, code, family name, note */
+.rule-head{margin-top:clamp(56px,7vw,96px);display:grid;grid-template-columns:auto 1fr;gap:4px 28px;align-items:end}
+.family-rule{grid-column:1/-1;height:18px;
+ background:linear-gradient(var(--theme),var(--theme)) 0 0/100% 3px no-repeat,
+ repeating-linear-gradient(90deg,var(--theme) 0 1px,transparent 1px 12px) 0 3px/100% 8px no-repeat,
+ repeating-linear-gradient(90deg,var(--theme) 0 1px,transparent 1px 60px) 0 3px/100% 15px no-repeat}
+.family-code{font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:24px;letter-spacing:.12em;color:var(--mid);align-self:end;padding-bottom:6px}
+.rule-head h2,.rule-head h1{font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:clamp(42px,5.6vw,72px);line-height:.94;letter-spacing:.005em;text-transform:uppercase;margin:0;color:var(--ink)}
+.family-note{grid-column:2;font-size:15px;line-height:1.5;color:var(--mid);max-width:60ch;margin:6px 0 0}
+
+/* the list itself */
+.bench-line{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:6px 40px;padding:22px 0 24px;position:relative;margin:0}
+.bench-line::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--rule)}
+html.bench-js .bench-line::after{transform:scaleX(0);transform-origin:0 50%;transition:transform .55s cubic-bezier(.2,.75,.25,1);transition-delay:var(--rule-wait,0ms)}
+html.bench-js .bench-line.rule-drawn::after{transform:none}
+.part-name{font-weight:700;font-size:18px;line-height:1.35;margin:0}
+.part-name a{color:inherit}
+.part-copy{margin:.4em 0 0;font-size:16px;line-height:1.6;max-width:60ch;overflow-wrap:anywhere}
+.part-name,.stage-copy,.reply-cell,.entry-aside{overflow-wrap:anywhere}
+code{font-size:.92em;letter-spacing:.01em;background:var(--tint);padding:1px 5px}
+.volume-cell{font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:29px;line-height:1.06;letter-spacing:.03em;color:var(--theme);text-align:right;margin:0}
+.tolerance-note{font-size:14px;line-height:1.45;color:var(--mid);text-align:right;margin:.35em 0 0}
+.glyph-cell{display:grid;grid-template-columns:56px 1fr;gap:20px;align-items:start}
+.glyph-cell svg{width:56px;height:56px;stroke:var(--theme);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;margin-top:2px}
+.stage-line{grid-template-columns:minmax(0,.6fr) minmax(0,2fr)}
+.stage-cell{font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:30px;line-height:1.05;letter-spacing:.03em;color:var(--theme);text-transform:uppercase;margin:0}
+.stage-copy{font-size:16px;line-height:1.65;max-width:68ch;margin:0}
+.query-line{grid-template-columns:minmax(0,1fr) minmax(0,1.6fr)}
+.query-cell{font-weight:700;font-size:18px;line-height:1.4;margin:0}
+.reply-cell{font-size:16px;line-height:1.65;max-width:66ch;margin:0}
+.figure-cell{font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:29px;line-height:1.06;letter-spacing:.03em;color:var(--theme);text-align:right;margin:0}
+.figure-cell a{color:inherit}
+
+/* the order band */
+.order-band{background:var(--theme);color:var(--ground);margin-top:clamp(56px,7vw,96px);padding:clamp(40px,6vw,72px) 0}
+.order-band h2{font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:clamp(48px,7vw,96px);line-height:.9;text-transform:uppercase;letter-spacing:.005em;margin:0;color:var(--accent)}
+.order-band p{font-size:18px;max-width:52ch;margin:16px 0 0;color:var(--pale)}
+.order-band .order-tab{background:var(--accent);border-color:var(--accent);color:var(--ink);margin-top:28px}
+.order-band .order-tab:hover{background:var(--ground);border-color:var(--ground);color:var(--ink)}
+.order-band :focus-visible{outline-color:var(--ground)}
+.band-grid{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:24px 40px;align-items:end}
+.band-grid .band-fine{font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:22px;letter-spacing:.06em;text-transform:uppercase;color:var(--pale);text-align:right;line-height:1.2}
+
+/* the plate at the foot of the page */
+.bench-plate{margin-top:clamp(56px,7vw,96px);display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:16px 40px;align-items:end}
+.bench-plate figure{margin:0}
+.plate-wide{grid-column:1/-1}
+.plate-code{font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:24px;letter-spacing:.1em;text-transform:uppercase;color:var(--theme);margin:0}
+.plate-note{font-size:15px;line-height:1.5;color:var(--mid);margin:4px 0 0;max-width:46ch}
+.plate-wide+.plate-side{grid-column:2}
+
+/* the bar along the bottom */
+.bench-foot{background:var(--ink);color:var(--ground);margin-top:clamp(56px,7vw,96px);padding:44px 0 36px;flex-shrink:0}
+.ledger-grid{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:24px 40px;align-items:start}
+.ledger-mark{font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:40px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);line-height:1;margin:0}
+.ledger-place{font-size:15px;color:var(--dim);margin:8px 0 0;max-width:52ch;line-height:1.6}
+.ledger-links{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:6px 24px}
+.ledger-links a{font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:22px;letter-spacing:.05em;text-transform:uppercase;color:var(--ground);text-decoration:none}
+.ledger-links a:hover{color:var(--accent)}
+.ledger-fine{grid-column:1/-1;border-top:1px solid #2D4A47;padding-top:16px;font-size:14px;color:var(--dim);display:flex;flex-wrap:wrap;gap:6px 28px;justify-content:space-between;margin:12px 0 0}
+.bench-foot :focus-visible{outline-color:var(--accent)}
+
+/* the request form, written as bench lines */
+.entry-rung{grid-template-columns:minmax(0,.8fr) minmax(0,1.6fr);align-items:start}
+.entry-rung label{font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:28px;line-height:1.05;letter-spacing:.03em;text-transform:uppercase;color:var(--theme);display:block}
+.entry-aside{font-size:14px;line-height:1.45;color:var(--mid);margin:.3em 0 0;max-width:34ch}
+.entry-well{width:100%;font:inherit;font-size:16px;color:var(--ink);background:#FFFFFF;border:2px solid var(--theme);padding:12px 14px;border-radius:0;margin:0}
+.entry-well:focus-visible{outline:3px solid var(--accent);outline-offset:0;border-color:var(--ink)}
+textarea.entry-well{min-height:150px;resize:vertical;font-family:inherit}
+.entry-tall{min-height:220px}
+.entry-send{grid-template-columns:minmax(0,.8fr) minmax(0,1.6fr)}
+.dispatch-tab{font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:26px;letter-spacing:.05em;text-transform:uppercase;line-height:1;background:var(--theme);color:var(--ground);border:2px solid var(--theme);padding:14px 26px 10px;cursor:pointer}
+.dispatch-tab:hover{background:var(--ink);border-color:var(--ink)}
+.honey-well{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+.entry-fault{color:var(--alarm);font-size:14px;margin:.4em 0 0}
+
+/* the consent tray */
+.consent-tray{position:fixed;top:0;left:0;right:0;background:var(--ink);color:var(--ground);border-bottom:5px solid var(--accent);z-index:60;font-size:15px;line-height:1.5;box-shadow:0 8px 26px rgba(13,31,30,.28)}
+.consent-tray[hidden]{display:none}
+.tray-deck{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:10px 40px;align-items:center;padding:13px 0 15px}
+.tray-head{font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:25px;letter-spacing:.05em;text-transform:uppercase;color:var(--accent);margin:0 0 2px;line-height:1}
+.consent-tray p{margin:0}
+.consent-tray a{color:var(--ground)}
+.tray-acts{display:flex;flex-wrap:wrap;gap:10px;justify-content:flex-end}
+.tray-accept,.tray-manage,.tray-save{font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:21px;letter-spacing:.05em;text-transform:uppercase;line-height:1;padding:10px 16px 7px;cursor:pointer;border:2px solid var(--accent)}
+.tray-accept,.tray-save{background:var(--accent);color:var(--ink)}
+.tray-manage{background:transparent;color:var(--ground);border-color:var(--ground)}
+.tray-accept:hover,.tray-save:hover{background:var(--ground);border-color:var(--ground)}
+.tray-manage:hover{background:var(--ground);color:var(--ink)}
+.tray-panel{grid-column:1/-1;margin-top:4px;border-top:1px solid #2D4A47;padding-top:12px}
+.tray-panel[hidden]{display:none}
+.tray-row{display:flex;gap:12px;align-items:flex-start}
+.tray-row input{width:20px;height:20px;margin:2px 0 0;accent-color:#9BE3D8;flex-shrink:0}
+.tray-row small{display:block;color:var(--dim);font-size:13px}
+.tray-panel .tray-acts{justify-content:flex-start;margin-top:10px}
+.consent-tray :focus-visible{outline-color:var(--accent)}
+
+/* the thank-you and empty-shelf pages */
+
+@media (max-width:980px){
+ .bench-top{grid-template-columns:1fr auto auto;grid-template-areas:"mark tab tog" "shelf shelf shelf";gap:0 14px;padding-bottom:12px}
+ .shelf-toggle{display:block}
+ .order-tab.bar-tab{font-size:20px;padding:11px 14px 8px}
+ .shelf-nav{display:none;border-top:0;margin-top:6px}
+ .shelf-links{flex-direction:column;gap:0;padding:0 0 6px}
+ .shelf-links a{padding:10px 0;border-bottom:1px solid var(--rule)}
+ .list-open .shelf-nav{display:block}
+ html:not(.bench-js) .shelf-nav{display:block}
+ html:not(.bench-js) .shelf-links{flex-direction:row;flex-wrap:wrap;gap:0 18px}
+}
+@media (max-width:720px){
+ .bench-lead,.bench-line,.band-grid,.bench-plate,.ledger-grid{grid-template-columns:1fr}
+ .family-note{grid-column:1/-1}
+ .volume-cell,.tolerance-note,.figure-cell,.band-grid .band-fine{text-align:left}
+ .bench-line{gap:8px 0;padding:18px 0 20px}
+ .ticket-acts{order:3;margin-top:6px}
+ .ticket-side{order:4}
+ .plate-wide+.plate-side{grid-column:1}
+ .tray-deck{grid-template-columns:1fr;gap:8px}
+ .tray-acts{justify-content:flex-start}
+ .ledger-links{grid-template-columns:1fr}
+ .bench-mark{font-size:36px}
+ .ticket-line{font-size:clamp(50px,15vw,80px)}
+}
+@media (max-width:400px){
+ .shelf-links a,.ledger-links a{font-size:20px}
+ .bench-mark{font-size:31px}
+ .mark-strap{font-size:12px}
+}
+@media (prefers-reduced-motion:reduce){
+ html.bench-js .bench-line::after{transform:none;transition:none}
+ .shelf-toggle span{transition:none}
+}
+</style>
+<script>document.documentElement.classList.add('bench-js');</script>
+</head>
+<body>
+<header class="stock-list">
+<div class="bench-top">
+<div class="mark-cell"><a class="bench-mark" href="index.html">Chemnotia</a><span class="mark-strap">Glassware and bench consumables</span></div>
+<button class="shelf-toggle" type="button" aria-expanded="false" aria-controls="shelf-links" aria-label="Open the menu"><span></span><span></span><span></span></button>
+<a class="order-tab bar-tab" href="request-a-price-list.html">Request a price list</a>
+<nav class="shelf-nav" aria-label="Pages"><ul class="shelf-links" id="shelf-links"><li><a href="index.html">Home</a></li><li><a href="glassware.html">Glassware</a></li><li><a href="bench-consumables.html">Bench consumables</a></li><li><a href="racks-and-stands.html">Racks and stands</a></li><li><a href="request-a-price-list.html">Request a price list</a></li></ul></nav>
+</div>
+</header>
+<main>
+<div class="stock-list"><div class="bench-lead"><p class="ticket-code">Privacy notice</p><h1 class="ticket-line">What this site keeps, and what it does not.</h1><div class="ticket-side"><p class="ticket-copy">Written for the people who read chemnotia.com and send lists through it. Short, because there is not much to say: one form, one mailbox, one entry in your browser.</p><p class="ticket-stamp">Last updated 28 September 2026</p></div></div></div>
+<div class="stock-list">
+<div class="rule-head"><div class="family-rule" aria-hidden="true"></div><span class="family-code">P1</span><h2>Who and what</h2><p class="family-note">The site, the business, the scope of this notice.</p></div>
+<div class="bench-line stage-line"><p class="stage-cell">The site</p><p class="stage-copy">This notice covers chemnotia.com, the website of Chemnotia, a supplier of laboratory glassware and bench consumables placed in Leuven, Flemish Brabant, Belgium. It applies to everything you read here and to anything you send through the request form or to the mailbox.</p></div>
+<div class="bench-line stage-line"><p class="stage-cell">The form</p><p class="stage-copy">The request page carries one form. It asks for a name, an email address, an organisation if you choose to give one, a delivery postcode and country, the part list itself and a message. Those fields are passed to a form-relay service that turns the submission into an email and delivers it to orders@chemnotia.com; the relay holds the submission only for as long as delivery takes. What you sent is used to read the list, reply with a price list and, if you confirm, to pack and dispatch the order. It is used for nothing else.</p></div>
+<div class="bench-line stage-line"><p class="stage-cell">The mailbox</p><p class="stage-copy">Mail to orders@chemnotia.com stays in that mailbox while a quotation, an order or a question about either is open, and afterwards for the period Belgian tax rules require invoices and the correspondence behind them to be kept. When that period ends the thread is deleted.</p></div>
+<div class="rule-head"><div class="family-rule" aria-hidden="true"></div><span class="family-code">P2</span><h2>In your browser</h2><p class="family-note">The consent entry, and the fonts.</p></div>
+<div class="bench-line stage-line"><p class="stage-cell">The consent entry</p><p class="stage-copy">On a first visit a strip opens across the head of the page, above everything else, and pushes the page down rather than sitting over it. Whatever you choose there is stored as one entry, named <code>cn_bench_pref</code>, in your browser&rsquo;s local storage, so the notice does not return. The entry records your choice and the date, nothing else. Today nothing on the site reads it: no analytics, no advertising tags and no tag manager are installed, and the site sets no cookies of its own. Should analytics ever be added, it would run only where that entry records a yes, and this notice would be rewritten first.</p></div>
+<div class="bench-line stage-line"><p class="stage-cell">Fonts</p><p class="stage-copy">Two typefaces are fetched from a font service on every page. The request goes straight from your browser to that service, which therefore sees your address as any server you fetch a file from would. No other third party is called by the site.</p></div>
+<div class="bench-line stage-line"><p class="stage-cell">No sale</p><p class="stage-copy">Nothing you send is sold, rented or handed to a third party for marketing. When an order ships, a carrier receives a delivery address and a parcel description, and nothing more.</p></div>
+<div class="rule-head"><div class="family-rule" aria-hidden="true"></div><span class="family-code">P3</span><h2>Your rights</h2><p class="family-note">Under European and Californian law, and how to use them.</p></div>
+<div class="bench-line stage-line"><p class="stage-cell">In the European Union</p><p class="stage-copy">The General Data Protection Regulation lets you see what is held about you, have a wrong entry put right or the whole record erased, take a machine-readable copy away with you, and object to a use you dislike. A complaint can also go to the Belgian Data Protection Authority if you feel a request was brushed aside.</p></div>
+<div class="bench-line stage-line"><p class="stage-cell">In California</p><p class="stage-copy">Under the California Consumer Privacy Act a resident of California may ask what is collected, ask for it to be deleted, opt out of any sale, and expect the same service either way. We sell nothing, so the opt-out is already in effect.</p></div>
+<div class="bench-line stage-line"><p class="stage-cell">How to ask</p><p class="stage-copy">Write to orders@chemnotia.com with the request. We answer from the same address within the period the law allows, and normally within a few working days. We may ask you to confirm the address the request came from before anything is deleted.</p></div>
+<div class="bench-line stage-line"><p class="stage-cell">Changes</p><p class="stage-copy">This notice is revised when the site or the way it handles a list changes. The date at the top of the page is the date of the current version.</p></div>
+<div class="bench-plate"><figure class=""><img src="assets/img/rack-wood.webp" alt="A two-tier wooden test-tube rack with drying pegs, photographed against white" width="1200" height="675" loading="lazy" decoding="async" fetchpriority="low"></figure><div class="plate-side"><p class="plate-code">Plate 6</p><p class="plate-note">A two-tier wooden rack with its drying pegs, against white.</p></div></div>
+</div>
+</main>
+<footer class="bench-foot">
+<div class="stock-list ledger-grid">
+<div><p class="ledger-mark">Chemnotia</p><p class="ledger-place">Glassware and bench consumables, from a stockroom in Leuven, Flemish Brabant, Belgium. Glass, racks, stands and consumables only: no reagents, no calibration, nothing for medical or diagnostic use.</p></div>
+<ul class="ledger-links"><li><a href="index.html">Home</a></li><li><a href="glassware.html">Glassware</a></li><li><a href="bench-consumables.html">Bench consumables</a></li><li><a href="racks-and-stands.html">Racks and stands</a></li><li><a href="request-a-price-list.html">Request a price list</a></li><li><a href="privacy.html">Privacy notice</a></li><li><a href="terms.html">Terms of use</a></li></ul>
+<p class="ledger-fine"><span>© 2026 Chemnotia · Leuven, Flemish Brabant</span><span>Serving Belgium, the Netherlands and Luxembourg</span></p>
+</div>
+</footer>
+<div class="consent-tray" id="consent-tray" role="region" aria-label="Consent preferences" hidden>
+<div class="stock-list tray-deck">
+<div><p class="tray-head">Your choice, held on your own machine</p>
+<p>No cookies are set here and nothing is measured. Your answer is written once to this browser&rsquo;s storage, which is the only reason the strip stays away next time. <a href="privacy.html">Privacy notice</a>.</p></div>
+<div class="tray-acts"><button class="tray-accept" id="tray-accept" type="button">Accept all</button><button class="tray-manage" id="tray-manage" type="button" aria-expanded="false" aria-controls="tray-panel">Manage preferences</button></div>
+<div class="tray-panel" id="tray-panel" hidden>
+<div class="tray-row"><input type="checkbox" id="tray-analytics"><label for="tray-analytics">Analytics and performance<small>Stays unticked until you tick it. At present no tool on the site would read the answer either way.</small></label></div>
+<div class="tray-acts"><button class="tray-save" id="tray-save" type="button">Save choices</button></div>
+</div>
+</div>
+</div>
+<script>
+(function(){
+  var top=document.querySelector('.bench-top'),tog=document.querySelector('.shelf-toggle');
+  if(tog&&top){tog.addEventListener('click',function(){var o=top.classList.toggle('list-open');
+    tog.setAttribute('aria-expanded',o?'true':'false');tog.setAttribute('aria-label',o?'Close the menu':'Open the menu');});}
+  var lines=[].slice.call(document.querySelectorAll('.bench-line'));
+  if(!('IntersectionObserver' in window)){lines.forEach(function(l){l.classList.add('rule-drawn');});}
+  else{var io=new IntersectionObserver(function(es){var k=0;es.forEach(function(e){if(e.isIntersecting){
+      e.target.style.setProperty('--rule-wait',(k*45)+'ms');e.target.classList.add('rule-drawn');io.unobserve(e.target);k++;}});},
+    {rootMargin:'0px 0px -6% 0px'});lines.forEach(function(l){io.observe(l);});}
+  var KEY='cn_bench_pref',tray=document.getElementById('consent-tray');
+  if(!tray)return;
+  function fit(){document.body.style.paddingTop=tray.hidden?'':tray.offsetHeight+'px';}
+  var stored=null;try{stored=localStorage.getItem(KEY);}catch(err){stored=null;}
+  if(!stored){tray.hidden=false;fit();
+    if('ResizeObserver' in window){new ResizeObserver(fit).observe(tray);}
+    window.addEventListener('resize',fit);
+    if(document.fonts&&document.fonts.ready&&document.fonts.ready.then){document.fonts.ready.then(fit);}}
+  var panel=document.getElementById('tray-panel'),manage=document.getElementById('tray-manage'),
+      accept=document.getElementById('tray-accept'),save=document.getElementById('tray-save'),
+      box=document.getElementById('tray-analytics');
+  function keep(v){try{localStorage.setItem(KEY,JSON.stringify({analytics:v,saved:new Date().toISOString().slice(0,10)}));}catch(err){}
+    tray.hidden=true;fit();}
+  accept.addEventListener('click',function(){keep(true);});
+  manage.addEventListener('click',function(){var o=panel.hidden;panel.hidden=!o;manage.setAttribute('aria-expanded',o?'true':'false');
+    fit();if(o){box.focus();}});
+  save.addEventListener('click',function(){keep(!!box.checked);});
+})();
+</script>
+</body>
+</html>

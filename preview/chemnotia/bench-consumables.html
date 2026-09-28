@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bench consumables: bottles, tubing, paper · Chemnotia</title>
+<meta name="description" content="Wash bottles, silicone and PVC tubing by bore and wall, stoppers by size, filter paper by grade and retention, disposable pipettes. Stocked in Leuven.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#134E4A">
+<link rel="canonical" href="/bench-consumables.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Chemnotia">
+<meta property="og:title" content="Bench consumables: bottles, tubing, paper · Chemnotia">
+<meta property="og:description" content="Wash bottles, silicone and PVC tubing by bore and wall, stoppers by size, filter paper by grade and retention, disposable pipettes. Stocked in Leuven.">
+<meta property="og:image" content="/assets/og.png">
+<meta property="og:url" content="/bench-consumables.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="48x48 32x32 16x16">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Teko:wght@500&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap">
+<style>
+:root{--ground:#F4FAF9;--ink:#0D1F1E;--theme:#134E4A;--accent:#9BE3D8;--mid:#3B6863;--tint:#E3F3F0;--rule:#B7D6D1;--pale:#C9EDE7;--dim:#9FC7C1;--alarm:#8A2C2C}
+*{box-sizing:border-box}
+html{background:var(--ground);color:var(--ink);font:400 17px/1.6 "Noto Serif",Georgia,"Times New Roman",serif;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;min-height:100vh;display:flex;flex-direction:column}
+main{flex:1 0 auto}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--theme);text-decoration-thickness:1px;text-underline-offset:3px}
+p{margin:0}
+:focus-visible{outline:3px solid var(--theme);outline-offset:3px}
+.stock-list{width:100%;max-width:1180px;margin:0 auto;padding:0 clamp(16px,4vw,48px)}
+
+/* the bar along the top: mark, tagline, shelf of links, order tab */
+.bench-top{display:grid;grid-template-columns:1fr auto auto;grid-template-areas:"mark tab tab" "shelf shelf shelf";align-items:center;gap:0 24px;padding:14px 0 0;position:relative}
+.mark-cell{grid-area:mark}
+.bar-tab{grid-area:tab;justify-self:end}
+.shelf-nav{grid-area:shelf;border-top:1px solid var(--rule);margin-top:12px}
+.bench-top::after{content:"";position:absolute;left:0;right:0;bottom:0;height:9px;
+ background:linear-gradient(var(--theme),var(--theme)) 0 0/100% 2px no-repeat,
+ repeating-linear-gradient(90deg,var(--theme) 0 1px,transparent 1px 10px) 0 2px/100% 5px no-repeat,
+ repeating-linear-gradient(90deg,var(--theme) 0 1px,transparent 1px 50px) 0 2px/100% 9px no-repeat}
+.bench-mark{font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:44px;line-height:1;letter-spacing:.06em;text-transform:uppercase;color:var(--theme);text-decoration:none;display:block}
+.mark-strap{display:block;font-size:13px;letter-spacing:.02em;color:var(--mid);margin-top:2px}
+.shelf-links{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:0 30px}
+.shelf-links a{display:block;white-space:nowrap;font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:23px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink);text-decoration:none;padding:12px 0 9px;border-bottom:3px solid transparent}
+.shelf-links a:hover{color:var(--theme)}
+.shelf-links a[aria-current=page]{border-bottom-color:var(--accent);color:var(--theme)}
+.order-tab{display:inline-block;font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:23px;letter-spacing:.05em;text-transform:uppercase;line-height:1;background:var(--theme);color:var(--ground);text-decoration:none;padding:12px 20px 9px;border:2px solid var(--theme)}
+.order-tab:hover{background:var(--ink);border-color:var(--ink);color:var(--ground)}
+.order-tab:focus-visible{outline-offset:4px}
+.shelf-toggle{display:none;grid-area:tog;justify-self:end;width:48px;height:44px;border:2px solid var(--theme);background:var(--ground);padding:0;cursor:pointer;position:relative}
+.shelf-toggle span{position:absolute;left:11px;right:11px;height:3px;background:var(--theme);transition:transform .22s,opacity .22s}
+.shelf-toggle span:nth-child(1){top:11px}
+.shelf-toggle span:nth-child(2){top:19px}
+.shelf-toggle span:nth-child(3){top:27px}
+.list-open .shelf-toggle span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.list-open .shelf-toggle span:nth-child(2){opacity:0}
+.list-open .shelf-toggle span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+
+/* opening lines of a page */
+.bench-lead{padding:clamp(48px,7vw,96px) 0 8px;display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:24px 40px;align-items:end}
+.ticket-code{font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:22px;letter-spacing:.12em;text-transform:uppercase;color:var(--mid);grid-column:1/-1;margin:0}
+.ticket-line{font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:clamp(58px,8.6vw,124px);line-height:.9;letter-spacing:-.005em;text-transform:uppercase;margin:0;max-width:12ch;color:var(--ink)}
+.ticket-copy{font-size:19px;line-height:1.55;max-width:44ch;margin:0 0 6px}
+.ticket-acts{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:14px 28px;align-items:center;margin-top:18px}
+.ticket-acts a:not(.order-tab){font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:22px;letter-spacing:.05em;text-transform:uppercase;color:var(--theme)}
+.ticket-stamp{font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:18px;letter-spacing:.1em;text-transform:uppercase;color:var(--mid);margin:0}
+
+/* a family rule: graduated bar, code, family name, note */
+.rule-head{margin-top:clamp(56px,7vw,96px);display:grid;grid-template-columns:auto 1fr;gap:4px 28px;align-items:end}
+.family-rule{grid-column:1/-1;height:18px;
+ background:linear-gradient(var(--theme),var(--theme)) 0 0/100% 3px no-repeat,
+ repeating-linear-gradient(90deg,var(--theme) 0 1px,transparent 1px 12px) 0 3px/100% 8px no-repeat,
+ repeating-linear-gradient(90deg,var(--theme) 0 1px,transparent 1px 60px) 0 3px/100% 15px no-repeat}
+.family-code{font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:24px;letter-spacing:.12em;color:var(--mid);align-self:end;padding-bottom:6px}
+.rule-head h2,.rule-head h1{font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:clamp(42px,5.6vw,72px);line-height:.94;letter-spacing:.005em;text-transform:uppercase;margin:0;color:var(--ink)}
+.family-note{grid-column:2;font-size:15px;line-height:1.5;color:var(--mid);max-width:60ch;margin:6px 0 0}
+
+/* the list itself */
+.bench-line{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:6px 40px;padding:22px 0 24px;position:relative;margin:0}
+.bench-line::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--rule)}
+html.bench-js .bench-line::after{transform:scaleX(0);transform-origin:0 50%;transition:transform .55s cubic-bezier(.2,.75,.25,1);transition-delay:var(--rule-wait,0ms)}
+html.bench-js .bench-line.rule-drawn::after{transform:none}
+.part-name{font-weight:700;font-size:18px;line-height:1.35;margin:0}
+.part-name a{color:inherit}
+.part-copy{margin:.4em 0 0;font-size:16px;line-height:1.6;max-width:60ch;overflow-wrap:anywhere}
+.part-name,.stage-copy,.reply-cell,.entry-aside{overflow-wrap:anywhere}
+code{font-size:.92em;letter-spacing:.01em;background:var(--tint);padding:1px 5px}
+.volume-cell{font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:29px;line-height:1.06;letter-spacing:.03em;color:var(--theme);text-align:right;margin:0}
+.tolerance-note{font-size:14px;line-height:1.45;color:var(--mid);text-align:right;margin:.35em 0 0}
+.glyph-cell{display:grid;grid-template-columns:56px 1fr;gap:20px;align-items:start}
+.glyph-cell svg{width:56px;height:56px;stroke:var(--theme);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;margin-top:2px}
+.stage-line{grid-template-columns:minmax(0,.6fr) minmax(0,2fr)}
+.stage-cell{font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:30px;line-height:1.05;letter-spacing:.03em;color:var(--theme);text-transform:uppercase;margin:0}
+.stage-copy{font-size:16px;line-height:1.65;max-width:68ch;margin:0}
+.query-line{grid-template-columns:minmax(0,1fr) minmax(0,1.6fr)}
+.query-cell{font-weight:700;font-size:18px;line-height:1.4;margin:0}
+.reply-cell{font-size:16px;line-height:1.65;max-width:66ch;margin:0}
+.figure-cell{font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:29px;line-height:1.06;letter-spacing:.03em;color:var(--theme);text-align:right;margin:0}
+.figure-cell a{color:inherit}
+
+/* the order band */
+.order-band{background:var(--theme);color:var(--ground);margin-top:clamp(56px,7vw,96px);padding:clamp(40px,6vw,72px) 0}
+.order-band h2{font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:clamp(48px,7vw,96px);line-height:.9;text-transform:uppercase;letter-spacing:.005em;margin:0;color:var(--accent)}
+.order-band p{font-size:18px;max-width:52ch;margin:16px 0 0;color:var(--pale)}
+.order-band .order-tab{background:var(--accent);border-color:var(--accent);color:var(--ink);margin-top:28px}
+.order-band .order-tab:hover{background:var(--ground);border-color:var(--ground);color:var(--ink)}
+.order-band :focus-visible{outline-color:var(--ground)}
+.band-grid{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:24px 40px;align-items:end}
+.band-grid .band-fine{font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:22px;letter-spacing:.06em;text-transform:uppercase;color:var(--pale);text-align:right;line-height:1.2}
+
+/* the plate at the foot of the page */
+.bench-plate{margin-top:clamp(56px,7vw,96px);display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:16px 40px;align-items:end}
+.bench-plate figure{margin:0}
+.plate-wide{grid-column:1/-1}
+.plate-code{font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:24px;letter-spacing:.1em;text-transform:uppercase;color:var(--theme);margin:0}
+.plate-note{font-size:15px;line-height:1.5;color:var(--mid);margin:4px 0 0;max-width:46ch}
+.plate-wide+.plate-side{grid-column:2}
+
+/* the bar along the bottom */
+.bench-foot{background:var(--ink);color:var(--ground);margin-top:clamp(56px,7vw,96px);padding:44px 0 36px;flex-shrink:0}
+.ledger-grid{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:24px 40px;align-items:start}
+.ledger-mark{font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:40px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);line-height:1;margin:0}
+.ledger-place{font-size:15px;color:var(--dim);margin:8px 0 0;max-width:52ch;line-height:1.6}
+.ledger-links{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:6px 24px}
+.ledger-links a{font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:22px;letter-spacing:.05em;text-transform:uppercase;color:var(--ground);text-decoration:none}
+.ledger-links a:hover{color:var(--accent)}
+.ledger-fine{grid-column:1/-1;border-top:1px solid #2D4A47;padding-top:16px;font-size:14px;color:var(--dim);display:flex;flex-wrap:wrap;gap:6px 28px;justify-content:space-between;margin:12px 0 0}
+.bench-foot :focus-visible{outline-color:var(--accent)}
+
+/* the request form, written as bench lines */
+.entry-rung{grid-template-columns:minmax(0,.8fr) minmax(0,1.6fr);align-items:start}
+.entry-rung label{font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:28px;line-height:1.05;letter-spacing:.03em;text-transform:uppercase;color:var(--theme);display:block}
+.entry-aside{font-size:14px;line-height:1.45;color:var(--mid);margin:.3em 0 0;max-width:34ch}
+.entry-well{width:100%;font:inherit;font-size:16px;color:var(--ink);background:#FFFFFF;border:2px solid var(--theme);padding:12px 14px;border-radius:0;margin:0}
+.entry-well:focus-visible{outline:3px solid var(--accent);outline-offset:0;border-color:var(--ink)}
+textarea.entry-well{min-height:150px;resize:vertical;font-family:inherit}
+.entry-tall{min-height:220px}
+.entry-send{grid-template-columns:minmax(0,.8fr) minmax(0,1.6fr)}
+.dispatch-tab{font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:26px;letter-spacing:.05em;text-transform:uppercase;line-height:1;background:var(--theme);color:var(--ground);border:2px solid var(--theme);padding:14px 26px 10px;cursor:pointer}
+.dispatch-tab:hover{background:var(--ink);border-color:var(--ink)}
+.honey-well{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+.entry-fault{color:var(--alarm);font-size:14px;margin:.4em 0 0}
+
+/* the consent tray */
+.consent-tray{position:fixed;top:0;left:0;right:0;background:var(--ink);color:var(--ground);border-bottom:5px solid var(--accent);z-index:60;font-size:15px;line-height:1.5;box-shadow:0 8px 26px rgba(13,31,30,.28)}
+.consent-tray[hidden]{display:none}
+.tray-deck{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:10px 40px;align-items:center;padding:13px 0 15px}
+.tray-head{font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:25px;letter-spacing:.05em;text-transform:uppercase;color:var(--accent);margin:0 0 2px;line-height:1}
+.consent-tray p{margin:0}
+.consent-tray a{color:var(--ground)}
+.tray-acts{display:flex;flex-wrap:wrap;gap:10px;justify-content:flex-end}
+.tray-accept,.tray-manage,.tray-save{font-family:Teko,"Arial Narrow",Impact,sans-serif;font-weight:500;font-size:21px;letter-spacing:.05em;text-transform:uppercase;line-height:1;padding:10px 16px 7px;cursor:pointer;border:2px solid var(--accent)}
+.tray-accept,.tray-save{background:var(--accent);color:var(--ink)}
+.tray-manage{background:transparent;color:var(--ground);border-color:var(--ground)}
+.tray-accept:hover,.tray-save:hover{background:var(--ground);border-color:var(--ground)}
+.tray-manage:hover{background:var(--ground);color:var(--ink)}
+.tray-panel{grid-column:1/-1;margin-top:4px;border-top:1px solid #2D4A47;padding-top:12px}
+.tray-panel[hidden]{display:none}
+.tray-row{display:flex;gap:12px;align-items:flex-start}
+.tray-row input{width:20px;height:20px;margin:2px 0 0;accent-color:#9BE3D8;flex-shrink:0}
+.tray-row small{display:block;color:var(--dim);font-size:13px}
+.tray-panel .tray-acts{justify-content:flex-start;margin-top:10px}
+.consent-tray :focus-visible{outline-color:var(--accent)}
+
+/* the thank-you and empty-shelf pages */
+
+@media (max-width:980px){
+ .bench-top{grid-template-columns:1fr auto auto;grid-template-areas:"mark tab tog" "shelf shelf shelf";gap:0 14px;padding-bottom:12px}
+ .shelf-toggle{display:block}
+ .order-tab.bar-tab{font-size:20px;padding:11px 14px 8px}
+ .shelf-nav{display:none;border-top:0;margin-top:6px}
+ .shelf-links{flex-direction:column;gap:0;padding:0 0 6px}
+ .shelf-links a{padding:10px 0;border-bottom:1px solid var(--rule)}
+ .list-open .shelf-nav{display:block}
+ html:not(.bench-js) .shelf-nav{display:block}
+ html:not(.bench-js) .shelf-links{flex-direction:row;flex-wrap:wrap;gap:0 18px}
+}
+@media (max-width:720px){
+ .bench-lead,.bench-line,.band-grid,.bench-plate,.ledger-grid{grid-template-columns:1fr}
+ .family-note{grid-column:1/-1}
+ .volume-cell,.tolerance-note,.figure-cell,.band-grid .band-fine{text-align:left}
+ .bench-line{gap:8px 0;padding:18px 0 20px}
+ .ticket-acts{order:3;margin-top:6px}
+ .ticket-side{order:4}
+ .plate-wide+.plate-side{grid-column:1}
+ .tray-deck{grid-template-columns:1fr;gap:8px}
+ .tray-acts{justify-content:flex-start}
+ .ledger-links{grid-template-columns:1fr}
+ .bench-mark{font-size:36px}
+ .ticket-line{font-size:clamp(50px,15vw,80px)}
+}
+@media (max-width:400px){
+ .shelf-links a,.ledger-links a{font-size:20px}
+ .bench-mark{font-size:31px}
+ .mark-strap{font-size:12px}
+}
+@media (prefers-reduced-motion:reduce){
+ html.bench-js .bench-line::after{transform:none;transition:none}
+ .shelf-toggle span{transition:none}
+}
+</style>
+<script>document.documentElement.classList.add('bench-js');</script>
+</head>
+<body>
+<header class="stock-list">
+<div class="bench-top">
+<div class="mark-cell"><a class="bench-mark" href="index.html">Chemnotia</a><span class="mark-strap">Glassware and bench consumables</span></div>
+<button class="shelf-toggle" type="button" aria-expanded="false" aria-controls="shelf-links" aria-label="Open the menu"><span></span><span></span><span></span></button>
+<a class="order-tab bar-tab" href="request-a-price-list.html">Request a price list</a>
+<nav class="shelf-nav" aria-label="Pages"><ul class="shelf-links" id="shelf-links"><li><a href="index.html">Home</a></li><li><a href="glassware.html">Glassware</a></li><li><a href="bench-consumables.html" aria-current="page">Bench consumables</a></li><li><a href="racks-and-stands.html">Racks and stands</a></li><li><a href="request-a-price-list.html">Request a price list</a></li></ul></nav>
+</div>
+</header>
+<main>
+<div class="stock-list"><div class="bench-lead"><p class="ticket-code">Family 200 &middot; Bench consumables</p><h1 class="ticket-line">Wash bottles, tubing, stoppers, paper, pipettes.</h1><div class="ticket-side"><p class="ticket-copy">The things a bench uses up, bought by the box and listed by the size that matters: bore and wall for tubing, size number for stoppers, grade and retention for paper.</p></div><div class="ticket-acts"><a class="order-tab" href="request-a-price-list.html">Request a price list</a><a href="#stock-deep">What to stock deep</a></div></div></div>
+<div class="stock-list">
+<div class="rule-head"><div class="family-rule" aria-hidden="true"></div><span class="family-code">210</span><h2>Wash bottles</h2><p class="family-note">Polyethylene, translucent, with a bent delivery tube.</p></div>
+<div class="bench-line"><div><p class="part-name">Wash bottle, narrow mouth</p><p class="part-copy">A squeeze bottle with a bent delivery tube and a cap that seals. Translucent, so the level shows through the wall.</p></div><div><p class="volume-cell">250&nbsp;ml &middot; 500&nbsp;ml &middot; 1&nbsp;l</p><p class="tolerance-note">cap colour by request</p></div></div>
+<div class="bench-line"><div><p class="part-name">Wash bottle, wide mouth</p><p class="part-copy">The same body with a wider neck, for filling from a jug without a funnel.</p></div><div><p class="volume-cell">500&nbsp;ml &middot; 1&nbsp;l</p><p class="tolerance-note">cap colour by request</p></div></div>
+<div class="bench-line"><div><p class="part-name">Delivery tube and cap</p><p class="part-copy">The tube and the cap are the parts that crack; both are listed on their own so a bottle is not thrown away for a split tube.</p></div><div><p class="volume-cell">to fit 250&nbsp;ml, 500&nbsp;ml and 1&nbsp;l</p><p class="tolerance-note">sold separately</p></div></div>
+<div class="rule-head"><div class="family-rule" aria-hidden="true"></div><span class="family-code">220</span><h2>Tubing</h2><p class="family-note">Bore first, then wall, in millimetres. Cut by the metre.</p></div>
+<div class="bench-line"><div><p class="part-name">Silicone tubing</p><p class="part-copy">Soft, clear and flexible in the cold; it takes a hose clip and slides over a glass side arm without a fight.</p></div><div><p class="volume-cell">bore 2&nbsp;mm to 12&nbsp;mm &middot; wall 1&nbsp;mm to 3&nbsp;mm</p><p class="tolerance-note">by the metre; coils on request</p></div></div>
+<div class="bench-line"><div><p class="part-name">PVC tubing</p><p class="part-copy">Firmer than silicone, clear, and cheaper by the metre: the tubing for a wash-bottle line or a drain.</p></div><div><p class="volume-cell">bore 3&nbsp;mm to 12&nbsp;mm &middot; wall 1.5&nbsp;mm to 3&nbsp;mm</p><p class="tolerance-note">by the metre</p></div></div>
+<div class="bench-line"><div><p class="part-name">Rubber tubing, thick wall</p><p class="part-copy">Black or red, heavy wall, for a vacuum line where a thin wall would collapse.</p></div><div><p class="volume-cell">bore 6&nbsp;mm to 12&nbsp;mm &middot; wall 3&nbsp;mm to 5&nbsp;mm</p><p class="tolerance-note">by the metre</p></div></div>
+<div class="bench-line"><div><p class="part-name">Hose clips</p><p class="part-copy">Spring and screw clips, listed by the outside diameter of the tubing they close on.</p></div><div><p class="volume-cell">for 6&nbsp;mm to 20&nbsp;mm outside diameter</p><p class="tolerance-note">in tens</p></div></div>
+<div class="rule-head"><div class="family-rule" aria-hidden="true"></div><span class="family-code">230</span><h2>Stoppers</h2><p class="family-note">Rubber by size number, glass by joint.</p></div>
+<div class="bench-line"><div><p class="part-name">Rubber stopper, solid</p><p class="part-copy">Tapered, by the standard size number, which fixes the top and bottom diameter. Grey or red.</p></div><div><p class="volume-cell">size 00 to size 15</p><p class="tolerance-note">in tens</p></div></div>
+<div class="bench-line"><div><p class="part-name">Rubber stopper, one hole and two holes</p><p class="part-copy">The same sizes, bored for a glass tube or a thermometer.</p></div><div><p class="volume-cell">size 0 to size 13</p><p class="tolerance-note">in tens</p></div></div>
+<div class="bench-line"><div><p class="part-name">Cork stopper</p><p class="part-copy">Natural cork, tapered, for dry storage; not for liquids that seep.</p></div><div><p class="volume-cell">sizes as listed</p><p class="tolerance-note">by the bag</p></div></div>
+<div class="bench-line"><div><p class="part-name">Ground-glass stopper</p><p class="part-copy">Pennyhead or hexagonal, by the standard-taper joint that matches the socket on the flask.</p></div><div><p class="volume-cell">joint size as listed</p><p class="tolerance-note">singly</p></div></div>
+<div class="rule-head"><div class="family-rule" aria-hidden="true"></div><span class="family-code">240</span><h2>Filter paper</h2><p class="family-note">Grade and retention as the mill prints them. Diameters in millimetres.</p></div>
+<div class="bench-line"><div><p class="part-name">Qualitative paper, medium</p><p class="part-copy">The general-purpose grade: medium speed, medium retention, the sheet for most gravity filtrations.</p></div><div><p class="volume-cell">55&nbsp;mm &middot; 70&nbsp;mm &middot; 90&nbsp;mm &middot; 110&nbsp;mm &middot; 125&nbsp;mm &middot; 150&nbsp;mm &middot; 185&nbsp;mm &middot; 240&nbsp;mm</p><p class="tolerance-note">box quantity as packed</p></div></div>
+<div class="bench-line"><div><p class="part-name">Qualitative paper, fast</p><p class="part-copy">A coarse, open sheet for gelatinous precipitates and quick separations where fine particles do not matter.</p></div><div><p class="volume-cell">70&nbsp;mm &middot; 90&nbsp;mm &middot; 110&nbsp;mm &middot; 125&nbsp;mm &middot; 150&nbsp;mm &middot; 185&nbsp;mm</p><p class="tolerance-note">box quantity as packed</p></div></div>
+<div class="bench-line"><div><p class="part-name">Qualitative paper, fine</p><p class="part-copy">A slow, tight sheet that holds fine particles. Use it with a funnel and patience.</p></div><div><p class="volume-cell">70&nbsp;mm &middot; 90&nbsp;mm &middot; 110&nbsp;mm &middot; 125&nbsp;mm &middot; 150&nbsp;mm</p><p class="tolerance-note">box quantity as packed</p></div></div>
+<div class="bench-line"><div><p class="part-name">Pleated paper</p><p class="part-copy">Pre-folded for speed, in the same grades, ready to drop into a funnel.</p></div><div><p class="volume-cell">110&nbsp;mm &middot; 125&nbsp;mm &middot; 150&nbsp;mm &middot; 185&nbsp;mm &middot; 240&nbsp;mm</p><p class="tolerance-note">box quantity as packed</p></div></div>
+<div class="rule-head"><div class="family-rule" aria-hidden="true"></div><span class="family-code">250</span><h2>Disposable pipettes</h2><p class="family-note">Glass and polyethylene, by the box.</p></div>
+<div class="bench-line"><div><p class="part-name">Pasteur pipette, glass</p><p class="part-copy">Soda glass, plain or plugged, with a separate rubber teat.</p></div><div><p class="volume-cell">150&nbsp;mm &middot; 230&nbsp;mm</p><p class="tolerance-note">by the box</p></div></div>
+<div class="bench-line"><div><p class="part-name">Transfer pipette, polyethylene</p><p class="part-copy">Moulded in one piece with its bulb; graduated for indication only.</p></div><div><p class="volume-cell">1&nbsp;ml &middot; 3&nbsp;ml &middot; 5&nbsp;ml</p><p class="tolerance-note">by the bag</p></div></div>
+<div class="bench-line"><div><p class="part-name">Pipette teats</p><p class="part-copy">Rubber bulbs for glass Pasteur pipettes. They harden on the shelf, so buy the quantity you will use.</p></div><div><p class="volume-cell">one size</p><p class="tolerance-note">by the bag</p></div></div>
+</div>
+<div class="stock-list" id="stock-deep">
+<div class="rule-head"><div class="family-rule" aria-hidden="true"></div><span class="family-code">260</span><h2>What to stock deep</h2><p class="family-note">A stockroom&rsquo;s view of what runs out, from the lists it reads.</p></div>
+<div class="bench-line stage-line"><p class="stage-cell">Stock deep</p><p class="stage-copy">Medium-grade filter paper in the size your funnels take; rubber stoppers in the two sizes that fit your conical flasks; silicone tubing in one bore; and wash-bottle caps. These are the items that run out on a Friday afternoon, and each is cheap by the box and awkward to be without.</p></div>
+<div class="bench-line stage-line"><p class="stage-cell">Stock shallow</p><p class="stage-copy">Fast and fine paper, wide-mouth wash bottles, thick-wall rubber tubing and bored stoppers. One box of each covers a year on most benches; the reply to your list will say when a box quantity is larger than you asked for.</p></div>
+<div class="bench-line stage-line"><p class="stage-cell">Do not stock</p><p class="stage-copy">Anything that ages on the shelf: rubber teats harden, cork dries and cracks, and polyethylene yellows in sunlight. Buy those in the quantity you will use within the season and list them again next season.</p></div>
+<div class="rule-head"><div class="family-rule" aria-hidden="true"></div><span class="family-code">270</span><h2>Not carried</h2><p class="family-note">The limits of this family, stated plainly.</p></div>
+<div class="bench-line"><div><p class="part-name">Reagents and solvents</p><p class="part-copy">Not stocked, not sourced, not quoted. A chemical on a list is struck and the rest of the list is read.</p></div><div><p class="volume-cell">Never</p></div></div>
+<div class="bench-line"><div><p class="part-name">Anything for medical or diagnostic use</p><p class="part-copy">Nothing in this family is sold for clinical, diagnostic, medical or veterinary purposes.</p></div><div><p class="volume-cell">Not sold for it</p></div></div>
+<div class="bench-line"><div><p class="part-name">Safety advice</p><p class="part-copy">We can tell you the bore of a tube. We cannot tell you whether it is the right tube for your line; that is for the people responsible for the bench.</p></div><div><p class="volume-cell">Not given</p></div></div>
+<div class="bench-plate"><figure class=""><img src="assets/img/stopper-tied.webp" alt="A ground-glass stopper lying on a dark bench with its cotton tie" width="1200" height="675" loading="lazy" decoding="async" fetchpriority="low"></figure><div class="plate-side"><p class="plate-code">Plate 3</p><p class="plate-note">A ground-glass stopper on the bench with its cotton tie, so the pair stays together between uses.</p></div></div>
+</div>
+</main>
+<footer class="bench-foot">
+<div class="stock-list ledger-grid">
+<div><p class="ledger-mark">Chemnotia</p><p class="ledger-place">Glassware and bench consumables, from a stockroom in Leuven, Flemish Brabant, Belgium. Glass, racks, stands and consumables only: no reagents, no calibration, nothing for medical or diagnostic use.</p></div>
+<ul class="ledger-links"><li><a href="index.html">Home</a></li><li><a href="glassware.html">Glassware</a></li><li><a href="bench-consumables.html">Bench consumables</a></li><li><a href="racks-and-stands.html">Racks and stands</a></li><li><a href="request-a-price-list.html">Request a price list</a></li><li><a href="privacy.html">Privacy notice</a></li><li><a href="terms.html">Terms of use</a></li></ul>
+<p class="ledger-fine"><span>© 2026 Chemnotia · Leuven, Flemish Brabant</span><span>Serving Belgium, the Netherlands and Luxembourg</span></p>
+</div>
+</footer>
+<div class="consent-tray" id="consent-tray" role="region" aria-label="Consent preferences" hidden>
+<div class="stock-list tray-deck">
+<div><p class="tray-head">Your choice, held on your own machine</p>
+<p>No cookies are set here and nothing is measured. Your answer is written once to this browser&rsquo;s storage, which is the only reason the strip stays away next time. <a href="privacy.html">Privacy notice</a>.</p></div>
+<div class="tray-acts"><button class="tray-accept" id="tray-accept" type="button">Accept all</button><button class="tray-manage" id="tray-manage" type="button" aria-expanded="false" aria-controls="tray-panel">Manage preferences</button></div>
+<div class="tray-panel" id="tray-panel" hidden>
+<div class="tray-row"><input type="checkbox" id="tray-analytics"><label for="tray-analytics">Analytics and performance<small>Stays unticked until you tick it. At present no tool on the site would read the answer either way.</small></label></div>
+<div class="tray-acts"><button class="tray-save" id="tray-save" type="button">Save choices</button></div>
+</div>
+</div>
+</div>
+<script>
+(function(){
+  var top=document.querySelector('.bench-top'),tog=document.querySelector('.shelf-toggle');
+  if(tog&&top){tog.addEventListener('click',function(){var o=top.classList.toggle('list-open');
+    tog.setAttribute('aria-expanded',o?'true':'false');tog.setAttribute('aria-label',o?'Close the menu':'Open the menu');});}
+  var lines=[].slice.call(document.querySelectorAll('.bench-line'));
+  if(!('IntersectionObserver' in window)){lines.forEach(function(l){l.classList.add('rule-drawn');});}
+  else{var io=new IntersectionObserver(function(es){var k=0;es.forEach(function(e){if(e.isIntersecting){
+      e.target.style.setProperty('--rule-wait',(k*45)+'ms');e.target.classList.add('rule-drawn');io.unobserve(e.target);k++;}});},
+    {rootMargin:'0px 0px -6% 0px'});lines.forEach(function(l){io.observe(l);});}
+  var KEY='cn_bench_pref',tray=document.getElementById('consent-tray');
+  if(!tray)return;
+  function fit(){document.body.style.paddingTop=tray.hidden?'':tray.offsetHeight+'px';}
+  var stored=null;try{stored=localStorage.getItem(KEY);}catch(err){stored=null;}
+  if(!stored){tray.hidden=false;fit();
+    if('ResizeObserver' in window){new ResizeObserver(fit).observe(tray);}
+    window.addEventListener('resize',fit);
+    if(document.fonts&&document.fonts.ready&&document.fonts.ready.then){document.fonts.ready.then(fit);}}
+  var panel=document.getElementById('tray-panel'),manage=document.getElementById('tray-manage'),
+      accept=document.getElementById('tray-accept'),save=document.getElementById('tray-save'),
+      box=document.getElementById('tray-analytics');
+  function keep(v){try{localStorage.setItem(KEY,JSON.stringify({analytics:v,saved:new Date().toISOString().slice(0,10)}));}catch(err){}
+    tray.hidden=true;fit();}
+  accept.addEventListener('click',function(){keep(true);});
+  manage.addEventListener('click',function(){var o=panel.hidden;panel.hidden=!o;manage.setAttribute('aria-expanded',o?'true':'false');
+    fit();if(o){box.focus();}});
+  save.addEventListener('click',function(){keep(!!box.checked);});
+})();
+</script>
+</body>
+</html>

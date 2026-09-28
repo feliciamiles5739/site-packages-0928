@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Handwriting books — My New Skills</title>
+<meta name="description" content="Three handwriting workbooks from Dunedin: print, joins and spacing, ruled to three heights, with page count, paper weight and binding stated for each.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="/handwriting-books.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Handwriting books — My New Skills">
+<meta property="og:description" content="Three handwriting workbooks from Dunedin: print, joins and spacing, ruled to three heights, with page count, paper weight and binding stated for each.">
+<meta property="og:image" content="/assets/og.png">
+<meta property="og:url" content="/handwriting-books.html">
+<meta property="og:site_name" content="My New Skills">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700;900&amp;family=Lexend+Deca:wght@300;400;500;600&amp;display=swap">
+<script>document.documentElement.classList.add('ink-on');</script>
+<style>
+:root{--theme:#243B7A;--accent:#F2B705;--ink:#171F33;--ground:#FBFAFD;--desk:#E7EAF3;--feint:#CCD4E8;--soft:#4A5470;--paper:#FFFFFF;--tint:#EEF1F9;--pitch:28px;--gutter:92px;--edge:40px;--inset:36px}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--desk);color:var(--ink);font:400 17px/var(--pitch) "Lexend Deca",system-ui,sans-serif;letter-spacing:.002em}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--theme)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+h1,h2,h3{font-family:"Frank Ruhl Libre",Georgia,serif;font-weight:700;margin:0;color:var(--theme)}
+p{margin:0 0 var(--pitch)}
+ul,ol{margin:0 0 var(--pitch);padding-left:1.4em}
+strong{font-weight:600}
+.sight-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* cover band across the top of every page */
+.cover-band{background:var(--theme);color:#fff;position:relative;z-index:30}
+.cover-inner{max-width:1360px;margin:0 auto;padding:0 var(--edge);display:flex;align-items:center;gap:24px;min-height:84px}
+.book-mark{color:#fff;text-decoration:none;display:block;line-height:1.1;padding:14px 0}
+.mark-name{font:700 27px/1 "Frank Ruhl Libre",Georgia,serif;letter-spacing:.01em;display:block}
+.mark-line{display:block;font:500 12px/16px "Lexend Deca",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-top:6px}
+.spine-nav{margin-left:auto}
+.spine-list{list-style:none;margin:0;padding:0;display:flex;align-items:center;gap:2px}
+.spine-link{display:block;color:#fff;text-decoration:none;font-size:15px;padding:10px 12px;border-bottom:2px solid transparent}
+.spine-link:hover,.spine-link[aria-current="page"]{border-bottom-color:var(--accent)}
+.spine-order{display:inline-block;margin-left:14px;background:var(--accent);color:var(--ink);text-decoration:none;font-weight:600;font-size:15px;padding:11px 18px;border-radius:2px;box-shadow:3px 3px 0 rgba(0,0,0,.28)}
+.spine-order:hover{background:#ffc628}
+.pencil-toggle{display:none;margin-left:auto;background:none;border:2px solid rgba(255,255,255,.55);border-radius:3px;width:46px;height:42px;padding:0;cursor:pointer;position:relative}
+.pencil-line{position:absolute;left:11px;right:11px;height:2px;background:var(--accent);border-radius:2px;transition:transform .32s ease,opacity .2s ease;transform-origin:center}
+.pencil-line:nth-child(1){top:12px}.pencil-line:nth-child(2){top:19px}.pencil-line:nth-child(3){top:26px}
+.menu-shown .pencil-line:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.menu-shown .pencil-line:nth-child(2){opacity:0;transform:scaleX(0)}
+.menu-shown .pencil-line:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* the workbook page itself */
+.page-stack{position:relative;max-width:1360px;margin:0 auto;background:var(--ground);box-shadow:0 0 0 1px #d6dbea,0 24px 48px -30px rgba(23,31,51,.4)}
+.page-stack::before{content:"";position:absolute;top:0;bottom:0;left:var(--gutter);border-left:3px solid var(--accent);pointer-events:none;z-index:2}
+.page-stack::after{content:"";position:absolute;top:0;bottom:0;left:calc(var(--gutter) + 7px);border-left:1px solid var(--theme);pointer-events:none;z-index:2}
+.exercise-box{position:relative;padding:calc(var(--pitch)*2) var(--edge) calc(var(--pitch)*2) calc(var(--gutter) + var(--inset))}
+.exercise-box + .exercise-box{border-top:1px solid var(--theme)}
+.rule-sheet{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.rule-sheet::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(to bottom,transparent 0 20px,var(--feint) 20px 21px,transparent 21px var(--pitch))}
+.exercise-box > :not(.rule-sheet):not(.exercise-number){position:relative;z-index:1}
+.exercise-number{position:absolute;left:0;top:calc(var(--pitch)*2 - 6px);width:var(--gutter);text-align:center;font:700 40px/1 "Frank Ruhl Libre",Georgia,serif;color:var(--theme);z-index:3}
+.exercise-number::after{content:"";display:block;width:26px;height:2px;background:var(--accent);margin:8px auto 0}
+.exercise-head{font-size:34px;line-height:40px;margin:0 0 4px}
+.exercise-head::before{content:"Exercise";display:block;font:600 12px/16px "Lexend Deca",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--soft);margin-bottom:6px}
+.exercise-lead{font-size:19px;line-height:var(--pitch);color:var(--soft);max-width:66ch;margin:0 0 calc(var(--pitch)*1.5)}
+.reading-column{max-width:70ch}
+
+/* front label: the cover of the book */
+.cover-label{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:56px;align-items:end;padding-top:calc(var(--pitch)*2.5)}
+.label-stamp{display:inline-block;font:600 12px/20px "Lexend Deca",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--theme);border:1.5px solid var(--theme);padding:3px 12px;border-radius:2px;margin-bottom:var(--pitch);background:var(--paper)}
+.label-headline{font-size:clamp(40px,5.4vw,72px);line-height:1.02;letter-spacing:-.01em;margin-bottom:var(--pitch)}
+.label-headline em{font-style:italic;font-weight:400}
+.label-sub{font-size:19px;max-width:56ch;margin-bottom:calc(var(--pitch)*1.25)}
+.label-actions{display:flex;flex-wrap:wrap;gap:14px 26px;align-items:center;margin-bottom:var(--pitch)}
+.order-button{display:inline-block;background:var(--accent);color:var(--ink);text-decoration:none;font-weight:600;font-size:17px;padding:13px 24px;border-radius:2px;box-shadow:4px 4px 0 var(--theme);border:0;cursor:pointer;font-family:inherit}
+.order-button:hover{background:#ffc628}
+.quiet-link{color:var(--theme);font-weight:500;text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:2px;text-underline-offset:5px}
+.label-figure{margin:0}
+.figure-frame{border:1.5px solid var(--theme);padding:8px;background:var(--paper);box-shadow:5px 5px 0 var(--accent)}
+.figure-caption{font-size:14px;line-height:22px;color:var(--soft);margin-top:14px;padding-left:14px;border-left:3px solid var(--accent)}
+.figure-caption b{font-weight:600;color:var(--theme)}
+
+/* the four fields at the head of the page */
+.facts-ruler{display:grid;grid-template-columns:repeat(4,1fr);border-top:2px solid var(--theme);border-bottom:1px solid var(--theme);margin:0}
+.ruler-mark{padding:18px 20px 18px 0;margin-right:20px;border-right:1px solid var(--feint)}
+.ruler-mark:last-child{border-right:0;margin-right:0}
+.mark-key{font:600 12px/20px "Lexend Deca",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);margin:0}
+.mark-value{font:500 18px/26px "Frank Ruhl Libre",Georgia,serif;color:var(--theme);margin:4px 0 0}
+
+/* the six choices */
+.book-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 48px}
+.book-entry{display:grid;grid-template-columns:44px 1fr 48px;gap:0 16px;padding:calc(var(--pitch)*.75) 0 var(--pitch);border-top:1px dashed var(--theme)}
+.entry-letter{font:700 26px/36px "Frank Ruhl Libre",Georgia,serif;color:var(--theme);width:36px;height:36px;border:1.5px solid var(--theme);border-radius:50%;text-align:center;background:var(--paper)}
+.entry-name{font-size:23px;line-height:32px;margin:1px 0 6px}
+.entry-note{margin:0;grid-column:2;color:var(--ink)}
+.entry-icon{width:44px;height:44px;color:var(--theme);grid-column:3;grid-row:1/3;justify-self:end}
+.entry-icon svg{width:44px;height:44px;display:block}
+
+/* answer boxes */
+.answer-slot{position:relative;margin-top:calc(var(--pitch)*1.5);border:1.5px solid var(--theme);background:var(--paper);padding:30px 28px 6px;border-radius:3px;box-shadow:4px 4px 0 var(--accent);max-width:78ch}
+.answer-slot > :last-child{margin-bottom:22px}
+.slot-label{position:absolute;top:-11px;left:18px;background:var(--paper);padding:0 8px;font:600 12px/22px "Lexend Deca",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--theme)}
+.answer-slot--wide{max-width:none}
+
+/* how an order runs */
+.working-steps{list-style:none;padding:0;margin:0 0 var(--pitch);counter-reset:step;max-width:72ch}
+.working-step{position:relative;padding:0 0 var(--pitch) 64px;counter-increment:step}
+.working-step::before{content:counter(step);position:absolute;left:0;top:0;width:44px;height:44px;border:1.5px solid var(--theme);border-radius:50%;background:var(--paper);font:700 22px/42px "Frank Ruhl Libre",Georgia,serif;color:var(--theme);text-align:center}
+.working-step h3{font-size:22px;line-height:28px;margin-bottom:4px}
+.working-step p{margin:0}
+.side-figure{float:right;width:min(360px,42%);margin:6px 0 var(--pitch) 40px}
+.split-pair{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:48px;align-items:start}
+
+/* questions */
+.faq-sheet{list-style:none;margin:0;padding:0;max-width:78ch}
+.faq-item{margin-bottom:calc(var(--pitch)*1.5)}
+.faq-question{font-size:23px;line-height:32px;padding-left:44px;position:relative}
+.faq-question::before{content:"Q";position:absolute;left:0;top:2px;width:30px;height:30px;border:1.5px solid var(--theme);border-radius:3px;font:700 17px/28px "Lexend Deca",sans-serif;color:var(--theme);text-align:center;background:var(--paper)}
+.faq-answer{margin-top:22px;margin-left:44px;padding:22px 24px 2px}
+.faq-answer .slot-label{left:14px}
+
+/* the refusals */
+.refusal-list{list-style:none;margin:0;padding:0;max-width:78ch}
+.refusal-item{display:grid;grid-template-columns:36px 1fr;gap:16px;align-items:start;padding:14px 0;border-bottom:1px dashed var(--theme);font-size:19px}
+.refusal-item:first-child{border-top:1px dashed var(--theme)}
+.refusal-item svg{width:28px;height:28px;margin-top:2px;color:var(--theme)}
+
+/* the last exercise: order and reach us */
+.closing-line{font:400 34px/44px "Frank Ruhl Libre",Georgia,serif;color:var(--theme);max-width:26ch;margin-bottom:var(--pitch)}
+.post-box{display:grid;grid-template-columns:repeat(3,1fr);gap:28px 40px;margin:0;padding:var(--pitch) 0 0;border-top:2px solid var(--theme)}
+.post-line{margin:0}
+.post-line dt{font:600 12px/20px "Lexend Deca",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--soft)}
+.post-line dd{margin:4px 0 0}
+
+/* foot of the book */
+.page-foot{background:var(--theme);color:#fff;margin-top:0}
+.foot-inner{max-width:1360px;margin:0 auto;padding:44px var(--edge) 40px;display:grid;grid-template-columns:1fr auto;gap:24px 48px;align-items:start}
+.foot-name{font:700 24px/30px "Frank Ruhl Libre",Georgia,serif;margin:0 0 6px}
+.foot-place{margin:0;color:#d7dcea;font-size:15px;max-width:52ch}
+.foot-links{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,auto);gap:6px 32px}
+.foot-links a{color:#fff;text-decoration:none;font-size:15px;border-bottom:1px solid rgba(255,255,255,.35)}
+.foot-links a:hover{border-bottom-color:var(--accent)}
+.foot-note{grid-column:1/-1;margin:0;font-size:14px;color:#d7dcea;border-top:1px solid rgba(255,255,255,.25);padding-top:18px}
+
+/* consent slip */
+.consent-slip{position:fixed;right:20px;bottom:20px;z-index:60;width:min(380px,calc(100vw - 32px));background:var(--paper);border:1.5px solid var(--theme);box-shadow:5px 5px 0 var(--accent);padding:20px 22px 18px;border-radius:3px;font-size:15px;line-height:23px}
+.consent-slip[hidden]{display:none}
+.slip-head{font:700 19px/24px "Frank Ruhl Libre",Georgia,serif;color:var(--theme);margin:0 0 8px}
+.slip-text{margin:0 0 14px}
+.slip-text a{color:var(--theme)}
+.slip-actions{display:flex;flex-wrap:wrap;gap:10px}
+.slip-accept,.slip-manage,.slip-save{font:600 14px/20px "Lexend Deca",sans-serif;padding:9px 14px;border-radius:2px;cursor:pointer;border:1.5px solid var(--theme)}
+.slip-accept,.slip-save{background:var(--accent);color:var(--ink);border-color:var(--accent)}
+.slip-manage{background:var(--paper);color:var(--theme)}
+.slip-panel{margin:14px 0 0;padding:12px 0 0;border-top:1px dashed var(--theme)}
+.slip-panel[hidden]{display:none}
+.panel-toggle{display:flex;gap:10px;align-items:flex-start;margin-bottom:12px}
+.panel-toggle input{width:20px;height:20px;margin:2px 0 0;accent-color:var(--theme)}
+
+/* mobile and tablet */
+@media (max-width:1100px){:root{--gutter:64px;--inset:28px;--edge:28px}.book-list{grid-template-columns:1fr}.cover-label{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:36px}.post-box{grid-template-columns:1fr 1fr}.split-pair{grid-template-columns:1fr}}
+@media (max-width:900px){
+  .cover-inner{min-height:72px;flex-wrap:wrap;padding:0 var(--edge)}
+  .pencil-toggle{display:block;flex:0 0 46px}
+  .book-mark{flex:1 1 0;min-width:0}
+  .mark-name{font-size:23px}
+  .mark-line{font-size:11px;letter-spacing:.1em}
+  .spine-nav{flex-basis:100%;margin:0;display:none}
+  .menu-shown .spine-nav{display:block}
+  .spine-list{flex-direction:column;align-items:stretch;gap:0;padding:6px 0 16px;border-top:1px solid rgba(255,255,255,.25)}
+  .spine-link{padding:12px 4px;font-size:17px;border-bottom:1px solid rgba(255,255,255,.12)}
+  .spine-order{margin:14px 4px 0;text-align:center}
+  .cover-label{grid-template-columns:1fr;gap:36px;padding-top:calc(var(--pitch)*1.5)}
+  .facts-ruler{grid-template-columns:1fr 1fr}
+  .ruler-mark:nth-child(2n){border-right:0;margin-right:0}
+  .side-figure{float:none;width:100%;margin:0 0 var(--pitch)}
+}
+@media (max-width:600px){
+  :root{--gutter:40px;--inset:20px;--edge:18px}
+  body{font-size:16px}
+  .exercise-number{font-size:26px;top:calc(var(--pitch)*2 - 2px)}
+  .exercise-number::after{width:18px;margin-top:5px}
+  .exercise-head{font-size:28px;line-height:34px}
+  .label-headline{font-size:36px;margin-bottom:20px}
+  .label-sub,.exercise-lead{font-size:17px}
+  .facts-ruler{grid-template-columns:1fr}
+  .ruler-mark{border-right:0;margin-right:0;border-bottom:1px solid var(--feint);padding:14px 0}
+  .ruler-mark:last-child{border-bottom:0}
+  .book-entry{grid-template-columns:36px 1fr 40px;gap:0 12px}
+  .entry-icon,.entry-icon svg{width:36px;height:36px}
+  .entry-name{font-size:20px;line-height:28px}
+  .answer-slot{padding:26px 18px 6px}
+  .faq-question{padding-left:40px;font-size:20px;line-height:28px}
+  .faq-answer{margin-left:0}
+  .working-step{padding-left:56px}
+  .closing-line{font-size:27px;line-height:36px}
+  .post-box{grid-template-columns:1fr}
+  .foot-inner{grid-template-columns:1fr}
+  .consent-slip{right:12px;bottom:12px;left:12px;width:auto;padding:14px 14px 12px;font-size:14px;line-height:20px}
+  .slip-head{display:none}
+  .slip-text{margin-bottom:10px}
+  .slip-accept,.slip-manage,.slip-save{padding:8px 12px}
+  .cover-label{padding-top:var(--pitch)}
+  .label-stamp{margin-bottom:18px}
+  .label-sub{line-height:26px;margin-bottom:24px}
+  .refusal-item{font-size:17px}
+}
+
+/* motion: the baselines draw themselves across each exercise, top line first */
+@media (prefers-reduced-motion:no-preference){
+  html{scroll-behavior:smooth}
+  html.ink-on .exercise-box .rule-sheet::before{clip-path:polygon(0 0,0 0,0 0);transition:clip-path 2.1s cubic-bezier(.25,.55,.25,1)}
+  html.ink-on .exercise-box.drawn-in .rule-sheet::before{clip-path:polygon(0 0,3600% 0,0 3024px)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .pencil-line,.rule-sheet::before{transition:none}
+}
+
+.book-spec{display:grid;grid-template-columns:150px 1fr;gap:6px 24px;margin:0 0 var(--pitch);padding:20px 0 14px;border-top:1px dashed var(--theme)}
+.book-spec dt{font:600 12px/24px "Lexend Deca",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);margin:0}
+.book-spec dd{margin:0}
+.title-head{font-size:26px;line-height:34px;margin:calc(var(--pitch)*1.25) 0 8px}
+.title-head small{display:block;font:500 13px/20px "Lexend Deca",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);margin-bottom:2px}
+.ruling-demo{max-width:78ch;margin:0 0 var(--pitch)}
+.demo-switch{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+.demo-pick{font:600 15px/22px "Lexend Deca",sans-serif;background:var(--paper);color:var(--theme);border:1.5px solid var(--theme);border-radius:2px;padding:8px 16px;cursor:pointer}
+.demo-pick[aria-pressed="true"]{background:var(--theme);color:#fff}
+.demo-sheet{width:100%;height:auto;display:block;background:var(--paper);border:1.5px solid var(--theme);box-shadow:4px 4px 0 var(--accent)}
+.demo-note{margin:16px 0 0;color:var(--soft);font-size:15px;line-height:24px}
+.lasting-sum{max-width:78ch;display:grid;grid-template-columns:1fr 1fr;gap:16px 24px;margin:0 0 var(--pitch);padding:24px;background:var(--paper);border:1.5px solid var(--theme);box-shadow:4px 4px 0 var(--accent)}
+.sum-field{display:block}
+.sum-field span{display:block;font:600 12px/22px "Lexend Deca",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--soft)}
+.sum-field input,.sum-field select{width:100%;font:400 17px/26px "Lexend Deca",sans-serif;padding:8px 10px;border:1.5px solid var(--theme);border-radius:2px;color:var(--ink);background:var(--ground)}
+.sum-result{grid-column:1/-1;margin:0;font:400 24px/34px "Frank Ruhl Libre",Georgia,serif;color:var(--theme);border-top:1px dashed var(--theme);padding-top:14px}
+.page-figure{margin:0 0 var(--pitch)}
+.order-form{max-width:78ch}
+.form-field{display:block;margin-bottom:22px}
+.field-label{display:block;font:600 14px/22px "Lexend Deca",sans-serif;color:var(--theme);margin-bottom:6px}
+.field-help{display:block;font-size:14px;line-height:22px;color:var(--soft);margin-top:4px}
+.field-input{width:100%;font:400 17px/26px "Lexend Deca",sans-serif;padding:11px 12px;border:1.5px solid var(--theme);border-radius:2px;background:var(--paper);color:var(--ink)}
+textarea.field-input{min-height:150px;resize:vertical}
+.choice-set{border:1.5px solid var(--theme);border-radius:2px;padding:14px 18px 6px;margin:0 0 22px;background:var(--paper)}
+.choice-set legend{font:600 14px/22px "Lexend Deca",sans-serif;color:var(--theme);padding:0 6px}
+.choice-item{display:flex;gap:12px;align-items:flex-start;margin:0 0 12px}
+.choice-item input{width:20px;height:20px;margin:4px 0 0;accent-color:var(--theme);flex:none}
+.honey-pot{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+.field-pair{display:grid;grid-template-columns:1fr 1fr;gap:0 24px}
+.credit-list li{overflow-wrap:anywhere;margin-bottom:10px}
+@media (max-width:600px){.book-spec{grid-template-columns:1fr;gap:0 0}.book-spec dd{margin-bottom:10px}.lasting-sum{grid-template-columns:1fr;padding:18px}.field-pair{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="cover-band">
+<div class="cover-inner">
+<a class="book-mark" href="index.html"><span class="mark-name">My New Skills</span><span class="mark-line">Practice workbooks, printed and posted</span></a>
+<button class="pencil-toggle" type="button" aria-label="Open the menu" aria-expanded="false" aria-controls="spine-list"><span class="pencil-line"></span><span class="pencil-line"></span><span class="pencil-line"></span></button>
+<nav class="spine-nav" aria-label="Pages of the site">
+<ul class="spine-list" id="spine-list"><li><a class="spine-link" href="index.html">Home</a></li><li><a class="spine-link" href="handwriting-books.html" aria-current="page">Handwriting books</a></li><li><a class="spine-link" href="number-practice.html">Number practice</a></li><li><a class="spine-link" href="how-a-book-is-built.html">How a book is built</a></li><li><a class="spine-link" href="order-a-set.html">Order a set</a></li><li><a class="spine-order" href="order-a-set.html">Order a set of books</a></li></ul>
+</nav>
+</div>
+</header>
+<main class="page-stack">
+<section class="exercise-box" id="page-title"><div class="rule-sheet" aria-hidden="true"></div>
+<span class="label-stamp">Handwriting</span>
+<h1 class="label-headline">Three books, <em>ruled to three heights.</em></h1>
+<p class="label-sub">Print, joins and spacing. Each book states its ruling height, page count, paper weight and binding on the cover, and this page states them again so you can choose without writing to ask.</p>
+<div class="label-actions"><a class="order-button" href="order-a-set.html">Order a set of books</a><a class="quiet-link" href="#the-ruling">Draw the ruling</a></div>
+</section>
+<section class="exercise-box" id="the-three-books">
+<div class="rule-sheet" aria-hidden="true"></div>
+<span class="exercise-number" aria-hidden="true">1</span>
+<h2 class="exercise-head">The three books</h2>
+<p class="exercise-lead">Each book here is described the way it is printed on its own back cover: ruling height, page count, paper weight, binding, and the order the letter forms come in.</p><div class="split-pair"><div><h3 class="title-head"><small>Book one</small>Print</h3><dl class="book-spec"><dt>Ruling</dt><dd>8 mm x-height, with the ascender line 8 mm above the x-height line and the descender line 8 mm below the baseline. Twenty-four millimetres from descender line to ascender line, and an eight-millimetre gap between bands.</dd><dt>Pages</dt><dd>Sixty-four, all ruled, with the model line printed at the head of every page and the rest of the page left for you.</dd><dt>Paper</dt><dd>120 gsm uncoated white. Takes a pencil, a fibre-tip and a fountain pen without bleed-through.</dd><dt>Binding</dt><dd>Sewn sections, glued at the spine, lay-flat. The book stays open at any page without a hand on it.</dd><dt>Letter forms, in order</dt><dd>The round family first: c, o, a, d, g, q. Then the tall straight letters: l, t, i, j. Then the arch letters: n, m, r, h, b, p. Then the dip letters: u, y, v, w. Then the odd ones: s, f, k, x, z, e. Capitals fill the last sixteen pages, grouped the same way.</dd></dl><h3 class="title-head"><small>Book two</small>Joins</h3><dl class="book-spec"><dt>Ruling</dt><dd>6 mm x-height, the same three-height pattern, six millimetres between bands. The band is narrower because a joined hand runs smaller than print.</dd><dt>Pages</dt><dd>Eighty. The first four pages repeat the print forms at this size before any join is asked for.</dd><dt>Paper</dt><dd>120 gsm uncoated white, the same stock as the print book.</dd><dt>Binding</dt><dd>Sewn sections, lay-flat.</dd><dt>Joins, in order</dt><dd>The baseline join first, out of a, d, e, h, i, k, l, m, n, t and u. Then the top join out of o, r, v and w. Then the join into e, which is the one most people get wrong. Then the letters that do not join forward: g, j, q, y, x, z, and why leaving them unjoined is correct. Whole words from page thirty onward, sentences from page fifty.</dd></dl><h3 class="title-head"><small>Book three</small>Spacing</h3><dl class="book-spec"><dt>Ruling</dt><dd>5 mm x-height for the first two sections, then a 4 mm band for the last, so the hand learns to hold its spacing as the writing gets smaller.</dd><dt>Pages</dt><dd>Forty-eight.</dd><dt>Paper</dt><dd>110 gsm uncoated white. Slightly lighter, because this book is written in pencil more than pen.</dd><dt>Binding</dt><dd>Sewn sections, lay-flat.</dd><dt>Exercises, in order</dt><dd>Letter spacing inside a word, using the width of the letter n as the measure. Word spacing, first a pencil's width and then narrower. Line spacing on the three-height rule, so ascenders and descenders from neighbouring lines do not collide. A final section written without the ruling, on plain paper bound into the book.</dd></dl></div><figure class="label-figure"><div class="figure-frame"><img src="assets/img/alphabet-cards-on-a-desk.webp" alt="An open notebook of handwriting practice beside a printed alphabet card on a wooden desk" width="864" height="576" fetchpriority="high"></div><figcaption class="figure-caption"><b>Fig. 1</b> A practice notebook open beside a printed alphabet. The model sits where the eye can reach it between lines; ours is printed at the head of each page for the same reason.</figcaption></figure></div><div class="answer-slot"><span class="slot-label">Which to order</span><p>Buy the print book if your letters are not yet settled. Buy the joins book if they are settled and you want them to connect. Buy the spacing book if the letters are fine and the words are the problem. Two of the three is the usual set; all three is a year of pages.</p></div>
+</section>
+<section class="exercise-box" id="the-ruling">
+<div class="rule-sheet" aria-hidden="true"></div>
+<span class="exercise-number" aria-hidden="true">2</span>
+<h2 class="exercise-head">The ruling, drawn to scale</h2>
+<p class="exercise-lead">Pick a height and the sheet redraws. The proportions are the ones in the books; only the screen scale is different.</p><div class="ruling-demo">
+<div class="demo-switch" role="group" aria-label="Choose a ruling height to draw">
+<button type="button" class="demo-pick" data-mm="5" aria-pressed="false">5 mm</button>
+<button type="button" class="demo-pick" data-mm="6" aria-pressed="false">6 mm</button>
+<button type="button" class="demo-pick" data-mm="8" aria-pressed="true">8 mm</button>
+</div>
+<svg class="demo-sheet" id="demo-sheet" viewBox="0 0 680 320" role="img" aria-label="Two bands of the three-height ruling, each with an ascender line, an x-height line, a baseline and a descender line"><line x1="24" y1="24" x2="560" y2="24" stroke="#CCD4E8" stroke-width="1.2"/><text x="572" y="28" font-size="11" font-family="Lexend Deca, sans-serif" fill="#4A5470">ascender line</text><line x1="24" y1="64" x2="560" y2="64" stroke="#CCD4E8" stroke-width="1.2"/><text x="572" y="68" font-size="11" font-family="Lexend Deca, sans-serif" fill="#4A5470">x-height line</text><line x1="24" y1="104" x2="560" y2="104" stroke="#243B7A" stroke-width="2"/><text x="572" y="108" font-size="11" font-family="Lexend Deca, sans-serif" fill="#4A5470">baseline</text><line x1="24" y1="144" x2="560" y2="144" stroke="#CCD4E8" stroke-width="1.2"/><text x="572" y="148" font-size="11" font-family="Lexend Deca, sans-serif" fill="#4A5470">descender line</text><line x1="24" y1="24" x2="24" y2="144" stroke="#F2B705" stroke-width="3"/><line x1="24" y1="159" x2="560" y2="159" stroke="#CCD4E8" stroke-width="1.2"/><line x1="24" y1="199" x2="560" y2="199" stroke="#CCD4E8" stroke-width="1.2"/><line x1="24" y1="239" x2="560" y2="239" stroke="#243B7A" stroke-width="2"/><line x1="24" y1="279" x2="560" y2="279" stroke="#CCD4E8" stroke-width="1.2"/><line x1="24" y1="159" x2="24" y2="279" stroke="#F2B705" stroke-width="3"/><text x="24" y="301" font-size="12" font-family="Lexend Deca, sans-serif" fill="#4A5470">8 mm x-height, drawn at five screen pixels to the millimetre</text></svg>
+<p class="demo-note" id="demo-note">Two bands of the 8 mm ruling, as printed in the print book. The heavier line is the baseline. Everything sits on it; only ascenders rise above the x-height line and only descenders drop below the baseline.</p>
+</div><div class="reading-column">
+<p>Every handwriting book we print is ruled to three heights. There are four lines to a band. The baseline is the heavy one, and every letter stands on it. The x-height line above it sets the height of a, c, e and the other small letters. The ascender line above that is where b, d, h, k, l and t reach. The descender line below the baseline is where g, j, p, q and y drop. A writer who keeps to those four lines has solved most of what makes a page look untidy, because the untidiness is nearly always one of those heights wandering.</p>
+<p>The gap between bands matters as much as the band. Too small and the descenders of one line tangle with the ascenders of the next. Too large and the page looks like a form. We set it equal to the x-height, which keeps the lines close enough to read as text.</p>
+<p>Ruling is printed in a pale blue that a pencil line sits over cleanly, and that a photocopy drops out. The model line at the head of each page is printed in black, at the same size as the ruling, so there is never a question of what size to write.</p>
+</div>
+</section>
+<section class="exercise-box" id="who-it-suits">
+<div class="rule-sheet" aria-hidden="true"></div>
+<span class="exercise-number" aria-hidden="true">3</span>
+<h2 class="exercise-head">Who it suits, and who it does not</h2>
+<p class="exercise-lead">Read both lists before you order. The second one saves more people money than the first.</p><div class="split-pair"><div class="reading-column">
+<h3 class="title-head">It suits</h3>
+<ul>
+<li>An adult whose print is readable but tired, and who wants to settle it without going back to school.</li>
+<li>A child past the first year or two of school, who knows the letters and is ready for joins.</li>
+<li>Anyone who writes by hand for work, on labels, in a log or on a form, and wants the joins decided once so the hand stops deciding them each time.</li>
+<li>A left-handed writer. The letter forms are the same; the first spread of each book shows the left-handed page tilt and where the wrist rests.</li>
+<li>A school wanting one book per desk. Class sets are packed by title.</li>
+</ul>
+<h3 class="title-head">It does not suit</h3>
+<ul>
+<li>Someone who does not yet know the letters. The book assumes you can read the model line. It is not a first reader.</li>
+<li>Someone who wants to be told what is wrong. A book shows the model and gives you the line. It cannot see your hand.</li>
+<li>Anyone who needs a ruling narrower than the 4 mm band at the end of the spacing book.</li>
+<li>Anyone after a decorative script. We print one plain joined hand, chosen because it is quick and stays readable at speed.</li>
+</ul>
+</div>
+<figure class="label-figure"><div class="figure-frame"><img src="assets/img/copybook-second-page.webp" alt="Another copybook page, the same sentence repeated down the page in a looped hand" width="622" height="778" loading="lazy"></div><figcaption class="figure-caption"><b>Fig. 2</b> A copybook page, one line written out again and again. The method survives because it works; the ruling under it is what we have changed.</figcaption></figure></div><div class="answer-slot"><span class="slot-label">The honest limit</span><p>A book cannot tell you whether your grip is wrong. It shows the letter, gives you the line, and leaves the rest to you. If you want someone to watch you write, that is a different thing, and we do not sell it. If you want the pages, they are here.</p><p><a class="order-button" href="order-a-set.html">Order a set of books</a></p></div>
+</section>
+</main>
+<footer class="page-foot">
+<div class="foot-inner">
+<div><p class="foot-name">My New Skills</p><p class="foot-place">Dunedin, Otago. Practice workbooks printed here and posted throughout New Zealand and to Australia. Reached by e-mail and by the order form.</p></div>
+<ul class="foot-links">
+<li><a href="index.html">Home</a></li><li><a href="handwriting-books.html">Handwriting books</a></li>
+<li><a href="number-practice.html">Number practice</a></li><li><a href="how-a-book-is-built.html">How a book is built</a></li>
+<li><a href="order-a-set.html">Order a set of books</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li>
+</ul>
+<p class="foot-note">© 2026 My New Skills &middot; Dunedin, New Zealand &middot; post@mynewskills.com</p>
+</div>
+</footer>
+<aside class="consent-slip" id="consent-slip" hidden aria-label="Cookie preferences">
+<p class="slip-head">One preference, kept in your browser</p>
+<p class="slip-text">This site keeps a single consent choice in your browser and sets no analytics or advertising cookies unless you accept them. None are installed at present. <a href="privacy.html">Read the privacy page</a>.</p>
+<div class="slip-actions"><button class="slip-accept" type="button" id="slip-accept">Accept all</button><button class="slip-manage" type="button" id="slip-manage" aria-expanded="false" aria-controls="slip-panel">Manage preferences</button></div>
+<div class="slip-panel" id="slip-panel" hidden>
+<label class="panel-toggle"><input type="checkbox" id="slip-analytics"><span>Analytics and performance measurement. Off unless you tick it, and nothing reads this setting today.</span></label>
+<button class="slip-save" type="button" id="slip-save">Save my choice</button>
+</div>
+</aside>
+<script>
+(function(){
+  var d=document;
+  var tog=d.querySelector('.pencil-toggle');
+  if(tog){tog.addEventListener('click',function(){
+    var on=tog.getAttribute('aria-expanded')==='true';
+    tog.setAttribute('aria-expanded',on?'false':'true');
+    tog.setAttribute('aria-label',on?'Open the menu':'Close the menu');
+    d.body.classList.toggle('menu-shown',!on);
+  });}
+  var KEY='mns_book_pref', slip=d.getElementById('consent-slip');
+  function stored(){try{return localStorage.getItem(KEY);}catch(e){return null;}}
+  function keep(v){try{localStorage.setItem(KEY,JSON.stringify(v));}catch(e){} slip.hidden=true;}
+  if(slip&&!stored()){
+    slip.hidden=false;
+    var panel=d.getElementById('slip-panel'), manage=d.getElementById('slip-manage'), box=d.getElementById('slip-analytics');
+    d.getElementById('slip-accept').addEventListener('click',function(){keep({analytics:true});});
+    manage.addEventListener('click',function(){var open=!panel.hidden;panel.hidden=open;manage.setAttribute('aria-expanded',open?'false':'true');});
+    d.getElementById('slip-save').addEventListener('click',function(){keep({analytics:!!box.checked});});
+  }
+  var boxes=d.querySelectorAll('.exercise-box');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('drawn-in');io.unobserve(e.target);}});},{threshold:0.06});
+    boxes.forEach(function(b){io.observe(b);});
+  }else{boxes.forEach(function(b){b.classList.add('drawn-in');});}
+  var nx=d.querySelector('input[name="_next"]');
+  if(nx){nx.value=new URL('thanks.html',location.href).href;}
+})();
+
+(function(){
+  var sheet=document.getElementById('demo-sheet'),note=document.getElementById('demo-note');
+  if(!sheet)return;
+  var THEME='#243B7A',FEINT='#CCD4E8',ACCENT='#F2B705',SOFT='#4A5470';
+  var words={5:'Two bands of the 5 mm ruling, the height of the spacing book. The heavier line is the baseline.',6:'Two bands of the 6 mm ruling, the height of the joins book. The heavier line is the baseline.',8:'Two bands of the 8 mm ruling, as printed in the print book. The heavier line is the baseline. Everything sits on it; only ascenders rise above the x-height line and only descenders drop below the baseline.'};
+  function draw(mm){
+    var s=5,band=3*mm*s,y0=24,out='',names=['ascender line','x-height line','baseline','descender line'];
+    for(var b=0;b<2;b++){var top=y0+b*(band+3*s);
+      for(var i=0;i<4;i++){var y=top+i*mm*s,heavy=(i===2);
+        out+='<line x1="24" y1="'+y+'" x2="560" y2="'+y+'" stroke="'+(heavy?THEME:FEINT)+'" stroke-width="'+(heavy?2:1.2)+'"/>';
+        if(b===0)out+='<text x="572" y="'+(y+4)+'" font-size="11" font-family="Lexend Deca, sans-serif" fill="'+SOFT+'">'+names[i]+'</text>';}
+      out+='<line x1="24" y1="'+top+'" x2="24" y2="'+(top+band)+'" stroke="'+ACCENT+'" stroke-width="3"/>';}
+    out+='<text x="24" y="'+(y0+2*band+3*s+22)+'" font-size="12" font-family="Lexend Deca, sans-serif" fill="'+SOFT+'">'+mm+' mm x-height, drawn at five screen pixels to the millimetre</text>';
+    sheet.setAttribute('viewBox','0 0 680 '+(y0+2*band+3*s+40)); sheet.innerHTML=out; note.textContent=words[mm];
+  }
+  document.querySelectorAll('.demo-pick').forEach(function(b){b.addEventListener('click',function(){
+    document.querySelectorAll('.demo-pick').forEach(function(x){x.setAttribute('aria-pressed','false');});
+    b.setAttribute('aria-pressed','true'); draw(parseInt(b.getAttribute('data-mm'),10));});});
+})();
+</script>
+</body>
+</html>

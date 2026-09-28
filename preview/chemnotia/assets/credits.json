@@ -1,0 +1,85 @@
+{
+ "picks": [
+  {
+   "asset": "tubes-loose.webp",
+   "source": "openverse",
+   "creator": "Openverse contributor",
+   "license": "CC0",
+   "url": "https://www.rawpixel.com/image/3305760/free-photo-image-lab-medicine-research",
+   "title": "heap empty test tubes",
+   "needs_attribution": false
+  },
+  {
+   "asset": "conicals-tray.webp",
+   "source": "pxhere",
+   "creator": "PxHere contributor",
+   "license": "CC0",
+   "url": "https://pxhere.com/",
+   "title": "beaker,lab,glass,glass wear,chemical,science",
+   "needs_attribution": false
+  },
+  {
+   "asset": "stopper-tied.webp",
+   "source": "wikimedia",
+   "creator": "User:Akaniji",
+   "license": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Volumetric_flask_string1.jpg",
+   "title": "Volumetric flask string1.jpg",
+   "needs_attribution": false
+  },
+  {
+   "asset": "boss-head.webp",
+   "source": "wikimedia",
+   "creator": "Goodymeraj",
+   "license": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:A_laboratory_apparatus_01.jpg",
+   "title": "A laboratory apparatus 01.jpg",
+   "needs_attribution": false
+  },
+  {
+   "asset": "rack-pegs.webp",
+   "source": "wikimedia",
+   "creator": "Wikimedia Commons contributor",
+   "license": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Test_Tube_Rack_-_DPLA_-_ab2c7f238a8f5431f21593ce530768b5_(page_1).jpg",
+   "title": "Test Tube Rack - DPLA - ab2c7f238a8f5431f21593ce530768b5 (page 1).jpg",
+   "needs_attribution": false
+  },
+  {
+   "asset": "rack-wood.webp",
+   "source": "wikimedia",
+   "creator": "Wikimedia Commons contributor",
+   "license": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Test_Tube_Rack_-_DPLA_-_0c07a7de62776c337eb2e34c7fc21a5e.jpg",
+   "title": "Test Tube Rack - DPLA - 0c07a7de62776c337eb2e34c7fc21a5e.jpg",
+   "needs_attribution": false
+  },
+  {
+   "asset": "filter-flask.webp",
+   "source": "pxhere",
+   "creator": "PxHere contributor",
+   "license": "CC0",
+   "url": "https://pxhere.com/",
+   "title": "glass,erlenmeyer,blue,chemistry,glass bottle,product",
+   "needs_attribution": false
+  },
+  {
+   "asset": "conicals-misted.webp",
+   "source": "openverse",
+   "creator": "Openverse contributor",
+   "license": "CC0",
+   "url": "https://www.rawpixel.com/image/5905888/photo-image-background-design-public-domain",
+   "title": "Free conical flask image",
+   "needs_attribution": false
+  },
+  {
+   "asset": "clamp-bench.webp",
+   "source": "wikimedia",
+   "creator": "Goodymeraj",
+   "license": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Another_laboratory_apparatus.jpg",
+   "title": "Another laboratory apparatus.jpg",
+   "needs_attribution": false
+  }
+ ]
+}

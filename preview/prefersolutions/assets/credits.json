@@ -1,0 +1,114 @@
+{
+ "picks": [
+  {
+   "asset": "printed-week-sheets.webp",
+   "source": "openverse",
+   "creator": "cloudplanner",
+   "license": "CC BY",
+   "url": "https://www.flickr.com/photos/140356468@N03/26675838151",
+   "short_url": "https://flic.kr/p/GDfDiZ",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "title": "cloud-planner-work",
+   "needs_attribution": true
+  },
+  {
+   "asset": "desk-clock-notebook.webp",
+   "source": "openverse",
+   "creator": "freestocks.org",
+   "license": "CC0",
+   "url": "https://www.flickr.com/photos/135396164@N05/33572876081",
+   "short_url": "https://flic.kr/p/T9HLp4",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "title": "Some accessories on a white desk",
+   "needs_attribution": false
+  },
+  {
+   "asset": "open-diary-week.webp",
+   "source": "openverse",
+   "creator": "cireremarc",
+   "license": "CC BY",
+   "url": "https://www.flickr.com/photos/23291498@N04/4095381675",
+   "short_url": "https://flic.kr/p/7eTUhT",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "title": "Sapa X",
+   "needs_attribution": true
+  },
+  {
+   "asset": "espresso-pull.webp",
+   "source": "openverse",
+   "creator": "tapecode",
+   "license": "Public domain",
+   "url": "https://www.flickr.com/photos/148019735@N08/31813073584",
+   "short_url": "https://flic.kr/p/QtdjqG",
+   "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+   "title": "Coffee Shop Cafeteria Restaurant Service Concept",
+   "needs_attribution": false
+  },
+  {
+   "asset": "cafe-table-cups.webp",
+   "source": "openverse",
+   "creator": "insidious_plots",
+   "license": "CC BY",
+   "url": "https://www.flickr.com/photos/70928775@N00/4561130216",
+   "short_url": "https://flic.kr/p/7X3Z79",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "title": "Cappuccinos and coffee cake, baked in capp cups",
+   "needs_attribution": true
+  },
+  {
+   "asset": "wall-clock-plain.webp",
+   "source": "wm_unsplash",
+   "creator": "Eder Pozo P\u00e9rez ederpozo",
+   "license": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Round_analog_clock_(Unsplash).jpg",
+   "short_url": "https://commons.wikimedia.org/wiki/File:Round_analog_clock_(Unsplash).jpg",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "title": "Round analog clock (Unsplash).jpg",
+   "needs_attribution": false
+  },
+  {
+   "asset": "workshop-bench.webp",
+   "source": "openverse",
+   "creator": "Lisa Fotios",
+   "license": "CC0",
+   "url": "https://stocksnap.io/photo/workbench-machinery-RKR8CFTODQ",
+   "short_url": "https://stocksnap.io/photo/workbench-machinery-RKR8CFTODQ",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "title": "Workbench Machinery",
+   "needs_attribution": false
+  },
+  {
+   "asset": "timber-workshop.webp",
+   "source": "wm_unsplash",
+   "creator": "manu schwendener manuschwendener",
+   "license": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Carpenter_and_wheelwright_from_Borre_(Unsplash).jpg",
+   "short_url": "https://commons.wikimedia.org/wiki/File:Carpenter_and_wheelwright_from_Borre_(Unsplash).jpg",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "title": "Carpenter and wheelwright from Borre (Unsplash).jpg",
+   "needs_attribution": false
+  },
+  {
+   "asset": "notebook-and-pens.webp",
+   "source": "openverse",
+   "creator": "Kristin Hardwick",
+   "license": "CC0",
+   "url": "https://stocksnap.io/photo/journal-desk-MFRLKOXJVH",
+   "short_url": "https://stocksnap.io/photo/journal-desk-MFRLKOXJVH",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "title": "Journal Desk",
+   "needs_attribution": false
+  },
+  {
+   "asset": "desk-coffee-keyboard.webp",
+   "source": "openverse",
+   "creator": "Lukas",
+   "license": "CC0",
+   "url": "https://stocksnap.io/photo/lifestyle-office-0DW7NPB8RO",
+   "short_url": "https://stocksnap.io/photo/lifestyle-office-0DW7NPB8RO",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "title": "Lifestyle Office",
+   "needs_attribution": false
+  }
+ ]
+}

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My New Skills — practice workbooks, printed in Dunedin</title>
+<meta name="description" content="Printed practice workbooks for handwriting, mental arithmetic, sketching and touch typing. No course, no tutor, no certificate. Made in Dunedin, posted across New Zealand.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="My New Skills — practice workbooks, printed in Dunedin">
+<meta property="og:description" content="Printed practice workbooks for handwriting, mental arithmetic, sketching and touch typing. No course, no tutor, no certificate. Made in Dunedin, posted across New Zealand.">
+<meta property="og:image" content="/assets/og.png">
+<meta property="og:url" content="/">
+<meta property="og:site_name" content="My New Skills">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700;900&amp;family=Lexend+Deca:wght@300;400;500;600&amp;display=swap">
+<script>document.documentElement.classList.add('ink-on');</script>
+<style>
+:root{--theme:#243B7A;--accent:#F2B705;--ink:#171F33;--ground:#FBFAFD;--desk:#E7EAF3;--feint:#CCD4E8;--soft:#4A5470;--paper:#FFFFFF;--tint:#EEF1F9;--pitch:28px;--gutter:92px;--edge:40px;--inset:36px}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--desk);color:var(--ink);font:400 17px/var(--pitch) "Lexend Deca",system-ui,sans-serif;letter-spacing:.002em}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--theme)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+h1,h2,h3{font-family:"Frank Ruhl Libre",Georgia,serif;font-weight:700;margin:0;color:var(--theme)}
+p{margin:0 0 var(--pitch)}
+ul,ol{margin:0 0 var(--pitch);padding-left:1.4em}
+strong{font-weight:600}
+.sight-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* cover band across the top of every page */
+.cover-band{background:var(--theme);color:#fff;position:relative;z-index:30}
+.cover-inner{max-width:1360px;margin:0 auto;padding:0 var(--edge);display:flex;align-items:center;gap:24px;min-height:84px}
+.book-mark{color:#fff;text-decoration:none;display:block;line-height:1.1;padding:14px 0}
+.mark-name{font:700 27px/1 "Frank Ruhl Libre",Georgia,serif;letter-spacing:.01em;display:block}
+.mark-line{display:block;font:500 12px/16px "Lexend Deca",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-top:6px}
+.spine-nav{margin-left:auto}
+.spine-list{list-style:none;margin:0;padding:0;display:flex;align-items:center;gap:2px}
+.spine-link{display:block;color:#fff;text-decoration:none;font-size:15px;padding:10px 12px;border-bottom:2px solid transparent}
+.spine-link:hover,.spine-link[aria-current="page"]{border-bottom-color:var(--accent)}
+.spine-order{display:inline-block;margin-left:14px;background:var(--accent);color:var(--ink);text-decoration:none;font-weight:600;font-size:15px;padding:11px 18px;border-radius:2px;box-shadow:3px 3px 0 rgba(0,0,0,.28)}
+.spine-order:hover{background:#ffc628}
+.pencil-toggle{display:none;margin-left:auto;background:none;border:2px solid rgba(255,255,255,.55);border-radius:3px;width:46px;height:42px;padding:0;cursor:pointer;position:relative}
+.pencil-line{position:absolute;left:11px;right:11px;height:2px;background:var(--accent);border-radius:2px;transition:transform .32s ease,opacity .2s ease;transform-origin:center}
+.pencil-line:nth-child(1){top:12px}.pencil-line:nth-child(2){top:19px}.pencil-line:nth-child(3){top:26px}
+.menu-shown .pencil-line:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.menu-shown .pencil-line:nth-child(2){opacity:0;transform:scaleX(0)}
+.menu-shown .pencil-line:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* the workbook page itself */
+.page-stack{position:relative;max-width:1360px;margin:0 auto;background:var(--ground);box-shadow:0 0 0 1px #d6dbea,0 24px 48px -30px rgba(23,31,51,.4)}
+.page-stack::before{content:"";position:absolute;top:0;bottom:0;left:var(--gutter);border-left:3px solid var(--accent);pointer-events:none;z-index:2}
+.page-stack::after{content:"";position:absolute;top:0;bottom:0;left:calc(var(--gutter) + 7px);border-left:1px solid var(--theme);pointer-events:none;z-index:2}
+.exercise-box{position:relative;padding:calc(var(--pitch)*2) var(--edge) calc(var(--pitch)*2) calc(var(--gutter) + var(--inset))}
+.exercise-box + .exercise-box{border-top:1px solid var(--theme)}
+.rule-sheet{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.rule-sheet::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(to bottom,transparent 0 20px,var(--feint) 20px 21px,transparent 21px var(--pitch))}
+.exercise-box > :not(.rule-sheet):not(.exercise-number){position:relative;z-index:1}
+.exercise-number{position:absolute;left:0;top:calc(var(--pitch)*2 - 6px);width:var(--gutter);text-align:center;font:700 40px/1 "Frank Ruhl Libre",Georgia,serif;color:var(--theme);z-index:3}
+.exercise-number::after{content:"";display:block;width:26px;height:2px;background:var(--accent);margin:8px auto 0}
+.exercise-head{font-size:34px;line-height:40px;margin:0 0 4px}
+.exercise-head::before{content:"Exercise";display:block;font:600 12px/16px "Lexend Deca",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--soft);margin-bottom:6px}
+.exercise-lead{font-size:19px;line-height:var(--pitch);color:var(--soft);max-width:66ch;margin:0 0 calc(var(--pitch)*1.5)}
+.reading-column{max-width:70ch}
+
+/* front label: the cover of the book */
+.cover-label{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:56px;align-items:end;padding-top:calc(var(--pitch)*2.5)}
+.label-stamp{display:inline-block;font:600 12px/20px "Lexend Deca",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--theme);border:1.5px solid var(--theme);padding:3px 12px;border-radius:2px;margin-bottom:var(--pitch);background:var(--paper)}
+.label-headline{font-size:clamp(40px,5.4vw,72px);line-height:1.02;letter-spacing:-.01em;margin-bottom:var(--pitch)}
+.label-headline em{font-style:italic;font-weight:400}
+.label-sub{font-size:19px;max-width:56ch;margin-bottom:calc(var(--pitch)*1.25)}
+.label-actions{display:flex;flex-wrap:wrap;gap:14px 26px;align-items:center;margin-bottom:var(--pitch)}
+.order-button{display:inline-block;background:var(--accent);color:var(--ink);text-decoration:none;font-weight:600;font-size:17px;padding:13px 24px;border-radius:2px;box-shadow:4px 4px 0 var(--theme);border:0;cursor:pointer;font-family:inherit}
+.order-button:hover{background:#ffc628}
+.quiet-link{color:var(--theme);font-weight:500;text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:2px;text-underline-offset:5px}
+.label-figure{margin:0}
+.figure-frame{border:1.5px solid var(--theme);padding:8px;background:var(--paper);box-shadow:5px 5px 0 var(--accent)}
+.figure-caption{font-size:14px;line-height:22px;color:var(--soft);margin-top:14px;padding-left:14px;border-left:3px solid var(--accent)}
+.figure-caption b{font-weight:600;color:var(--theme)}
+
+/* the four fields at the head of the page */
+.facts-ruler{display:grid;grid-template-columns:repeat(4,1fr);border-top:2px solid var(--theme);border-bottom:1px solid var(--theme);margin:0}
+.ruler-mark{padding:18px 20px 18px 0;margin-right:20px;border-right:1px solid var(--feint)}
+.ruler-mark:last-child{border-right:0;margin-right:0}
+.mark-key{font:600 12px/20px "Lexend Deca",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);margin:0}
+.mark-value{font:500 18px/26px "Frank Ruhl Libre",Georgia,serif;color:var(--theme);margin:4px 0 0}
+
+/* the six choices */
+.book-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 48px}
+.book-entry{display:grid;grid-template-columns:44px 1fr 48px;gap:0 16px;padding:calc(var(--pitch)*.75) 0 var(--pitch);border-top:1px dashed var(--theme)}
+.entry-letter{font:700 26px/36px "Frank Ruhl Libre",Georgia,serif;color:var(--theme);width:36px;height:36px;border:1.5px solid var(--theme);border-radius:50%;text-align:center;background:var(--paper)}
+.entry-name{font-size:23px;line-height:32px;margin:1px 0 6px}
+.entry-note{margin:0;grid-column:2;color:var(--ink)}
+.entry-icon{width:44px;height:44px;color:var(--theme);grid-column:3;grid-row:1/3;justify-self:end}
+.entry-icon svg{width:44px;height:44px;display:block}
+
+/* answer boxes */
+.answer-slot{position:relative;margin-top:calc(var(--pitch)*1.5);border:1.5px solid var(--theme);background:var(--paper);padding:30px 28px 6px;border-radius:3px;box-shadow:4px 4px 0 var(--accent);max-width:78ch}
+.answer-slot > :last-child{margin-bottom:22px}
+.slot-label{position:absolute;top:-11px;left:18px;background:var(--paper);padding:0 8px;font:600 12px/22px "Lexend Deca",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--theme)}
+.answer-slot--wide{max-width:none}
+
+/* how an order runs */
+.working-steps{list-style:none;padding:0;margin:0 0 var(--pitch);counter-reset:step;max-width:72ch}
+.working-step{position:relative;padding:0 0 var(--pitch) 64px;counter-increment:step}
+.working-step::before{content:counter(step);position:absolute;left:0;top:0;width:44px;height:44px;border:1.5px solid var(--theme);border-radius:50%;background:var(--paper);font:700 22px/42px "Frank Ruhl Libre",Georgia,serif;color:var(--theme);text-align:center}
+.working-step h3{font-size:22px;line-height:28px;margin-bottom:4px}
+.working-step p{margin:0}
+.side-figure{float:right;width:min(360px,42%);margin:6px 0 var(--pitch) 40px}
+.split-pair{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:48px;align-items:start}
+
+/* questions */
+.faq-sheet{list-style:none;margin:0;padding:0;max-width:78ch}
+.faq-item{margin-bottom:calc(var(--pitch)*1.5)}
+.faq-question{font-size:23px;line-height:32px;padding-left:44px;position:relative}
+.faq-question::before{content:"Q";position:absolute;left:0;top:2px;width:30px;height:30px;border:1.5px solid var(--theme);border-radius:3px;font:700 17px/28px "Lexend Deca",sans-serif;color:var(--theme);text-align:center;background:var(--paper)}
+.faq-answer{margin-top:22px;margin-left:44px;padding:22px 24px 2px}
+.faq-answer .slot-label{left:14px}
+
+/* the refusals */
+.refusal-list{list-style:none;margin:0;padding:0;max-width:78ch}
+.refusal-item{display:grid;grid-template-columns:36px 1fr;gap:16px;align-items:start;padding:14px 0;border-bottom:1px dashed var(--theme);font-size:19px}
+.refusal-item:first-child{border-top:1px dashed var(--theme)}
+.refusal-item svg{width:28px;height:28px;margin-top:2px;color:var(--theme)}
+
+/* the last exercise: order and reach us */
+.closing-line{font:400 34px/44px "Frank Ruhl Libre",Georgia,serif;color:var(--theme);max-width:26ch;margin-bottom:var(--pitch)}
+.post-box{display:grid;grid-template-columns:repeat(3,1fr);gap:28px 40px;margin:0;padding:var(--pitch) 0 0;border-top:2px solid var(--theme)}
+.post-line{margin:0}
+.post-line dt{font:600 12px/20px "Lexend Deca",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--soft)}
+.post-line dd{margin:4px 0 0}
+
+/* foot of the book */
+.page-foot{background:var(--theme);color:#fff;margin-top:0}
+.foot-inner{max-width:1360px;margin:0 auto;padding:44px var(--edge) 40px;display:grid;grid-template-columns:1fr auto;gap:24px 48px;align-items:start}
+.foot-name{font:700 24px/30px "Frank Ruhl Libre",Georgia,serif;margin:0 0 6px}
+.foot-place{margin:0;color:#d7dcea;font-size:15px;max-width:52ch}
+.foot-links{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,auto);gap:6px 32px}
+.foot-links a{color:#fff;text-decoration:none;font-size:15px;border-bottom:1px solid rgba(255,255,255,.35)}
+.foot-links a:hover{border-bottom-color:var(--accent)}
+.foot-note{grid-column:1/-1;margin:0;font-size:14px;color:#d7dcea;border-top:1px solid rgba(255,255,255,.25);padding-top:18px}
+
+/* consent slip */
+.consent-slip{position:fixed;right:20px;bottom:20px;z-index:60;width:min(380px,calc(100vw - 32px));background:var(--paper);border:1.5px solid var(--theme);box-shadow:5px 5px 0 var(--accent);padding:20px 22px 18px;border-radius:3px;font-size:15px;line-height:23px}
+.consent-slip[hidden]{display:none}
+.slip-head{font:700 19px/24px "Frank Ruhl Libre",Georgia,serif;color:var(--theme);margin:0 0 8px}
+.slip-text{margin:0 0 14px}
+.slip-text a{color:var(--theme)}
+.slip-actions{display:flex;flex-wrap:wrap;gap:10px}
+.slip-accept,.slip-manage,.slip-save{font:600 14px/20px "Lexend Deca",sans-serif;padding:9px 14px;border-radius:2px;cursor:pointer;border:1.5px solid var(--theme)}
+.slip-accept,.slip-save{background:var(--accent);color:var(--ink);border-color:var(--accent)}
+.slip-manage{background:var(--paper);color:var(--theme)}
+.slip-panel{margin:14px 0 0;padding:12px 0 0;border-top:1px dashed var(--theme)}
+.slip-panel[hidden]{display:none}
+.panel-toggle{display:flex;gap:10px;align-items:flex-start;margin-bottom:12px}
+.panel-toggle input{width:20px;height:20px;margin:2px 0 0;accent-color:var(--theme)}
+
+/* mobile and tablet */
+@media (max-width:1100px){:root{--gutter:64px;--inset:28px;--edge:28px}.book-list{grid-template-columns:1fr}.cover-label{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:36px}.post-box{grid-template-columns:1fr 1fr}.split-pair{grid-template-columns:1fr}}
+@media (max-width:900px){
+  .cover-inner{min-height:72px;flex-wrap:wrap;padding:0 var(--edge)}
+  .pencil-toggle{display:block;flex:0 0 46px}
+  .book-mark{flex:1 1 0;min-width:0}
+  .mark-name{font-size:23px}
+  .mark-line{font-size:11px;letter-spacing:.1em}
+  .spine-nav{flex-basis:100%;margin:0;display:none}
+  .menu-shown .spine-nav{display:block}
+  .spine-list{flex-direction:column;align-items:stretch;gap:0;padding:6px 0 16px;border-top:1px solid rgba(255,255,255,.25)}
+  .spine-link{padding:12px 4px;font-size:17px;border-bottom:1px solid rgba(255,255,255,.12)}
+  .spine-order{margin:14px 4px 0;text-align:center}
+  .cover-label{grid-template-columns:1fr;gap:36px;padding-top:calc(var(--pitch)*1.5)}
+  .facts-ruler{grid-template-columns:1fr 1fr}
+  .ruler-mark:nth-child(2n){border-right:0;margin-right:0}
+  .side-figure{float:none;width:100%;margin:0 0 var(--pitch)}
+}
+@media (max-width:600px){
+  :root{--gutter:40px;--inset:20px;--edge:18px}
+  body{font-size:16px}
+  .exercise-number{font-size:26px;top:calc(var(--pitch)*2 - 2px)}
+  .exercise-number::after{width:18px;margin-top:5px}
+  .exercise-head{font-size:28px;line-height:34px}
+  .label-headline{font-size:36px;margin-bottom:20px}
+  .label-sub,.exercise-lead{font-size:17px}
+  .facts-ruler{grid-template-columns:1fr}
+  .ruler-mark{border-right:0;margin-right:0;border-bottom:1px solid var(--feint);padding:14px 0}
+  .ruler-mark:last-child{border-bottom:0}
+  .book-entry{grid-template-columns:36px 1fr 40px;gap:0 12px}
+  .entry-icon,.entry-icon svg{width:36px;height:36px}
+  .entry-name{font-size:20px;line-height:28px}
+  .answer-slot{padding:26px 18px 6px}
+  .faq-question{padding-left:40px;font-size:20px;line-height:28px}
+  .faq-answer{margin-left:0}
+  .working-step{padding-left:56px}
+  .closing-line{font-size:27px;line-height:36px}
+  .post-box{grid-template-columns:1fr}
+  .foot-inner{grid-template-columns:1fr}
+  .consent-slip{right:12px;bottom:12px;left:12px;width:auto;padding:14px 14px 12px;font-size:14px;line-height:20px}
+  .slip-head{display:none}
+  .slip-text{margin-bottom:10px}
+  .slip-accept,.slip-manage,.slip-save{padding:8px 12px}
+  .cover-label{padding-top:var(--pitch)}
+  .label-stamp{margin-bottom:18px}
+  .label-sub{line-height:26px;margin-bottom:24px}
+  .refusal-item{font-size:17px}
+}
+
+/* motion: the baselines draw themselves across each exercise, top line first */
+@media (prefers-reduced-motion:no-preference){
+  html{scroll-behavior:smooth}
+  html.ink-on .exercise-box .rule-sheet::before{clip-path:polygon(0 0,0 0,0 0);transition:clip-path 2.1s cubic-bezier(.25,.55,.25,1)}
+  html.ink-on .exercise-box.drawn-in .rule-sheet::before{clip-path:polygon(0 0,3600% 0,0 3024px)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .pencil-line,.rule-sheet::before{transition:none}
+}
+
+.book-spec{display:grid;grid-template-columns:150px 1fr;gap:6px 24px;margin:0 0 var(--pitch);padding:20px 0 14px;border-top:1px dashed var(--theme)}
+.book-spec dt{font:600 12px/24px "Lexend Deca",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);margin:0}
+.book-spec dd{margin:0}
+.title-head{font-size:26px;line-height:34px;margin:calc(var(--pitch)*1.25) 0 8px}
+.title-head small{display:block;font:500 13px/20px "Lexend Deca",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);margin-bottom:2px}
+.ruling-demo{max-width:78ch;margin:0 0 var(--pitch)}
+.demo-switch{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+.demo-pick{font:600 15px/22px "Lexend Deca",sans-serif;background:var(--paper);color:var(--theme);border:1.5px solid var(--theme);border-radius:2px;padding:8px 16px;cursor:pointer}
+.demo-pick[aria-pressed="true"]{background:var(--theme);color:#fff}
+.demo-sheet{width:100%;height:auto;display:block;background:var(--paper);border:1.5px solid var(--theme);box-shadow:4px 4px 0 var(--accent)}
+.demo-note{margin:16px 0 0;color:var(--soft);font-size:15px;line-height:24px}
+.lasting-sum{max-width:78ch;display:grid;grid-template-columns:1fr 1fr;gap:16px 24px;margin:0 0 var(--pitch);padding:24px;background:var(--paper);border:1.5px solid var(--theme);box-shadow:4px 4px 0 var(--accent)}
+.sum-field{display:block}
+.sum-field span{display:block;font:600 12px/22px "Lexend Deca",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--soft)}
+.sum-field input,.sum-field select{width:100%;font:400 17px/26px "Lexend Deca",sans-serif;padding:8px 10px;border:1.5px solid var(--theme);border-radius:2px;color:var(--ink);background:var(--ground)}
+.sum-result{grid-column:1/-1;margin:0;font:400 24px/34px "Frank Ruhl Libre",Georgia,serif;color:var(--theme);border-top:1px dashed var(--theme);padding-top:14px}
+.page-figure{margin:0 0 var(--pitch)}
+.order-form{max-width:78ch}
+.form-field{display:block;margin-bottom:22px}
+.field-label{display:block;font:600 14px/22px "Lexend Deca",sans-serif;color:var(--theme);margin-bottom:6px}
+.field-help{display:block;font-size:14px;line-height:22px;color:var(--soft);margin-top:4px}
+.field-input{width:100%;font:400 17px/26px "Lexend Deca",sans-serif;padding:11px 12px;border:1.5px solid var(--theme);border-radius:2px;background:var(--paper);color:var(--ink)}
+textarea.field-input{min-height:150px;resize:vertical}
+.choice-set{border:1.5px solid var(--theme);border-radius:2px;padding:14px 18px 6px;margin:0 0 22px;background:var(--paper)}
+.choice-set legend{font:600 14px/22px "Lexend Deca",sans-serif;color:var(--theme);padding:0 6px}
+.choice-item{display:flex;gap:12px;align-items:flex-start;margin:0 0 12px}
+.choice-item input{width:20px;height:20px;margin:4px 0 0;accent-color:var(--theme);flex:none}
+.honey-pot{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+.field-pair{display:grid;grid-template-columns:1fr 1fr;gap:0 24px}
+.credit-list li{overflow-wrap:anywhere;margin-bottom:10px}
+@media (max-width:600px){.book-spec{grid-template-columns:1fr;gap:0 0}.book-spec dd{margin-bottom:10px}.lasting-sum{grid-template-columns:1fr;padding:18px}.field-pair{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="cover-band">
+<div class="cover-inner">
+<a class="book-mark" href="index.html"><span class="mark-name">My New Skills</span><span class="mark-line">Practice workbooks, printed and posted</span></a>
+<button class="pencil-toggle" type="button" aria-label="Open the menu" aria-expanded="false" aria-controls="spine-list"><span class="pencil-line"></span><span class="pencil-line"></span><span class="pencil-line"></span></button>
+<nav class="spine-nav" aria-label="Pages of the site">
+<ul class="spine-list" id="spine-list"><li><a class="spine-link" href="index.html" aria-current="page">Home</a></li><li><a class="spine-link" href="handwriting-books.html">Handwriting books</a></li><li><a class="spine-link" href="number-practice.html">Number practice</a></li><li><a class="spine-link" href="how-a-book-is-built.html">How a book is built</a></li><li><a class="spine-link" href="order-a-set.html">Order a set</a></li><li><a class="spine-order" href="order-a-set.html">Order a set of books</a></li></ul>
+</nav>
+</div>
+</header>
+<main class="page-stack">
+<section class="exercise-box cover-label" id="front-label">
+<div class="rule-sheet" aria-hidden="true"></div>
+<div>
+<span class="label-stamp">Printed in Dunedin &middot; posted throughout New Zealand</span>
+<h1 class="label-headline">A page a day, <em>on paper.</em></h1>
+<p class="label-sub">Practice workbooks for handwriting, mental arithmetic, sketching and touch typing. There is no course behind them, no app and no test. You get a printed book of exercises, ruled for the job and bound to lie flat, posted to your door.</p>
+<div class="label-actions"><a class="order-button" href="order-a-set.html">Order a set of books</a><a class="quiet-link" href="#choose-a-book">See the six choices</a></div>
+</div>
+<figure class="label-figure"><div class="figure-frame"><img src="assets/img/two-pencils-on-yellow.webp" alt="Two sharpened grey pencils lying on a plain yellow surface" width="1400" height="875" fetchpriority="high"></div><figcaption class="figure-caption"><b>Fig. 1</b> Two sharpened pencils. That is the whole kit a page needs.</figcaption></figure>
+</section>
+<section class="exercise-box" id="page-fields" aria-label="What this business is">
+<div class="rule-sheet" aria-hidden="true"></div>
+<dl class="facts-ruler">
+<div class="ruler-mark"><dt class="mark-key">What we make</dt><dd class="mark-value">Printed workbooks, posted</dd></div>
+<div class="ruler-mark"><dt class="mark-key">What we are not</dt><dd class="mark-value">No course, no tutor, no assessment</dd></div>
+<div class="ruler-mark"><dt class="mark-key">What we state</dt><dd class="mark-value">Paper weight and binding stated on every book</dd></div>
+<div class="ruler-mark"><dt class="mark-key">What we promise</dt><dd class="mark-value">No certificate and no claim about results</dd></div>
+</dl>
+</section>
+<section class="exercise-box" id="choose-a-book">
+<div class="rule-sheet" aria-hidden="true"></div>
+<span class="exercise-number" aria-hidden="true">1</span>
+<h2 class="exercise-head">Choose a book</h2>
+<p class="exercise-lead">Four lines of books and two ways to buy them. Each is paper and exercises, nothing more. Read the letter that fits, then order the set.</p><ol class="book-list"><li class="book-entry"><span class="entry-letter" aria-hidden="true">a</span><h3 class="entry-name"><a class="quiet-link" href="handwriting-books.html">Handwriting books</a></h3><span class="entry-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M30 6l12 12-20 20H10V26z"/><path d="M26 10l12 12"/><path d="M10 38l8-8"/><path d="M6 44h36"/></svg></span><p class="entry-note">Letter forms first, then joins, then spacing. Ruled to three heights, so the x-height, the ascender and the descender each have a line to sit on. Three books: print, joined writing, and a spacing book for writers whose letters are right but crowd each other.</p></li><li class="book-entry"><span class="entry-letter" aria-hidden="true">b</span><h3 class="entry-name"><a class="quiet-link" href="number-practice.html">Number practice</a></h3><span class="entry-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="6" width="34" height="36" rx="2"/><path d="M7 18h34M7 30h34M18 6v36M30 6v36"/><path d="M11 12h3M12.5 10.5v3M35 12h3M34 24h4M36 22v4M22 36h4"/></svg></span><p class="entry-note">Tables, then mental methods, then written methods, in that order. A fixed number of questions to the page, one page a day, and the answer key at the back so the eye cannot drift down to it.</p></li><li class="book-entry"><span class="entry-letter" aria-hidden="true">c</span><h3 class="entry-name"><a class="quiet-link" href="how-a-book-is-built.html">Sketching books</a></h3><span class="entry-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 40l3-11L33 7l8 8-22 22z"/><path d="M11 29l8 8M28 12l8 8"/><path d="M6 44h20"/><path d="M26 44c6-4 10-4 16 0"/></svg></span><p class="entry-note">Line, then proportion, then shading. Every exercise page faces a blank page of the same paper, so you draw beside the example rather than over it. Heavier stock, because a soft pencil is hard on thin paper.</p></li><li class="book-entry"><span class="entry-letter" aria-hidden="true">d</span><h3 class="entry-name"><a class="quiet-link" href="how-a-book-is-built.html">Touch-typing books</a></h3><span class="entry-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="12" width="40" height="24" rx="3"/><path d="M10 19h3M17 19h3M24 19h3M31 19h3M38 19h0M10 25h3M17 25h3M24 25h3M31 25h3M38 25h0M14 31h20"/></svg></span><p class="entry-note">Home row outward: the eight resting keys first, then each reach in turn. The drills are printed, not timed on a screen, so the book props beside any keyboard and nothing counts your errors.</p></li><li class="book-entry"><span class="entry-letter" aria-hidden="true">e</span><h3 class="entry-name"><a class="quiet-link" href="order-a-set.html">Class sets</a></h3><span class="entry-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 34h30v8H8zM10 24h30v8H10zM7 14h30v8H7z"/><path d="M13 18h18M15 28h18M14 38h18"/></svg></span><p class="entry-note">The same titles in multiples for a school, a library or a club, packed by title. Say how many of each on the order form and we quote the set and the postage together before anything is printed.</p></li><li class="book-entry"><span class="entry-letter" aria-hidden="true">f</span><h3 class="entry-name"><a class="quiet-link" href="order-a-set.html">Ruled refill pads</a></h3><span class="entry-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 10h28v32H10z"/><path d="M10 10c2-4 26-4 28 0"/><path d="M14 20h20M14 26h20M14 32h20M14 38h12"/><path d="M16 7v6M32 7v6"/></svg></span><p class="entry-note">Loose pads ruled the same way as the handwriting books, for the days when you want the ruling without the exercises. The same paper, gummed at the head, in the three heights we print.</p></li></ol><div class="answer-slot"><span class="slot-label">Answer</span><p>Most first orders are one handwriting book and one number book. If you are not sure which ruling height to ask for, say so on the order form and we will tell you which one the sample pages were set for.</p><p><a class="order-button" href="order-a-set.html">Order a set of books</a></p></div>
+</section>
+<section class="exercise-box" id="how-an-order-runs">
+<div class="rule-sheet" aria-hidden="true"></div>
+<span class="exercise-number" aria-hidden="true">2</span>
+<h2 class="exercise-head">How an order runs</h2>
+<p class="exercise-lead">This is a small publisher. It writes, rules, prints and binds practice workbooks, then posts them. Here is the whole of it, in order.</p><div class="split-pair">
+<div>
+<ol class="working-steps">
+<li class="working-step"><h3>You write to us</h3><p>The order form asks for your name, your e-mail, which titles you want and how many, and where they are going. A message box takes anything else: a left-handed writer, a school year, a ruling height you already use.</p></li>
+<li class="working-step"><h3>We reply from post@mynewskills.com</h3><p>The reply confirms the titles, the ruling of each, the page count and the paper weight, and sets out the cost of the set and the postage as one figure. Nothing is charged until you say yes to that reply.</p></li>
+<li class="working-step"><h3>We print and bind</h3><p>Each book is printed on the paper stated for that title, folded into sections, sewn and glued so the spine opens flat, then trimmed. A set for one person usually leaves within the week. A class set takes longer, and the reply says how long.</p></li>
+<li class="working-step"><h3>We post</h3><p>Within New Zealand books travel by tracked courier. To Australia they go by tracked international post. You get the tracking reference by e-mail on the day the parcel leaves Dunedin.</p></li>
+<li class="working-step"><h3>You practise</h3><p>That is the end of our part. We do not mark anything, we do not follow up, and we do not ask how it went unless you want to tell us.</p></li>
+</ol>
+<p>What we care about is the object. A ruling that is exactly the height printed on the cover. Paper heavy enough that a soft pencil does not show through to the next page. A binding that stays open at the page you are on without a hand holding it down. Answers at the back, never at the foot of the page. Plain instructions in short sentences, one idea to a line. That is the whole craft, and it is enough to keep a small press busy.</p>
+<p>We work from Dunedin and post throughout New Zealand and to Australia. The books are written here, ruled here, printed and bound here, and packed here. A single order and a class set go through the same hands.</p>
+</div>
+<figure class="label-figure"><div class="figure-frame"><img src="assets/img/copybook-line-repeated.webp" alt="A nineteenth-century copybook page with one sentence written out in copperplate, line after line" width="622" height="778" loading="lazy"></div><figcaption class="figure-caption"><b>Fig. 2</b> A copybook page from the eighteen-thirties, one sentence written line after line. The idea is old. Our ruling is not.</figcaption></figure>
+</div>
+<div class="answer-slot"><span class="slot-label">What we turn down</span><p>We turn down anything that turns a book into a service. We will not mark or grade work sent to us, will not write a report on a learner, will not design a programme for a class, and will not print a badge, a level or a certificate on any page. We also do not print other people's material, and we do not sell the books through anyone else.</p></div>
+</section>
+<section class="exercise-box" id="questions">
+<div class="rule-sheet" aria-hidden="true"></div>
+<span class="exercise-number" aria-hidden="true">3</span>
+<h2 class="exercise-head">Questions people ask before they order</h2>
+<p class="exercise-lead">Seven questions we answer most weeks, answered here so you do not have to write to ask them.</p><ol class="faq-sheet"><li class="faq-item"><h3 class="faq-question">Is there a course or an app with these?</h3><div class="answer-slot faq-answer"><span class="slot-label">Answer</span><p>No. The book is the whole product. There is no login, no video, no lesson to book and nothing to download. The exercises, the instructions and the answers are all printed, and the book works anywhere there is a flat surface and a pencil.</p></div></li><li class="faq-item"><h3 class="faq-question">Do you mark the work?</h3><div class="answer-slot faq-answer"><span class="slot-label">Answer</span><p>No. Nobody here sees your pages. The number books carry an answer key at the back so you can check your own page. The handwriting and sketching books carry the model to compare against. That is the only marking there is, and you do it yourself.</p></div></li><li class="faq-item"><h3 class="faq-question">Which book suits a left-handed writer?</h3><div class="answer-slot faq-answer"><span class="slot-label">Answer</span><p>The same books. The ruling and the letter forms do not change with the hand. What changes is the tilt of the page and where the wrist rests, and the first spread of every handwriting book shows both positions. If you order the joined-writing book, say left-handed on the form and we will slip in the loose sheet on paper tilt.</p></div></li><li class="faq-item"><h3 class="faq-question">Is there a certificate at the end?</h3><div class="answer-slot faq-answer"><span class="slot-label">Answer</span><p>No. There is a last page. We issue no certificate, no diploma, no level and no qualification, and no book carries a stamp, a badge or a score that could be read as one.</p></div></li><li class="faq-item"><h3 class="faq-question">Can a school order a class set?</h3><div class="answer-slot faq-answer"><span class="slot-label">Answer</span><p>Yes. Put the titles and the number of copies of each on the order form. Class sets are packed by title and posted as one parcel. We quote the set and the postage together and tell you the printing time before you confirm anything.</p></div></li><li class="faq-item"><h3 class="faq-question">Do you post outside New Zealand?</h3><div class="answer-slot faq-answer"><span class="slot-label">Answer</span><p>To Australia, yes, by tracked post. Further afield, write first. Postage on a parcel of books can cost more than the books do, and we would rather tell you that before you order than have you find out after.</p></div></li><li class="faq-item"><h3 class="faq-question">Are the answers included?</h3><div class="answer-slot faq-answer"><span class="slot-label">Answer</span><p>In the number books, yes, as an answer key on the last pages. In the handwriting books the model line is the answer. In the sketching books the example drawing is. The typing books need no key: the text you copied is the check.</p></div></li></ol>
+</section>
+<section class="exercise-box" id="what-we-do-not-do">
+<div class="rule-sheet" aria-hidden="true"></div>
+<span class="exercise-number" aria-hidden="true">4</span>
+<h2 class="exercise-head">What we do not do</h2>
+<p class="exercise-lead">Cross these out before you order. They are not in the book and they are not on offer.</p><ul class="refusal-list"><li class="refusal-item"><svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l16 16M22 6L6 22"/></svg><span>We run no course, no class, no lesson and no tutoring.</span></li><li class="refusal-item"><svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l16 16M22 6L6 22"/></svg><span>We issue no certificate, diploma or qualification of any kind.</span></li><li class="refusal-item"><svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l16 16M22 6L6 22"/></svg><span>We do not mark, assess, grade or report on anyone's work.</span></li><li class="refusal-item"><svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l16 16M22 6L6 22"/></svg><span>We make no claim about how fast anyone will improve.</span></li><li class="refusal-item"><svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l16 16M22 6L6 22"/></svg><span>We give no advice on learning difficulties. A workbook is not an assessment.</span></li></ul><div class="answer-slot"><span class="slot-label">Answer</span><p>If you need any of the five things above, we are the wrong shop and we will say so by return. If you need a well-made book of exercises, read on.</p></div>
+</section>
+<section class="exercise-box" id="order-and-reach-us">
+<div class="rule-sheet" aria-hidden="true"></div>
+<span class="exercise-number" aria-hidden="true">5</span>
+<h2 class="exercise-head">Order a set, or write first</h2>
+<p class="exercise-lead">The form takes a minute. The reply comes by e-mail with everything in one figure, and nothing is printed until you say yes.</p><p class="closing-line">One page a day is a small thing. Paper, a pencil and a book that lies flat is all the kit it needs.</p>
+<p><a class="order-button" href="order-a-set.html">Order a set of books</a></p>
+<dl class="post-box">
+<div class="post-line"><dt>Post</dt><dd><a href="mailto:post@mynewskills.com">post@mynewskills.com</a><br>The only address we use. Every reply comes from it.</dd></div>
+<div class="post-line"><dt>Hours</dt><dd>Replies Monday to Friday, nine in the morning to four in the afternoon, New Zealand time. Orders sent at the weekend are answered on Monday.</dd></div>
+<div class="post-line"><dt>Where</dt><dd>Dunedin, Otago. We post throughout New Zealand and to Australia. Further afield, write first and we will tell you whether the postage makes sense.</dd></div>
+</dl>
+</section>
+</main>
+<footer class="page-foot">
+<div class="foot-inner">
+<div><p class="foot-name">My New Skills</p><p class="foot-place">Dunedin, Otago. Practice workbooks printed here and posted throughout New Zealand and to Australia. Reached by e-mail and by the order form.</p></div>
+<ul class="foot-links">
+<li><a href="index.html">Home</a></li><li><a href="handwriting-books.html">Handwriting books</a></li>
+<li><a href="number-practice.html">Number practice</a></li><li><a href="how-a-book-is-built.html">How a book is built</a></li>
+<li><a href="order-a-set.html">Order a set of books</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li>
+</ul>
+<p class="foot-note">© 2026 My New Skills &middot; Dunedin, New Zealand &middot; post@mynewskills.com</p>
+</div>
+</footer>
+<aside class="consent-slip" id="consent-slip" hidden aria-label="Cookie preferences">
+<p class="slip-head">One preference, kept in your browser</p>
+<p class="slip-text">This site keeps a single consent choice in your browser and sets no analytics or advertising cookies unless you accept them. None are installed at present. <a href="privacy.html">Read the privacy page</a>.</p>
+<div class="slip-actions"><button class="slip-accept" type="button" id="slip-accept">Accept all</button><button class="slip-manage" type="button" id="slip-manage" aria-expanded="false" aria-controls="slip-panel">Manage preferences</button></div>
+<div class="slip-panel" id="slip-panel" hidden>
+<label class="panel-toggle"><input type="checkbox" id="slip-analytics"><span>Analytics and performance measurement. Off unless you tick it, and nothing reads this setting today.</span></label>
+<button class="slip-save" type="button" id="slip-save">Save my choice</button>
+</div>
+</aside>
+<script>
+(function(){
+  var d=document;
+  var tog=d.querySelector('.pencil-toggle');
+  if(tog){tog.addEventListener('click',function(){
+    var on=tog.getAttribute('aria-expanded')==='true';
+    tog.setAttribute('aria-expanded',on?'false':'true');
+    tog.setAttribute('aria-label',on?'Open the menu':'Close the menu');
+    d.body.classList.toggle('menu-shown',!on);
+  });}
+  var KEY='mns_book_pref', slip=d.getElementById('consent-slip');
+  function stored(){try{return localStorage.getItem(KEY);}catch(e){return null;}}
+  function keep(v){try{localStorage.setItem(KEY,JSON.stringify(v));}catch(e){} slip.hidden=true;}
+  if(slip&&!stored()){
+    slip.hidden=false;
+    var panel=d.getElementById('slip-panel'), manage=d.getElementById('slip-manage'), box=d.getElementById('slip-analytics');
+    d.getElementById('slip-accept').addEventListener('click',function(){keep({analytics:true});});
+    manage.addEventListener('click',function(){var open=!panel.hidden;panel.hidden=open;manage.setAttribute('aria-expanded',open?'false':'true');});
+    d.getElementById('slip-save').addEventListener('click',function(){keep({analytics:!!box.checked});});
+  }
+  var boxes=d.querySelectorAll('.exercise-box');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('drawn-in');io.unobserve(e.target);}});},{threshold:0.06});
+    boxes.forEach(function(b){io.observe(b);});
+  }else{boxes.forEach(function(b){b.classList.add('drawn-in');});}
+  var nx=d.querySelector('input[name="_next"]');
+  if(nx){nx.value=new URL('thanks.html',location.href).href;}
+})();
+</script>
+</body>
+</html>
